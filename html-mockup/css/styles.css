@@ -1,0 +1,84 @@
+@import "modal.css";
+
+body {
+    font-family: LatoMedium;
+}
+
+.container {
+    background-color: beige;
+    height: 100%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: gray;
+    padding: 0;
+}
+
+.container.left {
+    border-right-width: 2px;
+}
+
+.container.right {
+    border-left-width: 2px;
+}
+
+.splash {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 33px;
+    width: 100%;
+}
+
+.vertical-centered {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.horizontal-centered {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.horizontal-vertical-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.app-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.home-buttons {
+
+}
+
+.home-button {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: cadetblue;
+    line-height: 46px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 8px;
+}
+
+.shadowy {
+    -moz-box-shadow: 5px 5px 9px 0px #c0c0c0;
+    -webkit-box-shadow: 5px 5px 9px 0px #c0c0c0;
+    -o-box-shadow: 5px 5px 9px 0px #c0c0c0;
+    box-shadow: 5px 5px 9px 0px #c0c0c0;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=134, Strength=9);
+}
