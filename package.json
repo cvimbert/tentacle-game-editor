@@ -1,0 +1,35 @@
+{
+  "name": "tentacle-game-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvimbert/tentacle-game-editor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cvimbert/tentacle-game-editor/issues"
+  },
+  "homepage": "https://github.com/cvimbert/tentacle-game-editor#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "cordova": "^6.3.1",
+    "jquery": "^3.1.0",
+    "node-uuid": "^1.4.7",
+    "requirejs": "^2.2.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-requirejs": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-cordovacli": "^1.0.1",
+    "grunt-sass": "^1.2.1"
+  }
+}

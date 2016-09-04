@@ -1,0 +1,17 @@
+{
+  "name": "tentacle-game-editor",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Christophe Vimbert <c.vimbert@outlook.fr>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/cvimbert/tentacle-game-editor",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
