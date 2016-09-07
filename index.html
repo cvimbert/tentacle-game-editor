@@ -16,13 +16,15 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="bower_components/tentacle-model-monitor/css/interface.css">
 
+    <link rel="stylesheet" href="css/app.css">
+
     <!-- A supprimer dès que possible -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
     <!-- Données de test -->
     <script src="data/modeldescriptorV3.js"></script>
-    <script src="data/jsonmonitordescriptor.js"></script>
+    <script src="data/panels.js"></script>
     <script src="data/localisation.js"></script>
 
     <!-- Dépendances angular à reformater -->
@@ -37,10 +39,10 @@
 
 </head>
 <body>
-<div>
+<div class="app-container">
 
-    <div id="monitors-container" ng-controller="panelscontroller">
-        <div class="container-fluid">
+    <div id="monitors-container" class="app-container" ng-controller="panelscontroller">
+        <div class="app-container container-fluid">
             <ng-view></ng-view>
         </div>
 
