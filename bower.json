@@ -13,5 +13,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "uuid": "^2.0.2",
+    "tentacle-model-monitor": "cvimbert/tentacle-model-monitor"
+  }
 }

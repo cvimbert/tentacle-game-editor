@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+
+    <script src="node_modules/requirejs/require.js"></script>
+    <script src="config.js"></script>
+
+    <link rel="stylesheet" href="bower_components/tentacle-model-monitor/css/game.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/tentacle-model-monitor/css/interface.css">
+
+    <!-- A supprimer dès que possible -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- Données de test -->
+    <script src="data/modeldescriptorV3.js"></script>
+    <script src="data/jsonmonitordescriptor.js"></script>
+    <script src="data/localisation.js"></script>
+
+    <!-- Dépendances angular à reformater -->
+    <!--<script src="src/directives/draggable.js"></script>
+    <script src="src/controllers/modelmonitorcontroller.js"></script>
+    <script src="src/controllers/panelcontroller.js"></script>
+    <script src="src/controllers/spritespanelcontroller.js"></script>
+    <script src="src/controllers/panelscontroller.js"></script>
+    <script src="src/factory/shared.js"></script>-->
+
+    <script src="app.js"></script>
+
+</head>
+<body>
+<div>
+
+    <div id="monitors-container" ng-controller="panelscontroller">
+        <div class="container-fluid">
+            <ng-view></ng-view>
+        </div>
+
+        <div id="modal-desc" class="modal">
+            <form name="modalform">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" ng-click="closeEditionModal()" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">{{getLocString(descid)}}</h4>
+                            <div class="items-stack"><span ng-repeat="stackitem in backItemsStack" ng-class="{'final-stack-item': $index === backItemsStack.length - 1}">{{getLocString(stackitem.type) + ": " + getName(stackitem, "")}}</span></div>
+                        </div>
+                        <div class="modal-body" ng-include="'includes/baseeditor.html'">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" ng-click="closeEditionModal()">Fermer</button>
+                            <button ng-if="backItemsStack.length > 1" ng-click="goBack()" type="button" class="btn btn-default">Retour</button>
+                            <button ng-disabled="!modalform.$valid" ng-click="validateAndGoBack()" type="button" class="btn btn-primary">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

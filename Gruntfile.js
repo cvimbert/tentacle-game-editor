@@ -31,11 +31,16 @@ module.exports = function(grunt){
                     platforms: ['android']
                 }
             },
+            run_android: {
+                options: {
+                    command: 'run',
+                    args: ['android']
+                }
+            },
             emulate_android: {
                 options: {
                     command: 'emulate',
-                    platforms: ['android'],
-                    args: ['--target','Nexus5']
+                    platforms: ['android']
                 }
             }
         }
