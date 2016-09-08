@@ -28,6 +28,7 @@ require.config({
         panelscontroller: 'bower_components/tentacle-model-monitor/src/controllers/panelscontroller',
         spritespanelcontroller: 'bower_components/tentacle-model-monitor/src/controllers/spritespanelcontroller',
         draggabledirective: 'bower_components/tentacle-model-monitor/src/directives/draggable',
+        toolbarpanelcontroller: 'src/controllers/toolbar',
         localization: 'data/localisation'
     }
 });

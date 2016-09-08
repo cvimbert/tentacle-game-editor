@@ -4,7 +4,7 @@
 
 $(document).ready(function() {
 
-    require(["monitoringapp", "modelmonitorcontroller", "panelcontroller", "panelscontroller", "spritespanelcontroller", "draggabledirective"], function(MonitoringApp, modelMonitorController, panelController, panelsController, spritesPanelController, draggableDirective) {
+    require(["monitoringapp", "modelmonitorcontroller", "panelcontroller", "panelscontroller", "spritespanelcontroller", "draggabledirective", "toolbarpanelcontroller"], function(MonitoringApp, modelMonitorController, panelController, panelsController, spritesPanelController, draggableDirective, toolbarPanelController) {
 
         var shared = {};
 
@@ -13,6 +13,7 @@ $(document).ready(function() {
         mainApp.controller("panelcontroller", panelController);
         mainApp.controller("panelscontroller", panelsController);
         mainApp.controller("spritespanelcontroller", spritesPanelController);
+        mainApp.controller("toolbarpanelcontroller", toolbarPanelController);
         mainApp.directive('draggable', draggableDirective);
         mainApp.factory('shared', function() {
             return shared;

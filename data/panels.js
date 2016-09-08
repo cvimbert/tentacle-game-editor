@@ -192,7 +192,39 @@ var panels = {
                     containerid: "b1"
                 }
             }
-        }
+        },
+        play: {
+            template: "includes/layout1.html",
+            title: "Set de panneaux 1",
+            css: "test-set1",
+            panels: {
+                panel1: {
+                    name: "Panneau d'édition",
+                    type: "Sprite",
+                    containerid: "main",
+                    css: "test-panel1",
+                    template: "includes/spritespanel.html",
+                    controller: "spritespanelcontroller"
+                }
+            },
+            buttons: {
+                bouton1a: {
+                    label: "Aller au panneau 2",
+                    containerid: "top-right",
+                    action: {
+                        type: "navigatetopanel",
+                        panelid: "panelsset2"
+                    }
+                },
+                bouton1b: {
+                    label: "Enregistrer",
+                    containerid: "top-right",
+                    action: {
+                        type: "save"
+                    }
+                }
+            }
+        },
     },
     defaultset: "start"
 };

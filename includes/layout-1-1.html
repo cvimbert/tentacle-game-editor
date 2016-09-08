@@ -1,15 +1,7 @@
-<div>
+<div controller="toolbarpanelcontroller">
     <table style="width: 100%; height: 100%;">
         <tr style="height: 55px" class="tools-row">
-            <td>
-                <div style="float: left">
-                    <button onclick="document.location.href='#/start'" class="btn btn-primary back-button">Back</button>
-                </div>
-                <div style="float: right">
-                    <button class="btn btn-primary play-button">Play</button>
-                    <button class="btn btn-primary save-button">Save</button>
-                </div>
-            </td>
+            <td ng-include="'includes/toolbar.html'"></td>
         </tr>
         <tr>
             <td>
@@ -22,5 +14,4 @@
                 </div></td>
         </tr>
     </table>
-
 </div>

@@ -1,14 +1,23 @@
-<div>
-    <div class="layout-panel">
-        <div class="row row-50">
-            <div id="b1" class="col-md-4"></div>
-            <div id="b2" class="col-md-4"></div>
-            <div id="b3" class="col-md-4"></div>
-        </div>
-        <div class="row row-50">
-            <div id="b4" class="col-md-4"></div>
-            <div id="b5" class="col-md-4"></div>
-            <div id="b6" class="col-md-4"></div>
-        </div>
-    </div>
+<div controller="toolbarpanelcontroller">
+    <table style="width: 100%; height: 100%;">
+        <tr style="height: 55px" class="tools-row">
+            <td ng-include="'includes/toolbar.html'"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="layout-panel">
+                    <div class="row row-50">
+                        <div id="b1" class="col-md-4"></div>
+                        <div id="b2" class="col-md-4"></div>
+                        <div id="b3" class="col-md-4"></div>
+                    </div>
+                    <div class="row row-50">
+                        <div id="b4" class="col-md-4"></div>
+                        <div id="b5" class="col-md-4"></div>
+                        <div id="b6" class="col-md-4"></div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
 </div>
