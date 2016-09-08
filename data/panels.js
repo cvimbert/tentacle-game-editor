@@ -194,7 +194,7 @@ var panels = {
             }
         },
         play: {
-            template: "includes/layout1.html",
+            template: "includes/layout-1.html",
             title: "Set de panneaux 1",
             css: "test-set1",
             panels: {
