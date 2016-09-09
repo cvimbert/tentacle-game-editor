@@ -201,27 +201,10 @@ var panels = {
                 panel1: {
                     name: "Panneau d'édition",
                     type: "Sprite",
-                    containerid: "main",
+                    containerid: "b1",
                     css: "test-panel1",
                     template: "includes/spritespanel.html",
                     controller: "spritespanelcontroller"
-                }
-            },
-            buttons: {
-                bouton1a: {
-                    label: "Aller au panneau 2",
-                    containerid: "top-right",
-                    action: {
-                        type: "navigatetopanel",
-                        panelid: "panelsset2"
-                    }
-                },
-                bouton1b: {
-                    label: "Enregistrer",
-                    containerid: "top-right",
-                    action: {
-                        type: "save"
-                    }
                 }
             }
         },

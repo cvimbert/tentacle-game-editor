@@ -13,7 +13,6 @@ module.exports = function(grunt){
                 options: {
                     command: ['create','platform'],
                     platforms: ['android'],
-                    path: 'cordova',
                     id: 'com.blip.gameeditor',
                     name: 'Blip'
                 }

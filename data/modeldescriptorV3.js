@@ -535,7 +535,7 @@ var modelDescriptorV3 = {
             },
             scale: {
                 type: "number",
-                defaultValue: 1,
+                defaultvalue: 1,
                 required: true
             }
         }

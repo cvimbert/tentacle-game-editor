@@ -8,7 +8,7 @@ require.config({
         }
     },
     paths: {
-        underscore: 'node_modules/underscore/underscore',
+        underscore: 'bower_components/underscore/underscore',
         modelmanager: 'bower_components/tentacle-model-manager/src/modelmanager',
         modeldescriptor: 'bower_components/tentacle-model-manager/src/modeldescriptor',
         model: 'bower_components/tentacle-model-manager/src/model',
@@ -16,7 +16,7 @@ require.config({
         filter: 'bower_components/tentacle-model-manager/src/filter',
         filtersset: 'bower_components/tentacle-model-manager/src/filtersset',
         constants: 'bower_components/tentacle-model-manager/src/constants',
-        jquery: 'node_modules/jquery/dist/jquery',
+        jquery: 'bower_components/jquery/dist/jquery',
         loadingmanager: 'bower_components/tentacle-model-monitor/src/loadingmanager',
         monitorbutton: 'bower_components/tentacle-model-monitor/src/monitorbutton',
         monitorpanel: 'bower_components/tentacle-model-monitor/src/monitorpanel',
