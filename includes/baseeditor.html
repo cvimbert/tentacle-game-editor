@@ -28,7 +28,7 @@
                 <tr>
                     <td>
                         <select ng-model="collectionid" class="combobox">
-                            <option ng-repeat="(refid, ref) in getReferencesCollection(item, attribute)" ng-if="item[attributeid].lastIndexOf(refid) === -1" value="{{refid}}">{{getName(ref)}}</option>
+                            <option ng-repeat="(refid, ref) in getReferencesCollection(item, attribute)" ng-if="isInCollection(item, attributeid, refid)" value="{{refid}}">{{getName(ref)}}</option>
                         </select>
                     </td>
                     <td class="button-td">
