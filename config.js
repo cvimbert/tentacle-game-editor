@@ -29,6 +29,8 @@ require.config({
         spritespanelcontroller: 'src/model-monitor/controllers/spritespanelcontroller',
         draggabledirective: 'src/model-monitor/directives/draggable',
         toolbarpanelcontroller: 'src/controllers/toolbar',
-        localization: 'data/localisation'
+        localization: 'data/localisation',
+        console: 'src/controllers/console',
+        contenteditable: 'src/directives/contenteditable'
     }
 });

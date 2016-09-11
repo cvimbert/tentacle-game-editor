@@ -1,0 +1,17 @@
+<div ng-controller="consolecontroller" class="console model-displayer">
+    <table>
+        <tr class="text-tr">
+            <td>
+                {{ text }}
+            </td>
+        </tr>
+        <tr class="prompt-tr">
+            <td>
+                <div class="prompt" ng-keypress="sendCommand($event)" contenteditable ng-model="prompt"></div>
+            </td>
+            <td>
+                {{ prompt }}
+            </td>
+        </tr>
+    </table>
+</div>

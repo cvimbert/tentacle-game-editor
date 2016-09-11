@@ -122,12 +122,12 @@ define (["jquery", "localization"], function($, Localization) {
 
                 if (item.get(attribute.linkedcollectionattribute)) {
                     var linkedItemAttribute = item.get(attribute.linkedcollectionattribute);
-                    var litem = shared.modelManager.getItem(linkedItemAttribute);
+                    var litem = shared.modelManager.getModelByUid(linkedItemAttribute);
 
                     var itemValues = litem.get(attribute.linkedcollectionattributevalue);
 
                     _.each(itemValues, function (itemUid) {
-                        var it = shared.modelManager.getItem(itemUid);
+                        var it = shared.modelManager.getModelByUid(itemUid);
                         ret[itemUid] = it;
                     });
                 }
