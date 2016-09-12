@@ -1,10 +1,10 @@
 /* global Tentacle */
 
-define([], function() {
+define(["underscore"], function(_) {
     return function ($scope, shared) {
 
 
-        var currentSelection = [];
+        $scope.selections = {};
 
         $scope.init = function (datas) {
             var serDatas = atob(datas);
@@ -16,10 +16,17 @@ define([], function() {
 
             $scope.getModels();
 
+            _.each($scope.models, function (model, key) {
+                spriteSelections[key] = false;
+            });
+
             $scope.controlSprites = shared.modelManager.getModelByType("ControlSprite");
             $scope.foregroundSprites = shared.modelManager.getModelByType("ForegroundSprite");
             $scope.backgroundSprites = shared.modelManager.getModelByType("BackgroundSprite");
         };
+
+
+        //$scope.getDynamicSrpi
 
         $scope.getModels = function () {
             $scope.models = shared.modelManager.getModelByType($scope.modeltype);
@@ -66,13 +73,7 @@ define([], function() {
             var elementId = jElement.data("id");
             var model = shared.modelManager.getModelByUid(elementId);
 
-            if (!$scope.isSelected(model)) {
-                currentSelection.push(model);
-                jElement.addClass("selected");
-            } else {
-                currentSelection.splice(currentSelection.indexOf(model), 1);
-                jElement.removeClass("selected");
-            }
+            $scope.selections[elementId] = !$scope.selections[elementId];
         };
     };
 });
