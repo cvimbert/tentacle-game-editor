@@ -94,3 +94,9 @@ body {
 .model-displayer .item-displayer-container {
     height: 100%;
 }
+
+.game-container .game-element.selected {
+    border-style: solid;
+    border-color: rebeccapurple;
+    border-width: 1px;
+}

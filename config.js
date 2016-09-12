@@ -31,6 +31,7 @@ require.config({
         toolbarpanelcontroller: 'src/controllers/toolbar',
         localization: 'data/localisation',
         console: 'src/controllers/console',
-        contenteditable: 'src/directives/contenteditable'
+        contenteditable: 'src/directives/contenteditable',
+        selectable: 'src/directives/selectable'
     }
 });

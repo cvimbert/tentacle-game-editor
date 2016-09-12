@@ -2,6 +2,10 @@
 
 define([], function() {
     return function ($scope, shared) {
+
+
+        var currentSelection = [];
+
         $scope.init = function (datas) {
             var serDatas = atob(datas);
             datasObj = JSON.parse(serDatas);
@@ -46,6 +50,29 @@ define([], function() {
         $scope.deleteItem = function (descid, item, $event) {
             $event.stopPropagation();
             shared.modelManager.deleteItem(descid, item);
+        };
+
+        $scope.isSelected = function(model) {
+            return currentSelection.indexOf(model) !== -1;
+        };
+
+        $scope.clearSelection = function() {
+            // pas bonne idée ça
+            //currentSelection = [];
+        };
+
+        $scope.toggleSelection = function(element) {
+            var jElement = $(element);
+            var elementId = jElement.data("id");
+            var model = shared.modelManager.getModelByUid(elementId);
+
+            if (!$scope.isSelected(model)) {
+                currentSelection.push(model);
+                jElement.addClass("selected");
+            } else {
+                currentSelection.splice(currentSelection.indexOf(model), 1);
+                jElement.removeClass("selected");
+            }
         };
     };
 });

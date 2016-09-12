@@ -10,7 +10,7 @@
             <div class="game-element enabled ui-widget-content" ng-repeat="bsprite in backgroundSprites" style="left: {{bsprite.attributes.x}}px; top: {{bsprite.attributes.y}}px"><img ng-src="data/packages/{{getImageUrl(bsprite, 'decorations');}}"></div>
         </div>
         <div id="spritescontainer">
-            <div class="game-element enabled ui-widget-content" ng-repeat="model in models" style="left: {{model.attributes.x}}px; top: {{model.attributes.y}}px"><img ng-src="data/packages/{{getImageUrl(model, 'sprites');}}"></div>
+            <div selectable data-id="{{ model.uid }}" class="game-element enabled ui-widget-content" ng-class="{'selected': isSelected()}" ng-repeat="model in models" style="left: {{model.attributes.x}}px; top: {{model.attributes.y}}px"><img ng-src="data/packages/{{getImageUrl(model, 'sprites');}}"></div>
         </div>
         <div id="foregroundcontainer">
             <div class="game-element enabled ui-widget-content" ng-repeat="fsprite in foregroundSprites" style="left: {{fsprite.attributes.x}}px; top: {{fsprite.attributes.y}}px"><img ng-src="data/packages/{{getImageUrl(fsprite, 'decorations');}}"></div>
