@@ -1,7 +1,7 @@
 /**
  * Created by Christophe on 13/09/2016.
  */
-define(["underscore"], function(_) {
+define(["underscore", "sprite", "spritesgroup"], function(_, Sprite, SpritesGroup) {
 
     return function (modelManager) {
 

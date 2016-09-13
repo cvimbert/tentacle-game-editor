@@ -3,7 +3,7 @@
  */
 define(["underscore"], function(_) {
 
-    return function (model, modelManager) {
+    return function (model, modelManager, gameManager) {
 
         var spritesUidCollection = model.get("sprites");
         var spritesCollection = [];

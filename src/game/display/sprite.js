@@ -3,9 +3,9 @@
  */
 define(["underscore", "displayobject"], function(_, DisplayObject) {
 
-    return function (model, modelManager) {
+    return function (model, modelManager, gameManager) {
 
-        _.extends.(this, DisplayObject);
+        _.extends(this, DisplayObject);
 
         var graphicSpriteUid = model.get("reference");
         this.graphicSpriteModel = modelManager.getModelByUid(graphicSpriteUid);

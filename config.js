@@ -33,6 +33,9 @@ require.config({
         console: 'src/controllers/console',
         contenteditable: 'src/directives/contenteditable',
         selectable: 'src/directives/selectable',
-        displayobject: 'src/game/display/displayobject'
+        displayobject: 'src/game/display/displayobject',
+        gamemanager: 'src/game/gamemanager',
+        sprite: 'src/game/display/sprite',
+        spritesgroup: 'src/game/display/spritesgroup'
     }
 });
