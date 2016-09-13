@@ -8,22 +8,23 @@ define(["underscore"], function(_) {
         var spritesUidCollection = model.get("sprites");
         var spritesCollection = [];
 
+        _.each(spritesUidCollection, function(spriteUid) {
+            spritesCollection.push(gameManager.getObjectByUid(spriteUid));
+        });
 
         this.getDisplaySpritesUid = function() {
-            _.each(spritesUidCollection, function(spriteUid) {
-                spritesCollection.push(modelManager.getModelByUid(spriteUid));
-            });
+
         };
 
         this.show = function() {
-            _.each(spritesCollection, function() {
-
+            _.each(spritesCollection, function(sprite) {
+                sprite.show();
             });
         };
 
         this.hide = function() {
-            _.each(spritesCollection, function() {
-
+            _.each(spritesCollection, function(sprite) {
+                sprite.hide();
             });
         };
     }

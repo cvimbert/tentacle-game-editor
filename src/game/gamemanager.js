@@ -9,11 +9,29 @@ define(["underscore", "sprite", "spritesgroup"], function(_, Sprite, SpritesGrou
         var models = {};
 
         this.initialize = function() {
-            modelsByType = modelManager.getCompleteModel();
+            var completeModels = modelManager.getCompleteModel();
 
-            _.each(modelsByType, function(model, type) {
+            _.each(completeModels, function(modelsList, type) {
 
+                if (!modelsByType[type]) {
+                    modelsByType[type] = {};
+                }
+
+                _.each(modelsList, function(model, uid) {
+                    try {
+                        var classFunction = eval(type);
+                        var instanciedClass = new classFunction(model, modelManager, this);
+                        modelsByType[type][uid] = instanciedClass;
+                        models[uid] = instanciedClass;
+                    } catch (e) {
+                        console.log(e.message);
+                    }
+                });
             });
+        };
+
+        this.getObjectByUid = function(uid) {
+            return models[uid];
         };
 
         this.executeDisplayList = function(displayList) {

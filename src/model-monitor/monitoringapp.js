@@ -16,7 +16,7 @@
 
 })(function(ModelManager, LoadingManager, MonitorPanelsSet) {
 
-    return function (mainApp, modelDescriptorJson, monitorDesc) {
+    return function (mainApp, modelDescriptorJson, monitorDesc, loadedFunction) {
         var panelsSets = {};
 
         var t = this;
@@ -59,6 +59,8 @@
                 }]);
 
             t.modelManager.loadModel("base");
+
+            loadedFunction();
 
             angular.bootstrap(document, ["monitoring-panel"]);
         });

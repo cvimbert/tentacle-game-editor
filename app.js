@@ -22,13 +22,18 @@ $(document).ready(function() {
             return shared;
         });
 
-        var app = new MonitoringApp(mainApp, modelDescriptorV3, panels);
-        shared.modelManager = app.modelManager;
+        var app = new MonitoringApp(mainApp, modelDescriptorV3, panels, function() {
+            shared.modelManager = app.modelManager;
 
-        var gameManager = new GameManager(shared.modelManager);
+            var gameManager = new GameManager(app.modelManager);
+            gameManager.initialize();
 
-        window.console.log("-->");
-        window.console.log(shared.modelManager.getCompleteModel());
+            window.console.log("-->");
+            window.console.log(shared.modelManager.getCompleteModel());
+            window.console.log("<--");
+        });
+
+
     });
 });
 
