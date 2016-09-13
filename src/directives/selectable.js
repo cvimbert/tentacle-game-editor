@@ -6,12 +6,15 @@ define([], function() {
     return function () {
         return {
             restrict: 'A',
-            link: function (scope, element, attrs) {
+            require: "ngModel",
+            link: function (scope, element, attrs, ngModel) {
 
-                var selected = false;
+                //var model = scope.$eval(attrs.selectable);
 
                 element.bind("mousedown", function() {
-                    scope.toggleSelection(element);
+                    ngModel.$setViewValue(!ngModel.$viewValue);
+
+                    $(element).toggleClass("selected", ngModel.$viewValue);
                 });
             }
         };

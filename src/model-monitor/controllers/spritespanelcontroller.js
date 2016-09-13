@@ -17,7 +17,7 @@ define(["underscore"], function(_) {
             $scope.getModels();
 
             _.each($scope.models, function (model, key) {
-                spriteSelections[key] = false;
+                $scope.selections[key] = false;
             });
 
             $scope.controlSprites = shared.modelManager.getModelByType("ControlSprite");
@@ -60,7 +60,8 @@ define(["underscore"], function(_) {
         };
 
         $scope.isSelected = function(model) {
-            return currentSelection.indexOf(model) !== -1;
+            var is = $scope.selections[model.uid];
+            return $scope.selections[model.uid];
         };
 
         $scope.clearSelection = function() {

@@ -32,6 +32,7 @@ require.config({
         localization: 'data/localisation',
         console: 'src/controllers/console',
         contenteditable: 'src/directives/contenteditable',
-        selectable: 'src/directives/selectable'
+        selectable: 'src/directives/selectable',
+        displayobject: 'src/game/display/displayobject'
     }
 });

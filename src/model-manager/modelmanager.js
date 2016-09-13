@@ -126,6 +126,8 @@
             return modelsByType;
         };
 
+        this.getCompleteModel = this.getModel;
+
         this.getModelByUid = function (uid) {
             return models[uid];
         };

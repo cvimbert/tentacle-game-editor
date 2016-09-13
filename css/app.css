@@ -99,4 +99,6 @@ body {
     border-style: solid;
     border-color: rebeccapurple;
     border-width: 1px;
+    margin-top: -1px;
+    margin-left: -1px;
 }
