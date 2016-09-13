@@ -6,6 +6,7 @@ define(["underscore"], function(_) {
     return function (modelManager) {
 
         var modelsByType = {};
+        var models = {};
 
         this.initialize = function() {
             modelsByType = modelManager.getCompleteModel();
