@@ -7,15 +7,15 @@ define(["underscore"], function(_) {
         console: {
             prefix: "spritesgroup",
             commands: {
-                showall: function() {
-                    this.show();
+                showall: function(spriteGroup) {
+                    spriteGroup.show();
                 },
-                hideall: function() {
-                    this.hide();
+                hideall: function(spriteGroup) {
+                    spriteGroup.hide();
                 }
             }
         },
-        constructor: function(model, modelManager, gameManager) {
+        "SpritesGroup": function(model, modelManager, gameManager) {
 
             var spritesUidCollection;
             var spritesCollection;

@@ -39,7 +39,7 @@ define(["underscore", "sprite", "spritesgroup"], function(_, Sprite, SpritesGrou
 
                         if (classFunction) {
 
-                            var instanciedClass = new classFunction.constructor(model, modelManager, self);
+                            var instanciedClass = new classFunction[type](model, modelManager, self);
                             modelsByType[type][uid] = instanciedClass;
                             models[uid] = instanciedClass;
 

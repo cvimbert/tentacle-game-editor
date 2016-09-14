@@ -7,15 +7,15 @@ define(["underscore", "displayobject"], function(_, DisplayObject) {
         console: {
             prefix: "sprite",
             commands: {
-                show: function() {
-                    this.show();
+                show: function(sprite) {
+                    sprite.show();
                 },
-                hide: function() {
-                    this.hide();
+                hide: function(sprite) {
+                    sprite.hide();
                 }
             }
         },
-        constructor: function(model, modelManager, gameManager) {
+        "Sprite": function(model, modelManager, gameManager) {
             _.extend(this, DisplayObject);
 
             var graphicSpriteUid;

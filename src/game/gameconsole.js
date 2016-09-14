@@ -8,6 +8,7 @@ define(["underscore"], function(_) {
         var commandsSets = {};
         var self = this;
         var gameManager;
+        this.onMessage = null;
 
         this.initialize = function(gManager) {
             gameManager = gManager;
@@ -25,6 +26,8 @@ define(["underscore"], function(_) {
         };
 
         this.evalCommand = function(commandExpression) {
+
+            self.message(commandExpression);
 
             var commandArray = commandExpression.split(" ");
 
@@ -54,20 +57,23 @@ define(["underscore"], function(_) {
                 return false;
             }
 
+            console.log(expressionObject);
+
             if (!commandsSets[setName][commandName]) {
-                self.message("Cet commande n'existe pas pour ce type d'objet");
+                self.message("Cette commande n'existe pas pour ce type d'objet");
                 return false;
             }
 
             // on peut finalement lancer la commande
             var commandFunction = commandsSets[setName][commandName];
-            _.bind(commandFunction, expressionObject);
 
-            commandFunction();
+            commandFunction(expressionObject);
         };
 
         this.message = function(messageString) {
             console.log(messageString);
+
+            if (this.onMessage) this.onMessage(messageString);
         };
 
     }

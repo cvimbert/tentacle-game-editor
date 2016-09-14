@@ -2,15 +2,12 @@
     <table>
         <tr class="text-tr">
             <td>
-                {{ text }}
+                <div class="console-text" ng-bind-html="text"></div>
             </td>
         </tr>
         <tr class="prompt-tr">
             <td>
-                <div class="prompt" ng-keypress="sendCommand($event)" contenteditable ng-model="prompt"></div>
-            </td>
-            <td>
-                {{ prompt }}
+                <div class="prompt" ng-keyup="sendCommand($event)" contenteditable ng-model="prompt"></div>
             </td>
         </tr>
     </table>

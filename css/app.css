@@ -95,6 +95,26 @@ body {
     height: 100%;
 }
 
+.model-displayer .prompt-tr {
+    height: 31px;
+}
+
+.model-displayer .console-text {
+    height: 100%;
+    font-size: 12px;
+}
+
+.model-displayer .prompt {
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+    height: 31px;
+    line-height: 27px;
+    padding-left: 4px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
 .game-container .game-element.selected {
     border-style: solid;
     border-color: rebeccapurple;

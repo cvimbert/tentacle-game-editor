@@ -8,7 +8,7 @@ $(document).ready(function() {
 
         var shared = {};
 
-        var mainApp = angular.module("monitoring-panel", ['ngRoute']);
+        var mainApp = angular.module("monitoring-panel", ['ngRoute', 'ngSanitize']);
         mainApp.controller("modelmonitorcontroller", modelMonitorController);
         mainApp.controller("panelcontroller", panelController);
         mainApp.controller("panelscontroller", panelsController);
@@ -32,10 +32,6 @@ $(document).ready(function() {
             gameManager.initialize();
 
             gameConsole.initialize(gameManager);
-
-            window.console.log("-->");
-            window.console.log(shared.modelManager.getCompleteModel());
-            window.console.log("<--");
         });
 
 

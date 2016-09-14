@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "uuid": "^2.0.2",
-    "tentacle-model-monitor": "cvimbert/tentacle-model-monitor"
+    "tentacle-model-monitor": "cvimbert/tentacle-model-monitor",
+    "angular-sanitize": "^1.5.8"
   }
 }

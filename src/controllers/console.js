@@ -4,14 +4,17 @@
 define([], function() {
     return function ($scope, shared) {
 
-        $scope.text = "ok";
-        $scope.prompt = "pas ok";
+        $scope.text = "";
+        $scope.prompt = "";
 
+        shared.gameConsole.onMessage = function(message) {
+            $scope.text += "> " + message + "<br>";
+        };
 
         $scope.sendCommand = function(e) {
-
             if (e.keyCode === 13) {
-                alert ($scope.prompt);
+                shared.gameConsole.evalCommand($scope.prompt);
+                $scope.prompt = "";
             }
         }
     }
