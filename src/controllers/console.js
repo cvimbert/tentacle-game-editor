@@ -7,14 +7,31 @@ define([], function() {
         $scope.text = "";
         $scope.prompt = "";
 
+        shared.gameConsole.reinit();
+
         shared.gameConsole.onMessage = function(message) {
             $scope.text += "> " + message + "<br>";
         };
 
         $scope.sendCommand = function(e) {
-            if (e.keyCode === 13) {
-                shared.gameConsole.evalCommand($scope.prompt);
-                $scope.prompt = "";
+
+            var cmd;
+
+            switch (e.keyCode) {
+                case 13:
+                    shared.gameConsole.evalCommand($scope.prompt);
+                    $scope.prompt = "";
+                    break;
+
+                case 38:
+                    cmd = shared.gameConsole.getPreviousInHistory();
+                    if (cmd) $scope.prompt = cmd;
+                    break;
+
+                case 40:
+                    cmd = shared.gameConsole.getNextInHistory();
+                    if (cmd) $scope.prompt = cmd;
+                    break;
             }
         }
     }

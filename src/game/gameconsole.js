@@ -8,6 +8,8 @@ define(["underscore"], function(_) {
         var commandsSets = {};
         var self = this;
         var gameManager;
+        var history = [];
+        var historyIndex = 0;
         this.onMessage = null;
 
         this.initialize = function(gManager) {
@@ -25,8 +27,34 @@ define(["underscore"], function(_) {
             commandsSets[prefix] = commands;
         };
 
+        this.reinit = function() {
+            historyIndex = history.length;
+        };
+
+        this.getPreviousInHistory = function() {
+
+            if (historyIndex > 0) {
+                historyIndex--;
+                return history[historyIndex];
+            } else {
+                return null;
+            }
+        };
+
+        this.getNextInHistory = function() {
+
+            if (historyIndex < history.length - 1) {
+                historyIndex++;
+                return history[historyIndex];
+            } else {
+                return null;
+            }
+        };
+
         this.evalCommand = function(commandExpression) {
 
+            history.push(commandExpression);
+            historyIndex = history.length;
             self.message(commandExpression);
 
             var commandArray = commandExpression.split(" ");
@@ -57,8 +85,6 @@ define(["underscore"], function(_) {
                 return false;
             }
 
-            console.log(expressionObject);
-
             if (!commandsSets[setName][commandName]) {
                 self.message("Cette commande n'existe pas pour ce type d'objet");
                 return false;
@@ -66,13 +92,11 @@ define(["underscore"], function(_) {
 
             // on peut finalement lancer la commande
             var commandFunction = commandsSets[setName][commandName];
-
             commandFunction(expressionObject);
         };
 
         this.message = function(messageString) {
             console.log(messageString);
-
             if (this.onMessage) this.onMessage(messageString);
         };
 
