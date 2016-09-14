@@ -12,6 +12,9 @@ define(["underscore", "displayobject"], function(_, DisplayObject) {
                 },
                 hide: function(sprite) {
                     sprite.hide();
+                },
+                toggle: function(sprite) {
+                    sprite.toggle();
                 }
             }
         },
@@ -21,6 +24,8 @@ define(["underscore", "displayobject"], function(_, DisplayObject) {
             var graphicSpriteUid;
             var graphicSpriteModel;
             var self = this;
+
+            this.model = model;
 
             this.initialize = function() {
                 graphicSpriteUid = model.get("reference");

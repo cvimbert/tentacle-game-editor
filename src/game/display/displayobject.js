@@ -6,16 +6,16 @@ define([], function() {
     return {
         bindedBooleanVariable: null,
         show: function() {
-            this.bindedBooleanVariable = true;
+            this.bindedBooleanVariable[this.model.uid] = true;
         },
         hide: function() {
-            this.bindedBooleanVariable = false;
+            this.bindedBooleanVariable[this.model.uid] = false;
         },
         toggle: function(value) {
             if (value !== undefined) {
-                this.bindedBooleanVariable = value;
+                this.bindedBooleanVariable[this.model.uid] = value;
             } else {
-                this.bindedBooleanVariable = !this.bindedBooleanVariable;
+                this.bindedBooleanVariable[this.model.uid] = !this.bindedBooleanVariable[this.model.uid];
             }
         }
     }

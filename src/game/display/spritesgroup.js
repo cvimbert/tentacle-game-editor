@@ -40,6 +40,12 @@ define(["underscore"], function(_) {
                     sprite.hide();
                 });
             };
+
+            this.toggle = function() {
+                _.each(spritesCollection, function(sprite) {
+                    sprite.toggle();
+                })
+            }
         }
     };
 });

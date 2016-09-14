@@ -5,6 +5,7 @@ define(["underscore"], function(_) {
 
 
         $scope.selections = {};
+        $scope.spritesVisibility = {};
 
         $scope.init = function (datas) {
             var serDatas = atob(datas);
@@ -18,6 +19,13 @@ define(["underscore"], function(_) {
 
             _.each($scope.models, function (model, key) {
                 $scope.selections[key] = false;
+                $scope.spritesVisibility[key] = true;
+            });
+
+            var spriteObjects = shared.gameManager.getObjectsByType("Sprite");
+
+            _.each(spriteObjects, function(spriteObject, uid) {
+                spriteObject.bindedBooleanVariable = $scope.spritesVisibility;
             });
 
             $scope.controlSprites = shared.modelManager.getModelByType("ControlSprite");

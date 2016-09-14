@@ -4,7 +4,7 @@
 
 $(document).ready(function() {
 
-    require(["gameconsole", "gamemanager", "monitoringapp", "modelmonitorcontroller", "panelcontroller", "panelscontroller", "spritespanelcontroller", "draggabledirective", "toolbarpanelcontroller", "console", "contenteditable", "selectable"], function(GameConsole, GameManager, MonitoringApp, modelMonitorController, panelController, panelsController, spritesPanelController, draggableDirective, toolbarPanelController, console, contentEditable, selectable) {
+    require(["displayobjectdirective", "gameconsole", "gamemanager", "monitoringapp", "modelmonitorcontroller", "panelcontroller", "panelscontroller", "spritespanelcontroller", "draggabledirective", "toolbarpanelcontroller", "console", "contenteditable", "selectable"], function(displayObjectDirective, GameConsole, GameManager, MonitoringApp, modelMonitorController, panelController, panelsController, spritesPanelController, draggableDirective, toolbarPanelController, console, contentEditable, selectable) {
 
         var shared = {};
 
@@ -18,6 +18,7 @@ $(document).ready(function() {
         mainApp.directive('draggable', draggableDirective);
         mainApp.directive('contenteditable', contentEditable);
         mainApp.directive('selectable', selectable);
+        mainApp.directive('displayboolean', displayObjectDirective);
         mainApp.factory('shared', function() {
             return shared;
         });
@@ -29,6 +30,7 @@ $(document).ready(function() {
             shared.gameConsole = gameConsole;
 
             var gameManager = new GameManager(app.modelManager, gameConsole);
+            shared.gameManager = gameManager;
             gameManager.initialize();
 
             gameConsole.initialize(gameManager);

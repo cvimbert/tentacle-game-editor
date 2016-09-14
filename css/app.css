@@ -122,3 +122,11 @@ body {
     margin-top: -1px;
     margin-left: -1px;
 }
+
+.game-container .game-element.sprite {
+    display: none;
+}
+
+.game-container .game-element.sprite.visible {
+    display: block;
+}

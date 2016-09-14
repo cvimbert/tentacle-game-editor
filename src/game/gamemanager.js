@@ -54,6 +54,11 @@ define(["underscore", "sprite", "spritesgroup"], function(_, Sprite, SpritesGrou
 
 
             });
+
+            // initialisation de tous les objets
+            _.each(models, function(object) {
+                object.initialize();
+            });
         };
 
         this.getObjectByUid = function(uid) {
@@ -66,6 +71,10 @@ define(["underscore", "sprite", "spritesgroup"], function(_, Sprite, SpritesGrou
                 return modelsByName[name];
             else
                 return null;
+        };
+
+        this.getObjectsByType = function(type) {
+            return modelsByType[type];
         };
 
         this.executeDisplayList = function(displayList) {
