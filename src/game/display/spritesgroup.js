@@ -3,29 +3,43 @@
  */
 define(["underscore"], function(_) {
 
-    return function (model, modelManager, gameManager) {
+    return {
+        console: {
+            prefix: "spritesgroup",
+            commands: {
+                showall: function() {
+                    this.show();
+                },
+                hideall: function() {
+                    this.hide();
+                }
+            }
+        },
+        constructor: function(model, modelManager, gameManager) {
 
-        var spritesUidCollection = model.get("sprites");
-        var spritesCollection = [];
+            var spritesUidCollection;
+            var spritesCollection;
 
-        _.each(spritesUidCollection, function(spriteUid) {
-            spritesCollection.push(gameManager.getObjectByUid(spriteUid));
-        });
+            this.initialize = function() {
+                spritesUidCollection = model.get("sprites");
+                spritesCollection = [];
 
-        this.getDisplaySpritesUid = function() {
+                _.each(spritesUidCollection, function(spriteUid) {
+                    spritesCollection.push(gameManager.getObjectByUid(spriteUid));
+                });
+            };
 
-        };
+            this.show = function() {
+                _.each(spritesCollection, function(sprite) {
+                    sprite.show();
+                });
+            };
 
-        this.show = function() {
-            _.each(spritesCollection, function(sprite) {
-                sprite.show();
-            });
-        };
-
-        this.hide = function() {
-            _.each(spritesCollection, function(sprite) {
-                sprite.hide();
-            });
-        };
-    }
+            this.hide = function() {
+                _.each(spritesCollection, function(sprite) {
+                    sprite.hide();
+                });
+            };
+        }
+    };
 });

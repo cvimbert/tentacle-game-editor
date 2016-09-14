@@ -4,7 +4,7 @@
 
 $(document).ready(function() {
 
-    require(["gamemanager", "monitoringapp", "modelmonitorcontroller", "panelcontroller", "panelscontroller", "spritespanelcontroller", "draggabledirective", "toolbarpanelcontroller", "console", "contenteditable", "selectable"], function(GameManager, MonitoringApp, modelMonitorController, panelController, panelsController, spritesPanelController, draggableDirective, toolbarPanelController, console, contentEditable, selectable) {
+    require(["gameconsole", "gamemanager", "monitoringapp", "modelmonitorcontroller", "panelcontroller", "panelscontroller", "spritespanelcontroller", "draggabledirective", "toolbarpanelcontroller", "console", "contenteditable", "selectable"], function(GameConsole, GameManager, MonitoringApp, modelMonitorController, panelController, panelsController, spritesPanelController, draggableDirective, toolbarPanelController, console, contentEditable, selectable) {
 
         var shared = {};
 
@@ -25,8 +25,13 @@ $(document).ready(function() {
         var app = new MonitoringApp(mainApp, modelDescriptorV3, panels, function() {
             shared.modelManager = app.modelManager;
 
-            var gameManager = new GameManager(app.modelManager);
+            var gameConsole = new GameConsole();
+            shared.gameConsole = gameConsole;
+
+            var gameManager = new GameManager(app.modelManager, gameConsole);
             gameManager.initialize();
+
+            gameConsole.initialize(gameManager);
 
             window.console.log("-->");
             window.console.log(shared.modelManager.getCompleteModel());

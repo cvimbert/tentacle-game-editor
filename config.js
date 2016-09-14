@@ -36,6 +36,7 @@ require.config({
         displayobject: 'src/game/display/displayobject',
         gamemanager: 'src/game/gamemanager',
         sprite: 'src/game/display/sprite',
-        spritesgroup: 'src/game/display/spritesgroup'
+        spritesgroup: 'src/game/display/spritesgroup',
+        gameconsole: 'src/game/gameconsole'
     }
 });

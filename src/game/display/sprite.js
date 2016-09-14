@@ -3,12 +3,31 @@
  */
 define(["underscore", "displayobject"], function(_, DisplayObject) {
 
-    return function (model, modelManager, gameManager) {
+    return {
+        console: {
+            prefix: "sprite",
+            commands: {
+                show: function() {
+                    this.show();
+                },
+                hide: function() {
+                    this.hide();
+                }
+            }
+        },
+        constructor: function(model, modelManager, gameManager) {
+            _.extend(this, DisplayObject);
 
-        _.extend(this, DisplayObject);
+            var graphicSpriteUid;
+            var graphicSpriteModel;
+            var self = this;
 
-        var graphicSpriteUid = model.get("reference");
-        this.graphicSpriteModel = modelManager.getModelByUid(graphicSpriteUid);
-        this.displayUid = this.graphicSpriteModel.uid;
-    }
+            this.initialize = function() {
+                graphicSpriteUid = model.get("reference");
+                graphicSpriteModel = modelManager.getModelByUid(graphicSpriteUid);
+
+                self.displayUid = graphicSpriteModel.uid;
+            };
+        }
+    };
 });
