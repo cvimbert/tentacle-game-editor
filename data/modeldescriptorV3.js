@@ -47,7 +47,6 @@ var modelDescriptorV3 = {
                 referencetype: "linkedcollection",
                 linkedcollectionattribute: "group",
                 linkedcollectionattributevalue: "sprites",
-                //referencetype: "Sprite",
                 required: true
             }
         }

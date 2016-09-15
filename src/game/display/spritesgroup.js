@@ -5,12 +5,12 @@ define(["underscore"], function(_) {
 
     return {
         console: {
-            prefix: "spritesgroup",
+            prefix: "group",
             commands: {
-                showall: function(spriteGroup) {
+                show: function(spriteGroup) {
                     spriteGroup.show();
                 },
-                hideall: function(spriteGroup) {
+                hide: function(spriteGroup) {
                     spriteGroup.hide();
                 }
             }

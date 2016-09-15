@@ -16,7 +16,7 @@
             <div class="game-element enabled ui-widget-content" ng-repeat="fsprite in foregroundSprites" style="left: {{fsprite.attributes.x}}px; top: {{fsprite.attributes.y}}px"><img ng-src="data/packages/{{getImageUrl(fsprite, 'decorations');}}"></div>
         </div>
         <div id="controlscontainer">
-            <div class="game-element enabled ui-widget-content" ng-repeat="control in controlSprites" style="left: {{control.attributes.x}}px; top: {{control.attributes.y}}px"><img ng-src="data/packages/{{getImageUrl(control, 'controls');}}"></div>
+            <div control class="game-element enabled ui-widget-content" ng-repeat="control in controlSprites" style="left: {{control.attributes.x}}px; top: {{control.attributes.y}}px"><img ng-src="data/packages/{{getImageUrl(control, 'controls');}}"></div>
         </div>
     </div>
 </div>

@@ -20,10 +20,6 @@ define(["underscore"], function(_) {
             var prefix = object.console.prefix;
             var commands = object.console.commands;
 
-            /*_.each(commands, function(commandFunction, commandName) {
-
-            });*/
-
             commandsSets[prefix] = commands;
         };
 

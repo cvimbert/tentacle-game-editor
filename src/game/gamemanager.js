@@ -1,7 +1,7 @@
 /**
  * Created by Christophe on 13/09/2016.
  */
-define(["underscore", "sprite", "spritesgroup"], function(_, Sprite, SpritesGroup) {
+define(["underscore", "sprite", "spritesgroup", "groupstate"], function(_, Sprite, SpritesGroup, GroupState) {
 
     return function (modelManager, gameConsole) {
 
