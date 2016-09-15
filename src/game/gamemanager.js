@@ -1,12 +1,13 @@
 /**
  * Created by Christophe on 13/09/2016.
  */
-define(["underscore", "sprite", "spritesgroup", "groupstate"], function(_, Sprite, SpritesGroup, GroupState) {
+define(["underscore", "sprite", "spritesgroup", "groupstate", "sequence"], function(_, Sprite, SpritesGroup, GroupState, Sequence) {
 
-    return function (modelManager, gameConsole) {
+    return function (modelManager, gameConsole, scope) {
 
         var modelsByType = {};
         var models = {};
+        this.scope = null;
 
         // pour la console uniquement
         var modelsByName = {};
@@ -63,6 +64,10 @@ define(["underscore", "sprite", "spritesgroup", "groupstate"], function(_, Sprit
 
         this.getObjectByUid = function(uid) {
             return models[uid];
+        };
+
+        this.setScope = function(scope) {
+            self.scope = scope;
         };
 
         this.getObjectByName = function(name) {

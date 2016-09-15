@@ -6,17 +6,23 @@ define([], function() {
     return {
         bindedBooleanVariable: null,
         show: function() {
-            this.bindedBooleanVariable[this.model.uid] = true;
+            this.setVisibility(true);
         },
         hide: function() {
-            this.bindedBooleanVariable[this.model.uid] = false;
+            this.setVisibility(false);
         },
         toggle: function(value) {
             if (value !== undefined) {
-                this.bindedBooleanVariable[this.model.uid] = value;
+                this.setVisibility(value);
             } else {
-                this.bindedBooleanVariable[this.model.uid] = !this.bindedBooleanVariable[this.model.uid];
+                this.setVisibility(!this.bindedBooleanVariable[this.model.uid]);
             }
+        },
+        setVisibility: function(val) {
+            this.bindedBooleanVariable[this.model.uid] = val;
+
+            // on doit pouvoir déplacer cet appel
+            this.gameManager.scope.$applyAsync();
         }
     }
 });

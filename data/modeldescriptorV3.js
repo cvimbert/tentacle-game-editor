@@ -25,6 +25,15 @@ var modelDescriptorV3 = {
                 collectiontype: "reference",
                 referencetype: "GroupState",
                 required: true
+
+                // ici il faudrait plutôt une liste filtrée d'éléments (par un autre attribut)
+
+                /*type: "collection",
+                collectiontype: "reference",
+                referencetype: "linkedcollection",
+                linkedcollectionattribute: "spritesgroup",
+                linkedcollectionattributevalue: "sprites",
+                required: true*/
             }
         }
     },

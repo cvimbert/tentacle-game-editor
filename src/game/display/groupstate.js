@@ -19,8 +19,8 @@ define(["underscore"], function(_) {
 
             this.initialize = function() {
 
-                spritesUidCollection = model.get("sprites");
-                groupUid = model.get("group");
+                var spritesUidCollection = model.get("sprites");
+                var groupUid = model.get("group");
 
                 spritesCollection = [];
 

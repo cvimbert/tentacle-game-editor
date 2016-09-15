@@ -21,6 +21,8 @@ define(["underscore", "displayobject"], function(_, DisplayObject) {
         "Sprite": function(model, modelManager, gameManager) {
             _.extend(this, DisplayObject);
 
+            this.gameManager = gameManager;
+
             var graphicSpriteUid;
             var graphicSpriteModel;
             var self = this;

@@ -38,6 +38,7 @@ require.config({
         sprite: 'src/game/display/sprite',
         spritesgroup: 'src/game/display/spritesgroup',
         groupstate: 'src/game/display/groupstate',
+        sequence: 'src/game/spriteslogic/sequence',
         gameconsole: 'src/game/gameconsole',
         displayobjectdirective: 'src/directives/displayobject',
         controldirective: 'src/directives/control'

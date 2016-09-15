@@ -7,6 +7,8 @@ define(["underscore"], function(_) {
         $scope.selections = {};
         $scope.spritesVisibility = {};
 
+        shared.gameManager.setScope($scope);
+
         $scope.init = function (datas) {
             var serDatas = atob(datas);
             datasObj = JSON.parse(serDatas);
@@ -19,7 +21,7 @@ define(["underscore"], function(_) {
 
             _.each($scope.models, function (model, key) {
                 $scope.selections[key] = false;
-                $scope.spritesVisibility[key] = true;
+                $scope.spritesVisibility[key] = false;
             });
 
             var spriteObjects = shared.gameManager.getObjectsByType("Sprite");
