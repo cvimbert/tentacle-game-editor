@@ -4,7 +4,37 @@
 
 $(document).ready(function() {
 
-    require(["controldirective", "displayobjectdirective", "gameconsole", "gamemanager", "monitoringapp", "modelmonitorcontroller", "panelcontroller", "panelscontroller", "spritespanelcontroller", "draggabledirective", "toolbarpanelcontroller", "console", "contenteditable", "selectable"], function(controlDirective, displayObjectDirective, GameConsole, GameManager, MonitoringApp, modelMonitorController, panelController, panelsController, spritesPanelController, draggableDirective, toolbarPanelController, console, contentEditable, selectable) {
+    require([
+        "controldirective",
+        "displayobjectdirective",
+        "gameconsole",
+        "gamemanager",
+        "monitoringapp",
+        "modelmonitorcontroller",
+        "panelcontroller",
+        "panelscontroller",
+        "spritespanelcontroller",
+        "draggabledirective",
+        "toolbarpanelcontroller",
+        "console",
+        "contenteditable",
+        "selectable"
+    ], function(
+        controlDirective,
+        displayObjectDirective,
+        GameConsole,
+        GameManager,
+        MonitoringApp,
+        modelMonitorController,
+        panelController,
+        panelsController,
+        spritesPanelController,
+        draggableDirective,
+        toolbarPanelController,
+        console,
+        contentEditable,
+        selectable
+    ) {
 
         var shared = {};
 

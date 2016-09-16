@@ -1,7 +1,23 @@
 /**
  * Created by Christophe on 13/09/2016.
  */
-define(["underscore", "sprite", "spritesgroup", "groupstate", "sequence"], function(_, Sprite, SpritesGroup, GroupState, Sequence) {
+define([
+    "underscore",
+    "sprite",
+    "spritesgroup",
+    "groupstate",
+    "sequence",
+    "variable",
+    "condition"
+], function(
+    _,
+    Sprite,
+    SpritesGroup,
+    GroupState,
+    Sequence,
+    Variable,
+    Condition
+) {
 
     return function (modelManager, gameConsole, scope) {
 

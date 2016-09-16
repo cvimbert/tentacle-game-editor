@@ -660,7 +660,7 @@ var modelDescriptorV3 = {
                         }
                     },
                     boolean: {
-                        stringvalue: {
+                        booleanvalue: {
                             type: "boolean",
                             defaultvalue: "false",
                             required: true

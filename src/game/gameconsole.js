@@ -63,11 +63,11 @@ define(["underscore"], function(_) {
             var setName = commandArray[0];
             var objectName = commandArray[1];
             var commandName = commandArray[2];
-            var commandArgs;
+            var commandArgs = [];
 
-            /*if (commandArray.length > 3) {
-                commandArgs = commandArray[3];
-            }*/
+            for (var i = 3; i < commandArray.length; i++) {
+                commandArgs.push(commandArray[i]);
+            }
 
             if (!commandsSets[setName]) {
                 self.message("Ce set de commandes n'existe pas");
@@ -88,7 +88,11 @@ define(["underscore"], function(_) {
 
             // on peut finalement lancer la commande
             var commandFunction = commandsSets[setName][commandName];
-            commandFunction(expressionObject);
+
+            if (commandArgs.length > 0)
+                commandFunction(expressionObject, commandArgs);
+            else
+                commandFunction(expressionObject);
         };
 
         this.message = function(messageString) {
