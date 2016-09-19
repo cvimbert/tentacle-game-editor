@@ -78,6 +78,7 @@
 
             this.flattenAttribute = function (item, attribute, attributeId, destDesc, indentation) {
 
+                // il semblerait que ce cas ne soit plus d'usage
                 if (attribute.type !== Constants.ModelDecriptorTypes.LINKED_CONDITIONAL_ATTRIBUTES_SET && attribute.type !== Constants.ModelDecriptorTypes.INCLUDE) {
                     destDesc[attributeId] = attribute;
                     destDesc[attributeId].indentation = indentation;
@@ -99,12 +100,13 @@
                 } else if (attribute.type === Constants.ModelDecriptorTypes.LINKED_CONDITIONAL_ATTRIBUTES_SET) {
 
                     if (attribute.linktype === Constants.ModelDecriptorTypes.REFERENCE_ATTRIBUTE_VALUE) {
+
                         var refItemId = item.attributes[attribute.linkedreference];
 
                         if (refItemId) {
 
                             // recupération de l'objet qui possède cet id
-                            var targetItem = modelManager.getItem(refItemId);
+                            var targetItem = modelManager.getModelByUid(refItemId);
 
                             // récupération de la propriété qui nous intéresse dans cet objet
                             var targetItemSelectedValue = targetItem.attributes[attribute.linkedattribute];

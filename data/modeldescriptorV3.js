@@ -646,21 +646,21 @@ var modelDescriptorV3 = {
                 required: true,
                 attributesSets: {
                     string: {
-                        stringvalue: {
+                        value: {
                             type: "string",
                             defaultvalue: "value",
                             required: true
                         }
                     },
                     number: {
-                        numbervalue: {
+                        value: {
                             type: "number",
                             defaultvalue: 0,
                             required: true
                         }
                     },
                     boolean: {
-                        booleanvalue: {
+                        value: {
                             type: "boolean",
                             defaultvalue: "false",
                             required: true
@@ -682,7 +682,7 @@ var modelDescriptorV3 = {
                 type: "ConditionalAttributesSet",
                 required: true,
                 attributesSets: {
-                    checkvariable: {
+                    comparevariablewithvalue: {
                         variable: {
                             type: "reference",
                             referencetype: "Variable",
@@ -701,21 +701,21 @@ var modelDescriptorV3 = {
                             required: true,
                             attributesSets: {
                                 string: {
-                                    stringvalue: {
+                                    value: {
                                         type: "string",
                                         defaultvalue: "value",
                                         required: true
                                     }
                                 },
                                 number: {
-                                    numbervalue: {
+                                    value: {
                                         type: "number",
                                         defaultvalue: 0,
                                         required: true
                                     }
                                 },
                                 boolean: {
-                                    booleanvalue: {
+                                    value: {
                                         type: "boolean",
                                         defaultvalue: "false",
                                         required: true
@@ -724,7 +724,8 @@ var modelDescriptorV3 = {
                             }
                         }
                     },
-                    othertemp: {
+                    comparevariablewithvariable: {
+
                     }
                 }
             }

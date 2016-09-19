@@ -14,7 +14,8 @@ define([], function() {
             number: "Nombre",
             true: "Vrai",
             false: "Faux",
-            checkvariable: "Test de variable",
+            comparevariablewithvalue: "Compararer une variable avec une valeur",
+            comparevariablewithvariable: "Comparer une variable avec une autre variable",
             filereference: "Référence de fichier",
             soundfilereference: "Fichier son",
             spritefilereference: "Fichier sprite",
@@ -98,7 +99,13 @@ define([], function() {
             defaultstate: "Etat par défaut",
             conditionalgroupstateset: "Set d'états conditionnels",
             state: "Etat",
-            conditionalgroupstate: "Etat conditionnel"
+            conditionalgroupstate: "Etat conditionnel",
+            "===": "===",
+            "!==": "!==",
+            "<": "<",
+            ">": ">",
+            "<=": "<=",
+            ">=": ">="
         },
         en: {
 

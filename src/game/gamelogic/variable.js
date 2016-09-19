@@ -27,22 +27,7 @@ define([], function() {
             this.initialize = function() {
 
                 type = model.get("variabletype");
-
-                switch (type) {
-                    case "string":
-                        initValue = model.get("stringvalue");
-                        break;
-
-                    case "number":
-                        initValue = model.get("numbervalue");
-                        break;
-
-                    case "boolean":
-                        initValue = model.get("booleanvalue");
-                        break;
-
-                    default:
-                }
+                initValue = model.get("value");
 
                 currentValue = initValue;
             };
