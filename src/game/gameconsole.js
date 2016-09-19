@@ -90,13 +90,13 @@ define(["underscore"], function(_) {
             var commandFunction = commandsSets[setName][commandName];
 
             if (commandArgs.length > 0)
-                commandFunction(expressionObject, commandArgs);
+                this.message(commandFunction(expressionObject, commandArgs));
             else
-                commandFunction(expressionObject);
+                this.message(commandFunction(expressionObject));
         };
 
         this.message = function(messageString) {
-            console.log(messageString);
+            if (!messageString) return;
             if (this.onMessage) this.onMessage(messageString);
         };
 

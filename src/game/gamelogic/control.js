@@ -12,7 +12,14 @@ define([], function() {
         },
         "Control": function(model, modelManager, gameManager) {
 
+            var controlSprite;
+
             this.initialize = function() {
+                var spriteUid = model.get("sprite");
+                controlSprite = gameManager.getObjectByUid(spriteUid);
+            };
+
+            this.trigger = function() {
 
             };
 

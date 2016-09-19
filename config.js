@@ -43,6 +43,9 @@ require.config({
         condition: 'src/game/gamelogic/condition',
         gameconsole: 'src/game/gameconsole',
         displayobjectdirective: 'src/directives/displayobject',
-        controldirective: 'src/directives/control'
+        controldirective: 'src/directives/control',
+        control: 'src/game/gamelogic/control',
+        conditionalgroupstate: 'src/game/spriteslogic/conditionalgroupstate',
+        conditionalgroupstateset: 'src/game/spriteslogic/conditionalgroupstateset'
     }
 });

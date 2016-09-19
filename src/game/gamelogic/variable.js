@@ -11,7 +11,7 @@ define([], function() {
                     variable.set(args[0]);
                 },
                 get: function(variable) {
-                    console.log(variable.get());
+                    return variable.get();
                 },
                 reset: function(variable) {
                     variable.reset();

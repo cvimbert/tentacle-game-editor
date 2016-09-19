@@ -8,17 +8,13 @@ define([], function() {
             prefix: "condition",
             commands: {
                 eval: function(variable) {
-                    console.log(variable.eval());
+                    return variable.eval().toString();
                 }
             }
         },
         "Condition": function(model, modelManager, gameManager) {
 
             var conditionType;
-            var var1;
-            var operand;
-            var value;
-            var varValue;
 
             function comparaisonEval(value1, value2, operand) {
                 return eval(value1 + operand + value2);

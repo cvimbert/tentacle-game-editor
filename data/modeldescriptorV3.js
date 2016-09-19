@@ -776,7 +776,8 @@ var modelDescriptorV3 = {
             },
             conditionalstates: {
                 type: "collection",
-                collectiontype: "ConditionalGroupState",
+                collectiontype: "reference",
+                referencetype: "ConditionalGroupState",
                 required: true
             },
             defaultstate: {
@@ -788,6 +789,7 @@ var modelDescriptorV3 = {
     },
     // à partir d'ici, ce ne sont plus des objets complets
     ConditionalGroupState: {
+        referenceable: true,
         attributes: {
             state: {
                 type: "reference",

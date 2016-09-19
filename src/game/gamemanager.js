@@ -8,7 +8,10 @@ define([
     "groupstate",
     "sequence",
     "variable",
-    "condition"
+    "condition",
+    "control",
+    "conditionalgroupstate",
+    "conditionalgroupstateset"
 ], function(
     _,
     Sprite,
@@ -16,7 +19,10 @@ define([
     GroupState,
     Sequence,
     Variable,
-    Condition
+    Condition,
+    Control,
+    ConditionalGroupState,
+    ConditionalGroupStateSet
 ) {
 
     return function (modelManager, gameConsole, scope) {
