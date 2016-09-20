@@ -7,7 +7,9 @@ define(["underscore"], function(_) {
         console: {
             prefix: "cgsstate",
             commands: {
-
+                display: function(cgsstate) {
+                    cgsstate.display();
+                }
             }
         },
         "ConditionalGroupStateSet": function(model, modelManager, gameManager) {
@@ -29,7 +31,7 @@ define(["underscore"], function(_) {
                 });
 
                 var defaultStateUid = model.get("defaultstate");
-                defaultState = gameManager.get(defaultStateUid);
+                defaultState = gameManager.getObjectByUid(defaultStateUid);
             };
 
             this.display = function() {

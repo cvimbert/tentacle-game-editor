@@ -1,6 +1,14 @@
 /* global Tentacle, Localization, _ */
 
-define (["jquery", "localization"], function($, Localization) {
+define ([
+    "underscore",
+    "jquery",
+    "localization"
+], function(
+    _,
+    $,
+    Localization
+) {
     return function ($scope, $location, shared) {
 
         var defaultLanguage = "fr";
@@ -110,7 +118,7 @@ define (["jquery", "localization"], function($, Localization) {
 
         $scope.isInCollection = function(item, attributeId, refId) {
             return item.attributes[attributeId].lastIndexOf(refId) === -1;
-        }
+        };
 
         $scope.getReferencesCollection = function (item, attribute) {
 
@@ -135,7 +143,23 @@ define (["jquery", "localization"], function($, Localization) {
                 return ret;
 
             } else {
-                return shared.modelManager.getModelByType(attribute.referencetype);
+
+                if (_.isArray(attribute.referencetype)) {
+                    var models = {};
+
+                    _.each(attribute.referencetype, function(reftype) {
+                        var tempModels = shared.modelManager.getModelByType(reftype);
+
+                        // temporaire, en attendant de pouvoir lire la doc
+                        _.each(tempModels, function(model, uid) {
+                            models[uid] = model;
+                        });
+                    });
+
+                    return models;
+                } else {
+                    return shared.modelManager.getModelByType(attribute.referencetype);
+                }
             }
 
             return {};

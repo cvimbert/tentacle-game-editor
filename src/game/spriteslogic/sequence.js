@@ -98,8 +98,6 @@ define(["underscore"], function(_) {
                         clearInterval(interv);
                     }
 
-                    //gameManager.scope.$apply();
-
                 }, delay * 1000);
             }
         }

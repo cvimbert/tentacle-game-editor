@@ -23,7 +23,7 @@ var modelDescriptorV3 = {
             states: {
                 type: "collection",
                 collectiontype: "reference",
-                referencetype: "GroupState",
+                referencetype: ["GroupState", "ConditionalGroupStateSet"],
                 required: true
 
                 // ici il faudrait plutôt une liste filtrée d'éléments (par un autre attribut)

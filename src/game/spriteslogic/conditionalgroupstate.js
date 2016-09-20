@@ -13,15 +13,15 @@ define([], function() {
         },
         "ConditionalGroupState": function(model, modelManager, gameManager) {
 
-            this.groupState = null;
+            this.state = null;
             this.condition = null;
 
             this.initialize = function() {
                 var stateUid = model.get("state");
-                this.groupState = gameManager.get(stateUid);
+                this.state = gameManager.getObjectByUid(stateUid);
 
                 var conditionUid = model.get("condition");
-                this.condition = gameManager.get(conditionUid);
+                this.condition = gameManager.getObjectByUid(conditionUid);
             };
         }
     }
