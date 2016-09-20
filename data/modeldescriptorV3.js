@@ -77,6 +77,22 @@ var modelDescriptorV3 = {
                 type: "ConditionalAttributesSet",
                 required: true,
                 attributesSets: {
+                    test: {
+                        type: "ConditionalAttributesSet",
+                        required: true,
+                        attributesSets: {
+                            t1: {
+                                type: "reference",
+                                referencetype: "Sprite",
+                                required: true
+                            },
+                            t2: {
+                                type: "reference",
+                                referencetype: "SpritesGroup",
+                                required: true
+                            }
+                        }
+                    },
                     displaysprite: {
                         sprite: {
                             type: "reference",

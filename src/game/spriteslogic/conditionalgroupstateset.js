@@ -48,7 +48,12 @@ define(["underscore"], function(_) {
                 }
 
                 defaultState.display();
-            }
+            };
+
+            this.hide = function() {
+                console.log("hh");
+                group.hide();
+            };
         }
     }
 });

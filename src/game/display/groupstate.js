@@ -37,7 +37,11 @@ define(["underscore"], function(_) {
                 _.each(spritesCollection, function(sprite) {
                     sprite.show();
                 });
-            }
+            };
+
+            this.hide = function() {
+                group.hide();
+            };
         }
     }
 });

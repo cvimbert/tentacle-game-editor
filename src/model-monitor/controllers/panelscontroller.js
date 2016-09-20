@@ -3,11 +3,13 @@
 define ([
     "underscore",
     "jquery",
-    "localization"
+    "localization",
+    "constants"
 ], function(
     _,
     $,
-    Localization
+    Localization,
+    Constants
 ) {
     return function ($scope, $location, shared) {
 

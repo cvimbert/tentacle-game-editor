@@ -66,9 +66,18 @@ define(["underscore"], function(_) {
                 }
             };
 
+            this.hide = function() {
+
+                _.each(groupStates, function(state) {
+                    state.hide();
+                });
+            };
+
             this.displayAtIndex = function(index) {
 
                 if (!isValidIndex(index)) return false;
+
+                this.hide();
 
                 currentIndex = index;
                 groupStates[index].display();
@@ -92,10 +101,10 @@ define(["underscore"], function(_) {
 
                 t.displayNext();
 
-                var interv = setInterval(function() {
+                animationInterval = setInterval(function() {
 
                     if (!t.displayNext()) {
-                        clearInterval(interv);
+                        clearInterval(animationInterval);
                     }
 
                 }, delay * 1000);
