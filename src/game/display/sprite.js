@@ -1,7 +1,7 @@
 /**
  * Created by Christophe on 08/09/2016.
  */
-define(["underscore", "displayobject"], function(_, DisplayObject) {
+define(["underscore", "displayobject", "eventdispatcher"], function(_, DisplayObject, EventDispatcher) {
 
     return {
         console: {
@@ -26,6 +26,8 @@ define(["underscore", "displayobject"], function(_, DisplayObject) {
             var graphicSpriteUid;
             var graphicSpriteModel;
             var self = this;
+
+            var evtCallbacks = [];
 
             this.model = model;
 

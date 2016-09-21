@@ -46,6 +46,7 @@ require.config({
         controldirective: 'src/directives/control',
         control: 'src/game/gamelogic/control',
         conditionalgroupstate: 'src/game/spriteslogic/conditionalgroupstate',
-        conditionalgroupstateset: 'src/game/spriteslogic/conditionalgroupstateset'
+        conditionalgroupstateset: 'src/game/spriteslogic/conditionalgroupstateset',
+        eventdispatcher: 'src/game/common/eventdispatcher'
     }
 });

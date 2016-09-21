@@ -134,6 +134,8 @@
 
             function flattenByItemAction(item, attributes, destDesc, indentation) {
 
+                // il va falloir un peu de récursivité ici !
+
                 _.each(attributes, function (attribute, attributeId) {
                     self.flattenAttribute(item, attribute, attributeId, destDesc, indentation);
                 });

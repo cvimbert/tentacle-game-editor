@@ -42,6 +42,10 @@ define([], function() {
                     case "showgroup":
                         gameManager.getObjectByUid(model.get("group")).show();
                         break;
+
+                    case "hidegroup":
+                        gameManager.getObjectByUid(model.get("group")).hide();
+                        break;
                 }
             };
         }
