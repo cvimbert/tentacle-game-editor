@@ -1,7 +1,13 @@
 /**
  * Created by Christophe on 20/09/2016.
  */
-define([], function() {
+define([
+    "underscore",
+    "triggers/basetrigger"
+], function(
+    _,
+    BaseTrigger
+) {
 
     return {
         console: {
@@ -15,6 +21,7 @@ define([], function() {
             var action;
             var condition;
             var triggerType;
+            var triggerObject;
 
             this.initialize = function() {
 
@@ -28,16 +35,19 @@ define([], function() {
             };
 
             this.enable = function() {
+                require(["triggers/" + triggerType], function(triggerExtension) {
 
-                switch (triggerType) {
+                    triggerObject = new BaseTrigger(model, gameManager, action, condition);
+                    _.extend(triggerObject, triggerExtension);
 
-                    case "controlclick":
-                        var controlUid = model.get("control");
-                        var control = gameManager.getObjectByUid(controlUid);
-                        break;
-                }
-            }
+                    triggerObject.initialize();
+                    triggerObject.on();
+                });
+            };
 
+            this.disable = function() {
+                triggerObject.off();
+            };
         }
     }
 });

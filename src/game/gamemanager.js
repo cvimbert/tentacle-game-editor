@@ -11,7 +11,9 @@ define([
     "condition",
     "control",
     "conditionalgroupstate",
-    "conditionalgroupstateset"
+    "conditionalgroupstateset",
+    "action",
+    "trigger"
 ], function(
     _,
     Sprite,
@@ -22,7 +24,9 @@ define([
     Condition,
     Control,
     ConditionalGroupState,
-    ConditionalGroupStateSet
+    ConditionalGroupStateSet,
+    Action,
+    Trigger
 ) {
 
     return function (modelManager, gameConsole, scope) {
@@ -74,13 +78,16 @@ define([
                         }
                     });
                 }
-
-
             });
 
             // initialisation de tous les objets
             _.each(models, function(object) {
                 object.initialize();
+            });
+
+            // activation des triggers
+            _.each(modelsByType["Trigger"], function(object) {
+                object.enable();
             });
         };
 

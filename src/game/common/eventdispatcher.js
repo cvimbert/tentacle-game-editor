@@ -4,8 +4,10 @@
 define(["underscore"], function(_) {
 
     return {
-        eventsCallback: {},
-        on: function(type, callback, objectUid) {
+        on: function(type, objectUid, callback) {
+
+            if (!this.eventsCallback) this.eventsCallback = {};
+
             if (!this.eventsCallback[type]) {
                 this.eventsCallback[type] = {};
             }
@@ -15,7 +17,10 @@ define(["underscore"], function(_) {
         off: function(type, objectUid) {
             delete this.eventsCallback[type][objectUid];
         },
-        dispatchEvent: function(type) {
+        dispatchEvent: function(type, objectUid) {
+
+            if (!this.eventsCallback || !this.eventsCallback[type]) return;
+
             _.each(this.eventsCallback[type], function(callback) {
                 callback();
             });

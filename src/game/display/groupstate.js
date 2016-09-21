@@ -32,6 +32,7 @@ define(["underscore"], function(_) {
             };
 
             this.display = function() {
+
                 group.hide();
 
                 _.each(spritesCollection, function(sprite) {

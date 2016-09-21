@@ -1,7 +1,7 @@
 /**
  * Created by Christophe on 15/09/2016.
  */
-define([], function() {
+define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
     return {
         console: {
@@ -11,6 +11,8 @@ define([], function() {
             }
         },
         "Control": function(model, modelManager, gameManager) {
+
+            _.extend(this, EventDispatcher);
 
             var controlSprite;
 

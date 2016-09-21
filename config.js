@@ -47,6 +47,9 @@ require.config({
         control: 'src/game/gamelogic/control',
         conditionalgroupstate: 'src/game/spriteslogic/conditionalgroupstate',
         conditionalgroupstateset: 'src/game/spriteslogic/conditionalgroupstateset',
-        eventdispatcher: 'src/game/common/eventdispatcher'
+        eventdispatcher: 'src/game/common/eventdispatcher',
+        action: 'src/game/gamelogic/action',
+        trigger: 'src/game/gamelogic/trigger',
+        triggers: 'src/game/gamelogic/triggers'
     }
 });

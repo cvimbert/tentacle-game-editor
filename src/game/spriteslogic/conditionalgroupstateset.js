@@ -51,7 +51,6 @@ define(["underscore"], function(_) {
             };
 
             this.hide = function() {
-                console.log("hh");
                 group.hide();
             };
         }
