@@ -439,6 +439,21 @@ var modelDescriptorV3 = {
             }
         }
     },
+    Clock: {
+        referenceable: true,
+        attributes: {
+            name: {
+                type: "string",
+                defaultvalue: "clockname",
+                required: true
+            },
+            period: {
+                type: "number",
+                defaultvalue: 1,
+                required: true
+            }
+        }
+    },
     SpriteFileReference: {
         referenceable: true,
         attributes: {
@@ -767,7 +782,7 @@ var modelDescriptorV3 = {
         attributes: {
             name: {
                 type: "string",
-                defaultvalue: "controlname",
+                defaultvalue: "soundname",
                 required: true
             },
             file: {

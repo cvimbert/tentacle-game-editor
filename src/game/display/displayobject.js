@@ -27,6 +27,7 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
         },
         setVisibility: function(val) {
 
+            // le deuxième if de l'imbrication n'est peut-être pas nécessaire
             if (val === true) {
                 if (this.bindedBooleanVariable[this.model.uid] === false) {
                     this.dispatchEvent("visible");
@@ -40,8 +41,6 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
             // on doit pouvoir déplacer cet appel
             this.gameManager.scope.$applyAsync();
-
-            //this.isVisible = val;
         }
     }, EventDispatcher);
 });

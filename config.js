@@ -51,6 +51,8 @@ require.config({
         action: 'src/game/gamelogic/action',
         trigger: 'src/game/gamelogic/trigger',
         triggers: 'src/game/gamelogic/triggers',
-        controlsprite: 'src/game/display/controlsprite'
+        controlsprite: 'src/game/display/controlsprite',
+        clock: 'src/game/gamelogic/clock',
+        graphs: 'src/game/graphs'
     }
 });

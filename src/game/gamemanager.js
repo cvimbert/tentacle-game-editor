@@ -14,7 +14,10 @@ define([
     "conditionalgroupstateset",
     "action",
     "trigger",
-    "controlsprite"
+    "controlsprite",
+    "clock",
+    "graphs/graphnode",
+    "graphs/graphlink"
 ], function(
     _,
     Sprite,
@@ -28,7 +31,10 @@ define([
     ConditionalGroupStateSet,
     Action,
     Trigger,
-    ControlSprite
+    ControlSprite,
+    Clock,
+    GraphNode,
+    GraphLink
 ) {
 
     return function (modelManager, gameConsole, scope) {

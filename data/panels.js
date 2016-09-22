@@ -55,6 +55,14 @@ var panels = {
                         type: "navigatetopanel",
                         panelid: "sound"
                     }
+                },
+                b7: {
+                    label: "Graphs",
+                    containerid: "b7",
+                    action: {
+                        type: "navigatetopanel",
+                        panelid: "graphs"
+                    }
                 }
             }
         },
@@ -180,6 +188,11 @@ var panels = {
                     name: "Actions",
                     type: "Action",
                     containerid: "b5"
+                },
+                clock: {
+                    name: "Clocks",
+                    type: "Clock",
+                    containerid: "b6"
                 }
             }
         },
@@ -190,6 +203,21 @@ var panels = {
                     name: "Sounds",
                     type: "Sound",
                     containerid: "b1"
+                }
+            }
+        },
+        graphs: {
+            template: "",
+            panels: {
+                nodes: {
+                    name: "Nodes",
+                    type: "GraphNode",
+                    containerid: "b1"
+                },
+                links: {
+                    name: "Links",
+                    type: "GraphLink",
+                    containerid: "b2"
                 }
             }
         },
