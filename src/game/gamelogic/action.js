@@ -46,6 +46,14 @@ define([], function() {
                     case "hidegroup":
                         gameManager.getObjectByUid(model.get("group")).hide();
                         break;
+
+                    case "nextinsequence":
+                        gameManager.getObjectByUid(model.get("sequence")).displayNext();
+                        break;
+
+                    case "previousinsequence":
+                        gameManager.getObjectByUid(model.get("sequence")).displayPrevious();
+                        break;
                 }
             };
         }

@@ -2,7 +2,28 @@
  * Created by Christophe on 15/09/2016.
  */
 
-// peut être pas utile ce créer cet objet. C'est le contrôle même qui doit être activé / désactivé
-define([], function() {
+define(["displayobject"], function(DisplayObject) {
 
+    return {
+        console: {
+            prefix: "controlsprite",
+            commands: {
+
+            }
+        },
+        "ControlSprite": function(model, modelManager, gameManager) {
+            _.extend(this, DisplayObject);
+
+            this.model = model;
+            this.gameManager = gameManager;
+
+            this.initialize = function() {
+
+            };
+
+            this.getDOMElement = function() {
+                return document.getElementById("control-" + model.uid);
+            };
+        }
+    }
 });

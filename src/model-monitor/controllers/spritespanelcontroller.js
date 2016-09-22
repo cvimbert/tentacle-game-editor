@@ -33,6 +33,10 @@ define(["underscore"], function(_) {
             $scope.controlSprites = shared.modelManager.getModelByType("ControlSprite");
             $scope.foregroundSprites = shared.modelManager.getModelByType("ForegroundSprite");
             $scope.backgroundSprites = shared.modelManager.getModelByType("BackgroundSprite");
+
+            setTimeout(function() {
+                shared.gameManager.afterRenderInit();
+            }, 2000);
         };
 
 

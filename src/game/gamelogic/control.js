@@ -15,6 +15,7 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
             _.extend(this, EventDispatcher);
 
             var controlSprite;
+            var controlDOMElement;
 
             this.initialize = function() {
                 var spriteUid = model.get("sprite");
@@ -27,10 +28,27 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
             this.enable = function() {
 
+                var self = this;
+
+                controlDOMElement = controlSprite.getDOMElement();
+
+                controlDOMElement.onclick = function() {
+                    self.dispatchEvent("click");
+                };
+
+                controlDOMElement.onmousedown = function() {
+                    self.dispatchEvent("press");
+                };
+
+                controlDOMElement.onmouseup = function() {
+                    self.dispatchEvent("release");
+                };
             };
 
             this.disable = function() {
-
+                controlDOMElement.onclick = function() {};
+                controlDOMElement.onmousedown = function() {};
+                controlDOMElement.onmouseup = function() {};
             };
 
             this.toggle = function(value) {

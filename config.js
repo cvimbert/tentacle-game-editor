@@ -50,6 +50,7 @@ require.config({
         eventdispatcher: 'src/game/common/eventdispatcher',
         action: 'src/game/gamelogic/action',
         trigger: 'src/game/gamelogic/trigger',
-        triggers: 'src/game/gamelogic/triggers'
+        triggers: 'src/game/gamelogic/triggers',
+        controlsprite: 'src/game/display/controlsprite'
     }
 });

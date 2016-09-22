@@ -22,7 +22,6 @@ define(["underscore", "displayobject", "eventdispatcher"], function(_, DisplayOb
             _.extend(this, DisplayObject);
 
             this.model = model;
-
             this.gameManager = gameManager;
 
             var graphicSpriteUid;
@@ -30,8 +29,6 @@ define(["underscore", "displayobject", "eventdispatcher"], function(_, DisplayOb
             var self = this;
 
             var evtCallbacks = [];
-
-            this.model = model;
 
             this.initialize = function() {
                 graphicSpriteUid = model.get("reference");
