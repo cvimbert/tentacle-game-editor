@@ -207,7 +207,7 @@ var panels = {
             }
         },
         graphs: {
-            template: "",
+            template: "includes/layout-1-2.html",
             panels: {
                 nodes: {
                     name: "Nodes",

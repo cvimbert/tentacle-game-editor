@@ -4,7 +4,7 @@
 define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
     return {
-
+ 
         console: {
             prefix: "graphnode",
             commands: {

@@ -664,6 +664,26 @@ var modelDescriptorV3 = {
             }
         }
     },
+    GraphNode: {
+        referenceable: true,
+        attributes: {
+            name: {
+                type: "string",
+                defaultvalue: "graphnodename",
+                required: true
+            }
+        }
+    },
+    GraphLink: {
+        referenceable: true,
+        attributes: {
+            name: {
+                type: "string",
+                defaultvalue: "graphlinkname",
+                required: true
+            }
+        }
+    },
     Variable: {
         referenceable: true,
         attributes: {
