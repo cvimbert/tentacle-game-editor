@@ -23,6 +23,8 @@ define([
             var triggerType;
             var triggerObject;
 
+            var bindings;
+
             this.initialize = function() {
 
                 var actionUid = model.get("action");
@@ -32,12 +34,22 @@ define([
                 condition = gameManager.getObjectByUid(conditionUid);
 
                 triggerType = model.get("triggertype");
+
+                bindings = {};
+            };
+
+            this.bind = function(sourceUid, callback) {
+                bindings[sourceUid] = callback;
+            };
+
+            this.unbind = function(sourceUid) {
+                delete bindings[sourceUid];
             };
 
             this.enable = function() {
                 require(["triggers/" + triggerType], function(triggerExtension) {
 
-                    triggerObject = new BaseTrigger(model, gameManager, action, condition);
+                    triggerObject = new BaseTrigger(model, gameManager, action, condition, bindings);
                     _.extend(triggerObject, triggerExtension);
 
                     triggerObject.initialize();

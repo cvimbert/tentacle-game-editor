@@ -207,17 +207,22 @@ var panels = {
             }
         },
         graphs: {
-            template: "includes/layout-1-2.html",
+            template: "includes/layout-1-3.html",
             panels: {
+                graphs: {
+                    name: "Graphs",
+                    type: "Graph",
+                    containerid: "b1"
+                },
                 nodes: {
                     name: "Nodes",
                     type: "GraphNode",
-                    containerid: "b1"
+                    containerid: "b2"
                 },
                 links: {
                     name: "Links",
                     type: "GraphLink",
-                    containerid: "b2"
+                    containerid: "b3"
                 }
             }
         },

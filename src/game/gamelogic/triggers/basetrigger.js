@@ -1,13 +1,20 @@
 /**
  * Created by Christophe on 21/09/2016.
  */
-define([], function() {
+define(["underscore"], function(_) {
 
-    return function (model, gameManager, action, condition) {
+    return function (model, gameManager, action, condition, bindings) {
 
         this.executeAction = function() {
             if (!condition || condition.eval()) {
-                action.execute();
+
+                _.each(bindings, function(boundFunction) {
+                    boundFunction();
+                });
+
+                if (action) {
+                    action.execute();
+                }
             }
         };
 

@@ -14,8 +14,16 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
         "GraphLink": function(model, modelManager, gameManager) {
             _.extend(this, EventDispatcher);
 
+            var destNode;
+            var trigger;
+
             this.initialize = function() {
 
+                var destNodeUid = model.get("destnode");
+                destNode = gameManager.getObjectByUid(destNodeUid);
+
+                var triggerUid = model.get("trigger");
+                trigger = gameManager.getObjectByUid(triggerUid);
             };
         }
     }

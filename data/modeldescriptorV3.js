@@ -332,7 +332,7 @@ var modelDescriptorV3 = {
             action: {
                 type: "reference",
                 referencetype: "Action",
-                required: true
+                //required: true
             },
             condition: {
                 type: "reference",
@@ -343,6 +343,13 @@ var modelDescriptorV3 = {
                 type: "ConditionalAttributesSet",
                 required: true,
                 attributesSets: {
+                    timeout: {
+                        time: {
+                            type: "number",
+                            defaultvalue: 1,
+                            required: true
+                        }
+                    },
                     controlclick: {
                         control: {
                             type: "reference",
@@ -664,12 +671,39 @@ var modelDescriptorV3 = {
             }
         }
     },
+    Graph: {
+        referenceable: true,
+        attributes: {
+            name: {
+                type: "string",
+                defaultvalue: "graphname",
+                required: true
+            },
+            nodes: {
+                type: "collection",
+                collectiontype: "reference",
+                referencetype: "GraphNode",
+                required: true
+            }
+        }
+    },
     GraphNode: {
         referenceable: true,
         attributes: {
             name: {
                 type: "string",
                 defaultvalue: "graphnodename",
+                required: true
+            },
+            state: {
+                type: "reference",
+                referencetype: ["GroupState", "ConditionalGroupStateSet"],
+                required: true
+            },
+            links: {
+                type: "collection",
+                collectiontype: "reference",
+                referencetype: "GraphLink",
                 required: true
             }
         }
@@ -680,6 +714,16 @@ var modelDescriptorV3 = {
             name: {
                 type: "string",
                 defaultvalue: "graphlinkname",
+                required: true
+            },
+            destnode: {
+                type: "reference",
+                referencetype: "GraphNode",
+                required: true
+            },
+            trigger: {
+                type: "reference",
+                referencetype: "Trigger",
                 required: true
             }
         }

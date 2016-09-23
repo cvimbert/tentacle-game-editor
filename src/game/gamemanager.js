@@ -16,6 +16,7 @@ define([
     "trigger",
     "controlsprite",
     "clock",
+    "graphs/graph",
     "graphs/graphnode",
     "graphs/graphlink"
 ], function(
@@ -33,6 +34,7 @@ define([
     Trigger,
     ControlSprite,
     Clock,
+    Graph,
     GraphNode,
     GraphLink
 ) {
