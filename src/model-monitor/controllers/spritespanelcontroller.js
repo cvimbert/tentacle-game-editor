@@ -1,7 +1,7 @@
 /* global Tentacle */
 
 define(["underscore"], function(_) {
-    return function ($scope, shared) {
+    return function ($scope, $timeout, shared) {
 
 
         $scope.selections = {};
@@ -34,13 +34,11 @@ define(["underscore"], function(_) {
             $scope.foregroundSprites = shared.modelManager.getModelByType("ForegroundSprite");
             $scope.backgroundSprites = shared.modelManager.getModelByType("BackgroundSprite");
 
-            setTimeout(function() {
+            $timeout(function() {
                 shared.gameManager.afterRenderInit();
-            }, 2000);
+            }, 1);
         };
 
-
-        //$scope.getDynamicSrpi
 
         $scope.getModels = function () {
             $scope.models = shared.modelManager.getModelByType($scope.modeltype);
@@ -81,6 +79,10 @@ define(["underscore"], function(_) {
         $scope.clearSelection = function() {
             // pas bonne idée ça
             //currentSelection = [];
+        };
+
+        $scope.afterRender = function() {
+            shared.gameManager.afterRenderInit();
         };
 
         $scope.toggleSelection = function(element) {

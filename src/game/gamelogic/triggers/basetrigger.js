@@ -30,5 +30,9 @@ define(["underscore"], function(_) {
             var uid = model.get(id);
             return gameManager.getObjectByUid(uid);
         };
+
+        this.getModelProperty = function(id) {
+            return model.get(id);
+        }
     }
 });

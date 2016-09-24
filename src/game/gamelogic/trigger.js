@@ -22,6 +22,8 @@ define([
             var condition;
             var triggerType;
             var triggerObject;
+            var activatedOnStart = false;
+            var enabled = false;
 
             var bindings;
 
@@ -35,7 +37,13 @@ define([
 
                 triggerType = model.get("triggertype");
 
+                activatedOnStart = (model.get("activatedonstart") === "true");
+
                 bindings = {};
+            };
+
+            this.isActivatedOnStart = function() {
+                return activatedOnStart;
             };
 
             this.bind = function(sourceUid, callback) {
@@ -55,10 +63,13 @@ define([
                     triggerObject.initialize();
                     triggerObject.on();
                 });
+
+                enabled = true;
             };
 
             this.disable = function() {
                 triggerObject.off();
+                enabled = false;
             };
         }
     }

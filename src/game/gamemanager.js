@@ -17,7 +17,7 @@ define([
     "controlsprite",
     "clock",
     "graphs/graph",
-    "graphs/graphnode",
+    "graphs/GraphNode",
     "graphs/graphlink"
 ], function(
     _,
@@ -97,7 +97,8 @@ define([
 
             // activation des triggers
             _.each(modelsByType["Trigger"], function(object) {
-                object.enable();
+                if (object.isActivatedOnStart())
+                    object.enable();
             });
         };
 
@@ -107,6 +108,11 @@ define([
             // activation des controles
             _.each(modelsByType["Control"], function(object) {
                 object.enable();
+            });
+
+            // très temporaire
+            _.each(modelsByType["Graph"], function(object) {
+                object.setCurrentNodeIndex(0);
             });
         };
 

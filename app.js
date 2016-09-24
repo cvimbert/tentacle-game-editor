@@ -50,6 +50,19 @@ $(document).ready(function() {
         mainApp.directive('selectable', selectable);
         mainApp.directive('displayboolean', displayObjectDirective);
         mainApp.directive('control', controlDirective);
+
+        /*mainApp.directive('afterRender', ['$timeout', function ($timeout) {
+            var def = {
+                restrict: 'A',
+                terminal: true,
+                transclude: false,
+                link: function (scope, element, attrs) {
+                   // $timeout(scope.$eval(attrs.afterRender), 0);  //Calling a scoped method
+                }
+            };
+            return def;
+        }]);*/
+
         mainApp.factory('shared', function() {
             return shared;
         });

@@ -339,6 +339,11 @@ var modelDescriptorV3 = {
                 referencetype: "Condition",
                 required: false
             },
+            activatedonstart: {
+                type: "boolean",
+                defaultvalue: false,
+                required: true
+            },
             triggertype: {
                 type: "ConditionalAttributesSet",
                 required: true,

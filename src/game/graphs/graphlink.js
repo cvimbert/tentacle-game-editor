@@ -18,12 +18,22 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
             var trigger;
 
             this.initialize = function() {
-
                 var destNodeUid = model.get("destnode");
                 destNode = gameManager.getObjectByUid(destNodeUid);
 
                 var triggerUid = model.get("trigger");
                 trigger = gameManager.getObjectByUid(triggerUid);
+            };
+
+            this.enableTriggers = function(callbackFunction) {
+                trigger.enable();
+                trigger.bind(model.uid, function() {
+                    callbackFunction(destNode);
+                });
+            };
+
+            this.disableTriggers = function() {
+                trigger.unbind(model.uid);
             };
         }
     }
