@@ -17,7 +17,7 @@ define([
     "controlsprite",
     "clock",
     "graphs/graph",
-    "graphs/GraphNode",
+    "graphs/graphnode",
     "graphs/graphlink"
 ], function(
     _,
