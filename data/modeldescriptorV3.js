@@ -360,6 +360,18 @@ var modelDescriptorV3 = {
                             type: "reference",
                             referencetype: "Control",
                             required: true
+                        },
+                        eventtype: {
+                            type: "include",
+                            includetype: "ClickEventType",
+                            required: true
+                        }
+                    },
+                    gameevent: {
+                        eventname: {
+                            type: "include",
+                            includetype: "GameEventName",
+                            required: true
                         }
                     },
                     clockperiod: {
@@ -915,6 +927,15 @@ var modelDescriptorV3 = {
     RandMode: {
         type: "Enumeration",
         enumerationvalues: ["sequence", "sequencen"]
+    },
+    GameEventName: {
+        type: "Enumeration",
+        required: true,
+        enumerationvalues: ["gamestart", "gameend"]
+    },
+    ClickEventType: {
+        type: "Enumeration",
+        enumerationvalues: ["controldown", "controlup", "controlclick"]
     },
     VariableValue: {
         type: "ConditionalAttributesSet",

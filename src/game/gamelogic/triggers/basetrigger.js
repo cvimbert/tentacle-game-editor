@@ -19,7 +19,11 @@ define(["underscore"], function(_) {
         };
 
         this.bind = function(object, eventName, callback) {
-            object.on(eventName, model.uid, callback);
+            if (object) {
+                object.on(eventName, model.uid, callback);
+            } else {
+                gameManager.on(eventName, model.uid, callback);
+            }
         };
 
         this.unbind = function(object, eventName) {

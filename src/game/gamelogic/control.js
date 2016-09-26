@@ -33,15 +33,15 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
                 controlDOMElement = controlSprite.getDOMElement();
 
                 controlDOMElement.onclick = function() {
-                    self.dispatchEvent("click");
+                    self.dispatchEvent("controlclick");
                 };
 
                 controlDOMElement.onmousedown = function() {
-                    self.dispatchEvent("press");
+                    self.dispatchEvent("controldown");
                 };
 
                 controlDOMElement.onmouseup = function() {
-                    self.dispatchEvent("release");
+                    self.dispatchEvent("controlup");
                 };
             };
 

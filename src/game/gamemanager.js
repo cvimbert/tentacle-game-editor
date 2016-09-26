@@ -3,6 +3,7 @@
  */
 define([
     "underscore",
+    "eventdispatcher",
     "sprite",
     "spritesgroup",
     "groupstate",
@@ -21,6 +22,7 @@ define([
     "graphs/graphlink"
 ], function(
     _,
+    EventDispatcher,
     Sprite,
     SpritesGroup,
     GroupState,
@@ -40,6 +42,8 @@ define([
 ) {
 
     return function (modelManager, gameConsole, scope) {
+
+        _.extend(this, EventDispatcher);
 
         var modelsByType = {};
         var models = {};
@@ -114,6 +118,8 @@ define([
             _.each(modelsByType["Graph"], function(object) {
                 object.setCurrentNodeIndex(0);
             });
+
+            this.dispatchEvent("gamestart", "gamemanager");
         };
 
         this.getObjectByUid = function(uid) {
