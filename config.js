@@ -53,6 +53,7 @@ require.config({
         triggers: 'src/game/gamelogic/triggers',
         controlsprite: 'src/game/display/controlsprite',
         clock: 'src/game/gamelogic/clock',
-        graphs: 'src/game/graphs'
+        graphs: 'src/game/graphs',
+        randomgenerator: 'src/game/common/randomgenerator'
     }
 });

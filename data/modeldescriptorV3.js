@@ -23,7 +23,8 @@ var modelDescriptorV3 = {
             states: {
                 type: "collection",
                 collectiontype: "reference",
-                referencetype: ["GroupState", "ConditionalGroupStateSet"],
+                //referencetype: ["GroupState", "ConditionalGroupStateSet"],
+                referencetype: "GroupState",
                 required: true
 
                 // ici il faudrait plutôt une liste filtrée d'éléments (par un autre attribut)
@@ -77,20 +78,24 @@ var modelDescriptorV3 = {
                 type: "ConditionalAttributesSet",
                 required: true,
                 attributesSets: {
-                    test: {
-                        type: "ConditionalAttributesSet",
-                        required: true,
-                        attributesSets: {
-                            t1: {
-                                type: "reference",
-                                referencetype: "Sprite",
-                                required: true
-                            },
-                            t2: {
-                                type: "reference",
-                                referencetype: "SpritesGroup",
-                                required: true
-                            }
+                    actionsset: {
+                        actions: {
+                            type: "collection",
+                            collectiontype: "reference",
+                            referencetype: "Action",
+                            required: true
+                        }
+                    },
+                    triggeraction: {
+                        trigger: {
+                            type: "reference",
+                            referencetype:"Trigger",
+                            required: true
+                        },
+                        triggeraction: {
+                            type: "include",
+                            includetype: "Enable",
+                            required: true
                         }
                     },
                     displaysprite: {
@@ -107,9 +112,17 @@ var modelDescriptorV3 = {
                             required: true
                         }
                     },
-                    stopclock: {
-                    },
-                    startclock: {
+                    clockaction: {
+                        clock: {
+                            type: "reference",
+                            referencetype: "Clock",
+                            required: true
+                        },
+                        clockaction: {
+                            type: "include",
+                            includetype: "StartStop",
+                            required: true
+                        }
                     },
                     hidegroup: {
                         group: {
@@ -329,9 +342,10 @@ var modelDescriptorV3 = {
                 defaultvalue: "groupstatename",
                 required: true
             },
-            action: {
-                type: "reference",
-                referencetype: "Action",
+            actions: {
+                type: "collection",
+                collectiontype: "reference",
+                referencetype: "Action"
                 //required: true
             },
             condition: {
@@ -348,6 +362,13 @@ var modelDescriptorV3 = {
                 type: "ConditionalAttributesSet",
                 required: true,
                 attributesSets: {
+                    clockperiod: {
+                        clock: {
+                            type: "reference",
+                            referencetype: "Clock",
+                            required: true
+                        }
+                    },
                     timeout: {
                         time: {
                             type: "number",
@@ -373,8 +394,6 @@ var modelDescriptorV3 = {
                             includetype: "GameEventName",
                             required: true
                         }
-                    },
-                    clockperiod: {
                     },
                     sequencestepleave: {
                         sequence: {
@@ -404,8 +423,6 @@ var modelDescriptorV3 = {
                             required: true
                         }
                     },
-                    endloop: {
-                    },
                     spritescollision: {
                         sprite1: {
                             type: "reference",
@@ -416,13 +433,6 @@ var modelDescriptorV3 = {
                             type: "reference",
                             referencetype: "Sprite",
                             required: true
-                        }
-                    },
-                    timeinterval: {
-                        time: {
-                            type: "number",
-                            required: true,
-                            defaultvalue: 500
                         }
                     }
                 }
@@ -932,6 +942,14 @@ var modelDescriptorV3 = {
         type: "Enumeration",
         required: true,
         enumerationvalues: ["gamestart", "gameend"]
+    },
+    Enable: {
+        type: "Enumeration",
+        enumerationvalues: ["enable", "disable"]
+    },
+    StartStop: {
+        type: "Enumeration",
+        enumerationvalues: ["start", "stop"]
     },
     ClickEventType: {
         type: "Enumeration",

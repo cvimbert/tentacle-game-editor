@@ -119,6 +119,7 @@ define ([
         };
 
         $scope.isInCollection = function(item, attributeId, refId) {
+            if (!item.attributes[attributeId]) return true;
             return item.attributes[attributeId].lastIndexOf(refId) === -1;
         };
 

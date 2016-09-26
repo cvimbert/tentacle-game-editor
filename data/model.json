@@ -1,0 +1,3560 @@
+{
+  "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb": {
+    "attributes": {
+      "name": "Octopus",
+      "identifier": "octopus"
+    },
+    "trashCan": {},
+    "type": "Package",
+    "uid": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb",
+    "$$hashKey": "object:125"
+  },
+  "85226c8c-4a72-4833-b55b-fcef373751e6": {
+    "attributes": {
+      "name": "background",
+      "file": "background.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {},
+    "type": "BackgroundFileReference",
+    "uid": "85226c8c-4a72-4833-b55b-fcef373751e6",
+    "$$hashKey": "object:115"
+  },
+  "0ebbed05-b2d7-488c-98e4-b7099fd421b1": {
+    "attributes": {
+      "name": "background",
+      "reference": "85226c8c-4a72-4833-b55b-fcef373751e6",
+      "x": 0,
+      "y": 0
+    },
+    "trashCan": {
+      "name": "background",
+      "reference": "85226c8c-4a72-4833-b55b-fcef373751e6",
+      "x": 0,
+      "y": 0
+    },
+    "type": "BackgroundSprite",
+    "uid": "0ebbed05-b2d7-488c-98e4-b7099fd421b1",
+    "$$hashKey": "object:172"
+  },
+  "554308a3-7938-4c20-8d3b-ec702736ef08": {
+    "attributes": {
+      "name": "Bouton A",
+      "file": "buttonA.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "Bouton 1",
+      "file": "buttonA.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "ControlFileReference",
+    "uid": "554308a3-7938-4c20-8d3b-ec702736ef08",
+    "$$hashKey": "object:48"
+  },
+  "5d3973eb-7131-478e-9df4-86dbbb194511": {
+    "attributes": {
+      "name": "Bouton A",
+      "reference": "554308a3-7938-4c20-8d3b-ec702736ef08",
+      "x": 57,
+      "y": 302
+    },
+    "trashCan": {},
+    "type": "ControlSprite",
+    "uid": "5d3973eb-7131-478e-9df4-86dbbb194511",
+    "$$hashKey": "object:31"
+  },
+  "cf34a9ff-daa6-4229-a836-714229f449d7": {
+    "attributes": {
+      "name": "Bouton B",
+      "file": "buttonB.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "Bouton B",
+      "file": "buttonB.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "ControlFileReference",
+    "uid": "cf34a9ff-daa6-4229-a836-714229f449d7",
+    "$$hashKey": "object:93"
+  },
+  "68efe720-e1ee-41c4-baf0-844c742ec3a7": {
+    "attributes": {
+      "name": "Bouton B",
+      "reference": "cf34a9ff-daa6-4229-a836-714229f449d7",
+      "x": 663,
+      "y": 302
+    },
+    "trashCan": {},
+    "type": "ControlSprite",
+    "uid": "68efe720-e1ee-41c4-baf0-844c742ec3a7",
+    "$$hashKey": "object:90"
+  },
+  "2323a722-aa99-4d6e-bee3-f6e0028ff34c": {
+    "attributes": {
+      "name": "Start",
+      "file": "start.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "Start",
+      "file": "start.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "ControlFileReference",
+    "uid": "2323a722-aa99-4d6e-bee3-f6e0028ff34c",
+    "$$hashKey": "object:207"
+  },
+  "b2eb5621-9b01-4cf1-817b-9a34083309ba": {
+    "attributes": {
+      "name": "Start 1",
+      "reference": "2323a722-aa99-4d6e-bee3-f6e0028ff34c",
+      "x": 658,
+      "y": 51
+    },
+    "trashCan": {},
+    "type": "ControlSprite",
+    "uid": "b2eb5621-9b01-4cf1-817b-9a34083309ba",
+    "$$hashKey": "object:192"
+  },
+  "b6bafd79-9aff-446f-b5c1-c0fe830e8992": {
+    "attributes": {
+      "name": "Start 2",
+      "reference": "2323a722-aa99-4d6e-bee3-f6e0028ff34c",
+      "x": 658,
+      "y": 103
+    },
+    "trashCan": {
+      "name": "Start 2",
+      "reference": "2323a722-aa99-4d6e-bee3-f6e0028ff34c",
+      "x": 0,
+      "y": 0
+    },
+    "type": "ControlSprite",
+    "uid": "b6bafd79-9aff-446f-b5c1-c0fe830e8992",
+    "$$hashKey": "object:233"
+  },
+  "c4dadbc7-b0ff-4a1a-ba24-3d82aa7f71c2": {
+    "attributes": {
+      "name": "Start 3",
+      "reference": "2323a722-aa99-4d6e-bee3-f6e0028ff34c",
+      "x": 658,
+      "y": 157
+    },
+    "trashCan": {
+      "name": "Start 3",
+      "reference": "2323a722-aa99-4d6e-bee3-f6e0028ff34c",
+      "x": 0,
+      "y": 0
+    },
+    "type": "ControlSprite",
+    "uid": "c4dadbc7-b0ff-4a1a-ba24-3d82aa7f71c2",
+    "$$hashKey": "object:237"
+  },
+  "860af9b6-fd0f-48c4-b302-a420b5938593": {
+    "attributes": {
+      "name": "o-body",
+      "file": "o-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-body",
+      "file": "o-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "860af9b6-fd0f-48c4-b302-a420b5938593",
+    "$$hashKey": "object:67"
+  },
+  "cf2a62c5-53dd-4c9e-b4a2-802e34438f1b": {
+    "attributes": {
+      "name": "o-body",
+      "reference": "860af9b6-fd0f-48c4-b302-a420b5938593",
+      "x": 140,
+      "y": 54,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "cf2a62c5-53dd-4c9e-b4a2-802e34438f1b",
+    "$$hashKey": "object:47"
+  },
+  "dc83f015-5361-4264-9f4e-a3b9b8d6e899": {
+    "attributes": {
+      "name": "o-t1",
+      "file": "o-t1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t1",
+      "file": "o-t1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "dc83f015-5361-4264-9f4e-a3b9b8d6e899",
+    "$$hashKey": "object:125"
+  },
+  "76f8c44e-f512-43dc-8d78-9011a5ae455f": {
+    "attributes": {
+      "name": "o-t1",
+      "reference": "dc83f015-5361-4264-9f4e-a3b9b8d6e899",
+      "x": 111,
+      "y": 81,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "76f8c44e-f512-43dc-8d78-9011a5ae455f",
+    "$$hashKey": "object:122"
+  },
+  "eb469132-44fc-4f4c-9bfe-b8428ccaa262": {
+    "attributes": {
+      "name": "o-t1-1a",
+      "file": "o-t1-1a.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t1-1a",
+      "file": "o-t1-1a.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "eb469132-44fc-4f4c-9bfe-b8428ccaa262",
+    "$$hashKey": "object:156"
+  },
+  "495f54be-8670-4f04-9880-b4af75bf90a0": {
+    "attributes": {
+      "name": "o-t1-1a",
+      "reference": "eb469132-44fc-4f4c-9bfe-b8428ccaa262",
+      "x": 84,
+      "y": 81,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "495f54be-8670-4f04-9880-b4af75bf90a0",
+    "$$hashKey": "object:153"
+  },
+  "88f9aa3f-34a7-41cb-ac45-d028c668503a": {
+    "attributes": {
+      "name": "o-t1-1b",
+      "file": "o-t1-1b.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t1-1b",
+      "file": "o-t1-1b",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "88f9aa3f-34a7-41cb-ac45-d028c668503a",
+    "$$hashKey": "object:96"
+  },
+  "327e3066-c76c-43e1-b38c-27354d8cd1c9": {
+    "attributes": {
+      "name": "o-t1-1b",
+      "reference": "88f9aa3f-34a7-41cb-ac45-d028c668503a",
+      "x": 97,
+      "y": 96,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "327e3066-c76c-43e1-b38c-27354d8cd1c9",
+    "$$hashKey": "object:77"
+  },
+  "195203bf-6b56-468b-af96-00d2fe10907b": {
+    "attributes": {
+      "name": "o-t1-2a",
+      "file": "o-t1-2a.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t1-2a",
+      "file": "o-t1-2a.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "195203bf-6b56-468b-af96-00d2fe10907b",
+    "$$hashKey": "object:129"
+  },
+  "a4e26061-6dcb-40a9-bd98-fb9cec86367f": {
+    "attributes": {
+      "name": "o-t1-2a",
+      "reference": "195203bf-6b56-468b-af96-00d2fe10907b",
+      "x": 63,
+      "y": 75,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "a4e26061-6dcb-40a9-bd98-fb9cec86367f",
+    "$$hashKey": "object:126"
+  },
+  "6efa2a9c-ca0f-4791-a561-0d90bbd74115": {
+    "attributes": {
+      "name": "o-t1-2b",
+      "file": "o-t1-2b.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t1-2b",
+      "file": "o-t1-2b.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "6efa2a9c-ca0f-4791-a561-0d90bbd74115",
+    "$$hashKey": "object:276"
+  },
+  "9f3b4149-5bf8-4c62-b3dd-70abcac452ba": {
+    "attributes": {
+      "name": "o-t1-2b",
+      "reference": "6efa2a9c-ca0f-4791-a561-0d90bbd74115",
+      "x": 87,
+      "y": 109,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "9f3b4149-5bf8-4c62-b3dd-70abcac452ba",
+    "$$hashKey": "object:255"
+  },
+  "c5e8629c-9f97-488e-a76b-896d06b8cb63": {
+    "attributes": {
+      "name": "o-t1-3b",
+      "file": "o-t1-3b.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t1-3b",
+      "file": "o-t1-3b.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "c5e8629c-9f97-488e-a76b-896d06b8cb63",
+    "$$hashKey": "object:311"
+  },
+  "1aca9cc6-8733-4713-b7dd-70901767b687": {
+    "attributes": {
+      "name": "o-t1-3b",
+      "reference": "c5e8629c-9f97-488e-a76b-896d06b8cb63",
+      "x": 72,
+      "y": 125,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "1aca9cc6-8733-4713-b7dd-70901767b687",
+    "$$hashKey": "object:308"
+  },
+  "309af07f-4b2f-46fe-9724-c57be6cd7c15": {
+    "attributes": {
+      "name": "o-t2-1",
+      "file": "o-t2-1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t2-1",
+      "file": "o-t2-1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "309af07f-4b2f-46fe-9724-c57be6cd7c15",
+    "$$hashKey": "object:347"
+  },
+  "4a54f9fa-98da-42dc-b1d5-a7c668642603": {
+    "attributes": {
+      "name": "o-t2-1",
+      "reference": "309af07f-4b2f-46fe-9724-c57be6cd7c15",
+      "x": 154,
+      "y": 101,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+    "$$hashKey": "object:344"
+  },
+  "5e4fcea8-bec8-455a-a698-9b20a204df94": {
+    "attributes": {
+      "name": "o-t2-2",
+      "file": "o-t2-2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t2-2",
+      "file": "o-t2-2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "5e4fcea8-bec8-455a-a698-9b20a204df94",
+    "$$hashKey": "object:384"
+  },
+  "fc49d8c3-f729-49d8-ba43-1f892b617439": {
+    "attributes": {
+      "name": "o-t2-2",
+      "reference": "5e4fcea8-bec8-455a-a698-9b20a204df94",
+      "x": 151,
+      "y": 114,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "fc49d8c3-f729-49d8-ba43-1f892b617439",
+    "$$hashKey": "object:381"
+  },
+  "70471a6e-b6b1-4414-95b9-8e499694eb54": {
+    "attributes": {
+      "name": "o-t2-3",
+      "file": "o-t2-3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t2-3",
+      "file": "o-t2-3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "70471a6e-b6b1-4414-95b9-8e499694eb54",
+    "$$hashKey": "object:422"
+  },
+  "93183b0b-c681-4e1c-9c3c-f2f5a909093f": {
+    "attributes": {
+      "name": "o-t2-3",
+      "reference": "70471a6e-b6b1-4414-95b9-8e499694eb54",
+      "x": 146,
+      "y": 126,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
+    "$$hashKey": "object:419"
+  },
+  "ed4cca3a-9241-44f4-aa85-730e731df60d": {
+    "attributes": {
+      "name": "o-t2-4",
+      "file": "o-t2-4.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t2-4",
+      "file": "o-t2-4.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "ed4cca3a-9241-44f4-aa85-730e731df60d",
+    "$$hashKey": "object:461"
+  },
+  "dc3039db-5161-4381-9da7-a16431161e8c": {
+    "attributes": {
+      "name": "o-t2-4",
+      "reference": "ed4cca3a-9241-44f4-aa85-730e731df60d",
+      "x": 144,
+      "y": 145,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "dc3039db-5161-4381-9da7-a16431161e8c",
+    "$$hashKey": "object:458"
+  },
+  "6954b7f9-720a-4571-b67a-e6fd3030b382": {
+    "attributes": {
+      "name": "o-t2-5",
+      "file": "o-t2-5.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t2-5",
+      "file": "o-t2-5.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "6954b7f9-720a-4571-b67a-e6fd3030b382",
+    "$$hashKey": "object:501"
+  },
+  "672561dd-1287-4224-90fa-dba8f5e3920e": {
+    "attributes": {
+      "name": "o-t2-5",
+      "reference": "6954b7f9-720a-4571-b67a-e6fd3030b382",
+      "x": 135,
+      "y": 163,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "672561dd-1287-4224-90fa-dba8f5e3920e",
+    "$$hashKey": "object:498"
+  },
+  "3310b81f-93cb-44f6-9c74-8acfcc9ae0f3": {
+    "attributes": {
+      "name": "o-t3-1",
+      "file": "o-t3-1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t3-1",
+      "file": "o-t3-1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "3310b81f-93cb-44f6-9c74-8acfcc9ae0f3",
+    "$$hashKey": "object:544"
+  },
+  "98356f3e-4539-47cd-9064-d2a9135777ba": {
+    "attributes": {
+      "name": "o-t3-1",
+      "reference": "3310b81f-93cb-44f6-9c74-8acfcc9ae0f3",
+      "x": 193,
+      "y": 123,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "98356f3e-4539-47cd-9064-d2a9135777ba",
+    "$$hashKey": "object:541"
+  },
+  "0c6608d8-0405-4d2c-b13a-e62f875d333b": {
+    "attributes": {
+      "name": "o-t3-2",
+      "file": "o-t3-2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t3-2",
+      "file": "o-t3-2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "0c6608d8-0405-4d2c-b13a-e62f875d333b",
+    "$$hashKey": "object:642"
+  },
+  "3c41ca14-0f37-4f56-ba03-d8f4cf9d7b52": {
+    "attributes": {
+      "name": "o-t3-2",
+      "reference": "0c6608d8-0405-4d2c-b13a-e62f875d333b",
+      "x": 193,
+      "y": 136,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "3c41ca14-0f37-4f56-ba03-d8f4cf9d7b52",
+    "$$hashKey": "object:639"
+  },
+  "d12773e7-53ac-4637-b7e5-fc889fd88201": {
+    "attributes": {
+      "name": "o-t3-3",
+      "file": "o-t3-3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t3-3",
+      "file": "o-t3-3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "d12773e7-53ac-4637-b7e5-fc889fd88201",
+    "$$hashKey": "object:685"
+  },
+  "7e5db21c-dfdf-432e-ab2a-c6c55765bca1": {
+    "attributes": {
+      "name": "o-t3-3",
+      "reference": "d12773e7-53ac-4637-b7e5-fc889fd88201",
+      "x": 198,
+      "y": 150,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "7e5db21c-dfdf-432e-ab2a-c6c55765bca1",
+    "$$hashKey": "object:682"
+  },
+  "a4a40b7f-e5f3-4c1b-b708-874777fb761b": {
+    "attributes": {
+      "name": "o-t3-4",
+      "file": "o-t3-4.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t3-4",
+      "file": "o-t3-4.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "a4a40b7f-e5f3-4c1b-b708-874777fb761b",
+    "$$hashKey": "object:729"
+  },
+  "1890cb0c-c9fe-4342-8cb7-88c3e0aa1c68": {
+    "attributes": {
+      "name": "o-t3-4",
+      "reference": "a4a40b7f-e5f3-4c1b-b708-874777fb761b",
+      "x": 196,
+      "y": 168,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "1890cb0c-c9fe-4342-8cb7-88c3e0aa1c68",
+    "$$hashKey": "object:726"
+  },
+  "0f6ba42e-c047-4b4d-8ce1-8e0d1e00b130": {
+    "attributes": {
+      "name": "o-t4-1",
+      "file": "o-t4-1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t4-1",
+      "file": "o-t4-1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "0f6ba42e-c047-4b4d-8ce1-8e0d1e00b130",
+    "$$hashKey": "object:774"
+  },
+  "b5c66e5c-8683-4fd4-8c57-29050c35f3c6": {
+    "attributes": {
+      "name": "o-t4-1",
+      "reference": "0f6ba42e-c047-4b4d-8ce1-8e0d1e00b130",
+      "x": 267,
+      "y": 141,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "b5c66e5c-8683-4fd4-8c57-29050c35f3c6",
+    "$$hashKey": "object:771"
+  },
+  "1b9b6c0e-6014-43e2-9f73-6c2e54acbbae": {
+    "attributes": {
+      "name": "o-t4-2",
+      "file": "o-t4-2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t4-2",
+      "file": "o-t4-2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "1b9b6c0e-6014-43e2-9f73-6c2e54acbbae",
+    "$$hashKey": "object:820"
+  },
+  "e605b9a0-7671-44fb-9004-6409a7ee0194": {
+    "attributes": {
+      "name": "o-t4-2",
+      "reference": "1b9b6c0e-6014-43e2-9f73-6c2e54acbbae",
+      "x": 275,
+      "y": 157,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "e605b9a0-7671-44fb-9004-6409a7ee0194",
+    "$$hashKey": "object:817"
+  },
+  "30067e7f-2dca-40a8-9393-acca6fc33b2f": {
+    "attributes": {
+      "name": "o-t4-3",
+      "file": "o-t4-3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "o-t4-3",
+      "file": "o-t4-3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "30067e7f-2dca-40a8-9393-acca6fc33b2f",
+    "$$hashKey": "object:867"
+  },
+  "a4aa9911-209b-47a4-8ea7-a0bb19111945": {
+    "attributes": {
+      "name": "o-t4-3",
+      "reference": "30067e7f-2dca-40a8-9393-acca6fc33b2f",
+      "x": 285,
+      "y": 173,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "a4aa9911-209b-47a4-8ea7-a0bb19111945",
+    "$$hashKey": "object:864"
+  },
+  "ffed990c-95c5-4bc9-9265-459a71692d7d": {
+    "attributes": {
+      "name": "p1-arm",
+      "file": "p1-arm.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p1-arm",
+      "file": "p1-arm.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "ffed990c-95c5-4bc9-9265-459a71692d7d",
+    "$$hashKey": "object:79"
+  },
+  "22e20b81-06af-4d12-a986-c462690e371c": {
+    "attributes": {
+      "name": "p1-arm",
+      "reference": "ffed990c-95c5-4bc9-9265-459a71692d7d",
+      "x": 51,
+      "y": 32,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "22e20b81-06af-4d12-a986-c462690e371c",
+    "$$hashKey": "object:40"
+  },
+  "cbb778fb-583e-46d4-8e39-640b0d6636d1": {
+    "attributes": {
+      "name": "p1-bag",
+      "file": "p1-bag.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p1-bag",
+      "file": "p1-bag.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "cbb778fb-583e-46d4-8e39-640b0d6636d1",
+    "$$hashKey": "object:128"
+  },
+  "826ef685-df2e-4e9e-9278-a284c450f828": {
+    "attributes": {
+      "name": "p1-bag",
+      "reference": "cbb778fb-583e-46d4-8e39-640b0d6636d1",
+      "x": 50,
+      "y": 17,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "826ef685-df2e-4e9e-9278-a284c450f828",
+    "$$hashKey": "object:125"
+  },
+  "8ef368df-2e68-454e-88e9-9bb1305fcd88": {
+    "attributes": {
+      "name": "p1-body",
+      "file": "p1-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p1-body",
+      "file": "p1-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "8ef368df-2e68-454e-88e9-9bb1305fcd88",
+    "$$hashKey": "object:178"
+  },
+  "1ab3b31d-79bb-4e7f-81ca-e2b8d0f7cd96": {
+    "attributes": {
+      "name": "p1-body",
+      "reference": "8ef368df-2e68-454e-88e9-9bb1305fcd88",
+      "x": 24,
+      "y": 11,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "1ab3b31d-79bb-4e7f-81ca-e2b8d0f7cd96",
+    "$$hashKey": "object:175"
+  },
+  "4418ab16-a013-445e-9b11-7dcb819ae706": {
+    "attributes": {
+      "name": "p2",
+      "file": "p2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p2",
+      "file": "p2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "4418ab16-a013-445e-9b11-7dcb819ae706",
+    "$$hashKey": "object:229"
+  },
+  "8e075819-fb0a-4d90-b8e9-48b7a7aa84f3": {
+    "attributes": {
+      "name": "p2",
+      "reference": "4418ab16-a013-445e-9b11-7dcb819ae706",
+      "x": 74,
+      "y": 11,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "8e075819-fb0a-4d90-b8e9-48b7a7aa84f3",
+    "$$hashKey": "object:226"
+  },
+  "e2aadd36-bced-4b66-9e2b-01b906c48e47": {
+    "attributes": {
+      "name": "p3",
+      "file": "p3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p3",
+      "file": "p3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "e2aadd36-bced-4b66-9e2b-01b906c48e47",
+    "$$hashKey": "object:281"
+  },
+  "17d3df03-7b13-40da-9a10-ba69368705e8": {
+    "attributes": {
+      "name": "p3",
+      "reference": "e2aadd36-bced-4b66-9e2b-01b906c48e47",
+      "x": 104,
+      "y": 11,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "17d3df03-7b13-40da-9a10-ba69368705e8",
+    "$$hashKey": "object:278"
+  },
+  "1b86097f-94f1-4bd1-94b3-8399868036c4": {
+    "attributes": {
+      "name": "p4-bag",
+      "file": "p4-bag.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p4-bag",
+      "file": "p4-bag.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "1b86097f-94f1-4bd1-94b3-8399868036c4",
+    "$$hashKey": "object:334"
+  },
+  "8459267a-8206-4fa2-80b3-7bdf126ca88f": {
+    "attributes": {
+      "name": "p4-bag",
+      "reference": "1b86097f-94f1-4bd1-94b3-8399868036c4",
+      "x": 64,
+      "y": 95,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "8459267a-8206-4fa2-80b3-7bdf126ca88f",
+    "$$hashKey": "object:331"
+  },
+  "6e14f397-74a0-4e09-ab36-7a21e32d95dd": {
+    "attributes": {
+      "name": "p4-body",
+      "file": "p4-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p4-body",
+      "file": "p4-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "6e14f397-74a0-4e09-ab36-7a21e32d95dd",
+    "$$hashKey": "object:388"
+  },
+  "ec1f3abe-ccbf-46bf-8f44-8a7549e3fee7": {
+    "attributes": {
+      "name": "p4-body",
+      "reference": "6e14f397-74a0-4e09-ab36-7a21e32d95dd",
+      "x": 23,
+      "y": 67,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "ec1f3abe-ccbf-46bf-8f44-8a7549e3fee7",
+    "$$hashKey": "object:385"
+  },
+  "4d1ae6b2-8fc6-41f9-b98e-628fc3d12219": {
+    "attributes": {
+      "name": "p5-bag",
+      "file": "p5-bag.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p5-bag",
+      "file": "p5-bag.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "4d1ae6b2-8fc6-41f9-b98e-628fc3d12219",
+    "$$hashKey": "object:521"
+  },
+  "26801000-8a50-4749-bf73-22e65216f8da": {
+    "attributes": {
+      "name": "p5-bag",
+      "reference": "4d1ae6b2-8fc6-41f9-b98e-628fc3d12219",
+      "x": 62,
+      "y": 171,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "26801000-8a50-4749-bf73-22e65216f8da",
+    "$$hashKey": "object:518"
+  },
+  "8b42014e-1493-4364-908d-ff6763dc9a2e": {
+    "attributes": {
+      "name": "p5-body",
+      "file": "p5-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p5-body",
+      "file": "p5-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "8b42014e-1493-4364-908d-ff6763dc9a2e",
+    "$$hashKey": "object:577"
+  },
+  "7763843e-ddf3-41a1-829c-4e1a305733bb": {
+    "attributes": {
+      "name": "p5-body",
+      "reference": "8b42014e-1493-4364-908d-ff6763dc9a2e",
+      "x": 34,
+      "y": 131,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "7763843e-ddf3-41a1-829c-4e1a305733bb",
+    "$$hashKey": "object:574"
+  },
+  "d12b2d69-842f-4de5-9366-41399ef2149d": {
+    "attributes": {
+      "name": "p6-bag",
+      "file": "p6-bag.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p6-bag",
+      "file": "p6-bag.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "d12b2d69-842f-4de5-9366-41399ef2149d",
+    "$$hashKey": "object:634"
+  },
+  "e3817525-6c2c-423f-948e-853a6bc69ba2": {
+    "attributes": {
+      "name": "p6-bag",
+      "reference": "d12b2d69-842f-4de5-9366-41399ef2149d",
+      "x": 129,
+      "y": 207,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "e3817525-6c2c-423f-948e-853a6bc69ba2",
+    "$$hashKey": "object:631"
+  },
+  "8b6e71d9-1db5-4db6-9a3a-419125ccc9bf": {
+    "attributes": {
+      "name": "p6-body",
+      "file": "p6-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p6-body",
+      "file": "p6-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "8b6e71d9-1db5-4db6-9a3a-419125ccc9bf",
+    "$$hashKey": "object:692"
+  },
+  "7c55bb81-f405-4300-ad9a-849be8309bb9": {
+    "attributes": {
+      "name": "p6-body",
+      "reference": "8b6e71d9-1db5-4db6-9a3a-419125ccc9bf",
+      "x": 90,
+      "y": 172,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "7c55bb81-f405-4300-ad9a-849be8309bb9",
+    "$$hashKey": "object:689"
+  },
+  "cc5cd9b5-204c-460d-a17f-13ccfb0796d3": {
+    "attributes": {
+      "name": "p7-bag",
+      "file": "p7-bag.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p7-bag",
+      "file": "p7-bag.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "cc5cd9b5-204c-460d-a17f-13ccfb0796d3",
+    "$$hashKey": "object:751"
+  },
+  "4d8dcb97-0d40-4919-9230-a4cb7f1b6e87": {
+    "attributes": {
+      "name": "p7-bag",
+      "reference": "cc5cd9b5-204c-460d-a17f-13ccfb0796d3",
+      "x": 198,
+      "y": 205,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "4d8dcb97-0d40-4919-9230-a4cb7f1b6e87",
+    "$$hashKey": "object:748"
+  },
+  "c83b45cd-4ab9-44bd-8d94-ca4c5ecfd5c7": {
+    "attributes": {
+      "name": "p7-body",
+      "file": "p7-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p7-body",
+      "file": "p7-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "c83b45cd-4ab9-44bd-8d94-ca4c5ecfd5c7",
+    "$$hashKey": "object:811"
+  },
+  "0a382ea3-0fcf-4685-9e5c-67d6823759f3": {
+    "attributes": {
+      "name": "p7-body",
+      "reference": "c83b45cd-4ab9-44bd-8d94-ca4c5ecfd5c7",
+      "x": 159,
+      "y": 174,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "0a382ea3-0fcf-4685-9e5c-67d6823759f3",
+    "$$hashKey": "object:808"
+  },
+  "77dde70e-4ea7-4f67-ad45-0aa02b3b06f8": {
+    "attributes": {
+      "name": "p8-arm1",
+      "file": "p8-arm1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p8-arm1",
+      "file": "p8-arm1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "77dde70e-4ea7-4f67-ad45-0aa02b3b06f8",
+    "$$hashKey": "object:872"
+  },
+  "dabd655c-0e8e-481a-9693-65461391711a": {
+    "attributes": {
+      "name": "p8-arm1",
+      "reference": "77dde70e-4ea7-4f67-ad45-0aa02b3b06f8",
+      "x": 246,
+      "y": 194,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "dabd655c-0e8e-481a-9693-65461391711a",
+    "$$hashKey": "object:869"
+  },
+  "c07c1265-8745-45ab-aff7-0eb5a1f3b9fc": {
+    "attributes": {
+      "name": "p8-arm2",
+      "file": "p8-arm2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p8-arm2",
+      "file": "p8-arm2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "c07c1265-8745-45ab-aff7-0eb5a1f3b9fc",
+    "$$hashKey": "object:934"
+  },
+  "376bdb6f-9c16-4a98-a715-94d442e6765f": {
+    "attributes": {
+      "name": "p8-arm2",
+      "reference": "c07c1265-8745-45ab-aff7-0eb5a1f3b9fc",
+      "x": 272,
+      "y": 205,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "376bdb6f-9c16-4a98-a715-94d442e6765f",
+    "$$hashKey": "object:931"
+  },
+  "2c8d339d-ad0a-4990-83c3-5b21f417b868": {
+    "attributes": {
+      "name": "p8-arm3",
+      "file": "p8-arm3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p8-arm3",
+      "file": "p8-arm3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "2c8d339d-ad0a-4990-83c3-5b21f417b868",
+    "$$hashKey": "object:997"
+  },
+  "b48ba02b-4b4e-483e-8a04-4f427aec2ea5": {
+    "attributes": {
+      "name": "p8-arm3",
+      "reference": "2c8d339d-ad0a-4990-83c3-5b21f417b868",
+      "x": 277,
+      "y": 201,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "b48ba02b-4b4e-483e-8a04-4f427aec2ea5",
+    "$$hashKey": "object:994"
+  },
+  "8f2bc2ae-b5f7-4d18-bda9-fff5c57360d8": {
+    "attributes": {
+      "name": "p8-bag",
+      "file": "p8-bag.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p8-bag",
+      "file": "p8-bag.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "8f2bc2ae-b5f7-4d18-bda9-fff5c57360d8",
+    "$$hashKey": "object:1061"
+  },
+  "c65975b0-12d6-4c82-bebe-6e208b36f271": {
+    "attributes": {
+      "name": "p8-bag",
+      "reference": "8f2bc2ae-b5f7-4d18-bda9-fff5c57360d8",
+      "x": 227,
+      "y": 194,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "c65975b0-12d6-4c82-bebe-6e208b36f271",
+    "$$hashKey": "object:1058"
+  },
+  "0ec826a7-2d85-4aa8-98d9-3e85829af885": {
+    "attributes": {
+      "name": "p8-body",
+      "file": "p8-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p8-body",
+      "file": "p8-body.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "0ec826a7-2d85-4aa8-98d9-3e85829af885",
+    "$$hashKey": "object:1126"
+  },
+  "97b8a8a5-8dde-4f83-b150-e9674746ee84": {
+    "attributes": {
+      "name": "p8-body",
+      "reference": "0ec826a7-2d85-4aa8-98d9-3e85829af885",
+      "x": 243,
+      "y": 178,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "97b8a8a5-8dde-4f83-b150-e9674746ee84",
+    "$$hashKey": "object:1123"
+  },
+  "5364cc1a-2762-4843-9a1e-f0c2c3906dcb": {
+    "attributes": {
+      "name": "p9-arm1",
+      "file": "p9-arm1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p9-arm1",
+      "file": "p9-arm1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "5364cc1a-2762-4843-9a1e-f0c2c3906dcb",
+    "$$hashKey": "object:1192"
+  },
+  "349d4188-bb87-4315-8e57-ec9cdb299371": {
+    "attributes": {
+      "name": "p9-arm1",
+      "reference": "5364cc1a-2762-4843-9a1e-f0c2c3906dcb",
+      "x": 189,
+      "y": 102,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "349d4188-bb87-4315-8e57-ec9cdb299371",
+    "$$hashKey": "object:1189"
+  },
+  "ac197fb4-3f86-453c-bf4a-48c924bd2ba4": {
+    "attributes": {
+      "name": "p9-arm2",
+      "file": "p9-arm2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p9-arm2",
+      "file": "p9-arm2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "ac197fb4-3f86-453c-bf4a-48c924bd2ba4",
+    "$$hashKey": "object:1259"
+  },
+  "b04bee95-56a5-4f6f-9922-56f040f4f99a": {
+    "attributes": {
+      "name": "p9-arm2",
+      "reference": "ac197fb4-3f86-453c-bf4a-48c924bd2ba4",
+      "x": 171,
+      "y": 140,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "b04bee95-56a5-4f6f-9922-56f040f4f99a",
+    "$$hashKey": "object:1256"
+  },
+  "2c79e568-46e4-4d46-b8d5-e294b232a72e": {
+    "attributes": {
+      "name": "p9-arm3",
+      "file": "p9-arm3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p9-arm3",
+      "file": "p9-arm3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "2c79e568-46e4-4d46-b8d5-e294b232a72e",
+    "$$hashKey": "object:1327"
+  },
+  "3bfe399f-3ab8-4489-aba5-ba8f6b80ccf9": {
+    "attributes": {
+      "name": "p9-arm3",
+      "reference": "2c79e568-46e4-4d46-b8d5-e294b232a72e",
+      "x": 183,
+      "y": 145,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "3bfe399f-3ab8-4489-aba5-ba8f6b80ccf9",
+    "$$hashKey": "object:1324"
+  },
+  "b0a58a97-dc56-49e9-bfbc-cdeff10730e8": {
+    "attributes": {
+      "name": "p9-head",
+      "file": "p9-head.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p9-head",
+      "file": "p9-head.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "b0a58a97-dc56-49e9-bfbc-cdeff10730e8",
+    "$$hashKey": "object:1396"
+  },
+  "7d5ec482-9d97-48da-a3d3-643b12320188": {
+    "attributes": {
+      "name": "p9-head",
+      "reference": "b0a58a97-dc56-49e9-bfbc-cdeff10730e8",
+      "x": 170,
+      "y": 114,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "7d5ec482-9d97-48da-a3d3-643b12320188",
+    "$$hashKey": "object:1393"
+  },
+  "e6578562-3ada-4669-a141-25ad508b4460": {
+    "attributes": {
+      "name": "p9-leg1",
+      "file": "p9-leg1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p9-leg1",
+      "file": "p9-leg1.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "e6578562-3ada-4669-a141-25ad508b4460",
+    "$$hashKey": "object:1466"
+  },
+  "ffb7d733-a56f-4481-a880-a898783ac690": {
+    "attributes": {
+      "name": "p9-leg1",
+      "reference": "e6578562-3ada-4669-a141-25ad508b4460",
+      "x": 219,
+      "y": 118,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "ffb7d733-a56f-4481-a880-a898783ac690",
+    "$$hashKey": "object:1463"
+  },
+  "bd11478c-aa8b-4b8b-9f62-ff0d7f88018e": {
+    "attributes": {
+      "name": "p9-leg2",
+      "file": "p9-leg2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p9-leg2",
+      "file": "p9-leg2.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "bd11478c-aa8b-4b8b-9f62-ff0d7f88018e",
+    "$$hashKey": "object:1537"
+  },
+  "445838a1-f0c8-4ff7-ae99-5329e2c7f3a9": {
+    "attributes": {
+      "name": "p9-leg2",
+      "reference": "bd11478c-aa8b-4b8b-9f62-ff0d7f88018e",
+      "x": 217,
+      "y": 127,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "445838a1-f0c8-4ff7-ae99-5329e2c7f3a9",
+    "$$hashKey": "object:1534"
+  },
+  "49c30e2a-718b-4f69-9034-127cf36bd254": {
+    "attributes": {
+      "name": "p9-leg3",
+      "file": "p9-leg3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p9-leg3",
+      "file": "p9-leg3.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "49c30e2a-718b-4f69-9034-127cf36bd254",
+    "$$hashKey": "object:1609"
+  },
+  "e77d525f-9ce2-46b5-bad9-c97888c47b6a": {
+    "attributes": {
+      "name": "p9-leg3",
+      "reference": "49c30e2a-718b-4f69-9034-127cf36bd254",
+      "x": 214,
+      "y": 139,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "e77d525f-9ce2-46b5-bad9-c97888c47b6a",
+    "$$hashKey": "object:1606"
+  },
+  "341d04ff-9aa9-4496-8b72-dfcf63f2c5b5": {
+    "attributes": {
+      "name": "p9-leg4",
+      "file": "p9-leg4.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p9-leg4",
+      "file": "p9-leg4.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "341d04ff-9aa9-4496-8b72-dfcf63f2c5b5",
+    "$$hashKey": "object:1682"
+  },
+  "9862fc77-14c1-4bf2-952e-b474a0767512": {
+    "attributes": {
+      "name": "p9-leg4",
+      "reference": "341d04ff-9aa9-4496-8b72-dfcf63f2c5b5",
+      "x": 210,
+      "y": 144,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "9862fc77-14c1-4bf2-952e-b474a0767512",
+    "$$hashKey": "object:1679"
+  },
+  "b513f4d6-27e8-4568-9c28-8ca4eee3f55d": {
+    "attributes": {
+      "name": "p9-other",
+      "file": "p9-other.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "p9-other",
+      "file": "p9-other.png",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SpriteFileReference",
+    "uid": "b513f4d6-27e8-4568-9c28-8ca4eee3f55d",
+    "$$hashKey": "object:1756"
+  },
+  "36242aa3-b6a7-4862-8f54-cd160e302cd3": {
+    "attributes": {
+      "name": "p9-other",
+      "reference": "b513f4d6-27e8-4568-9c28-8ca4eee3f55d",
+      "x": 161,
+      "y": 127,
+      "scale": 1
+    },
+    "trashCan": {},
+    "type": "Sprite",
+    "uid": "36242aa3-b6a7-4862-8f54-cd160e302cd3",
+    "$$hashKey": "object:1753"
+  },
+  "36eee7f9-ef85-46be-aa5f-5b4f0c615915": {
+    "attributes": {
+      "name": "g1",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
+        "dc3039db-5161-4381-9da7-a16431161e8c",
+        "672561dd-1287-4224-90fa-dba8f5e3920e"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
+    "$$hashKey": "object:171"
+  },
+  "9f430b8d-29bf-4a04-baa2-da8202287ee5": {
+    "attributes": {
+      "name": "st1",
+      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603"
+      ]
+    },
+    "trashCan": {
+      "name": "st1",
+      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "9f430b8d-29bf-4a04-baa2-da8202287ee5",
+    "$$hashKey": "object:226"
+  },
+  "217704e3-2795-446f-ba7e-48710bdaeef0": {
+    "attributes": {
+      "name": "st2",
+      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439"
+      ]
+    },
+    "trashCan": {
+      "name": "st2",
+      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "217704e3-2795-446f-ba7e-48710bdaeef0",
+    "$$hashKey": "object:247"
+  },
+  "5a39a638-fcd1-4f7a-9afb-608d25997ef4": {
+    "attributes": {
+      "name": "st3",
+      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f"
+      ]
+    },
+    "trashCan": {
+      "name": "st3",
+      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "5a39a638-fcd1-4f7a-9afb-608d25997ef4",
+    "$$hashKey": "object:264"
+  },
+  "7e5274e6-6dcb-4d04-950b-354fde85fed3": {
+    "attributes": {
+      "name": "st4",
+      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
+        "dc3039db-5161-4381-9da7-a16431161e8c"
+      ]
+    },
+    "trashCan": {
+      "name": "st4",
+      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
+        "dc3039db-5161-4381-9da7-a16431161e8c"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "7e5274e6-6dcb-4d04-950b-354fde85fed3",
+    "$$hashKey": "object:282"
+  },
+  "510702a8-2cfd-4549-89ee-e65d107cc041": {
+    "attributes": {
+      "name": "st5",
+      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
+        "dc3039db-5161-4381-9da7-a16431161e8c",
+        "672561dd-1287-4224-90fa-dba8f5e3920e"
+      ]
+    },
+    "trashCan": {
+      "name": "st5",
+      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
+        "dc3039db-5161-4381-9da7-a16431161e8c",
+        "672561dd-1287-4224-90fa-dba8f5e3920e"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "510702a8-2cfd-4549-89ee-e65d107cc041",
+    "$$hashKey": "object:301"
+  },
+  "29439236-fe8e-4bf2-ab5d-1e56253a5055": {
+    "attributes": {
+      "name": "s1",
+      "spritesgroup": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
+      "looptype": "",
+      "states": [
+        "9f430b8d-29bf-4a04-baa2-da8202287ee5",
+        "217704e3-2795-446f-ba7e-48710bdaeef0",
+        "5a39a638-fcd1-4f7a-9afb-608d25997ef4",
+        "7e5274e6-6dcb-4d04-950b-354fde85fed3",
+        "510702a8-2cfd-4549-89ee-e65d107cc041"
+      ]
+    },
+    "trashCan": {
+      "name": "s1",
+      "spritesgroup": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
+      "looptype": "",
+      "states": [
+        "9f430b8d-29bf-4a04-baa2-da8202287ee5",
+        "217704e3-2795-446f-ba7e-48710bdaeef0",
+        "5a39a638-fcd1-4f7a-9afb-608d25997ef4",
+        "7e5274e6-6dcb-4d04-950b-354fde85fed3",
+        "510702a8-2cfd-4549-89ee-e65d107cc041"
+      ]
+    },
+    "type": "Sequence",
+    "uid": "29439236-fe8e-4bf2-ab5d-1e56253a5055",
+    "$$hashKey": "object:213"
+  },
+  "739b16f1-0bff-4267-b61e-5157c0d11437": {
+    "attributes": {
+      "name": "perso4",
+      "sprites": [
+        "8459267a-8206-4fa2-80b3-7bdf126ca88f",
+        "ec1f3abe-ccbf-46bf-8f44-8a7549e3fee7"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "739b16f1-0bff-4267-b61e-5157c0d11437",
+    "$$hashKey": "object:211"
+  },
+  "3cabcbfa-e519-4d30-951f-1e1d10f66a12": {
+    "attributes": {
+      "name": "perso5",
+      "sprites": [
+        "26801000-8a50-4749-bf73-22e65216f8da",
+        "7763843e-ddf3-41a1-829c-4e1a305733bb"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "3cabcbfa-e519-4d30-951f-1e1d10f66a12",
+    "$$hashKey": "object:130"
+  },
+  "ec7f47a3-cfd5-43f5-82f0-a130a6d47c6a": {
+    "attributes": {
+      "name": "perso6",
+      "sprites": [
+        "e3817525-6c2c-423f-948e-853a6bc69ba2",
+        "7c55bb81-f405-4300-ad9a-849be8309bb9"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "ec7f47a3-cfd5-43f5-82f0-a130a6d47c6a",
+    "$$hashKey": "object:236"
+  },
+  "65feb714-1e3d-4098-b923-05a8f0f908c9": {
+    "attributes": {
+      "name": "perso7",
+      "sprites": [
+        "4d8dcb97-0d40-4919-9230-a4cb7f1b6e87",
+        "0a382ea3-0fcf-4685-9e5c-67d6823759f3"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "65feb714-1e3d-4098-b923-05a8f0f908c9",
+    "$$hashKey": "object:245"
+  },
+  "bd4870a8-f11c-49c8-aa5a-1a36e9ff2476": {
+    "attributes": {
+      "name": "perso8",
+      "sprites": [
+        "dabd655c-0e8e-481a-9693-65461391711a",
+        "376bdb6f-9c16-4a98-a715-94d442e6765f",
+        "b48ba02b-4b4e-483e-8a04-4f427aec2ea5",
+        "c65975b0-12d6-4c82-bebe-6e208b36f271",
+        "97b8a8a5-8dde-4f83-b150-e9674746ee84"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "bd4870a8-f11c-49c8-aa5a-1a36e9ff2476",
+    "$$hashKey": "object:133"
+  },
+  "b53bec23-29f7-4767-9f7d-a747ead13358": {
+    "attributes": {
+      "name": "perso1",
+      "sprites": [
+        "22e20b81-06af-4d12-a986-c462690e371c",
+        "826ef685-df2e-4e9e-9278-a284c450f828",
+        "1ab3b31d-79bb-4e7f-81ca-e2b8d0f7cd96"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "b53bec23-29f7-4767-9f7d-a747ead13358",
+    "$$hashKey": "object:134"
+  },
+  "bb981b04-3930-41da-be26-6acdbbd6aeb8": {
+    "attributes": {
+      "name": "goldInBag",
+      "variabletype": "number",
+      "value": 0
+    },
+    "trashCan": {
+      "name": "hasGoldInBag",
+      "variabletype": "number"
+    },
+    "type": "Variable",
+    "uid": "bb981b04-3930-41da-be26-6acdbbd6aeb8",
+    "$$hashKey": "object:400"
+  },
+  "7e6df4e4-8734-476b-af32-73aa4d46c02f": {
+    "attributes": {
+      "name": "hasGoldInBag",
+      "conditiontype": "comparevariablewithvalue",
+      "variable": "bb981b04-3930-41da-be26-6acdbbd6aeb8",
+      "operator": ">",
+      "variabletype": "",
+      "value": 0
+    },
+    "trashCan": {
+      "name": "hasGoldInBag",
+      "conditiontype": "comparevariablewithvalue",
+      "variable": "bb981b04-3930-41da-be26-6acdbbd6aeb8",
+      "operator": "",
+      "variabletype": ""
+    },
+    "type": "Condition",
+    "uid": "7e6df4e4-8734-476b-af32-73aa4d46c02f",
+    "$$hashKey": "object:418"
+  },
+  "a35288ec-911a-4e55-ac3d-c43862ef6dd5": {
+    "attributes": {
+      "name": "perso1-bag",
+      "group": "b53bec23-29f7-4767-9f7d-a747ead13358",
+      "sprites": [
+        "826ef685-df2e-4e9e-9278-a284c450f828",
+        "1ab3b31d-79bb-4e7f-81ca-e2b8d0f7cd96"
+      ]
+    },
+    "trashCan": {
+      "name": "perso1-bag",
+      "group": "b53bec23-29f7-4767-9f7d-a747ead13358",
+      "sprites": [
+        "826ef685-df2e-4e9e-9278-a284c450f828",
+        "1ab3b31d-79bb-4e7f-81ca-e2b8d0f7cd96"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "a35288ec-911a-4e55-ac3d-c43862ef6dd5",
+    "$$hashKey": "object:539"
+  },
+  "fd84b251-353f-47fb-aedf-d05a711eca57": {
+    "attributes": {
+      "state": "a35288ec-911a-4e55-ac3d-c43862ef6dd5",
+      "condition": "7e6df4e4-8734-476b-af32-73aa4d46c02f"
+    },
+    "trashCan": {
+      "state": "a35288ec-911a-4e55-ac3d-c43862ef6dd5",
+      "condition": "7e6df4e4-8734-476b-af32-73aa4d46c02f"
+    },
+    "type": "ConditionalGroupState",
+    "uid": "fd84b251-353f-47fb-aedf-d05a711eca57",
+    "$$hashKey": "object:520"
+  },
+  "d9c03b92-6746-4b94-bead-fdc875182df6": {
+    "attributes": {
+      "name": "perso1-wbag",
+      "group": "b53bec23-29f7-4767-9f7d-a747ead13358",
+      "sprites": [
+        "1ab3b31d-79bb-4e7f-81ca-e2b8d0f7cd96"
+      ]
+    },
+    "trashCan": {
+      "name": "perso1-wbag",
+      "group": "b53bec23-29f7-4767-9f7d-a747ead13358",
+      "sprites": [
+        "1ab3b31d-79bb-4e7f-81ca-e2b8d0f7cd96"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "d9c03b92-6746-4b94-bead-fdc875182df6",
+    "$$hashKey": "object:616"
+  },
+  "d4e41439-d912-4978-9790-e62960f3e09c": {
+    "attributes": {
+      "name": "perso1",
+      "group": "b53bec23-29f7-4767-9f7d-a747ead13358",
+      "conditionalstates": [
+        "fd84b251-353f-47fb-aedf-d05a711eca57"
+      ],
+      "defaultstate": "d9c03b92-6746-4b94-bead-fdc875182df6"
+    },
+    "trashCan": {
+      "name": "perso1",
+      "group": "b53bec23-29f7-4767-9f7d-a747ead13358",
+      "conditionalstates": [
+        "fd84b251-353f-47fb-aedf-d05a711eca57"
+      ],
+      "defaultstate": ""
+    },
+    "type": "ConditionalGroupStateSet",
+    "uid": "d4e41439-d912-4978-9790-e62960f3e09c",
+    "$$hashKey": "object:491"
+  },
+  "b90b36f7-7645-45db-a23f-f78ec1384cf2": {
+    "attributes": {
+      "name": "perso4-bag",
+      "group": "739b16f1-0bff-4267-b61e-5157c0d11437",
+      "sprites": [
+        "8459267a-8206-4fa2-80b3-7bdf126ca88f",
+        "ec1f3abe-ccbf-46bf-8f44-8a7549e3fee7"
+      ]
+    },
+    "trashCan": {
+      "name": "perso4-bag",
+      "group": "739b16f1-0bff-4267-b61e-5157c0d11437",
+      "sprites": [
+        "8459267a-8206-4fa2-80b3-7bdf126ca88f",
+        "ec1f3abe-ccbf-46bf-8f44-8a7549e3fee7"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "b90b36f7-7645-45db-a23f-f78ec1384cf2",
+    "$$hashKey": "object:727"
+  },
+  "124d1f2c-a8d5-412e-b9a2-e5e11c54f1ac": {
+    "attributes": {
+      "state": "b90b36f7-7645-45db-a23f-f78ec1384cf2",
+      "condition": "7e6df4e4-8734-476b-af32-73aa4d46c02f"
+    },
+    "trashCan": {
+      "state": "b90b36f7-7645-45db-a23f-f78ec1384cf2",
+      "condition": "7e6df4e4-8734-476b-af32-73aa4d46c02f"
+    },
+    "type": "ConditionalGroupState",
+    "uid": "124d1f2c-a8d5-412e-b9a2-e5e11c54f1ac",
+    "$$hashKey": "object:706"
+  },
+  "40bf8ebb-e819-49e2-a82f-89085b9b367c": {
+    "attributes": {
+      "name": "perso5-wbag",
+      "group": "739b16f1-0bff-4267-b61e-5157c0d11437",
+      "sprites": [
+        "ec1f3abe-ccbf-46bf-8f44-8a7549e3fee7"
+      ]
+    },
+    "trashCan": {
+      "name": "perso5-wbag",
+      "group": "739b16f1-0bff-4267-b61e-5157c0d11437",
+      "sprites": [
+        "ec1f3abe-ccbf-46bf-8f44-8a7549e3fee7"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "40bf8ebb-e819-49e2-a82f-89085b9b367c",
+    "$$hashKey": "object:808"
+  },
+  "bad3f38c-c54e-434a-b2f2-1271afc39cf2": {
+    "attributes": {
+      "name": "perso4",
+      "group": "739b16f1-0bff-4267-b61e-5157c0d11437",
+      "conditionalstates": [
+        "124d1f2c-a8d5-412e-b9a2-e5e11c54f1ac"
+      ],
+      "defaultstate": "40bf8ebb-e819-49e2-a82f-89085b9b367c"
+    },
+    "trashCan": {
+      "name": "perso4",
+      "group": "739b16f1-0bff-4267-b61e-5157c0d11437",
+      "conditionalstates": [
+        "124d1f2c-a8d5-412e-b9a2-e5e11c54f1ac"
+      ],
+      "defaultstate": ""
+    },
+    "type": "ConditionalGroupStateSet",
+    "uid": "bad3f38c-c54e-434a-b2f2-1271afc39cf2",
+    "$$hashKey": "object:702"
+  },
+  "7489f6f1-0357-4c04-9ef0-a00c18a634a4": {
+    "attributes": {
+      "name": "perso5-bag",
+      "group": "3cabcbfa-e519-4d30-951f-1e1d10f66a12",
+      "sprites": [
+        "26801000-8a50-4749-bf73-22e65216f8da",
+        "7763843e-ddf3-41a1-829c-4e1a305733bb"
+      ]
+    },
+    "trashCan": {
+      "name": "perso5-bag",
+      "group": "3cabcbfa-e519-4d30-951f-1e1d10f66a12",
+      "sprites": [
+        "26801000-8a50-4749-bf73-22e65216f8da",
+        "7763843e-ddf3-41a1-829c-4e1a305733bb"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "7489f6f1-0357-4c04-9ef0-a00c18a634a4",
+    "$$hashKey": "object:871"
+  },
+  "d73a26d9-23a7-4b6e-bb0b-0e7ccd85fad9": {
+    "attributes": {
+      "state": "7489f6f1-0357-4c04-9ef0-a00c18a634a4",
+      "condition": "7e6df4e4-8734-476b-af32-73aa4d46c02f"
+    },
+    "trashCan": {
+      "state": "7489f6f1-0357-4c04-9ef0-a00c18a634a4",
+      "condition": "7e6df4e4-8734-476b-af32-73aa4d46c02f"
+    },
+    "type": "ConditionalGroupState",
+    "uid": "d73a26d9-23a7-4b6e-bb0b-0e7ccd85fad9",
+    "$$hashKey": "object:848"
+  },
+  "f4495452-3b67-475c-9885-0374a0220824": {
+    "attributes": {
+      "name": "perso5-wbag",
+      "group": "3cabcbfa-e519-4d30-951f-1e1d10f66a12",
+      "sprites": [
+        "7763843e-ddf3-41a1-829c-4e1a305733bb"
+      ]
+    },
+    "trashCan": {
+      "name": "perso5-bag",
+      "group": "3cabcbfa-e519-4d30-951f-1e1d10f66a12",
+      "sprites": [
+        "7763843e-ddf3-41a1-829c-4e1a305733bb"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "f4495452-3b67-475c-9885-0374a0220824",
+    "$$hashKey": "object:958"
+  },
+  "69fa547e-d28e-4a39-a51d-34b5a081a752": {
+    "attributes": {
+      "name": "perso5",
+      "group": "3cabcbfa-e519-4d30-951f-1e1d10f66a12",
+      "conditionalstates": [
+        "d73a26d9-23a7-4b6e-bb0b-0e7ccd85fad9"
+      ],
+      "defaultstate": "f4495452-3b67-475c-9885-0374a0220824"
+    },
+    "trashCan": {
+      "name": "perso5",
+      "group": "3cabcbfa-e519-4d30-951f-1e1d10f66a12",
+      "conditionalstates": [
+        "d73a26d9-23a7-4b6e-bb0b-0e7ccd85fad9"
+      ],
+      "defaultstate": ""
+    },
+    "type": "ConditionalGroupStateSet",
+    "uid": "69fa547e-d28e-4a39-a51d-34b5a081a752",
+    "$$hashKey": "object:844"
+  },
+  "31728092-fe86-405e-af68-236569b2b367": {
+    "attributes": {
+      "name": "perso6-bag",
+      "group": "ec7f47a3-cfd5-43f5-82f0-a130a6d47c6a",
+      "sprites": [
+        "e3817525-6c2c-423f-948e-853a6bc69ba2",
+        "7c55bb81-f405-4300-ad9a-849be8309bb9"
+      ]
+    },
+    "trashCan": {
+      "name": "perso6-bag",
+      "group": "ec7f47a3-cfd5-43f5-82f0-a130a6d47c6a",
+      "sprites": [
+        "e3817525-6c2c-423f-948e-853a6bc69ba2",
+        "7c55bb81-f405-4300-ad9a-849be8309bb9"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "31728092-fe86-405e-af68-236569b2b367",
+    "$$hashKey": "object:1027"
+  },
+  "e78d02e3-aa63-414b-9a30-99d0a8091af0": {
+    "attributes": {
+      "state": "31728092-fe86-405e-af68-236569b2b367",
+      "condition": "7e6df4e4-8734-476b-af32-73aa4d46c02f"
+    },
+    "trashCan": {
+      "state": "31728092-fe86-405e-af68-236569b2b367",
+      "condition": "7e6df4e4-8734-476b-af32-73aa4d46c02f"
+    },
+    "type": "ConditionalGroupState",
+    "uid": "e78d02e3-aa63-414b-9a30-99d0a8091af0",
+    "$$hashKey": "object:1002"
+  },
+  "52dd7d2e-daa8-4e23-92e3-99d45153b566": {
+    "attributes": {
+      "name": "perso6-wbag",
+      "group": "ec7f47a3-cfd5-43f5-82f0-a130a6d47c6a",
+      "sprites": [
+        "7c55bb81-f405-4300-ad9a-849be8309bb9"
+      ]
+    },
+    "trashCan": {
+      "name": "perso6-wbag",
+      "group": "ec7f47a3-cfd5-43f5-82f0-a130a6d47c6a",
+      "sprites": [
+        "7c55bb81-f405-4300-ad9a-849be8309bb9"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "52dd7d2e-daa8-4e23-92e3-99d45153b566",
+    "$$hashKey": "object:1120"
+  },
+  "cd88da51-a4f4-4685-8d36-ac371912c54f": {
+    "attributes": {
+      "name": "perso6",
+      "group": "ec7f47a3-cfd5-43f5-82f0-a130a6d47c6a",
+      "conditionalstates": [
+        "e78d02e3-aa63-414b-9a30-99d0a8091af0"
+      ],
+      "defaultstate": "52dd7d2e-daa8-4e23-92e3-99d45153b566"
+    },
+    "trashCan": {
+      "name": "perso6",
+      "group": "ec7f47a3-cfd5-43f5-82f0-a130a6d47c6a",
+      "conditionalstates": [
+        "e78d02e3-aa63-414b-9a30-99d0a8091af0"
+      ],
+      "defaultstate": ""
+    },
+    "type": "ConditionalGroupStateSet",
+    "uid": "cd88da51-a4f4-4685-8d36-ac371912c54f",
+    "$$hashKey": "object:998"
+  },
+  "44d0732a-f005-40bc-958b-d8d96cdbfd53": {
+    "attributes": {
+      "name": "perso7-bag",
+      "group": "65feb714-1e3d-4098-b923-05a8f0f908c9",
+      "sprites": [
+        "4d8dcb97-0d40-4919-9230-a4cb7f1b6e87",
+        "0a382ea3-0fcf-4685-9e5c-67d6823759f3"
+      ]
+    },
+    "trashCan": {
+      "name": "perso7-bag",
+      "group": "65feb714-1e3d-4098-b923-05a8f0f908c9",
+      "sprites": [
+        "4d8dcb97-0d40-4919-9230-a4cb7f1b6e87",
+        "0a382ea3-0fcf-4685-9e5c-67d6823759f3"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "44d0732a-f005-40bc-958b-d8d96cdbfd53",
+    "$$hashKey": "object:1261"
+  },
+  "716b155a-3b5c-4bbb-a2ca-c70d01250c85": {
+    "attributes": {
+      "state": "44d0732a-f005-40bc-958b-d8d96cdbfd53",
+      "condition": "7e6df4e4-8734-476b-af32-73aa4d46c02f"
+    },
+    "trashCan": {
+      "state": "44d0732a-f005-40bc-958b-d8d96cdbfd53",
+      "condition": "7e6df4e4-8734-476b-af32-73aa4d46c02f"
+    },
+    "type": "ConditionalGroupState",
+    "uid": "716b155a-3b5c-4bbb-a2ca-c70d01250c85",
+    "$$hashKey": "object:1234"
+  },
+  "a49440fa-8174-4b40-821a-63847d19ec72": {
+    "attributes": {
+      "name": "perso7-wbag",
+      "group": "65feb714-1e3d-4098-b923-05a8f0f908c9",
+      "sprites": [
+        "0a382ea3-0fcf-4685-9e5c-67d6823759f3"
+      ]
+    },
+    "trashCan": {
+      "name": "perso7-wbag",
+      "group": "65feb714-1e3d-4098-b923-05a8f0f908c9",
+      "sprites": [
+        "0a382ea3-0fcf-4685-9e5c-67d6823759f3"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "a49440fa-8174-4b40-821a-63847d19ec72",
+    "$$hashKey": "object:1360"
+  },
+  "e9584f07-775c-4dd8-a6cb-49f335a71cd7": {
+    "attributes": {
+      "name": "perso7",
+      "group": "65feb714-1e3d-4098-b923-05a8f0f908c9",
+      "conditionalstates": [
+        "716b155a-3b5c-4bbb-a2ca-c70d01250c85"
+      ],
+      "defaultstate": "a49440fa-8174-4b40-821a-63847d19ec72"
+    },
+    "trashCan": {
+      "name": "perso7",
+      "group": "65feb714-1e3d-4098-b923-05a8f0f908c9",
+      "conditionalstates": [
+        "716b155a-3b5c-4bbb-a2ca-c70d01250c85"
+      ],
+      "defaultstate": ""
+    },
+    "type": "ConditionalGroupStateSet",
+    "uid": "e9584f07-775c-4dd8-a6cb-49f335a71cd7",
+    "$$hashKey": "object:1189"
+  },
+  "41a6a93c-1980-4031-bc2c-ec97bfd928bc": {
+    "attributes": {
+      "name": "perso8-bag",
+      "group": "bd4870a8-f11c-49c8-aa5a-1a36e9ff2476",
+      "sprites": [
+        "c65975b0-12d6-4c82-bebe-6e208b36f271",
+        "97b8a8a5-8dde-4f83-b150-e9674746ee84",
+        "97b8a8a5-8dde-4f83-b150-e9674746ee84"
+      ]
+    },
+    "trashCan": {
+      "name": "perso8-bag",
+      "group": "bd4870a8-f11c-49c8-aa5a-1a36e9ff2476",
+      "sprites": [
+        "c65975b0-12d6-4c82-bebe-6e208b36f271",
+        "97b8a8a5-8dde-4f83-b150-e9674746ee84",
+        "97b8a8a5-8dde-4f83-b150-e9674746ee84"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "41a6a93c-1980-4031-bc2c-ec97bfd928bc",
+    "$$hashKey": "object:1513"
+  },
+  "ec4d0f95-be39-40ee-9389-8fbd70b60bed": {
+    "attributes": {
+      "state": "41a6a93c-1980-4031-bc2c-ec97bfd928bc",
+      "condition": "7e6df4e4-8734-476b-af32-73aa4d46c02f"
+    },
+    "trashCan": {
+      "state": "41a6a93c-1980-4031-bc2c-ec97bfd928bc",
+      "condition": "7e6df4e4-8734-476b-af32-73aa4d46c02f"
+    },
+    "type": "ConditionalGroupState",
+    "uid": "ec4d0f95-be39-40ee-9389-8fbd70b60bed",
+    "$$hashKey": "object:1484"
+  },
+  "adf6bfbb-22a6-452d-a86e-1da6c3932c4f": {
+    "attributes": {
+      "name": "perso8-wbag",
+      "group": "bd4870a8-f11c-49c8-aa5a-1a36e9ff2476",
+      "sprites": [
+        "97b8a8a5-8dde-4f83-b150-e9674746ee84"
+      ]
+    },
+    "trashCan": {
+      "name": "perso8-wbag",
+      "group": "bd4870a8-f11c-49c8-aa5a-1a36e9ff2476",
+      "sprites": []
+    },
+    "type": "GroupState",
+    "uid": "adf6bfbb-22a6-452d-a86e-1da6c3932c4f",
+    "$$hashKey": "object:1624"
+  },
+  "45ce893e-6b11-490b-bde0-d23d47c6b86b": {
+    "attributes": {
+      "name": "perso8",
+      "group": "bd4870a8-f11c-49c8-aa5a-1a36e9ff2476",
+      "conditionalstates": [
+        "ec4d0f95-be39-40ee-9389-8fbd70b60bed"
+      ],
+      "defaultstate": "adf6bfbb-22a6-452d-a86e-1da6c3932c4f"
+    },
+    "trashCan": {
+      "name": "perso8",
+      "group": "bd4870a8-f11c-49c8-aa5a-1a36e9ff2476",
+      "conditionalstates": [
+        "ec4d0f95-be39-40ee-9389-8fbd70b60bed"
+      ],
+      "defaultstate": ""
+    },
+    "type": "ConditionalGroupStateSet",
+    "uid": "45ce893e-6b11-490b-bde0-d23d47c6b86b",
+    "$$hashKey": "object:1435"
+  },
+  "55e56ce0-bb60-40be-a465-6067eeb5466a": {
+    "attributes": {
+      "name": "perso",
+      "spritesgroup": "b53bec23-29f7-4767-9f7d-a747ead13358",
+      "looptype": "",
+      "states": [
+        "d4e41439-d912-4978-9790-e62960f3e09c",
+        "bad3f38c-c54e-434a-b2f2-1271afc39cf2",
+        "69fa547e-d28e-4a39-a51d-34b5a081a752",
+        "cd88da51-a4f4-4685-8d36-ac371912c54f",
+        "e9584f07-775c-4dd8-a6cb-49f335a71cd7",
+        "45ce893e-6b11-490b-bde0-d23d47c6b86b"
+      ]
+    },
+    "trashCan": {
+      "name": "perso",
+      "spritesgroup": "b53bec23-29f7-4767-9f7d-a747ead13358",
+      "looptype": "",
+      "states": [
+        "d4e41439-d912-4978-9790-e62960f3e09c",
+        "bad3f38c-c54e-434a-b2f2-1271afc39cf2",
+        "69fa547e-d28e-4a39-a51d-34b5a081a752",
+        "cd88da51-a4f4-4685-8d36-ac371912c54f",
+        "e9584f07-775c-4dd8-a6cb-49f335a71cd7",
+        "45ce893e-6b11-490b-bde0-d23d47c6b86b"
+      ]
+    },
+    "type": "Sequence",
+    "uid": "55e56ce0-bb60-40be-a465-6067eeb5466a",
+    "$$hashKey": "object:53"
+  },
+  "ea13aeb7-df0f-4a1c-8955-25cb160f1493": {
+    "attributes": {
+      "name": "fake1",
+      "condition": "",
+      "actiontype": "displaysprite",
+      "sprite": "cf2a62c5-53dd-4c9e-b4a2-802e34438f1b"
+    },
+    "trashCan": {
+      "name": "fake1",
+      "condition": "",
+      "actiontype": "displaysprite",
+      "sprite": "cf2a62c5-53dd-4c9e-b4a2-802e34438f1b"
+    },
+    "type": "Action",
+    "uid": "ea13aeb7-df0f-4a1c-8955-25cb160f1493",
+    "$$hashKey": "object:301"
+  },
+  "bd489abe-6cbc-4263-b6f2-67b835c7290b": {
+    "attributes": {
+      "name": "BoutonA",
+      "sprite": "5d3973eb-7131-478e-9df4-86dbbb194511"
+    },
+    "trashCan": {
+      "name": "BoutonA",
+      "sprite": "5d3973eb-7131-478e-9df4-86dbbb194511"
+    },
+    "type": "Control",
+    "uid": "bd489abe-6cbc-4263-b6f2-67b835c7290b",
+    "$$hashKey": "object:146"
+  },
+  "5a608fd2-c37d-4459-bf9a-5fb3e144485e": {
+    "attributes": {
+      "name": "Click Bouton A",
+      "condition": "",
+      "triggertype": "controlclick",
+      "control": "bd489abe-6cbc-4263-b6f2-67b835c7290b",
+      "activatedonstart": "false",
+      "eventtype": "controldown"
+    },
+    "trashCan": {
+      "name": "Click Bouton A",
+      "condition": "",
+      "triggertype": "controlclick",
+      "control": "bd489abe-6cbc-4263-b6f2-67b835c7290b"
+    },
+    "type": "Trigger",
+    "uid": "5a608fd2-c37d-4459-bf9a-5fb3e144485e",
+    "$$hashKey": "object:159"
+  },
+  "bb3cd82d-3ef7-4ecf-8c52-140ed123aafe": {
+    "attributes": {
+      "name": "perso-next",
+      "condition": "",
+      "actiontype": "nextinsequence",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a"
+    },
+    "trashCan": {
+      "name": "perso-next",
+      "condition": "",
+      "actiontype": "nextinsequence",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a"
+    },
+    "type": "Action",
+    "uid": "bb3cd82d-3ef7-4ecf-8c52-140ed123aafe",
+    "$$hashKey": "object:128"
+  },
+  "1278faed-0b55-4321-b007-a5a91b1fe5b3": {
+    "attributes": {
+      "name": "perso-previous",
+      "condition": "",
+      "actiontype": "previousinsequence",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a"
+    },
+    "trashCan": {
+      "name": "perso-previous",
+      "condition": "",
+      "actiontype": "previousinsequence",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a"
+    },
+    "type": "Action",
+    "uid": "1278faed-0b55-4321-b007-a5a91b1fe5b3",
+    "$$hashKey": "object:179"
+  },
+  "203a1f3f-248f-41fc-95d6-d7466330599e": {
+    "attributes": {
+      "name": "BoutonB",
+      "sprite": "68efe720-e1ee-41c4-baf0-844c742ec3a7"
+    },
+    "trashCan": {
+      "name": "Bouton B",
+      "sprite": "68efe720-e1ee-41c4-baf0-844c742ec3a7"
+    },
+    "type": "Control",
+    "uid": "203a1f3f-248f-41fc-95d6-d7466330599e",
+    "$$hashKey": "object:209"
+  },
+  "f5333d51-7cc9-4a3d-a5ff-bf83145086ee": {
+    "attributes": {
+      "name": "Click Bouton B",
+      "action": "",
+      "condition": "",
+      "triggertype": "controlclick",
+      "control": "203a1f3f-248f-41fc-95d6-d7466330599e",
+      "activatedonstart": "false",
+      "eventtype": "controldown"
+    },
+    "trashCan": {
+      "name": "Click Bouton B",
+      "action": "",
+      "condition": "",
+      "triggertype": "controlclick",
+      "control": "203a1f3f-248f-41fc-95d6-d7466330599e"
+    },
+    "type": "Trigger",
+    "uid": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee",
+    "$$hashKey": "object:254"
+  },
+  "c8489fd9-0560-42b4-9b91-d90bf130be12": {
+    "attributes": {
+      "name": "Horloge1",
+      "period": 1
+    },
+    "trashCan": {},
+    "type": "Clock",
+    "uid": "c8489fd9-0560-42b4-9b91-d90bf130be12",
+    "$$hashKey": "object:41"
+  },
+  "97bb29b8-8392-4811-a1cb-b8eefd2a842d": {
+    "attributes": {
+      "name": "blip",
+      "file": "blip.mp3",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "blip1",
+      "file": "",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SoundFileReference",
+    "uid": "97bb29b8-8392-4811-a1cb-b8eefd2a842d",
+    "$$hashKey": "object:291"
+  },
+  "c333cffc-ba5d-4623-b998-f4e769675440": {
+    "attributes": {
+      "name": "taken",
+      "file": "taken.mp3",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "trashCan": {
+      "name": "taken",
+      "file": "taken.mp3",
+      "package": "ed0a796f-73af-4ad2-a91a-0fd1a615a6cb"
+    },
+    "type": "SoundFileReference",
+    "uid": "c333cffc-ba5d-4623-b998-f4e769675440",
+    "$$hashKey": "object:302"
+  },
+  "938341e7-597d-4216-af08-4554f17c6c85": {
+    "attributes": {
+      "name": "blip",
+      "file": "97bb29b8-8392-4811-a1cb-b8eefd2a842d"
+    },
+    "trashCan": {
+      "name": "blip",
+      "file": "97bb29b8-8392-4811-a1cb-b8eefd2a842d"
+    },
+    "type": "Sound",
+    "uid": "938341e7-597d-4216-af08-4554f17c6c85",
+    "$$hashKey": "object:311"
+  },
+  "358850cc-ec2e-4a30-95f7-6d5ca5dbabf5": {
+    "attributes": {
+      "name": "taken",
+      "file": "c333cffc-ba5d-4623-b998-f4e769675440"
+    },
+    "trashCan": {
+      "name": "taken",
+      "file": "c333cffc-ba5d-4623-b998-f4e769675440"
+    },
+    "type": "Sound",
+    "uid": "358850cc-ec2e-4a30-95f7-6d5ca5dbabf5",
+    "$$hashKey": "object:320"
+  },
+  "307b28d2-2748-4f98-bcce-8b9479d458e0": {
+    "attributes": {
+      "name": "node1",
+      "state": "d4e41439-d912-4978-9790-e62960f3e09c",
+      "links": [
+        "442e0e44-9db3-4043-abfe-ce0b29be957f"
+      ]
+    },
+    "trashCan": {
+      "name": "node1",
+      "state": "d4e41439-d912-4978-9790-e62960f3e09c",
+      "links": [
+        "442e0e44-9db3-4043-abfe-ce0b29be957f"
+      ]
+    },
+    "type": "GraphNode",
+    "uid": "307b28d2-2748-4f98-bcce-8b9479d458e0",
+    "$$hashKey": "object:902"
+  },
+  "d15926ef-aafe-407d-9dda-8c653394cd9f": {
+    "attributes": {
+      "name": "node2",
+      "state": "bad3f38c-c54e-434a-b2f2-1271afc39cf2",
+      "links": [
+        "df050db1-b26c-48a2-b8fe-e4d5e9572a00",
+        "67a4a8ec-6274-49dd-b3a2-bf726de8fb49"
+      ]
+    },
+    "trashCan": {
+      "name": "node2",
+      "state": "bad3f38c-c54e-434a-b2f2-1271afc39cf2",
+      "links": [
+        "df050db1-b26c-48a2-b8fe-e4d5e9572a00",
+        "67a4a8ec-6274-49dd-b3a2-bf726de8fb49"
+      ]
+    },
+    "type": "GraphNode",
+    "uid": "d15926ef-aafe-407d-9dda-8c653394cd9f",
+    "$$hashKey": "object:936"
+  },
+  "3906d029-2ef7-4ad8-8e3e-63a5a7556481": {
+    "attributes": {
+      "name": "node3",
+      "state": "69fa547e-d28e-4a39-a51d-34b5a081a752",
+      "links": [
+        "5dd2efc5-12f4-4108-a76f-eb3a2680a7ea",
+        "6b56fcfb-073a-4bfe-9985-2a8e5444d264"
+      ]
+    },
+    "trashCan": {
+      "name": "node3",
+      "state": "69fa547e-d28e-4a39-a51d-34b5a081a752",
+      "links": [
+        "5dd2efc5-12f4-4108-a76f-eb3a2680a7ea",
+        "6b56fcfb-073a-4bfe-9985-2a8e5444d264"
+      ]
+    },
+    "type": "GraphNode",
+    "uid": "3906d029-2ef7-4ad8-8e3e-63a5a7556481",
+    "$$hashKey": "object:940"
+  },
+  "adfe5d91-0deb-452f-af38-adb42c10eaf5": {
+    "attributes": {
+      "name": "node4",
+      "state": "cd88da51-a4f4-4685-8d36-ac371912c54f",
+      "links": [
+        "480d2bcf-9ab1-4e9e-8c3a-827c695a8f12",
+        "e25cacca-b844-40c3-a368-7df9f9ac35ca",
+        "99eaa47f-323d-47e6-867f-a45d810dc332"
+      ]
+    },
+    "trashCan": {
+      "name": "node4",
+      "state": "cd88da51-a4f4-4685-8d36-ac371912c54f",
+      "links": [
+        "480d2bcf-9ab1-4e9e-8c3a-827c695a8f12",
+        "e25cacca-b844-40c3-a368-7df9f9ac35ca"
+      ]
+    },
+    "type": "GraphNode",
+    "uid": "adfe5d91-0deb-452f-af38-adb42c10eaf5",
+    "$$hashKey": "object:944"
+  },
+  "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45": {
+    "attributes": {
+      "name": "node5",
+      "state": "e9584f07-775c-4dd8-a6cb-49f335a71cd7",
+      "links": [
+        "0d02ca14-a4c4-42a3-8675-719b9975183b",
+        "1215802c-d2d3-46cd-8fc7-ef65cc75bc89"
+      ]
+    },
+    "trashCan": {
+      "name": "node5",
+      "state": "e9584f07-775c-4dd8-a6cb-49f335a71cd7",
+      "links": [
+        "0d02ca14-a4c4-42a3-8675-719b9975183b",
+        "1215802c-d2d3-46cd-8fc7-ef65cc75bc89"
+      ]
+    },
+    "type": "GraphNode",
+    "uid": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
+    "$$hashKey": "object:948"
+  },
+  "9cf22085-dc54-4414-bd04-fe76e68e7b68": {
+    "attributes": {
+      "name": "node6",
+      "state": "45ce893e-6b11-490b-bde0-d23d47c6b86b",
+      "links": [
+        "1c463a4d-57ef-4953-b3e4-d3abcdd662c2"
+      ]
+    },
+    "trashCan": {
+      "name": "node6",
+      "state": "45ce893e-6b11-490b-bde0-d23d47c6b86b",
+      "links": [
+        "1c463a4d-57ef-4953-b3e4-d3abcdd662c2"
+      ]
+    },
+    "type": "GraphNode",
+    "uid": "9cf22085-dc54-4414-bd04-fe76e68e7b68",
+    "$$hashKey": "object:952"
+  },
+  "9e1b8354-63ef-4e2c-a390-acc0cc592358": {
+    "attributes": {
+      "name": "graph1",
+      "nodes": [
+        "307b28d2-2748-4f98-bcce-8b9479d458e0",
+        "d15926ef-aafe-407d-9dda-8c653394cd9f",
+        "3906d029-2ef7-4ad8-8e3e-63a5a7556481",
+        "adfe5d91-0deb-452f-af38-adb42c10eaf5",
+        "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
+        "9cf22085-dc54-4414-bd04-fe76e68e7b68",
+        "ca28fd40-e60a-48ef-a812-84c6886235e3"
+      ]
+    },
+    "trashCan": {},
+    "type": "Graph",
+    "uid": "9e1b8354-63ef-4e2c-a390-acc0cc592358",
+    "$$hashKey": "object:958"
+  },
+  "442e0e44-9db3-4043-abfe-ce0b29be957f": {
+    "attributes": {
+      "name": "link1-2",
+      "destnode": "d15926ef-aafe-407d-9dda-8c653394cd9f",
+      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
+    },
+    "trashCan": {
+      "name": "link1-2",
+      "destnode": "d15926ef-aafe-407d-9dda-8c653394cd9f",
+      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
+    },
+    "type": "GraphLink",
+    "uid": "442e0e44-9db3-4043-abfe-ce0b29be957f",
+    "$$hashKey": "object:1016"
+  },
+  "df050db1-b26c-48a2-b8fe-e4d5e9572a00": {
+    "attributes": {
+      "name": "link2-1",
+      "destnode": "307b28d2-2748-4f98-bcce-8b9479d458e0",
+      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
+    },
+    "trashCan": {
+      "name": "link2-1",
+      "destnode": "307b28d2-2748-4f98-bcce-8b9479d458e0",
+      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
+    },
+    "type": "GraphLink",
+    "uid": "df050db1-b26c-48a2-b8fe-e4d5e9572a00",
+    "$$hashKey": "object:1074"
+  },
+  "67a4a8ec-6274-49dd-b3a2-bf726de8fb49": {
+    "attributes": {
+      "name": "link2-3",
+      "destnode": "3906d029-2ef7-4ad8-8e3e-63a5a7556481",
+      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
+    },
+    "trashCan": {
+      "name": "link2-3",
+      "destnode": "3906d029-2ef7-4ad8-8e3e-63a5a7556481",
+      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
+    },
+    "type": "GraphLink",
+    "uid": "67a4a8ec-6274-49dd-b3a2-bf726de8fb49",
+    "$$hashKey": "object:1133"
+  },
+  "5dd2efc5-12f4-4108-a76f-eb3a2680a7ea": {
+    "attributes": {
+      "name": "link3-2",
+      "destnode": "d15926ef-aafe-407d-9dda-8c653394cd9f",
+      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
+    },
+    "trashCan": {
+      "name": "link3-2",
+      "destnode": "d15926ef-aafe-407d-9dda-8c653394cd9f",
+      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
+    },
+    "type": "GraphLink",
+    "uid": "5dd2efc5-12f4-4108-a76f-eb3a2680a7ea",
+    "$$hashKey": "object:1249"
+  },
+  "6b56fcfb-073a-4bfe-9985-2a8e5444d264": {
+    "attributes": {
+      "name": "link3-4",
+      "destnode": "adfe5d91-0deb-452f-af38-adb42c10eaf5",
+      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
+    },
+    "trashCan": {
+      "name": "link3-4",
+      "destnode": "adfe5d91-0deb-452f-af38-adb42c10eaf5",
+      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
+    },
+    "type": "GraphLink",
+    "uid": "6b56fcfb-073a-4bfe-9985-2a8e5444d264",
+    "$$hashKey": "object:1310"
+  },
+  "480d2bcf-9ab1-4e9e-8c3a-827c695a8f12": {
+    "attributes": {
+      "name": "link4-3",
+      "destnode": "3906d029-2ef7-4ad8-8e3e-63a5a7556481",
+      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
+    },
+    "trashCan": {
+      "name": "link4-3",
+      "destnode": "3906d029-2ef7-4ad8-8e3e-63a5a7556481",
+      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
+    },
+    "type": "GraphLink",
+    "uid": "480d2bcf-9ab1-4e9e-8c3a-827c695a8f12",
+    "$$hashKey": "object:1442"
+  },
+  "e25cacca-b844-40c3-a368-7df9f9ac35ca": {
+    "attributes": {
+      "name": "link4-5",
+      "destnode": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
+      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
+    },
+    "trashCan": {
+      "name": "link4-5",
+      "destnode": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
+      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
+    },
+    "type": "GraphLink",
+    "uid": "e25cacca-b844-40c3-a368-7df9f9ac35ca",
+    "$$hashKey": "object:1507"
+  },
+  "0d02ca14-a4c4-42a3-8675-719b9975183b": {
+    "attributes": {
+      "name": "link5-4",
+      "destnode": "adfe5d91-0deb-452f-af38-adb42c10eaf5",
+      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
+    },
+    "trashCan": {
+      "name": "link5-4",
+      "destnode": "adfe5d91-0deb-452f-af38-adb42c10eaf5",
+      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
+    },
+    "type": "GraphLink",
+    "uid": "0d02ca14-a4c4-42a3-8675-719b9975183b",
+    "$$hashKey": "object:1578"
+  },
+  "1215802c-d2d3-46cd-8fc7-ef65cc75bc89": {
+    "attributes": {
+      "name": "link5-6",
+      "destnode": "9cf22085-dc54-4414-bd04-fe76e68e7b68",
+      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
+    },
+    "trashCan": {
+      "name": "link5-6",
+      "destnode": "9cf22085-dc54-4414-bd04-fe76e68e7b68",
+      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
+    },
+    "type": "GraphLink",
+    "uid": "1215802c-d2d3-46cd-8fc7-ef65cc75bc89",
+    "$$hashKey": "object:1647"
+  },
+  "1c463a4d-57ef-4953-b3e4-d3abcdd662c2": {
+    "attributes": {
+      "name": "link6-5",
+      "destnode": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
+      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
+    },
+    "trashCan": {
+      "name": "link6-5",
+      "destnode": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
+      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
+    },
+    "type": "GraphLink",
+    "uid": "1c463a4d-57ef-4953-b3e4-d3abcdd662c2",
+    "$$hashKey": "object:1722"
+  },
+  "f5ea1575-b263-4f7f-89c3-f47cb2fa7936": {
+    "attributes": {
+      "name": "Timer Temp",
+      "action": "",
+      "condition": "",
+      "triggertype": "timeout",
+      "time": 0.8,
+      "activatedonstart": "false"
+    },
+    "trashCan": {
+      "name": "timerTemp",
+      "action": "",
+      "condition": "",
+      "triggertype": "timeout"
+    },
+    "type": "Trigger",
+    "uid": "f5ea1575-b263-4f7f-89c3-f47cb2fa7936",
+    "$$hashKey": "object:135"
+  },
+  "06152654-0ff5-484b-bf9d-4822d5e67a86": {
+    "attributes": {
+      "name": "head",
+      "sprites": [
+        "cf2a62c5-53dd-4c9e-b4a2-802e34438f1b"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "06152654-0ff5-484b-bf9d-4822d5e67a86",
+    "$$hashKey": "object:160"
+  },
+  "f3d2acfa-a5b2-4c9f-a214-f88e3ce6f091": {
+    "attributes": {
+      "name": "head",
+      "group": "06152654-0ff5-484b-bf9d-4822d5e67a86",
+      "sprites": [
+        "cf2a62c5-53dd-4c9e-b4a2-802e34438f1b"
+      ]
+    },
+    "trashCan": {
+      "name": "head",
+      "group": "06152654-0ff5-484b-bf9d-4822d5e67a86",
+      "sprites": [
+        "cf2a62c5-53dd-4c9e-b4a2-802e34438f1b"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "f3d2acfa-a5b2-4c9f-a214-f88e3ce6f091",
+    "$$hashKey": "object:374"
+  },
+  "ca28fd40-e60a-48ef-a812-84c6886235e3": {
+    "attributes": {
+      "name": "head",
+      "state": "f3d2acfa-a5b2-4c9f-a214-f88e3ce6f091",
+      "links": [
+        "881d24d9-310e-4d19-9882-d6466e5ce5b8"
+      ]
+    },
+    "trashCan": {
+      "name": "head",
+      "state": "f3d2acfa-a5b2-4c9f-a214-f88e3ce6f091",
+      "links": [
+        "881d24d9-310e-4d19-9882-d6466e5ce5b8"
+      ]
+    },
+    "type": "GraphNode",
+    "uid": "ca28fd40-e60a-48ef-a812-84c6886235e3",
+    "$$hashKey": "object:420"
+  },
+  "881d24d9-310e-4d19-9882-d6466e5ce5b8": {
+    "attributes": {
+      "name": "link-head-5",
+      "destnode": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
+      "trigger": "f5ea1575-b263-4f7f-89c3-f47cb2fa7936"
+    },
+    "trashCan": {
+      "name": "link-head-5",
+      "destnode": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
+      "trigger": "f5ea1575-b263-4f7f-89c3-f47cb2fa7936"
+    },
+    "type": "GraphLink",
+    "uid": "881d24d9-310e-4d19-9882-d6466e5ce5b8",
+    "$$hashKey": "object:609"
+  },
+  "81761c92-6137-479e-b5b7-ca7dccb66539": {
+    "attributes": {
+      "name": "Start 2",
+      "sprite": "b6bafd79-9aff-446f-b5c1-c0fe830e8992"
+    },
+    "trashCan": {
+      "name": "Start 2",
+      "sprite": "b6bafd79-9aff-446f-b5c1-c0fe830e8992"
+    },
+    "type": "Control",
+    "uid": "81761c92-6137-479e-b5b7-ca7dccb66539",
+    "$$hashKey": "object:797"
+  },
+  "483d1ef8-00f4-43cc-a6a0-bdce008d4579": {
+    "attributes": {
+      "name": "Click Start 2",
+      "action": "",
+      "condition": "",
+      "triggertype": "controlclick",
+      "control": "81761c92-6137-479e-b5b7-ca7dccb66539",
+      "activatedonstart": "false",
+      "eventtype": "controldown"
+    },
+    "trashCan": {
+      "name": "Click start 2",
+      "action": "",
+      "condition": "",
+      "triggertype": "controlclick",
+      "control": "81761c92-6137-479e-b5b7-ca7dccb66539"
+    },
+    "type": "Trigger",
+    "uid": "483d1ef8-00f4-43cc-a6a0-bdce008d4579",
+    "$$hashKey": "object:810"
+  },
+  "99eaa47f-323d-47e6-867f-a45d810dc332": {
+    "attributes": {
+      "name": "link4-head",
+      "destnode": "ca28fd40-e60a-48ef-a812-84c6886235e3",
+      "trigger": "483d1ef8-00f4-43cc-a6a0-bdce008d4579"
+    },
+    "trashCan": {
+      "name": "link4-head",
+      "destnode": "ca28fd40-e60a-48ef-a812-84c6886235e3",
+      "trigger": "483d1ef8-00f4-43cc-a6a0-bdce008d4579"
+    },
+    "type": "GraphLink",
+    "uid": "99eaa47f-323d-47e6-867f-a45d810dc332",
+    "$$hashKey": "object:935"
+  },
+  "a59a722e-a832-44e2-9c98-0fc4998cc6c3": {
+    "attributes": {
+      "name": "Start Main Clock",
+      "condition": "",
+      "actiontype": "clockaction",
+      "clock": "c8489fd9-0560-42b4-9b91-d90bf130be12",
+      "clockaction": "start"
+    },
+    "trashCan": {
+      "name": "Start main clock",
+      "condition": "",
+      "actiontype": "clockaction",
+      "clock": "c8489fd9-0560-42b4-9b91-d90bf130be12",
+      "clockaction": ""
+    },
+    "type": "Action",
+    "uid": "a59a722e-a832-44e2-9c98-0fc4998cc6c3",
+    "$$hashKey": "object:31"
+  },
+  "03b27204-d1ee-4bed-afea-4df2b72d4a1a": {
+    "attributes": {
+      "name": "Clock Listener",
+      "action": "",
+      "condition": "",
+      "activatedonstart": "false",
+      "triggertype": "clockperiod",
+      "clock": "c8489fd9-0560-42b4-9b91-d90bf130be12"
+    },
+    "trashCan": {
+      "name": "Clock Listener",
+      "action": "",
+      "condition": "",
+      "activatedonstart": "false",
+      "triggertype": "clockperiod",
+      "clock": "c8489fd9-0560-42b4-9b91-d90bf130be12"
+    },
+    "type": "Trigger",
+    "uid": "03b27204-d1ee-4bed-afea-4df2b72d4a1a",
+    "$$hashKey": "object:32"
+  },
+  "05f05bd3-f909-4964-b494-c8ff48fc7dae": {
+    "attributes": {
+      "name": "Enable Clock Listener",
+      "condition": "",
+      "actiontype": "triggeraction",
+      "trigger": "03b27204-d1ee-4bed-afea-4df2b72d4a1a",
+      "triggeraction": "enable"
+    },
+    "trashCan": {
+      "name": "Enable Clock Listener",
+      "condition": "",
+      "actiontype": "triggeraction",
+      "trigger": "03b27204-d1ee-4bed-afea-4df2b72d4a1a",
+      "triggeraction": ""
+    },
+    "type": "Action",
+    "uid": "05f05bd3-f909-4964-b494-c8ff48fc7dae",
+    "$$hashKey": "object:73"
+  },
+  "92f2ec08-2a58-4fe4-9320-834338d7819b": {
+    "attributes": {
+      "name": "Start Actions",
+      "condition": "",
+      "actiontype": "actionsset",
+      "actions": [
+        "a59a722e-a832-44e2-9c98-0fc4998cc6c3",
+        "05f05bd3-f909-4964-b494-c8ff48fc7dae"
+      ]
+    },
+    "trashCan": {
+      "name": "",
+      "condition": "",
+      "actiontype": "actionsset"
+    },
+    "type": "Action",
+    "uid": "92f2ec08-2a58-4fe4-9320-834338d7819b",
+    "$$hashKey": "object:156"
+  },
+  "2aa9ffff-cf31-46eb-a452-d5fc4565ede3": {
+    "attributes": {
+      "name": "Start sequence",
+      "actions": [
+        "a59a722e-a832-44e2-9c98-0fc4998cc6c3",
+        "05f05bd3-f909-4964-b494-c8ff48fc7dae"
+      ],
+      "condition": "",
+      "activatedonstart": "false",
+      "triggertype": "gameevent",
+      "eventname": "gamestart"
+    },
+    "trashCan": {
+      "name": "Start sequence",
+      "actions": [
+        "a59a722e-a832-44e2-9c98-0fc4998cc6c3",
+        "05f05bd3-f909-4964-b494-c8ff48fc7dae"
+      ],
+      "condition": "",
+      "activatedonstart": "false",
+      "triggertype": "gameevent"
+    },
+    "type": "Trigger",
+    "uid": "2aa9ffff-cf31-46eb-a452-d5fc4565ede3",
+    "$$hashKey": "object:79"
+  },
+  "ac306e47-51cc-447c-8ba5-dc51b8a63b7f": {
+    "attributes": {
+      "name": "Tentacule 1a",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f",
+        "495f54be-8670-4f04-9880-b4af75bf90a0",
+        "a4e26061-6dcb-40a9-bd98-fb9cec86367f"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "ac306e47-51cc-447c-8ba5-dc51b8a63b7f",
+    "$$hashKey": "object:679"
+  },
+  "f2312dfd-26f3-46ca-9b58-2647efd93bf4": {
+    "attributes": {
+      "name": "Tentacule 1a",
+      "spritesgroup": "ac306e47-51cc-447c-8ba5-dc51b8a63b7f",
+      "looptype": "",
+      "states": [
+        "b536e3eb-2a2b-46de-9b96-c1c1fc8881d4",
+        "946f7147-ef94-40cf-922d-70155c7f83d4",
+        "22c1b716-3d08-4014-a55a-c63ed55acd8e",
+        "c8d042d7-c3ba-411b-808a-3809b91e3f97"
+      ]
+    },
+    "trashCan": {},
+    "type": "Sequence",
+    "uid": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
+    "$$hashKey": "object:676"
+  },
+  "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90": {
+    "attributes": {
+      "name": "Tentacule 1b",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f",
+        "327e3066-c76c-43e1-b38c-27354d8cd1c9",
+        "9f3b4149-5bf8-4c62-b3dd-70abcac452ba",
+        "1aca9cc6-8733-4713-b7dd-70901767b687"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90",
+    "$$hashKey": "object:856"
+  },
+  "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0": {
+    "attributes": {
+      "name": "Tentacule 1b",
+      "spritesgroup": "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90",
+      "looptype": "",
+      "states": [
+        "94f6eeb0-33ee-4f86-aff1-52d626d56b85",
+        "4cb81002-9564-4d0b-afc1-30d2c7642cf8",
+        "3533150a-67e6-4850-bfd9-555f50ee7dde",
+        "9ad6ac3a-330f-4aad-92ec-09a40d589b68",
+        "596e45e5-5fe7-45ca-a4ee-31d6f1f73a51"
+      ]
+    },
+    "trashCan": {},
+    "type": "Sequence",
+    "uid": "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0",
+    "$$hashKey": "object:853"
+  },
+  "39ec5213-1102-4a92-b188-37fd173a8abf": {
+    "attributes": {
+      "name": "Tentacule 2",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
+        "dc3039db-5161-4381-9da7-a16431161e8c",
+        "672561dd-1287-4224-90fa-dba8f5e3920e"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "39ec5213-1102-4a92-b188-37fd173a8abf",
+    "$$hashKey": "object:1035"
+  },
+  "463c68a2-18d1-45b7-b05e-5a0d9aec8a82": {
+    "attributes": {
+      "name": "Tentacule 2",
+      "spritesgroup": "39ec5213-1102-4a92-b188-37fd173a8abf",
+      "looptype": "",
+      "states": [
+        "650c803f-b976-43d6-990c-30f9447e41f5",
+        "2ee328a8-5182-4a9e-9a32-db21b67b2cd1",
+        "2d5ca173-370f-4d6e-b74d-b92d0fd74324",
+        "f3c45b23-1d3e-43ac-bc44-50964aa951d6",
+        "6afef7ee-f930-42ad-9897-16152faa9b7f",
+        "e5724e76-6152-4e6b-8edc-3542911ccb08"
+      ]
+    },
+    "trashCan": {},
+    "type": "Sequence",
+    "uid": "463c68a2-18d1-45b7-b05e-5a0d9aec8a82",
+    "$$hashKey": "object:1032"
+  },
+  "7917fa55-ee4a-4b38-8af8-2077a49888d0": {
+    "attributes": {
+      "name": "Tentacule 3",
+      "sprites": [
+        "98356f3e-4539-47cd-9064-d2a9135777ba",
+        "3c41ca14-0f37-4f56-ba03-d8f4cf9d7b52",
+        "7e5db21c-dfdf-432e-ab2a-c6c55765bca1",
+        "1890cb0c-c9fe-4342-8cb7-88c3e0aa1c68"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "7917fa55-ee4a-4b38-8af8-2077a49888d0",
+    "$$hashKey": "object:1216"
+  },
+  "0e038d94-49c7-4dc6-899f-d40d9c268fb7": {
+    "attributes": {
+      "name": "Tentacule 3",
+      "spritesgroup": "7917fa55-ee4a-4b38-8af8-2077a49888d0",
+      "looptype": "",
+      "states": [
+        "790d09a9-676d-4e90-8f9b-decae11c7003",
+        "0544f407-cf12-40d3-a810-90bc118d117c",
+        "a63b5545-e2de-4136-a8ef-c9f8574b4655",
+        "a3385247-bd46-494c-a841-4332370a6894",
+        "d74c9c98-7e5a-43ad-b1f0-83a8f0215920"
+      ]
+    },
+    "trashCan": {},
+    "type": "Sequence",
+    "uid": "0e038d94-49c7-4dc6-899f-d40d9c268fb7",
+    "$$hashKey": "object:1213"
+  },
+  "6c5d003e-f963-40f7-909f-19e0b88cb8ca": {
+    "attributes": {
+      "name": "Tentacule 4",
+      "sprites": [
+        "b5c66e5c-8683-4fd4-8c57-29050c35f3c6",
+        "e605b9a0-7671-44fb-9004-6409a7ee0194",
+        "a4aa9911-209b-47a4-8ea7-a0bb19111945"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "6c5d003e-f963-40f7-909f-19e0b88cb8ca",
+    "$$hashKey": "object:1397"
+  },
+  "dc136096-4b05-4312-bc9a-af97bdbd9d78": {
+    "attributes": {
+      "name": "Tentacule 4",
+      "spritesgroup": "6c5d003e-f963-40f7-909f-19e0b88cb8ca",
+      "looptype": "",
+      "states": [
+        "038210d4-8cb4-488e-a3a4-adc1203f7826",
+        "ddf3e78f-2e96-4df1-86ff-d5acff436796",
+        "4b0fad09-c684-47f5-ba2a-6d69de1053fd",
+        "401f4f1e-ee07-47e8-bcec-2340917658aa"
+      ]
+    },
+    "trashCan": {},
+    "type": "Sequence",
+    "uid": "dc136096-4b05-4312-bc9a-af97bdbd9d78",
+    "$$hashKey": "object:1394"
+  },
+  "b536e3eb-2a2b-46de-9b96-c1c1fc8881d4": {
+    "attributes": {
+      "name": "Tent 1a - 0",
+      "group": "ac306e47-51cc-447c-8ba5-dc51b8a63b7f",
+      "sprites": []
+    },
+    "trashCan": {
+      "name": "Tent 1a - 1",
+      "group": "ac306e47-51cc-447c-8ba5-dc51b8a63b7f",
+      "sprites": []
+    },
+    "type": "GroupState",
+    "uid": "b536e3eb-2a2b-46de-9b96-c1c1fc8881d4",
+    "$$hashKey": "object:133"
+  },
+  "946f7147-ef94-40cf-922d-70155c7f83d4": {
+    "attributes": {
+      "name": "Tent 1a - 1",
+      "group": "ac306e47-51cc-447c-8ba5-dc51b8a63b7f",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent1a - 1",
+      "group": "ac306e47-51cc-447c-8ba5-dc51b8a63b7f",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "946f7147-ef94-40cf-922d-70155c7f83d4",
+    "$$hashKey": "object:228"
+  },
+  "22c1b716-3d08-4014-a55a-c63ed55acd8e": {
+    "attributes": {
+      "name": "Tent 1a - 2",
+      "group": "ac306e47-51cc-447c-8ba5-dc51b8a63b7f",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f",
+        "495f54be-8670-4f04-9880-b4af75bf90a0"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent1a-2",
+      "group": "ac306e47-51cc-447c-8ba5-dc51b8a63b7f",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f",
+        "495f54be-8670-4f04-9880-b4af75bf90a0"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "22c1b716-3d08-4014-a55a-c63ed55acd8e",
+    "$$hashKey": "object:327"
+  },
+  "c8d042d7-c3ba-411b-808a-3809b91e3f97": {
+    "attributes": {
+      "name": "Tent 1a - 3",
+      "group": "ac306e47-51cc-447c-8ba5-dc51b8a63b7f",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f",
+        "495f54be-8670-4f04-9880-b4af75bf90a0",
+        "a4e26061-6dcb-40a9-bd98-fb9cec86367f"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 1a - 3",
+      "group": "ac306e47-51cc-447c-8ba5-dc51b8a63b7f",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f",
+        "495f54be-8670-4f04-9880-b4af75bf90a0",
+        "a4e26061-6dcb-40a9-bd98-fb9cec86367f"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "c8d042d7-c3ba-411b-808a-3809b91e3f97",
+    "$$hashKey": "object:429"
+  },
+  "94f6eeb0-33ee-4f86-aff1-52d626d56b85": {
+    "attributes": {
+      "name": "Tent 1b - 0",
+      "group": "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90",
+      "sprites": []
+    },
+    "trashCan": {
+      "name": "Tent 1b - 0",
+      "group": "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90",
+      "sprites": []
+    },
+    "type": "GroupState",
+    "uid": "94f6eeb0-33ee-4f86-aff1-52d626d56b85",
+    "$$hashKey": "object:647"
+  },
+  "4cb81002-9564-4d0b-afc1-30d2c7642cf8": {
+    "attributes": {
+      "name": "Tent 1b - 1",
+      "group": "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 1b - 1",
+      "group": "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "4cb81002-9564-4d0b-afc1-30d2c7642cf8",
+    "$$hashKey": "object:752"
+  },
+  "3533150a-67e6-4850-bfd9-555f50ee7dde": {
+    "attributes": {
+      "name": "Tent 1b - 2",
+      "group": "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f",
+        "327e3066-c76c-43e1-b38c-27354d8cd1c9"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 1b - 2",
+      "group": "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f",
+        "327e3066-c76c-43e1-b38c-27354d8cd1c9"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "3533150a-67e6-4850-bfd9-555f50ee7dde",
+    "$$hashKey": "object:861"
+  },
+  "9ad6ac3a-330f-4aad-92ec-09a40d589b68": {
+    "attributes": {
+      "name": "Tent 1b - 3",
+      "group": "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f",
+        "327e3066-c76c-43e1-b38c-27354d8cd1c9",
+        "9f3b4149-5bf8-4c62-b3dd-70abcac452ba"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 1b - 3",
+      "group": "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f",
+        "327e3066-c76c-43e1-b38c-27354d8cd1c9",
+        "9f3b4149-5bf8-4c62-b3dd-70abcac452ba"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "9ad6ac3a-330f-4aad-92ec-09a40d589b68",
+    "$$hashKey": "object:973"
+  },
+  "596e45e5-5fe7-45ca-a4ee-31d6f1f73a51": {
+    "attributes": {
+      "name": "Tent 1b - 4",
+      "group": "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f",
+        "327e3066-c76c-43e1-b38c-27354d8cd1c9",
+        "9f3b4149-5bf8-4c62-b3dd-70abcac452ba",
+        "1aca9cc6-8733-4713-b7dd-70901767b687"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 1b - 4",
+      "group": "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90",
+      "sprites": [
+        "76f8c44e-f512-43dc-8d78-9011a5ae455f",
+        "327e3066-c76c-43e1-b38c-27354d8cd1c9",
+        "9f3b4149-5bf8-4c62-b3dd-70abcac452ba",
+        "1aca9cc6-8733-4713-b7dd-70901767b687"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "596e45e5-5fe7-45ca-a4ee-31d6f1f73a51",
+    "$$hashKey": "object:1088"
+  },
+  "650c803f-b976-43d6-990c-30f9447e41f5": {
+    "attributes": {
+      "name": "Tent 2 - 0",
+      "group": "39ec5213-1102-4a92-b188-37fd173a8abf",
+      "sprites": []
+    },
+    "trashCan": {
+      "name": "Tent 2 - 0",
+      "group": "39ec5213-1102-4a92-b188-37fd173a8abf",
+      "sprites": []
+    },
+    "type": "GroupState",
+    "uid": "650c803f-b976-43d6-990c-30f9447e41f5",
+    "$$hashKey": "object:1215"
+  },
+  "2ee328a8-5182-4a9e-9a32-db21b67b2cd1": {
+    "attributes": {
+      "name": "Tent 2 - 1",
+      "group": "39ec5213-1102-4a92-b188-37fd173a8abf",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 2 - 1",
+      "group": "39ec5213-1102-4a92-b188-37fd173a8abf",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "2ee328a8-5182-4a9e-9a32-db21b67b2cd1",
+    "$$hashKey": "object:1332"
+  },
+  "2d5ca173-370f-4d6e-b74d-b92d0fd74324": {
+    "attributes": {
+      "name": "Tent 2 - 2",
+      "group": "39ec5213-1102-4a92-b188-37fd173a8abf",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 2 - 2",
+      "group": "39ec5213-1102-4a92-b188-37fd173a8abf",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "2d5ca173-370f-4d6e-b74d-b92d0fd74324",
+    "$$hashKey": "object:1453"
+  },
+  "f3c45b23-1d3e-43ac-bc44-50964aa951d6": {
+    "attributes": {
+      "name": "Tent 2 - 3",
+      "group": "39ec5213-1102-4a92-b188-37fd173a8abf",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 2 - 3",
+      "group": "39ec5213-1102-4a92-b188-37fd173a8abf",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "f3c45b23-1d3e-43ac-bc44-50964aa951d6",
+    "$$hashKey": "object:1577"
+  },
+  "6afef7ee-f930-42ad-9897-16152faa9b7f": {
+    "attributes": {
+      "name": "Tent 2 - 4",
+      "group": "39ec5213-1102-4a92-b188-37fd173a8abf",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
+        "dc3039db-5161-4381-9da7-a16431161e8c"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 2 - 4",
+      "group": "39ec5213-1102-4a92-b188-37fd173a8abf",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
+        "dc3039db-5161-4381-9da7-a16431161e8c"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "6afef7ee-f930-42ad-9897-16152faa9b7f",
+    "$$hashKey": "object:1704"
+  },
+  "e5724e76-6152-4e6b-8edc-3542911ccb08": {
+    "attributes": {
+      "name": "Tent 2 - 5",
+      "group": "39ec5213-1102-4a92-b188-37fd173a8abf",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
+        "dc3039db-5161-4381-9da7-a16431161e8c",
+        "672561dd-1287-4224-90fa-dba8f5e3920e"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 2 - 5",
+      "group": "39ec5213-1102-4a92-b188-37fd173a8abf",
+      "sprites": [
+        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
+        "fc49d8c3-f729-49d8-ba43-1f892b617439",
+        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
+        "dc3039db-5161-4381-9da7-a16431161e8c",
+        "672561dd-1287-4224-90fa-dba8f5e3920e"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "e5724e76-6152-4e6b-8edc-3542911ccb08",
+    "$$hashKey": "object:1834"
+  },
+  "790d09a9-676d-4e90-8f9b-decae11c7003": {
+    "attributes": {
+      "name": "Tent 3 - 0",
+      "group": "7917fa55-ee4a-4b38-8af8-2077a49888d0",
+      "sprites": []
+    },
+    "trashCan": {
+      "name": "Tent 3 - 0",
+      "group": "7917fa55-ee4a-4b38-8af8-2077a49888d0",
+      "sprites": []
+    },
+    "type": "GroupState",
+    "uid": "790d09a9-676d-4e90-8f9b-decae11c7003",
+    "$$hashKey": "object:1977"
+  },
+  "0544f407-cf12-40d3-a810-90bc118d117c": {
+    "attributes": {
+      "name": "Tent 3 - 1",
+      "group": "7917fa55-ee4a-4b38-8af8-2077a49888d0",
+      "sprites": [
+        "98356f3e-4539-47cd-9064-d2a9135777ba"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 3 - 1",
+      "group": "7917fa55-ee4a-4b38-8af8-2077a49888d0",
+      "sprites": [
+        "98356f3e-4539-47cd-9064-d2a9135777ba"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "0544f407-cf12-40d3-a810-90bc118d117c",
+    "$$hashKey": "object:2104"
+  },
+  "a63b5545-e2de-4136-a8ef-c9f8574b4655": {
+    "attributes": {
+      "name": "Tent 3 - 2",
+      "group": "7917fa55-ee4a-4b38-8af8-2077a49888d0",
+      "sprites": [
+        "98356f3e-4539-47cd-9064-d2a9135777ba",
+        "3c41ca14-0f37-4f56-ba03-d8f4cf9d7b52"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 3 - 2",
+      "group": "7917fa55-ee4a-4b38-8af8-2077a49888d0",
+      "sprites": [
+        "98356f3e-4539-47cd-9064-d2a9135777ba",
+        "3c41ca14-0f37-4f56-ba03-d8f4cf9d7b52"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "a63b5545-e2de-4136-a8ef-c9f8574b4655",
+    "$$hashKey": "object:2235"
+  },
+  "a3385247-bd46-494c-a841-4332370a6894": {
+    "attributes": {
+      "name": "Tent 3 - 3",
+      "group": "7917fa55-ee4a-4b38-8af8-2077a49888d0",
+      "sprites": [
+        "98356f3e-4539-47cd-9064-d2a9135777ba",
+        "3c41ca14-0f37-4f56-ba03-d8f4cf9d7b52",
+        "7e5db21c-dfdf-432e-ab2a-c6c55765bca1"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 3 - 3",
+      "group": "7917fa55-ee4a-4b38-8af8-2077a49888d0",
+      "sprites": [
+        "98356f3e-4539-47cd-9064-d2a9135777ba",
+        "3c41ca14-0f37-4f56-ba03-d8f4cf9d7b52",
+        "7e5db21c-dfdf-432e-ab2a-c6c55765bca1"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "a3385247-bd46-494c-a841-4332370a6894",
+    "$$hashKey": "object:2369"
+  },
+  "d74c9c98-7e5a-43ad-b1f0-83a8f0215920": {
+    "attributes": {
+      "name": "Tent 3 - 4",
+      "group": "7917fa55-ee4a-4b38-8af8-2077a49888d0",
+      "sprites": [
+        "98356f3e-4539-47cd-9064-d2a9135777ba",
+        "3c41ca14-0f37-4f56-ba03-d8f4cf9d7b52",
+        "7e5db21c-dfdf-432e-ab2a-c6c55765bca1",
+        "1890cb0c-c9fe-4342-8cb7-88c3e0aa1c68"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 3 - 4",
+      "group": "7917fa55-ee4a-4b38-8af8-2077a49888d0",
+      "sprites": [
+        "98356f3e-4539-47cd-9064-d2a9135777ba",
+        "3c41ca14-0f37-4f56-ba03-d8f4cf9d7b52",
+        "7e5db21c-dfdf-432e-ab2a-c6c55765bca1",
+        "1890cb0c-c9fe-4342-8cb7-88c3e0aa1c68"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "d74c9c98-7e5a-43ad-b1f0-83a8f0215920",
+    "$$hashKey": "object:2506"
+  },
+  "038210d4-8cb4-488e-a3a4-adc1203f7826": {
+    "attributes": {
+      "name": "Tent 4 - 0",
+      "group": "6c5d003e-f963-40f7-909f-19e0b88cb8ca",
+      "sprites": []
+    },
+    "trashCan": {
+      "name": "Tent 4 - 0",
+      "group": "6c5d003e-f963-40f7-909f-19e0b88cb8ca",
+      "sprites": []
+    },
+    "type": "GroupState",
+    "uid": "038210d4-8cb4-488e-a3a4-adc1203f7826",
+    "$$hashKey": "object:2655"
+  },
+  "ddf3e78f-2e96-4df1-86ff-d5acff436796": {
+    "attributes": {
+      "name": "Tent 4 - 1",
+      "group": "6c5d003e-f963-40f7-909f-19e0b88cb8ca",
+      "sprites": [
+        "b5c66e5c-8683-4fd4-8c57-29050c35f3c6"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 4 - 1",
+      "group": "6c5d003e-f963-40f7-909f-19e0b88cb8ca",
+      "sprites": [
+        "b5c66e5c-8683-4fd4-8c57-29050c35f3c6"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "ddf3e78f-2e96-4df1-86ff-d5acff436796",
+    "$$hashKey": "object:2790"
+  },
+  "4b0fad09-c684-47f5-ba2a-6d69de1053fd": {
+    "attributes": {
+      "name": "Tent 4 - 2",
+      "group": "6c5d003e-f963-40f7-909f-19e0b88cb8ca",
+      "sprites": [
+        "b5c66e5c-8683-4fd4-8c57-29050c35f3c6",
+        "e605b9a0-7671-44fb-9004-6409a7ee0194"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 4 - 2",
+      "group": "6c5d003e-f963-40f7-909f-19e0b88cb8ca",
+      "sprites": [
+        "b5c66e5c-8683-4fd4-8c57-29050c35f3c6",
+        "e605b9a0-7671-44fb-9004-6409a7ee0194"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "4b0fad09-c684-47f5-ba2a-6d69de1053fd",
+    "$$hashKey": "object:3077"
+  },
+  "401f4f1e-ee07-47e8-bcec-2340917658aa": {
+    "attributes": {
+      "name": "Tent 4 - 3",
+      "group": "6c5d003e-f963-40f7-909f-19e0b88cb8ca",
+      "sprites": [
+        "b5c66e5c-8683-4fd4-8c57-29050c35f3c6",
+        "e605b9a0-7671-44fb-9004-6409a7ee0194",
+        "a4aa9911-209b-47a4-8ea7-a0bb19111945"
+      ]
+    },
+    "trashCan": {
+      "name": "Tent 4 - 3",
+      "group": "6c5d003e-f963-40f7-909f-19e0b88cb8ca",
+      "sprites": [
+        "b5c66e5c-8683-4fd4-8c57-29050c35f3c6",
+        "e605b9a0-7671-44fb-9004-6409a7ee0194",
+        "a4aa9911-209b-47a4-8ea7-a0bb19111945"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "401f4f1e-ee07-47e8-bcec-2340917658aa",
+    "$$hashKey": "object:3219"
+  }
+}

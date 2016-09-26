@@ -13,21 +13,31 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
         "Clock": function(model, modelManager, gameManager) {
             _.extend(this, EventDispatcher);
 
-            this.initialize = function() {
+            var period;
+            var interval;
 
+            this.initialize = function() {
+                period = model.get("period");
             };
 
             this.start = function() {
+                var t = this;
 
+                // par prudence
+                this.stop();
+
+                interval = setInterval(function() {
+                    console.log("yep");
+                    t.dispatchEvent("period");
+                }, period * 1000);
             };
 
             this.stop = function() {
-
+                if (interval) {
+                    clearInterval(interval);
+                    interval = null;
+                }
             };
-
-            this.pause = function() {
-
-            }
         }
     }
 });
