@@ -22,10 +22,6 @@ define([], function() {
                     }
 
                     break;
-
-                case "sequencen":
-
-                    break;
             }
 
             return choosenObject;

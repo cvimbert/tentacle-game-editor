@@ -54,6 +54,7 @@ require.config({
         controlsprite: 'src/game/display/controlsprite',
         clock: 'src/game/gamelogic/clock',
         graphs: 'src/game/graphs',
-        randomgenerator: 'src/game/common/randomgenerator'
+        randomgenerator: 'src/game/common/randomgenerator',
+        actions: 'src/game/gamelogic/actions'
     }
 });

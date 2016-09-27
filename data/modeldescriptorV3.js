@@ -98,17 +98,39 @@ var modelDescriptorV3 = {
                             required: true
                         }
                     },
-                    displaysprite: {
+                    spriteaction: {
                         sprite: {
                             type: "reference",
                             referencetype: "Sprite",
                             required: true
+                        },
+                        saction: {
+                            type: "include",
+                            includetype: "ShowHide",
+                            required: true
                         }
                     },
-                    showgroup: {
-                        group: {
+                    sequenceaction: {
+                        sequence: {
                             type: "reference",
-                            referencetype: "SpritesGroup",
+                            referencetype: "Sequence",
+                            required: true
+                        },
+                        gaction: {
+                            type: "include",
+                            includetype: "SequenceAction",
+                            required: true
+                        }
+                    },
+                    groupaction: {
+                        sprite: {
+                            type: "reference",
+                            referencetype: "Group",
+                            required: true
+                        },
+                        gaction: {
+                            type: "include",
+                            includetype: "ShowHide",
                             required: true
                         }
                     },
@@ -121,13 +143,6 @@ var modelDescriptorV3 = {
                         clockaction: {
                             type: "include",
                             includetype: "StartStop",
-                            required: true
-                        }
-                    },
-                    hidegroup: {
-                        group: {
-                            type: "reference",
-                            referencetype: "SpritesGroup",
                             required: true
                         }
                     },
@@ -947,9 +962,17 @@ var modelDescriptorV3 = {
         type: "Enumeration",
         enumerationvalues: ["enable", "disable"]
     },
+    ShowHide: {
+        type: "Enumeration",
+        enumerationvalues: ["show", "hide"]
+    },
     StartStop: {
         type: "Enumeration",
         enumerationvalues: ["start", "stop"]
+    },
+    SequenceAction: {
+        type: "Enumeration",
+        enumerationvalues: ["reset", "next", "previous"]
     },
     ClickEventType: {
         type: "Enumeration",

@@ -2191,23 +2191,6 @@
     "uid": "55e56ce0-bb60-40be-a465-6067eeb5466a",
     "$$hashKey": "object:53"
   },
-  "ea13aeb7-df0f-4a1c-8955-25cb160f1493": {
-    "attributes": {
-      "name": "fake1",
-      "condition": "",
-      "actiontype": "displaysprite",
-      "sprite": "cf2a62c5-53dd-4c9e-b4a2-802e34438f1b"
-    },
-    "trashCan": {
-      "name": "fake1",
-      "condition": "",
-      "actiontype": "displaysprite",
-      "sprite": "cf2a62c5-53dd-4c9e-b4a2-802e34438f1b"
-    },
-    "type": "Action",
-    "uid": "ea13aeb7-df0f-4a1c-8955-25cb160f1493",
-    "$$hashKey": "object:301"
-  },
   "bd489abe-6cbc-4263-b6f2-67b835c7290b": {
     "attributes": {
       "name": "BoutonA",
@@ -2242,7 +2225,7 @@
   },
   "bb3cd82d-3ef7-4ecf-8c52-140ed123aafe": {
     "attributes": {
-      "name": "perso-next",
+      "name": "Suivant Séquence perso",
       "condition": "",
       "actiontype": "nextinsequence",
       "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a"
@@ -2259,7 +2242,7 @@
   },
   "1278faed-0b55-4321-b007-a5a91b1fe5b3": {
     "attributes": {
-      "name": "perso-previous",
+      "name": "Précédent Séquence Perso",
       "condition": "",
       "actiontype": "previousinsequence",
       "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a"
@@ -2310,7 +2293,7 @@
   },
   "c8489fd9-0560-42b4-9b91-d90bf130be12": {
     "attributes": {
-      "name": "Horloge1",
+      "name": "Horloge 1",
       "period": 1
     },
     "trashCan": {},
@@ -3556,5 +3539,24 @@
     "type": "GroupState",
     "uid": "401f4f1e-ee07-47e8-bcec-2340917658aa",
     "$$hashKey": "object:3219"
+  },
+  "696446ac-2de4-41cb-b2b0-f270803153bd": {
+    "attributes": {
+      "name": "Voir Body",
+      "condition": "",
+      "actiontype": "spriteaction",
+      "sprite": "cf2a62c5-53dd-4c9e-b4a2-802e34438f1b",
+      "saction": "show"
+    },
+    "trashCan": {
+      "name": "",
+      "condition": "",
+      "actiontype": "spriteaction",
+      "sprite": "cf2a62c5-53dd-4c9e-b4a2-802e34438f1b",
+      "saction": "show"
+    },
+    "type": "Action",
+    "uid": "696446ac-2de4-41cb-b2b0-f270803153bd",
+    "$$hashKey": "object:36"
   }
 }

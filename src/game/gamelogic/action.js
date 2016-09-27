@@ -29,23 +29,11 @@ define(["randomgenerator"], function(RandomGenerator) {
                     if (!condition.eval()) return false;
                 }
 
+                require(["actions/" + actionType], function(actionFunction) {
+                    actionFunction(model, modelManager, gameManager)
+                });
+
                 switch (actionType) {
-
-                    case "displaysprite":
-                        gameManager.getObjectByUid(model.get("sprite")).show();
-                        break;
-
-                    case "hidesprite":
-                        gameManager.getObjectByUid(model.get("sprite")).hide();
-                        break;
-
-                    case "showgroup":
-                        gameManager.getObjectByUid(model.get("group")).show();
-                        break;
-
-                    case "hidegroup":
-                        gameManager.getObjectByUid(model.get("group")).hide();
-                        break;
 
                     case "nextinsequence":
                         gameManager.getObjectByUid(model.get("sequence")).displayNext();
@@ -89,6 +77,13 @@ define(["randomgenerator"], function(RandomGenerator) {
                         break;
 
                     case "randomaction":
+                        var actionsUids = model.get("actions");
+
+                        _.each(actionsUids, function(uid) {
+                            gameManager.getObjectByUid(uid).execute();
+                        });
+
+
 
                         break;
                 }
