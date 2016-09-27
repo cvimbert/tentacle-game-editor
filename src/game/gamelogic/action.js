@@ -1,7 +1,13 @@
 /**
  * Created by Christophe on 20/09/2016.
  */
-define(["randomgenerator"], function(RandomGenerator) {
+define([
+    "underscore",
+    "actions/baseaction"
+], function(
+    _,
+    BaseAction
+) {
 
     return {
         console: {
@@ -14,6 +20,7 @@ define(["randomgenerator"], function(RandomGenerator) {
 
             var condition;
             var actionType;
+            var actionObject;
 
             this.initialize = function() {
 
@@ -21,6 +28,18 @@ define(["randomgenerator"], function(RandomGenerator) {
                 condition = gameManager.getObjectByUid(conditionUid);
 
                 actionType = model.get("actiontype");
+
+                actionObject = new BaseAction(model, modelManager, gameManager);
+
+                require(["actions/" + actionType], function(ActionExtension) {
+                    _.extend(actionObject, ActionExtension);
+
+                    if (actionObject.initialize)
+                        actionObject.initialize();
+
+                }, function() {
+                    console.log("erreur de chargement d'action : " + actionType);
+                });
             };
 
             this.execute = function() {
@@ -29,9 +48,10 @@ define(["randomgenerator"], function(RandomGenerator) {
                     if (!condition.eval()) return false;
                 }
 
-                require(["actions/" + actionType], function(actionFunction) {
-                    actionFunction(model, modelManager, gameManager)
-                });
+                if (actionObject.launch)
+                    actionObject.launch();
+
+                return;
 
                 switch (actionType) {
 

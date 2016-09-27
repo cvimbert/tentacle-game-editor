@@ -3,7 +3,7 @@
  */
 define(["underscore"], function(_) {
 
-    return function (model, gameManager, action, condition, bindings) {
+    return function (model, gameManager, actions, condition, bindings) {
 
         this.executeAction = function() {
             if (!condition || condition.eval()) {
@@ -12,8 +12,10 @@ define(["underscore"], function(_) {
                     boundFunction();
                 });
 
-                if (action) {
-                    action.execute();
+                if (actions) {
+                    _.each(actions, function(action) {
+                        action.execute();
+                    });
                 }
             }
         };
@@ -37,6 +39,6 @@ define(["underscore"], function(_) {
 
         this.getModelProperty = function(id) {
             return model.get(id);
-        }
+        };
     }
 });

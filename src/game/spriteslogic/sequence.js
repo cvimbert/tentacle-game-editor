@@ -32,8 +32,8 @@ define(["underscore"], function(_) {
             var group;
             var groupStates;
             var loopType;
-            var initIndex = -1;
-            var currentIndex = -1;
+            var initIndex = 0;
+            var currentIndex = 0;
             var animationInterval;
 
             this.initialize = function() {
@@ -88,9 +88,13 @@ define(["underscore"], function(_) {
                 return this.displayAtIndex(currentIndex + 1);
             };
 
+            this.next = this.displayNext;
+
             this.displayPrevious = function() {
                 return this.displayAtIndex(currentIndex - 1);
             };
+
+            this.previous = this.displayPrevious;
 
             this.play = function(delay) {
 

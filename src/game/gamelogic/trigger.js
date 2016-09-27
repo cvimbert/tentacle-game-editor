@@ -18,7 +18,7 @@ define([
         },
         "Trigger": function(model, modelManager, gameManager) {
 
-            var action;
+            var actions;
             var condition;
             var triggerType;
             var triggerObject;
@@ -29,8 +29,12 @@ define([
 
             this.initialize = function() {
 
-                var actionUid = model.get("action");
-                action = gameManager.getObjectByUid(actionUid);
+                var actiosnUids = model.get("actions");
+                actions = [];
+
+                _.each(actiosnUids, function(uid) {
+                    actions.push(gameManager.getObjectByUid(uid));
+                });
 
                 var conditionUid = model.get("condition");
                 condition = gameManager.getObjectByUid(conditionUid);
@@ -57,7 +61,7 @@ define([
             this.enable = function() {
                 require(["triggers/" + triggerType], function(triggerExtension) {
 
-                    triggerObject = new BaseTrigger(model, gameManager, action, condition, bindings);
+                    triggerObject = new BaseTrigger(model, gameManager, actions, condition, bindings);
                     _.extend(triggerObject, triggerExtension);
 
                     triggerObject.initialize();

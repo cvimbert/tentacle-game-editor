@@ -92,7 +92,7 @@ var modelDescriptorV3 = {
                             referencetype:"Trigger",
                             required: true
                         },
-                        triggeraction: {
+                        taction: {
                             type: "include",
                             includetype: "Enable",
                             required: true
@@ -116,7 +116,7 @@ var modelDescriptorV3 = {
                             referencetype: "Sequence",
                             required: true
                         },
-                        gaction: {
+                        saction: {
                             type: "include",
                             includetype: "SequenceAction",
                             required: true
@@ -140,27 +140,13 @@ var modelDescriptorV3 = {
                             referencetype: "Clock",
                             required: true
                         },
-                        clockaction: {
+                        caction: {
                             type: "include",
                             includetype: "StartStop",
                             required: true
                         }
                     },
                     stopsequence: {
-                        sequence: {
-                            type: "reference",
-                            referencetype: "Sequence",
-                            required: true
-                        }
-                    },
-                    nextinsequence: {
-                        sequence: {
-                            type: "reference",
-                            referencetype: "Sequence",
-                            required: true
-                        }
-                    },
-                    previousinsequence: {
                         sequence: {
                             type: "reference",
                             referencetype: "Sequence",

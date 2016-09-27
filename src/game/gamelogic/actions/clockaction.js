@@ -5,7 +5,7 @@ define([], function() {
 
     return {
         launch: function() {
-            this.launchObjectCommand("group", "gaction");
+            this.launchObjectCommand("clock", "caction");
         }
     };
 });
