@@ -2223,40 +2223,6 @@
     "uid": "5a608fd2-c37d-4459-bf9a-5fb3e144485e",
     "$$hashKey": "object:159"
   },
-  "bb3cd82d-3ef7-4ecf-8c52-140ed123aafe": {
-    "attributes": {
-      "name": "Suivant Séquence perso",
-      "condition": "",
-      "actiontype": "nextinsequence",
-      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a"
-    },
-    "trashCan": {
-      "name": "perso-next",
-      "condition": "",
-      "actiontype": "nextinsequence",
-      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a"
-    },
-    "type": "Action",
-    "uid": "bb3cd82d-3ef7-4ecf-8c52-140ed123aafe",
-    "$$hashKey": "object:128"
-  },
-  "1278faed-0b55-4321-b007-a5a91b1fe5b3": {
-    "attributes": {
-      "name": "Précédent Séquence Perso",
-      "condition": "",
-      "actiontype": "previousinsequence",
-      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a"
-    },
-    "trashCan": {
-      "name": "perso-previous",
-      "condition": "",
-      "actiontype": "previousinsequence",
-      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a"
-    },
-    "type": "Action",
-    "uid": "1278faed-0b55-4321-b007-a5a91b1fe5b3",
-    "$$hashKey": "object:179"
-  },
   "203a1f3f-248f-41fc-95d6-d7466330599e": {
     "attributes": {
       "name": "BoutonB",
@@ -2787,7 +2753,8 @@
       "condition": "",
       "actiontype": "clockaction",
       "clock": "c8489fd9-0560-42b4-9b91-d90bf130be12",
-      "clockaction": "start"
+      "clockaction": "start",
+      "caction": "start"
     },
     "trashCan": {
       "name": "Start main clock",
@@ -2800,41 +2767,21 @@
     "uid": "a59a722e-a832-44e2-9c98-0fc4998cc6c3",
     "$$hashKey": "object:31"
   },
-  "03b27204-d1ee-4bed-afea-4df2b72d4a1a": {
-    "attributes": {
-      "name": "Clock Listener",
-      "action": "",
-      "condition": "",
-      "activatedonstart": "false",
-      "triggertype": "clockperiod",
-      "clock": "c8489fd9-0560-42b4-9b91-d90bf130be12"
-    },
-    "trashCan": {
-      "name": "Clock Listener",
-      "action": "",
-      "condition": "",
-      "activatedonstart": "false",
-      "triggertype": "clockperiod",
-      "clock": "c8489fd9-0560-42b4-9b91-d90bf130be12"
-    },
-    "type": "Trigger",
-    "uid": "03b27204-d1ee-4bed-afea-4df2b72d4a1a",
-    "$$hashKey": "object:32"
-  },
   "05f05bd3-f909-4964-b494-c8ff48fc7dae": {
     "attributes": {
       "name": "Enable Clock Listener",
       "condition": "",
       "actiontype": "triggeraction",
-      "trigger": "03b27204-d1ee-4bed-afea-4df2b72d4a1a",
-      "triggeraction": "enable"
+      "trigger": "9f7a024f-290c-4fb0-bd2b-c684ceed17f2",
+      "taction": "enable"
     },
     "trashCan": {
       "name": "Enable Clock Listener",
       "condition": "",
       "actiontype": "triggeraction",
-      "trigger": "03b27204-d1ee-4bed-afea-4df2b72d4a1a",
-      "triggeraction": ""
+      "trigger": "9f7a024f-290c-4fb0-bd2b-c684ceed17f2",
+      "triggeraction": "enable",
+      "taction": "enable"
     },
     "type": "Action",
     "uid": "05f05bd3-f909-4964-b494-c8ff48fc7dae",
@@ -2847,7 +2794,8 @@
       "actiontype": "actionsset",
       "actions": [
         "a59a722e-a832-44e2-9c98-0fc4998cc6c3",
-        "05f05bd3-f909-4964-b494-c8ff48fc7dae"
+        "05f05bd3-f909-4964-b494-c8ff48fc7dae",
+        "696446ac-2de4-41cb-b2b0-f270803153bd"
       ]
     },
     "trashCan": {
@@ -2858,32 +2806,6 @@
     "type": "Action",
     "uid": "92f2ec08-2a58-4fe4-9320-834338d7819b",
     "$$hashKey": "object:156"
-  },
-  "2aa9ffff-cf31-46eb-a452-d5fc4565ede3": {
-    "attributes": {
-      "name": "Start sequence",
-      "actions": [
-        "a59a722e-a832-44e2-9c98-0fc4998cc6c3",
-        "05f05bd3-f909-4964-b494-c8ff48fc7dae"
-      ],
-      "condition": "",
-      "activatedonstart": "false",
-      "triggertype": "gameevent",
-      "eventname": "gamestart"
-    },
-    "trashCan": {
-      "name": "Start sequence",
-      "actions": [
-        "a59a722e-a832-44e2-9c98-0fc4998cc6c3",
-        "05f05bd3-f909-4964-b494-c8ff48fc7dae"
-      ],
-      "condition": "",
-      "activatedonstart": "false",
-      "triggertype": "gameevent"
-    },
-    "type": "Trigger",
-    "uid": "2aa9ffff-cf31-46eb-a452-d5fc4565ede3",
-    "$$hashKey": "object:79"
   },
   "ac306e47-51cc-447c-8ba5-dc51b8a63b7f": {
     "attributes": {
@@ -3558,5 +3480,148 @@
     "type": "Action",
     "uid": "696446ac-2de4-41cb-b2b0-f270803153bd",
     "$$hashKey": "object:36"
+  },
+  "eac19532-4b18-4778-9032-b8a16e4bebf3": {
+    "attributes": {
+      "name": "Start 1",
+      "sprite": "b2eb5621-9b01-4cf1-817b-9a34083309ba"
+    },
+    "trashCan": {
+      "name": "Start 1",
+      "sprite": "b2eb5621-9b01-4cf1-817b-9a34083309ba"
+    },
+    "type": "Control",
+    "uid": "eac19532-4b18-4778-9032-b8a16e4bebf3",
+    "$$hashKey": "object:89"
+  },
+  "7608a2c9-929d-4076-93c3-2ccaa44e2848": {
+    "attributes": {
+      "name": "Click start 1",
+      "actions": [
+        "92f2ec08-2a58-4fe4-9320-834338d7819b"
+      ],
+      "condition": "",
+      "activatedonstart": "true",
+      "triggertype": "controlclick",
+      "control": "eac19532-4b18-4778-9032-b8a16e4bebf3",
+      "eventtype": "controlclick"
+    },
+    "trashCan": {
+      "name": "Click start 1",
+      "actions": [
+        "92f2ec08-2a58-4fe4-9320-834338d7819b"
+      ],
+      "condition": "",
+      "activatedonstart": "true",
+      "triggertype": "controlclick",
+      "control": "eac19532-4b18-4778-9032-b8a16e4bebf3",
+      "eventtype": ""
+    },
+    "type": "Trigger",
+    "uid": "7608a2c9-929d-4076-93c3-2ccaa44e2848",
+    "$$hashKey": "object:102"
+  },
+  "5a7f850c-8aab-4fb4-a159-431e4578ab98": {
+    "attributes": {
+      "name": "Grow Tentacule 2",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "463c68a2-18d1-45b7-b05e-5a0d9aec8a82",
+      "saction": "next"
+    },
+    "trashCan": {
+      "name": "Grow Tentacule 1",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "463c68a2-18d1-45b7-b05e-5a0d9aec8a82",
+      "saction": ""
+    },
+    "type": "Action",
+    "uid": "5a7f850c-8aab-4fb4-a159-431e4578ab98",
+    "$$hashKey": "object:145"
+  },
+  "605cde8b-d99b-4433-af2f-13171c4189c3": {
+    "attributes": {
+      "name": "Grow Tentacule 3",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "0e038d94-49c7-4dc6-899f-d40d9c268fb7",
+      "saction": "next"
+    },
+    "trashCan": {
+      "name": "Grow Tentacule 3",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "0e038d94-49c7-4dc6-899f-d40d9c268fb7",
+      "saction": ""
+    },
+    "type": "Action",
+    "uid": "605cde8b-d99b-4433-af2f-13171c4189c3",
+    "$$hashKey": "object:205"
+  },
+  "a6436a86-d4c5-42a5-bdef-6e70fc1d69ce": {
+    "attributes": {
+      "name": "Grow Tentacule 4",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "dc136096-4b05-4312-bc9a-af97bdbd9d78",
+      "saction": "next"
+    },
+    "trashCan": {
+      "name": "Grow Tentacule 3",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "dc136096-4b05-4312-bc9a-af97bdbd9d78",
+      "saction": "next"
+    },
+    "type": "Action",
+    "uid": "a6436a86-d4c5-42a5-bdef-6e70fc1d69ce",
+    "$$hashKey": "object:226"
+  },
+  "bac7fbaf-5bea-4f09-a86f-15ffe75b8a02": {
+    "attributes": {
+      "name": "Grow Random Tentacule",
+      "condition": "",
+      "actiontype": "randomaction",
+      "actions": [
+        "5a7f850c-8aab-4fb4-a159-431e4578ab98",
+        "605cde8b-d99b-4433-af2f-13171c4189c3",
+        "a6436a86-d4c5-42a5-bdef-6e70fc1d69ce"
+      ],
+      "randmode": "sequence"
+    },
+    "trashCan": {
+      "name": "Grow Random Tentacule",
+      "condition": "",
+      "actiontype": "randomaction"
+    },
+    "type": "Action",
+    "uid": "bac7fbaf-5bea-4f09-a86f-15ffe75b8a02",
+    "$$hashKey": "object:251"
+  },
+  "9f7a024f-290c-4fb0-bd2b-c684ceed17f2": {
+    "attributes": {
+      "name": "Clock Trigger",
+      "actions": [
+        "bac7fbaf-5bea-4f09-a86f-15ffe75b8a02"
+      ],
+      "condition": "",
+      "activatedonstart": "false",
+      "triggertype": "clockperiod",
+      "clock": "c8489fd9-0560-42b4-9b91-d90bf130be12"
+    },
+    "trashCan": {
+      "name": "Clock Trigger",
+      "actions": [
+        "bac7fbaf-5bea-4f09-a86f-15ffe75b8a02"
+      ],
+      "condition": "",
+      "activatedonstart": "true",
+      "triggertype": "clockperiod",
+      "clock": "c8489fd9-0560-42b4-9b91-d90bf130be12"
+    },
+    "type": "Trigger",
+    "uid": "9f7a024f-290c-4fb0-bd2b-c684ceed17f2",
+    "$$hashKey": "object:281"
   }
 }
