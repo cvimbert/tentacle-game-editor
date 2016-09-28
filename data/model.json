@@ -1456,150 +1456,6 @@
     "uid": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
     "$$hashKey": "object:171"
   },
-  "9f430b8d-29bf-4a04-baa2-da8202287ee5": {
-    "attributes": {
-      "name": "st1",
-      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
-      "sprites": [
-        "4a54f9fa-98da-42dc-b1d5-a7c668642603"
-      ]
-    },
-    "trashCan": {
-      "name": "st1",
-      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
-      "sprites": [
-        "4a54f9fa-98da-42dc-b1d5-a7c668642603"
-      ]
-    },
-    "type": "GroupState",
-    "uid": "9f430b8d-29bf-4a04-baa2-da8202287ee5",
-    "$$hashKey": "object:226"
-  },
-  "217704e3-2795-446f-ba7e-48710bdaeef0": {
-    "attributes": {
-      "name": "st2",
-      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
-      "sprites": [
-        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
-        "fc49d8c3-f729-49d8-ba43-1f892b617439"
-      ]
-    },
-    "trashCan": {
-      "name": "st2",
-      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
-      "sprites": [
-        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
-        "fc49d8c3-f729-49d8-ba43-1f892b617439"
-      ]
-    },
-    "type": "GroupState",
-    "uid": "217704e3-2795-446f-ba7e-48710bdaeef0",
-    "$$hashKey": "object:247"
-  },
-  "5a39a638-fcd1-4f7a-9afb-608d25997ef4": {
-    "attributes": {
-      "name": "st3",
-      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
-      "sprites": [
-        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
-        "fc49d8c3-f729-49d8-ba43-1f892b617439",
-        "93183b0b-c681-4e1c-9c3c-f2f5a909093f"
-      ]
-    },
-    "trashCan": {
-      "name": "st3",
-      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
-      "sprites": [
-        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
-        "fc49d8c3-f729-49d8-ba43-1f892b617439",
-        "93183b0b-c681-4e1c-9c3c-f2f5a909093f"
-      ]
-    },
-    "type": "GroupState",
-    "uid": "5a39a638-fcd1-4f7a-9afb-608d25997ef4",
-    "$$hashKey": "object:264"
-  },
-  "7e5274e6-6dcb-4d04-950b-354fde85fed3": {
-    "attributes": {
-      "name": "st4",
-      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
-      "sprites": [
-        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
-        "fc49d8c3-f729-49d8-ba43-1f892b617439",
-        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
-        "dc3039db-5161-4381-9da7-a16431161e8c"
-      ]
-    },
-    "trashCan": {
-      "name": "st4",
-      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
-      "sprites": [
-        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
-        "fc49d8c3-f729-49d8-ba43-1f892b617439",
-        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
-        "dc3039db-5161-4381-9da7-a16431161e8c"
-      ]
-    },
-    "type": "GroupState",
-    "uid": "7e5274e6-6dcb-4d04-950b-354fde85fed3",
-    "$$hashKey": "object:282"
-  },
-  "510702a8-2cfd-4549-89ee-e65d107cc041": {
-    "attributes": {
-      "name": "st5",
-      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
-      "sprites": [
-        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
-        "fc49d8c3-f729-49d8-ba43-1f892b617439",
-        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
-        "dc3039db-5161-4381-9da7-a16431161e8c",
-        "672561dd-1287-4224-90fa-dba8f5e3920e"
-      ]
-    },
-    "trashCan": {
-      "name": "st5",
-      "group": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
-      "sprites": [
-        "4a54f9fa-98da-42dc-b1d5-a7c668642603",
-        "fc49d8c3-f729-49d8-ba43-1f892b617439",
-        "93183b0b-c681-4e1c-9c3c-f2f5a909093f",
-        "dc3039db-5161-4381-9da7-a16431161e8c",
-        "672561dd-1287-4224-90fa-dba8f5e3920e"
-      ]
-    },
-    "type": "GroupState",
-    "uid": "510702a8-2cfd-4549-89ee-e65d107cc041",
-    "$$hashKey": "object:301"
-  },
-  "29439236-fe8e-4bf2-ab5d-1e56253a5055": {
-    "attributes": {
-      "name": "s1",
-      "spritesgroup": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
-      "looptype": "",
-      "states": [
-        "9f430b8d-29bf-4a04-baa2-da8202287ee5",
-        "217704e3-2795-446f-ba7e-48710bdaeef0",
-        "5a39a638-fcd1-4f7a-9afb-608d25997ef4",
-        "7e5274e6-6dcb-4d04-950b-354fde85fed3",
-        "510702a8-2cfd-4549-89ee-e65d107cc041"
-      ]
-    },
-    "trashCan": {
-      "name": "s1",
-      "spritesgroup": "36eee7f9-ef85-46be-aa5f-5b4f0c615915",
-      "looptype": "",
-      "states": [
-        "9f430b8d-29bf-4a04-baa2-da8202287ee5",
-        "217704e3-2795-446f-ba7e-48710bdaeef0",
-        "5a39a638-fcd1-4f7a-9afb-608d25997ef4",
-        "7e5274e6-6dcb-4d04-950b-354fde85fed3",
-        "510702a8-2cfd-4549-89ee-e65d107cc041"
-      ]
-    },
-    "type": "Sequence",
-    "uid": "29439236-fe8e-4bf2-ab5d-1e56253a5055",
-    "$$hashKey": "object:213"
-  },
   "739b16f1-0bff-4267-b61e-5157c0d11437": {
     "attributes": {
       "name": "perso4",
@@ -1684,7 +1540,7 @@
   },
   "bb981b04-3930-41da-be26-6acdbbd6aeb8": {
     "attributes": {
-      "name": "goldInBag",
+      "name": "Gold in Bag",
       "variabletype": "number",
       "value": 0
     },
@@ -1698,7 +1554,7 @@
   },
   "7e6df4e4-8734-476b-af32-73aa4d46c02f": {
     "attributes": {
-      "name": "hasGoldInBag",
+      "name": "Has Gold In Bag",
       "conditiontype": "comparevariablewithvalue",
       "variable": "bb981b04-3930-41da-be26-6acdbbd6aeb8",
       "operator": ">",
@@ -2162,7 +2018,7 @@
   },
   "55e56ce0-bb60-40be-a465-6067eeb5466a": {
     "attributes": {
-      "name": "perso",
+      "name": "Personnage",
       "spritesgroup": "b53bec23-29f7-4767-9f7d-a747ead13358",
       "looptype": "",
       "states": [
@@ -2259,8 +2115,8 @@
   },
   "c8489fd9-0560-42b4-9b91-d90bf130be12": {
     "attributes": {
-      "name": "Horloge 1",
-      "period": 1
+      "name": "Main Clock",
+      "period": 0.7
     },
     "trashCan": {},
     "type": "Clock",
@@ -2323,316 +2179,6 @@
     "uid": "358850cc-ec2e-4a30-95f7-6d5ca5dbabf5",
     "$$hashKey": "object:320"
   },
-  "307b28d2-2748-4f98-bcce-8b9479d458e0": {
-    "attributes": {
-      "name": "node1",
-      "state": "d4e41439-d912-4978-9790-e62960f3e09c",
-      "links": [
-        "442e0e44-9db3-4043-abfe-ce0b29be957f"
-      ]
-    },
-    "trashCan": {
-      "name": "node1",
-      "state": "d4e41439-d912-4978-9790-e62960f3e09c",
-      "links": [
-        "442e0e44-9db3-4043-abfe-ce0b29be957f"
-      ]
-    },
-    "type": "GraphNode",
-    "uid": "307b28d2-2748-4f98-bcce-8b9479d458e0",
-    "$$hashKey": "object:902"
-  },
-  "d15926ef-aafe-407d-9dda-8c653394cd9f": {
-    "attributes": {
-      "name": "node2",
-      "state": "bad3f38c-c54e-434a-b2f2-1271afc39cf2",
-      "links": [
-        "df050db1-b26c-48a2-b8fe-e4d5e9572a00",
-        "67a4a8ec-6274-49dd-b3a2-bf726de8fb49"
-      ]
-    },
-    "trashCan": {
-      "name": "node2",
-      "state": "bad3f38c-c54e-434a-b2f2-1271afc39cf2",
-      "links": [
-        "df050db1-b26c-48a2-b8fe-e4d5e9572a00",
-        "67a4a8ec-6274-49dd-b3a2-bf726de8fb49"
-      ]
-    },
-    "type": "GraphNode",
-    "uid": "d15926ef-aafe-407d-9dda-8c653394cd9f",
-    "$$hashKey": "object:936"
-  },
-  "3906d029-2ef7-4ad8-8e3e-63a5a7556481": {
-    "attributes": {
-      "name": "node3",
-      "state": "69fa547e-d28e-4a39-a51d-34b5a081a752",
-      "links": [
-        "5dd2efc5-12f4-4108-a76f-eb3a2680a7ea",
-        "6b56fcfb-073a-4bfe-9985-2a8e5444d264"
-      ]
-    },
-    "trashCan": {
-      "name": "node3",
-      "state": "69fa547e-d28e-4a39-a51d-34b5a081a752",
-      "links": [
-        "5dd2efc5-12f4-4108-a76f-eb3a2680a7ea",
-        "6b56fcfb-073a-4bfe-9985-2a8e5444d264"
-      ]
-    },
-    "type": "GraphNode",
-    "uid": "3906d029-2ef7-4ad8-8e3e-63a5a7556481",
-    "$$hashKey": "object:940"
-  },
-  "adfe5d91-0deb-452f-af38-adb42c10eaf5": {
-    "attributes": {
-      "name": "node4",
-      "state": "cd88da51-a4f4-4685-8d36-ac371912c54f",
-      "links": [
-        "480d2bcf-9ab1-4e9e-8c3a-827c695a8f12",
-        "e25cacca-b844-40c3-a368-7df9f9ac35ca",
-        "99eaa47f-323d-47e6-867f-a45d810dc332"
-      ]
-    },
-    "trashCan": {
-      "name": "node4",
-      "state": "cd88da51-a4f4-4685-8d36-ac371912c54f",
-      "links": [
-        "480d2bcf-9ab1-4e9e-8c3a-827c695a8f12",
-        "e25cacca-b844-40c3-a368-7df9f9ac35ca"
-      ]
-    },
-    "type": "GraphNode",
-    "uid": "adfe5d91-0deb-452f-af38-adb42c10eaf5",
-    "$$hashKey": "object:944"
-  },
-  "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45": {
-    "attributes": {
-      "name": "node5",
-      "state": "e9584f07-775c-4dd8-a6cb-49f335a71cd7",
-      "links": [
-        "0d02ca14-a4c4-42a3-8675-719b9975183b",
-        "1215802c-d2d3-46cd-8fc7-ef65cc75bc89"
-      ]
-    },
-    "trashCan": {
-      "name": "node5",
-      "state": "e9584f07-775c-4dd8-a6cb-49f335a71cd7",
-      "links": [
-        "0d02ca14-a4c4-42a3-8675-719b9975183b",
-        "1215802c-d2d3-46cd-8fc7-ef65cc75bc89"
-      ]
-    },
-    "type": "GraphNode",
-    "uid": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
-    "$$hashKey": "object:948"
-  },
-  "9cf22085-dc54-4414-bd04-fe76e68e7b68": {
-    "attributes": {
-      "name": "node6",
-      "state": "45ce893e-6b11-490b-bde0-d23d47c6b86b",
-      "links": [
-        "1c463a4d-57ef-4953-b3e4-d3abcdd662c2"
-      ]
-    },
-    "trashCan": {
-      "name": "node6",
-      "state": "45ce893e-6b11-490b-bde0-d23d47c6b86b",
-      "links": [
-        "1c463a4d-57ef-4953-b3e4-d3abcdd662c2"
-      ]
-    },
-    "type": "GraphNode",
-    "uid": "9cf22085-dc54-4414-bd04-fe76e68e7b68",
-    "$$hashKey": "object:952"
-  },
-  "9e1b8354-63ef-4e2c-a390-acc0cc592358": {
-    "attributes": {
-      "name": "graph1",
-      "nodes": [
-        "307b28d2-2748-4f98-bcce-8b9479d458e0",
-        "d15926ef-aafe-407d-9dda-8c653394cd9f",
-        "3906d029-2ef7-4ad8-8e3e-63a5a7556481",
-        "adfe5d91-0deb-452f-af38-adb42c10eaf5",
-        "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
-        "9cf22085-dc54-4414-bd04-fe76e68e7b68",
-        "ca28fd40-e60a-48ef-a812-84c6886235e3"
-      ]
-    },
-    "trashCan": {},
-    "type": "Graph",
-    "uid": "9e1b8354-63ef-4e2c-a390-acc0cc592358",
-    "$$hashKey": "object:958"
-  },
-  "442e0e44-9db3-4043-abfe-ce0b29be957f": {
-    "attributes": {
-      "name": "link1-2",
-      "destnode": "d15926ef-aafe-407d-9dda-8c653394cd9f",
-      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
-    },
-    "trashCan": {
-      "name": "link1-2",
-      "destnode": "d15926ef-aafe-407d-9dda-8c653394cd9f",
-      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
-    },
-    "type": "GraphLink",
-    "uid": "442e0e44-9db3-4043-abfe-ce0b29be957f",
-    "$$hashKey": "object:1016"
-  },
-  "df050db1-b26c-48a2-b8fe-e4d5e9572a00": {
-    "attributes": {
-      "name": "link2-1",
-      "destnode": "307b28d2-2748-4f98-bcce-8b9479d458e0",
-      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
-    },
-    "trashCan": {
-      "name": "link2-1",
-      "destnode": "307b28d2-2748-4f98-bcce-8b9479d458e0",
-      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
-    },
-    "type": "GraphLink",
-    "uid": "df050db1-b26c-48a2-b8fe-e4d5e9572a00",
-    "$$hashKey": "object:1074"
-  },
-  "67a4a8ec-6274-49dd-b3a2-bf726de8fb49": {
-    "attributes": {
-      "name": "link2-3",
-      "destnode": "3906d029-2ef7-4ad8-8e3e-63a5a7556481",
-      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
-    },
-    "trashCan": {
-      "name": "link2-3",
-      "destnode": "3906d029-2ef7-4ad8-8e3e-63a5a7556481",
-      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
-    },
-    "type": "GraphLink",
-    "uid": "67a4a8ec-6274-49dd-b3a2-bf726de8fb49",
-    "$$hashKey": "object:1133"
-  },
-  "5dd2efc5-12f4-4108-a76f-eb3a2680a7ea": {
-    "attributes": {
-      "name": "link3-2",
-      "destnode": "d15926ef-aafe-407d-9dda-8c653394cd9f",
-      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
-    },
-    "trashCan": {
-      "name": "link3-2",
-      "destnode": "d15926ef-aafe-407d-9dda-8c653394cd9f",
-      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
-    },
-    "type": "GraphLink",
-    "uid": "5dd2efc5-12f4-4108-a76f-eb3a2680a7ea",
-    "$$hashKey": "object:1249"
-  },
-  "6b56fcfb-073a-4bfe-9985-2a8e5444d264": {
-    "attributes": {
-      "name": "link3-4",
-      "destnode": "adfe5d91-0deb-452f-af38-adb42c10eaf5",
-      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
-    },
-    "trashCan": {
-      "name": "link3-4",
-      "destnode": "adfe5d91-0deb-452f-af38-adb42c10eaf5",
-      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
-    },
-    "type": "GraphLink",
-    "uid": "6b56fcfb-073a-4bfe-9985-2a8e5444d264",
-    "$$hashKey": "object:1310"
-  },
-  "480d2bcf-9ab1-4e9e-8c3a-827c695a8f12": {
-    "attributes": {
-      "name": "link4-3",
-      "destnode": "3906d029-2ef7-4ad8-8e3e-63a5a7556481",
-      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
-    },
-    "trashCan": {
-      "name": "link4-3",
-      "destnode": "3906d029-2ef7-4ad8-8e3e-63a5a7556481",
-      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
-    },
-    "type": "GraphLink",
-    "uid": "480d2bcf-9ab1-4e9e-8c3a-827c695a8f12",
-    "$$hashKey": "object:1442"
-  },
-  "e25cacca-b844-40c3-a368-7df9f9ac35ca": {
-    "attributes": {
-      "name": "link4-5",
-      "destnode": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
-      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
-    },
-    "trashCan": {
-      "name": "link4-5",
-      "destnode": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
-      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
-    },
-    "type": "GraphLink",
-    "uid": "e25cacca-b844-40c3-a368-7df9f9ac35ca",
-    "$$hashKey": "object:1507"
-  },
-  "0d02ca14-a4c4-42a3-8675-719b9975183b": {
-    "attributes": {
-      "name": "link5-4",
-      "destnode": "adfe5d91-0deb-452f-af38-adb42c10eaf5",
-      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
-    },
-    "trashCan": {
-      "name": "link5-4",
-      "destnode": "adfe5d91-0deb-452f-af38-adb42c10eaf5",
-      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
-    },
-    "type": "GraphLink",
-    "uid": "0d02ca14-a4c4-42a3-8675-719b9975183b",
-    "$$hashKey": "object:1578"
-  },
-  "1215802c-d2d3-46cd-8fc7-ef65cc75bc89": {
-    "attributes": {
-      "name": "link5-6",
-      "destnode": "9cf22085-dc54-4414-bd04-fe76e68e7b68",
-      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
-    },
-    "trashCan": {
-      "name": "link5-6",
-      "destnode": "9cf22085-dc54-4414-bd04-fe76e68e7b68",
-      "trigger": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee"
-    },
-    "type": "GraphLink",
-    "uid": "1215802c-d2d3-46cd-8fc7-ef65cc75bc89",
-    "$$hashKey": "object:1647"
-  },
-  "1c463a4d-57ef-4953-b3e4-d3abcdd662c2": {
-    "attributes": {
-      "name": "link6-5",
-      "destnode": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
-      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
-    },
-    "trashCan": {
-      "name": "link6-5",
-      "destnode": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
-      "trigger": "5a608fd2-c37d-4459-bf9a-5fb3e144485e"
-    },
-    "type": "GraphLink",
-    "uid": "1c463a4d-57ef-4953-b3e4-d3abcdd662c2",
-    "$$hashKey": "object:1722"
-  },
-  "f5ea1575-b263-4f7f-89c3-f47cb2fa7936": {
-    "attributes": {
-      "name": "Timer Temp",
-      "action": "",
-      "condition": "",
-      "triggertype": "timeout",
-      "time": 0.8,
-      "activatedonstart": "false"
-    },
-    "trashCan": {
-      "name": "timerTemp",
-      "action": "",
-      "condition": "",
-      "triggertype": "timeout"
-    },
-    "type": "Trigger",
-    "uid": "f5ea1575-b263-4f7f-89c3-f47cb2fa7936",
-    "$$hashKey": "object:135"
-  },
   "06152654-0ff5-484b-bf9d-4822d5e67a86": {
     "attributes": {
       "name": "head",
@@ -2663,40 +2209,6 @@
     "type": "GroupState",
     "uid": "f3d2acfa-a5b2-4c9f-a214-f88e3ce6f091",
     "$$hashKey": "object:374"
-  },
-  "ca28fd40-e60a-48ef-a812-84c6886235e3": {
-    "attributes": {
-      "name": "head",
-      "state": "f3d2acfa-a5b2-4c9f-a214-f88e3ce6f091",
-      "links": [
-        "881d24d9-310e-4d19-9882-d6466e5ce5b8"
-      ]
-    },
-    "trashCan": {
-      "name": "head",
-      "state": "f3d2acfa-a5b2-4c9f-a214-f88e3ce6f091",
-      "links": [
-        "881d24d9-310e-4d19-9882-d6466e5ce5b8"
-      ]
-    },
-    "type": "GraphNode",
-    "uid": "ca28fd40-e60a-48ef-a812-84c6886235e3",
-    "$$hashKey": "object:420"
-  },
-  "881d24d9-310e-4d19-9882-d6466e5ce5b8": {
-    "attributes": {
-      "name": "link-head-5",
-      "destnode": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
-      "trigger": "f5ea1575-b263-4f7f-89c3-f47cb2fa7936"
-    },
-    "trashCan": {
-      "name": "link-head-5",
-      "destnode": "d2947cf4-b18d-4df4-b0cc-8b5369cf1d45",
-      "trigger": "f5ea1575-b263-4f7f-89c3-f47cb2fa7936"
-    },
-    "type": "GraphLink",
-    "uid": "881d24d9-310e-4d19-9882-d6466e5ce5b8",
-    "$$hashKey": "object:609"
   },
   "81761c92-6137-479e-b5b7-ca7dccb66539": {
     "attributes": {
@@ -2731,21 +2243,6 @@
     "type": "Trigger",
     "uid": "483d1ef8-00f4-43cc-a6a0-bdce008d4579",
     "$$hashKey": "object:810"
-  },
-  "99eaa47f-323d-47e6-867f-a45d810dc332": {
-    "attributes": {
-      "name": "link4-head",
-      "destnode": "ca28fd40-e60a-48ef-a812-84c6886235e3",
-      "trigger": "483d1ef8-00f4-43cc-a6a0-bdce008d4579"
-    },
-    "trashCan": {
-      "name": "link4-head",
-      "destnode": "ca28fd40-e60a-48ef-a812-84c6886235e3",
-      "trigger": "483d1ef8-00f4-43cc-a6a0-bdce008d4579"
-    },
-    "type": "GraphLink",
-    "uid": "99eaa47f-323d-47e6-867f-a45d810dc332",
-    "$$hashKey": "object:935"
   },
   "a59a722e-a832-44e2-9c98-0fc4998cc6c3": {
     "attributes": {
@@ -3464,7 +2961,7 @@
   },
   "696446ac-2de4-41cb-b2b0-f270803153bd": {
     "attributes": {
-      "name": "Voir Body",
+      "name": "Show Body",
       "condition": "",
       "actiontype": "spriteaction",
       "sprite": "cf2a62c5-53dd-4c9e-b4a2-802e34438f1b",
@@ -3623,5 +3120,19 @@
     "type": "Trigger",
     "uid": "9f7a024f-290c-4fb0-bd2b-c684ceed17f2",
     "$$hashKey": "object:281"
+  },
+  "9cd57cd3-b564-4951-a861-305aeeadcd65": {
+    "attributes": {
+      "name": "Tentacle 1 State",
+      "variabletype": "string",
+      "value": "A"
+    },
+    "trashCan": {
+      "name": "Tentacle 1 State",
+      "variabletype": "string"
+    },
+    "type": "Variable",
+    "uid": "9cd57cd3-b564-4951-a861-305aeeadcd65",
+    "$$hashKey": "object:967"
   }
 }

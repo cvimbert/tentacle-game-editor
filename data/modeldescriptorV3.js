@@ -146,11 +146,15 @@ var modelDescriptorV3 = {
                             required: true
                         }
                     },
-                    stopsequence: {
-                        sequence: {
+                    variableaction: {
+                        variable: {
                             type: "reference",
-                            referencetype: "Sequence",
+                            referencetype: "Variable",
                             required: true
+                        },
+                        vaction: {
+                            type: "include",
+                            includetype: "VariableAction"
                         }
                     },
                     nextloop: {
@@ -184,17 +188,6 @@ var modelDescriptorV3 = {
                             type: "reference",
                             referencetype: "Variable",
                             required: true
-                        }
-                    },
-                    setvariable: {
-                        variable: {
-                            type: "reference",
-                            referencetype: "Variable",
-                            required: true
-                        },
-                        value: {
-                            type: "include",
-                            includetype: "VariableValueByType"
                         }
                     },
                     actions: {
@@ -988,6 +981,17 @@ var modelDescriptorV3 = {
                     defaultvalue: "false",
                     required: true
                 }
+            }
+        }
+    },
+    VariableAction: {
+        type: "ConditionalAttributesSet",
+        required: true,
+        attributesSets: {
+            set: {
+                type: "include",
+                includetype: "VariableValueByType",
+                required: true
             }
         }
     },
