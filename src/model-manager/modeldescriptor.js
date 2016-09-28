@@ -78,7 +78,7 @@
 
             this.flattenAttribute = function (item, attribute, attributeId, destDesc, indentation) {
 
-                // il semblerait que ce cas ne soit plus d'usage
+                // le bug vient de là, on dirait
                 if (attribute.type !== Constants.ModelDecriptorTypes.LINKED_CONDITIONAL_ATTRIBUTES_SET && attribute.type !== Constants.ModelDecriptorTypes.INCLUDE) {
                     destDesc[attributeId] = attribute;
                     destDesc[attributeId].indentation = indentation;
@@ -129,6 +129,13 @@
                         }
                     }
 
+                } else {
+                    // de la récursivité ici ?
+                    //console.log(_.keys(attribute));
+                    /*_.each(attribute, function(attr, attrId) {
+                        self.flattenAttribute(item, attr, attrId, destDesc, indentation);
+                    });*/
+                    //console.log("il ne se passe rien");
                 }
             };
 
@@ -138,6 +145,10 @@
 
                 _.each(attributes, function (attribute, attributeId) {
                     self.flattenAttribute(item, attribute, attributeId, destDesc, indentation);
+
+                    /*if (attribute.type === Constants.ModelDecriptorTypes.CONDITIONAL_ATTRIBUTES_SET) {
+                        alert ("ici");
+                    }*/
                 });
             }
         }

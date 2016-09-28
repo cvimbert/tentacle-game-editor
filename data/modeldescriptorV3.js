@@ -989,9 +989,11 @@ var modelDescriptorV3 = {
         required: true,
         attributesSets: {
             set: {
-                type: "include",
-                includetype: "VariableValueByType",
-                required: true
+                varvalue: {
+                    type: "include",
+                    includetype: "VariableValueByType",
+                    required: true
+                }
             }
         }
     },

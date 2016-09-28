@@ -2049,7 +2049,7 @@
   },
   "bd489abe-6cbc-4263-b6f2-67b835c7290b": {
     "attributes": {
-      "name": "BoutonA",
+      "name": "Bouton A",
       "sprite": "5d3973eb-7131-478e-9df4-86dbbb194511"
     },
     "trashCan": {
@@ -2081,7 +2081,7 @@
   },
   "203a1f3f-248f-41fc-95d6-d7466330599e": {
     "attributes": {
-      "name": "BoutonB",
+      "name": "Bouton B",
       "sprite": "68efe720-e1ee-41c4-baf0-844c742ec3a7"
     },
     "trashCan": {
@@ -3123,7 +3123,7 @@
   },
   "9cd57cd3-b564-4951-a861-305aeeadcd65": {
     "attributes": {
-      "name": "Tentacle 1 State",
+      "name": "Tentacle 1 A / B",
       "variabletype": "string",
       "value": "A"
     },
@@ -3134,5 +3134,69 @@
     "type": "Variable",
     "uid": "9cd57cd3-b564-4951-a861-305aeeadcd65",
     "$$hashKey": "object:967"
+  },
+  "c1bd7a58-01ee-44d3-ab22-101d42419b60": {
+    "attributes": {
+      "name": "Choose Tentacule A",
+      "condition": "",
+      "actiontype": "variableaction",
+      "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
+      "vaction": "set",
+      "varvalue": "",
+      "stringvalue": "A"
+    },
+    "trashCan": {
+      "name": "",
+      "condition": "",
+      "actiontype": "variableaction",
+      "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
+      "vaction": "set",
+      "varvalue": "",
+      "numbervalue": 0
+    },
+    "type": "Action",
+    "uid": "c1bd7a58-01ee-44d3-ab22-101d42419b60",
+    "$$hashKey": "object:39"
+  },
+  "c82f2fcb-68fd-471a-a9bf-971ae742c31d": {
+    "attributes": {
+      "name": "Choose Tentacule B",
+      "condition": "",
+      "actiontype": "variableaction",
+      "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
+      "vaction": "set",
+      "varvalue": "",
+      "stringvalue": "B"
+    },
+    "trashCan": {
+      "name": "Enable Tentacule B",
+      "condition": "",
+      "actiontype": "variableaction",
+      "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
+      "vaction": "set"
+    },
+    "type": "Action",
+    "uid": "c82f2fcb-68fd-471a-a9bf-971ae742c31d",
+    "$$hashKey": "object:158"
+  },
+  "e38ae0c1-e4f4-47d9-a0d0-49e7df13d564": {
+    "attributes": {
+      "name": "Choose Tentacle A / B",
+      "condition": "",
+      "actiontype": "randomaction",
+      "actions": [
+        "c1bd7a58-01ee-44d3-ab22-101d42419b60",
+        "c82f2fcb-68fd-471a-a9bf-971ae742c31d"
+      ],
+      "randmode": "sequence"
+    },
+    "trashCan": {
+      "name": "Choose Tentacle A / B",
+      "condition": "",
+      "actiontype": "randomaction"
+    },
+    "type": "Action",
+    "uid": "e38ae0c1-e4f4-47d9-a0d0-49e7df13d564",
+    "$$hashKey": "object:206"
   }
 }
