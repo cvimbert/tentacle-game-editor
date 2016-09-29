@@ -4,17 +4,24 @@
 define([], function() {
 
     return function(mode, array, options) {
+
         var current = [];
         current = _.clone(array);
-
 
         this.getRandObject = function() {
 
             var index = Math.floor(Math.random() * current.length);
-            var choosenObject = current[index];
+            var choosenObject;
 
             switch (mode) {
+
+                case "normal":
+                    choosenObject = array[index];
+
+                    break;
+
                 case "sequence":
+                    choosenObject = current[index];
                     current.splice(index, 1);
 
                     if (current.length === 0) {

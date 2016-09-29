@@ -5,7 +5,9 @@ define([], function() {
 
     return {
         launch: function() {
-            this.launchObjectCommand("variable", "vaction");
+            this.launchObjectCommand("variable", "vaction", {
+                set: "varvalue"
+            });
         }
     };
 });

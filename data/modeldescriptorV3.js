@@ -930,7 +930,7 @@ var modelDescriptorV3 = {
     },
     RandMode: {
         type: "Enumeration",
-        enumerationvalues: ["sequence", "sequencen"]
+        enumerationvalues: ["normal", "sequence"]
     },
     GameEventName: {
         type: "Enumeration",

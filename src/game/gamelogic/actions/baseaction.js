@@ -1,7 +1,7 @@
 /**
  * Created by Christophe on 27/09/2016.
  */
-define([], function() {
+define(["underscore"], function(_) {
 
     return function (model, modelManager, gameManager) {
 
@@ -14,14 +14,49 @@ define([], function() {
             return model.get(id);
         };
 
-        this.launchCommand = function(object, functionName) {
-            object[functionName]();
+        function launchEval(object, functionName, args) {
+
+            // TODO: ne fonctionne pour l'instant que pour les chaines de cararactères
+
+            var expression = "object." + functionName + "(";
+
+            if (args.length > 0) {
+                _.each(args, function(arg, i) {
+                    expression += "'" + arg + "'";
+                    if (i < args.length - 1) expression += ",";
+                });
+            }
+
+            expression += ")";
+            eval(expression);
+        }
+
+        this.launchCommand = function(object, functionName, args) {
+            launchEval(object, functionName, args);
         };
 
-        this.launchObjectCommand = function(objectId, commandName) {
+        this.launchObjectCommand = function(objectId, commandName, args) {
             var object = this.getObjectById(objectId);
             var command = model.get(commandName);
-            this.launchCommand(object, command);
+
+            var argsValues = [];
+
+            if (args) {
+
+                if (args[commandName]) {
+                    args = args[commandName];
+                }
+
+                if (_.isArray(args)) {
+                    _.each(args, function(arg) {
+                        argsValues.push(model.get(arg));
+                    });
+                } else {
+                    argsValues.push(model.get(args));
+                }
+            }
+
+            this.launchCommand(object, command, argsValues);
         };
 
         this.getObjectByUid = gameManager.getObjectByUid;
