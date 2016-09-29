@@ -794,10 +794,63 @@ var modelDescriptorV3 = {
                 defaultvalue: "conditionname",
                 required: true
             },
-            conditiontype: {
+            conditionobject: {
                 type: "ConditionalAttributesSet",
                 required: true,
                 attributesSets: {
+                    variablecondition: {
+                        variable: {
+                            type: "reference",
+                            referencetype: "Variable",
+                            required: true
+                        },
+                        operator: {
+                            type: "include",
+                            includetype: "ArithmeticOperator",
+                            required: true
+                        },
+                        conditiontype: {
+                            type: "ConditionalAttributesSet",
+                            required: true,
+                            attributesSets: {
+                                valuecomparison: {
+                                    variablevalue: {
+                                        type: "LinkedConditionalAttributesSet",
+                                        linktype: "referenceattributevalue",
+                                        linkedreference: "variable",
+                                        linkedattribute: "variabletype",
+                                        required: true,
+                                        attributesSets: {
+                                            string: {
+                                                value: {
+                                                    type: "string",
+                                                    defaultvalue: "value",
+                                                    required: true
+                                                }
+                                            },
+                                            number: {
+                                                value: {
+                                                    type: "number",
+                                                    defaultvalue: 0,
+                                                    required: true
+                                                }
+                                            },
+                                            boolean: {
+                                                value: {
+                                                    type: "boolean",
+                                                    defaultvalue: "false",
+                                                    required: true
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                variablecomparison: {
+
+                                }
+                            }
+                        }
+                    },
                     comparevariablewithvalue: {
                         variable: {
                             type: "reference",
@@ -839,9 +892,6 @@ var modelDescriptorV3 = {
                                 }
                             }
                         }
-                    },
-                    comparevariablewithvariable: {
-
                     }
                 }
             }

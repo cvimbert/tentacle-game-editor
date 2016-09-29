@@ -1,7 +1,13 @@
 /**
  * Created by Christophe on 16/09/2016.
  */
-define([], function() {
+define([
+    "underscore",
+    "conditions/basecondition"
+], function(
+    _,
+    BaseCondition
+) {
 
     return {
         console: {
@@ -15,6 +21,7 @@ define([], function() {
         "Condition": function(model, modelManager, gameManager) {
 
             var conditionType;
+            var conditionObject;
 
             function comparaisonEval(value1, value2, operand) {
                 return eval(value1 + operand + value2);
@@ -30,10 +37,24 @@ define([], function() {
             }
 
             this.initialize = function() {
-                conditionType = model.get("conditiontype");
+                conditionType = model.get("conditionobject");
+
+                conditionObject = new BaseCondition(model, modelManager, gameManager);
+
+                require(["conditions/" + conditionType], function(conditionExtension) {
+                    _.extend(conditionObject, conditionExtension);
+
+                    if (conditionObject.initialize) {
+                        conditionObject.initialize();
+                    }
+                }, function() {
+                    console.log("Erreur de chargement de condition : " + conditionType);
+                });
             };
 
             this.eval = function() {
+
+                return conditionObject.eval();
 
                 var expression;
 
@@ -48,6 +69,9 @@ define([], function() {
                     case "comparevariablewithvariable":
 
                         break;
+
+                    default:
+                        return true;
                 }
             };
         }

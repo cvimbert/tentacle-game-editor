@@ -1555,18 +1555,21 @@
   "7e6df4e4-8734-476b-af32-73aa4d46c02f": {
     "attributes": {
       "name": "Has Gold In Bag",
-      "conditiontype": "comparevariablewithvalue",
+      "conditionobject": "variablecondition",
       "variable": "bb981b04-3930-41da-be26-6acdbbd6aeb8",
       "operator": ">",
-      "variabletype": "",
+      "conditiontype": "valuecomparison",
+      "variablevalue": "",
       "value": 0
     },
     "trashCan": {
-      "name": "hasGoldInBag",
-      "conditiontype": "comparevariablewithvalue",
+      "name": "Has Gold In Bag",
+      "conditiontype": "valuecomparison",
       "variable": "bb981b04-3930-41da-be26-6acdbbd6aeb8",
-      "operator": "",
-      "variabletype": ""
+      "operator": ">",
+      "variabletype": "",
+      "value": 0,
+      "conditionobject": "variablecondition"
     },
     "type": "Condition",
     "uid": "7e6df4e4-8734-476b-af32-73aa4d46c02f",
@@ -2388,7 +2391,7 @@
     "attributes": {
       "name": "Tentacule 2",
       "spritesgroup": "39ec5213-1102-4a92-b188-37fd173a8abf",
-      "looptype": "",
+      "looptype": "circle",
       "states": [
         "650c803f-b976-43d6-990c-30f9447e41f5",
         "2ee328a8-5182-4a9e-9a32-db21b67b2cd1",
@@ -3083,7 +3086,8 @@
       "actions": [
         "5a7f850c-8aab-4fb4-a159-431e4578ab98",
         "605cde8b-d99b-4433-af2f-13171c4189c3",
-        "a6436a86-d4c5-42a5-bdef-6e70fc1d69ce"
+        "a6436a86-d4c5-42a5-bdef-6e70fc1d69ce",
+        "c84dea5f-6062-4265-8a15-759678ff99be"
       ],
       "randmode": "sequence"
     },
@@ -3138,7 +3142,7 @@
   "c1bd7a58-01ee-44d3-ab22-101d42419b60": {
     "attributes": {
       "name": "Choose Tentacule A",
-      "condition": "",
+      "condition": "a14dc741-3a84-4fb4-ae2b-7d841b2c307d",
       "actiontype": "variableaction",
       "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
       "vaction": "set",
@@ -3146,13 +3150,14 @@
       "stringvalue": "A"
     },
     "trashCan": {
-      "name": "",
-      "condition": "",
+      "name": "Choose Tentacule A",
+      "condition": "a14dc741-3a84-4fb4-ae2b-7d841b2c307d",
       "actiontype": "variableaction",
       "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
       "vaction": "set",
       "varvalue": "",
-      "numbervalue": 0
+      "numbervalue": 0,
+      "stringvalue": "A"
     },
     "type": "Action",
     "uid": "c1bd7a58-01ee-44d3-ab22-101d42419b60",
@@ -3161,7 +3166,7 @@
   "c82f2fcb-68fd-471a-a9bf-971ae742c31d": {
     "attributes": {
       "name": "Choose Tentacule B",
-      "condition": "",
+      "condition": "929a1975-eddf-499b-bfed-56c5ba24a3a6",
       "actiontype": "variableaction",
       "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
       "vaction": "set",
@@ -3169,11 +3174,13 @@
       "stringvalue": "B"
     },
     "trashCan": {
-      "name": "Enable Tentacule B",
-      "condition": "",
+      "name": "Choose Tentacule B",
+      "condition": "929a1975-eddf-499b-bfed-56c5ba24a3a6",
       "actiontype": "variableaction",
       "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
-      "vaction": "set"
+      "vaction": "set",
+      "varvalue": "",
+      "stringvalue": "B"
     },
     "type": "Action",
     "uid": "c82f2fcb-68fd-471a-a9bf-971ae742c31d",
@@ -3188,7 +3195,7 @@
         "c1bd7a58-01ee-44d3-ab22-101d42419b60",
         "c82f2fcb-68fd-471a-a9bf-971ae742c31d"
       ],
-      "randmode": "sequence"
+      "randmode": "normal"
     },
     "trashCan": {
       "name": "Choose Tentacle A / B",
@@ -3198,5 +3205,143 @@
     "type": "Action",
     "uid": "e38ae0c1-e4f4-47d9-a0d0-49e7df13d564",
     "$$hashKey": "object:206"
+  },
+  "c62713b1-45f3-418c-8a75-cc91659849e8": {
+    "attributes": {
+      "name": "Grow Tentacule 1A",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
+      "saction": "next"
+    },
+    "trashCan": {
+      "name": "Grow Tentacule 1a",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
+      "saction": ""
+    },
+    "type": "Action",
+    "uid": "c62713b1-45f3-418c-8a75-cc91659849e8",
+    "$$hashKey": "object:488"
+  },
+  "aee81a43-4ce5-4ea8-b988-3166813fc42b": {
+    "attributes": {
+      "name": "Grow Tentacule 1B",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0",
+      "saction": "next"
+    },
+    "trashCan": {
+      "name": "Grow Tentacule 1b",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0",
+      "saction": ""
+    },
+    "type": "Action",
+    "uid": "aee81a43-4ce5-4ea8-b988-3166813fc42b",
+    "$$hashKey": "object:542"
+  },
+  "a14dc741-3a84-4fb4-ae2b-7d841b2c307d": {
+    "attributes": {
+      "name": "Is Tentacule A",
+      "conditionobject": "variablecondition",
+      "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
+      "operator": "===",
+      "conditiontype": "valuecomparison",
+      "variablevalue": "",
+      "value": "A"
+    },
+    "trashCan": {
+      "name": "",
+      "conditionobject": "variablecondition",
+      "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
+      "operator": "===",
+      "conditiontype": "valuecomparison"
+    },
+    "type": "Condition",
+    "uid": "a14dc741-3a84-4fb4-ae2b-7d841b2c307d",
+    "$$hashKey": "object:44"
+  },
+  "929a1975-eddf-499b-bfed-56c5ba24a3a6": {
+    "attributes": {
+      "name": "Is Tentacule B",
+      "conditionobject": "variablecondition",
+      "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
+      "operator": "===",
+      "conditiontype": "valuecomparison",
+      "variablevalue": "",
+      "value": "B"
+    },
+    "trashCan": {
+      "name": "Is Tentacule B",
+      "conditionobject": "variablecondition",
+      "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
+      "operator": "===",
+      "conditiontype": "valuecomparison"
+    },
+    "type": "Condition",
+    "uid": "929a1975-eddf-499b-bfed-56c5ba24a3a6",
+    "$$hashKey": "object:110"
+  },
+  "c84dea5f-6062-4265-8a15-759678ff99be": {
+    "attributes": {
+      "name": "Grow Tentacule 1",
+      "condition": "",
+      "actiontype": "actionsset",
+      "actions": [
+        "c62713b1-45f3-418c-8a75-cc91659849e8",
+        "aee81a43-4ce5-4ea8-b988-3166813fc42b"
+      ]
+    },
+    "trashCan": {
+      "name": "Grow Tentacule 1",
+      "condition": "",
+      "actiontype": "actionsset",
+      "actions": [
+        "c62713b1-45f3-418c-8a75-cc91659849e8",
+        "aee81a43-4ce5-4ea8-b988-3166813fc42b"
+      ]
+    },
+    "type": "Action",
+    "uid": "c84dea5f-6062-4265-8a15-759678ff99be",
+    "$$hashKey": "object:190"
+  },
+  "fa166dfb-3010-4597-bcfb-e1c080065e45": {
+    "attributes": {
+      "name": "Test Booleen",
+      "variabletype": "boolean",
+      "value": "true"
+    },
+    "trashCan": {
+      "name": "Test Booleen",
+      "variabletype": "boolean"
+    },
+    "type": "Variable",
+    "uid": "fa166dfb-3010-4597-bcfb-e1c080065e45",
+    "$$hashKey": "object:153"
+  },
+  "2a685fc3-4202-43e2-aa8c-bc8ad3ac50fe": {
+    "attributes": {
+      "name": "Test cond boolean",
+      "conditionobject": "variablecondition",
+      "variable": "fa166dfb-3010-4597-bcfb-e1c080065e45",
+      "operator": "===",
+      "conditiontype": "valuecomparison",
+      "variablevalue": "",
+      "value": "false"
+    },
+    "trashCan": {
+      "name": "Test cond boolean",
+      "conditionobject": "variablecondition",
+      "variable": "fa166dfb-3010-4597-bcfb-e1c080065e45",
+      "operator": "===",
+      "conditiontype": "valuecomparison"
+    },
+    "type": "Condition",
+    "uid": "2a685fc3-4202-43e2-aa8c-bc8ad3ac50fe",
+    "$$hashKey": "object:104"
   }
 }

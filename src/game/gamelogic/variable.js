@@ -32,24 +32,29 @@ define([], function() {
                 currentValue = initValue;
             };
 
+            function convert(value) {
+                switch (type) {
+                    case "string":
+                        return String(value);
+
+                    case "number":
+                        return Number(value);
+
+                    case "boolean":
+                        return Boolean(Number);
+                }
+            }
+
             this.get = function() {
-                return currentValue;
+                return convert(currentValue);
+            };
+
+            this.getType = function() {
+                return model.get("variabletype");
             };
 
             this.set = function(value) {
-                switch (type) {
-                    case "string":
-                        currentValue = String(value);
-                        break;
-
-                    case "number":
-                        currentValue = Number(value);
-                        break;
-
-                    case "boolean":
-                        currentValue = Boolean(value);
-                        break;
-                }
+                currentValue = convert(value);
             };
 
             this.reset = function(newInitValue) {

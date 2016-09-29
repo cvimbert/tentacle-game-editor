@@ -62,7 +62,7 @@
 
         this.get = function (property) {
 
-            if (!this.attributes[property]) {
+            if (this.attributes[property] === undefined) {
                 //Tentacle.log(Tentacle.Exceptions.cantFindModelProperty, [property, this.type]);
                 return null;
             }
