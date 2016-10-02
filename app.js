@@ -2,9 +2,9 @@
  * Created by Christophe on 05/09/2016.
  */
 
-$(document).ready(function() {
+//$(document).ready(function() {
 
-    require([
+    define([
         "controldirective",
         "displayobjectdirective",
         "gameconsole",
@@ -18,7 +18,27 @@ $(document).ready(function() {
         "toolbarpanelcontroller",
         "console",
         "contenteditable",
-        "selectable"
+        "selectable",
+        //"angular",
+        //"angularRoute",
+        //"angularSanitize",
+        "actions/actionsset",
+        "actions/baseaction",
+        "actions/clockaction",
+        "actions/groupaction",
+        "actions/randomaction",
+        "actions/sequenceaction",
+        "actions/spriteaction",
+        "actions/triggeraction",
+        "actions/variableaction",
+        "conditions/basecondition",
+        "conditions/variablecondition",
+        "triggers/basetrigger",
+        "triggers/clockperiod",
+        "triggers/controlclick",
+        "triggers/gameevent",
+        "triggers/spritescollision",
+        "triggers/timeout"
     ], function(
         controlDirective,
         displayObjectDirective,
@@ -39,33 +59,25 @@ $(document).ready(function() {
         var shared = {};
 
         var mainApp = angular.module("monitoring-panel", ['ngRoute', 'ngSanitize']);
+        mainApp.factory('shared', function() {
+            return shared;
+        });
         mainApp.controller("modelmonitorcontroller", modelMonitorController);
         mainApp.controller("panelcontroller", panelController);
-        mainApp.controller("panelscontroller", panelsController);
+
         mainApp.controller("spritespanelcontroller", spritesPanelController);
         mainApp.controller("toolbarpanelcontroller", toolbarPanelController);
         mainApp.controller("consolecontroller", console);
+
+        mainApp.controller("panelscontroller", panelsController);
+
+
         mainApp.directive('draggable', draggableDirective);
         mainApp.directive('contenteditable', contentEditable);
         mainApp.directive('selectable', selectable);
         mainApp.directive('displayboolean', displayObjectDirective);
         mainApp.directive('control', controlDirective);
 
-        /*mainApp.directive('afterRender', ['$timeout', function ($timeout) {
-            var def = {
-                restrict: 'A',
-                terminal: true,
-                transclude: false,
-                link: function (scope, element, attrs) {
-                   // $timeout(scope.$eval(attrs.afterRender), 0);  //Calling a scoped method
-                }
-            };
-            return def;
-        }]);*/
-
-        mainApp.factory('shared', function() {
-            return shared;
-        });
 
         var app = new MonitoringApp(mainApp, modelDescriptorV3, panels, function() {
             shared.modelManager = app.modelManager;
@@ -82,5 +94,4 @@ $(document).ready(function() {
 
 
     });
-});
-
+//});

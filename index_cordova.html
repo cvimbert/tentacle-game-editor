@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+    <!--
+    Customize this policy to fit your own app's needs. For more guidance, see:
+        https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+        * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+        * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+        * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="bower_components/tentacle-model-monitor/css/game.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/tentacle-model-monitor/css/interface.css">
+
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="data/modeldescriptorV3.js"></script>
+    <script src="data/panels.js"></script>
+
+
+
+    <title>Hello World</title>
+</head>
+<body>
+<div class="app-container">
+
+    <div id="monitors-container" class="app-container" ng-controller="panelscontroller">
+        <div class="app-container container-fluid">
+            <ng-view></ng-view>
+        </div>
+
+        <div id="modal-desc" class="modal">
+            <form name="modalform">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" ng-click="closeEditionModal()" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">{{getLocString(descid)}}</h4>
+                            <div class="items-stack"><span ng-repeat="stackitem in backItemsStack" ng-class="{'final-stack-item': $index === backItemsStack.length - 1}">{{getLocString(stackitem.type) + ": " + getName(stackitem, "")}}</span></div>
+                        </div>
+                        <div class="modal-body" ng-include="'includes/baseeditor.html'">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" ng-click="closeEditionModal()">Fermer</button>
+                            <button ng-if="backItemsStack.length > 1" ng-click="goBack()" type="button" class="btn btn-default">Retour</button>
+                            <button ng-disabled="!modalform.$valid" ng-click="validateAndGoBack()" type="button" class="btn btn-primary">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="bower_components/requirejs/require.js"></script>
+<script src="config.js"></script>
+</body>
+</html>

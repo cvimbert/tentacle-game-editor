@@ -5,6 +5,19 @@ require.config({
     shim: {
         jquery: {
             exports: 'jQuery'
+        },
+        shim: {
+            angularRoute: {
+                deps: ['angular'],
+                exports: 'angular'
+            },
+            angularSanitize: {
+                deps: ['angular'],
+                exports: 'angular'
+            },
+            angular: {
+                exports: 'angular'
+            }
         }
     },
     paths: {
@@ -56,6 +69,12 @@ require.config({
         graphs: 'src/game/graphs',
         randomgenerator: 'src/game/common/randomgenerator',
         actions: 'src/game/gamelogic/actions',
-        conditions: 'src/game/gamelogic/conditions'
+        conditions: 'src/game/gamelogic/conditions',
+        testii: 'src/game',
+        angular: 'bower_components/angular/angular',
+        angularRoute: 'bower_components/angular-route/angular-route',
+        angularSanitize: 'bower_components/angular-sanitize/angular-sanitize',
+        app: "app"
+
     }
 });
