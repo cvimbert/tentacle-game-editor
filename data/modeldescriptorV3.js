@@ -356,6 +356,28 @@ var modelDescriptorV3 = {
                 type: "ConditionalAttributesSet",
                 required: true,
                 attributesSets: {
+                    sequencetrigger: {
+                        sequence: {
+                            type: "reference",
+                            referencetype: "Sequence",
+                            required: true
+                        },
+                        eventtype: {
+                            type: "ConditionalAttributesSet",
+                            required: true,
+                            attributesSets: {
+                                enterstate: {
+                                    state: {
+                                        type: "reference",
+                                        referencetype: "linkedcollection",
+                                        linkedcollectionattribute: "sequence",
+                                        linkedcollectionattributevalue: "states",
+                                        required: true
+                                    }
+                                }
+                            }
+                        }
+                    },
                     clockperiod: {
                         clock: {
                             type: "reference",
@@ -846,7 +868,11 @@ var modelDescriptorV3 = {
                                     }
                                 },
                                 variablecomparison: {
-
+                                    operandvariable: {
+                                        type: "reference",
+                                        referencetype: "Variable",
+                                        required: true
+                                    }
                                 }
                             }
                         }
@@ -1001,7 +1027,7 @@ var modelDescriptorV3 = {
     },
     SequenceAction: {
         type: "Enumeration",
-        enumerationvalues: ["reset", "next", "previous"]
+        enumerationvalues: ["reset", "next", "previous", "reverse"]
     },
     ClickEventType: {
         type: "Enumeration",

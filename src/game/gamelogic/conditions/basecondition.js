@@ -21,12 +21,19 @@ define(["variable"], function(Variable) {
         };
 
         function getValueFromComplexOperand(operand) {
-            if (operand instanceof Variable.Variable) {
-                return operand.get();
-            } else if ((typeof operand) === "object") {
-                // sans argments pour le moment
+
+            var object;
+
+            if (operand["object"] !== undefined) {
                 return operand["object"]["command"]();
-            } else {
+            } else if (operand["uid"] !== undefined) {
+                object = gameManager.getObjectByUid(operand["uid"]);
+                return object["command"];
+            } else if (operand["id"]) {
+                object = this.getObjectById(operand["id"]);
+                return object["command"];
+            }
+            else {
                 return operand;
             }
         }
@@ -41,8 +48,8 @@ define(["variable"], function(Variable) {
 
         this.evalExpression = function(operand1, operator, operand2) {
 
-            operand1 = addQuotesToOperandIfString(operand1);
-            operand2 = addQuotesToOperandIfString(operand2);
+            operand1 = this.addQuotesToOperandIfString(operand1);
+            operand2 = this.addQuotesToOperandIfString(operand2);
 
             return eval(operand1 + operator + operand2);
         };

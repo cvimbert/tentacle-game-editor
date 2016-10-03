@@ -2119,7 +2119,7 @@
   "c8489fd9-0560-42b4-9b91-d90bf130be12": {
     "attributes": {
       "name": "Main Clock",
-      "period": 0.7
+      "period": 0.2
     },
     "trashCan": {},
     "type": "Clock",
@@ -2325,7 +2325,7 @@
     "attributes": {
       "name": "Tentacule 1a",
       "spritesgroup": "ac306e47-51cc-447c-8ba5-dc51b8a63b7f",
-      "looptype": "",
+      "looptype": "circle",
       "states": [
         "b536e3eb-2a2b-46de-9b96-c1c1fc8881d4",
         "946f7147-ef94-40cf-922d-70155c7f83d4",
@@ -2357,7 +2357,7 @@
     "attributes": {
       "name": "Tentacule 1b",
       "spritesgroup": "c17d12cb-04e6-4ee3-93d9-4d4451bdfe90",
-      "looptype": "",
+      "looptype": "circle",
       "states": [
         "94f6eeb0-33ee-4f86-aff1-52d626d56b85",
         "4cb81002-9564-4d0b-afc1-30d2c7642cf8",
@@ -2425,7 +2425,7 @@
     "attributes": {
       "name": "Tentacule 3",
       "spritesgroup": "7917fa55-ee4a-4b38-8af8-2077a49888d0",
-      "looptype": "",
+      "looptype": "circle",
       "states": [
         "790d09a9-676d-4e90-8f9b-decae11c7003",
         "0544f407-cf12-40d3-a810-90bc118d117c",
@@ -2457,7 +2457,7 @@
     "attributes": {
       "name": "Tentacule 4",
       "spritesgroup": "6c5d003e-f963-40f7-909f-19e0b88cb8ca",
-      "looptype": "",
+      "looptype": "circle",
       "states": [
         "038210d4-8cb4-488e-a3a4-adc1203f7826",
         "ddf3e78f-2e96-4df1-86ff-d5acff436796",
@@ -3209,17 +3209,17 @@
   "c62713b1-45f3-418c-8a75-cc91659849e8": {
     "attributes": {
       "name": "Grow Tentacule 1A",
-      "condition": "",
+      "condition": "a14dc741-3a84-4fb4-ae2b-7d841b2c307d",
       "actiontype": "sequenceaction",
       "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
       "saction": "next"
     },
     "trashCan": {
-      "name": "Grow Tentacule 1a",
-      "condition": "",
+      "name": "Grow Tentacule 1A",
+      "condition": "a14dc741-3a84-4fb4-ae2b-7d841b2c307d",
       "actiontype": "sequenceaction",
       "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
-      "saction": ""
+      "saction": "next"
     },
     "type": "Action",
     "uid": "c62713b1-45f3-418c-8a75-cc91659849e8",
@@ -3228,17 +3228,17 @@
   "aee81a43-4ce5-4ea8-b988-3166813fc42b": {
     "attributes": {
       "name": "Grow Tentacule 1B",
-      "condition": "",
+      "condition": "929a1975-eddf-499b-bfed-56c5ba24a3a6",
       "actiontype": "sequenceaction",
       "sequence": "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0",
       "saction": "next"
     },
     "trashCan": {
-      "name": "Grow Tentacule 1b",
-      "condition": "",
+      "name": "Grow Tentacule 1B",
+      "condition": "929a1975-eddf-499b-bfed-56c5ba24a3a6",
       "actiontype": "sequenceaction",
       "sequence": "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0",
-      "saction": ""
+      "saction": "next"
     },
     "type": "Action",
     "uid": "aee81a43-4ce5-4ea8-b988-3166813fc42b",
@@ -3343,5 +3343,150 @@
     "type": "Condition",
     "uid": "2a685fc3-4202-43e2-aa8c-bc8ad3ac50fe",
     "$$hashKey": "object:104"
+  },
+  "5eac8aa1-bb14-4c70-b233-1588b388a638": {
+    "attributes": {
+      "name": "Reverse Tentacule 1A",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
+      "saction": "reverse"
+    },
+    "trashCan": {
+      "name": "Reverse Tentacule 1",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
+      "saction": ""
+    },
+    "type": "Action",
+    "uid": "5eac8aa1-bb14-4c70-b233-1588b388a638",
+    "$$hashKey": "object:108"
+  },
+  "11876acc-971f-441b-9481-4eec44e40a39": {
+    "attributes": {
+      "name": "Reverse Tentacule 1B",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0",
+      "saction": "reverse"
+    },
+    "trashCan": {
+      "name": "Reverse Tentacule 1B",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0",
+      "saction": ""
+    },
+    "type": "Action",
+    "uid": "11876acc-971f-441b-9481-4eec44e40a39",
+    "$$hashKey": "object:158"
+  },
+  "c627cd9d-684f-46f6-bd77-63bf10b61cc2": {
+    "attributes": {
+      "name": "Reverse Tentacule 2",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "463c68a2-18d1-45b7-b05e-5a0d9aec8a82",
+      "saction": "reverse"
+    },
+    "trashCan": {
+      "name": "Reverse Tentacule 2",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "463c68a2-18d1-45b7-b05e-5a0d9aec8a82",
+      "saction": ""
+    },
+    "type": "Action",
+    "uid": "c627cd9d-684f-46f6-bd77-63bf10b61cc2",
+    "$$hashKey": "object:179"
+  },
+  "acc400f8-dd3e-4d6a-87e3-f11fdf3dfa39": {
+    "attributes": {
+      "name": "Reverse Tentacule 3",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "0e038d94-49c7-4dc6-899f-d40d9c268fb7",
+      "saction": "reverse"
+    },
+    "trashCan": {
+      "name": "Reverse Tentacule 3",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "0e038d94-49c7-4dc6-899f-d40d9c268fb7",
+      "saction": ""
+    },
+    "type": "Action",
+    "uid": "acc400f8-dd3e-4d6a-87e3-f11fdf3dfa39",
+    "$$hashKey": "object:200"
+  },
+  "ea014fdc-eada-4ccb-b399-656824bb7223": {
+    "attributes": {
+      "name": "Reverse Tentacule 4",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "dc136096-4b05-4312-bc9a-af97bdbd9d78",
+      "saction": "reverse"
+    },
+    "trashCan": {
+      "name": "Reverse Tentacule 4",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "dc136096-4b05-4312-bc9a-af97bdbd9d78",
+      "saction": ""
+    },
+    "type": "Action",
+    "uid": "ea014fdc-eada-4ccb-b399-656824bb7223",
+    "$$hashKey": "object:221"
+  },
+  "57cfec2c-4b5e-44bd-b330-c9df18952698": {
+    "attributes": {
+      "name": "Tentacule 1A Complete",
+      "actions": [],
+      "condition": "",
+      "activatedonstart": "false",
+      "triggertype": "sequencetrigger",
+      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
+      "eventtype": "enterstate",
+      "state": "c8d042d7-c3ba-411b-808a-3809b91e3f97"
+    },
+    "trashCan": {
+      "name": "Tentacule 1A Complete",
+      "actions": [],
+      "condition": "",
+      "activatedonstart": "false",
+      "triggertype": "sequencetrigger",
+      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
+      "eventtype": "enterstate",
+      "state": "c8d042d7-c3ba-411b-808a-3809b91e3f97"
+    },
+    "type": "Trigger",
+    "uid": "57cfec2c-4b5e-44bd-b330-c9df18952698",
+    "$$hashKey": "object:242"
+  },
+  "dd1418a2-1915-45dc-99af-2d87ff40033b": {
+    "attributes": {
+      "name": "Tentacule 1A Started",
+      "actions": [],
+      "condition": "",
+      "activatedonstart": "false",
+      "triggertype": "sequencetrigger",
+      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
+      "eventtype": "enterstate",
+      "state": "b536e3eb-2a2b-46de-9b96-c1c1fc8881d4"
+    },
+    "trashCan": {
+      "name": "Tentacule 1A Started",
+      "actions": [],
+      "condition": "",
+      "activatedonstart": "false",
+      "triggertype": "sequencetrigger",
+      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
+      "eventtype": "enterstate",
+      "state": "b536e3eb-2a2b-46de-9b96-c1c1fc8881d4"
+    },
+    "type": "Trigger",
+    "uid": "dd1418a2-1915-45dc-99af-2d87ff40033b",
+    "$$hashKey": "object:323"
   }
 }

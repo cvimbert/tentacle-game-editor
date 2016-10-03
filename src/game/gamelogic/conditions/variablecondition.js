@@ -14,12 +14,13 @@ define([], function() {
             switch (this.conditionType) {
 
                 case "valuecomparison":
-                    var variableValue = this.getModelProperty("variablevalue");
-                    return this.evalExpression(variableValue, this.operator, this.variable.get());
+                    var variableValue = this.getModelProperty("value");
+                    return this.complexEval(variableValue, this.operator, this.variable.get());
                     break;
 
                 case "variablecomparison":
-
+                    var operandVar = this.getObjectById("operandvariable");
+                    return this.complexEval(operandVar.get(), this.operator, this.variable.get());
                     break;
 
                 default:

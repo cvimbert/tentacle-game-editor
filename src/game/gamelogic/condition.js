@@ -56,7 +56,7 @@ define([
 
                 return conditionObject.eval();
 
-                var expression;
+                /*var expression;
 
                 switch (conditionType) {
 
@@ -72,7 +72,7 @@ define([
 
                     default:
                         return true;
-                }
+                }*/
             };
         }
     }

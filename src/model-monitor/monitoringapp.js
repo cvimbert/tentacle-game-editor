@@ -39,7 +39,7 @@ define(["modelmanager", "loadingmanager", "monitorpanelsset"]
                         for (var setId in panelsSets) {
                             $routeProvider.when("/" + setId, {
                                 template: panelsSets[setId].template,
-                                controller: 'panelscontroller'
+                                controller: 'panelcontroller'
                             });
                         }
 

@@ -1,7 +1,7 @@
 /**
  * Created by Christophe on 15/09/2016.
  */
-define(["underscore"], function(_) {
+define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
     return {
         console: {
@@ -28,6 +28,7 @@ define(["underscore"], function(_) {
             }
         },
         "Sequence": function(model, modelManager, gameManager) {
+            _.extend(this, EventDispatcher);
 
             var group;
             var groupStates;
@@ -35,8 +36,11 @@ define(["underscore"], function(_) {
             var initIndex = 0;
             var currentIndex = 0;
             var animationInterval;
+            var direction;
 
             this.initialize = function() {
+
+                direction = 1;
 
                 var groupUid = model.get("spritesgroup");
                 var statesUidCollection = model.get("states");
@@ -49,7 +53,11 @@ define(["underscore"], function(_) {
                 _.each(statesUidCollection, function(stateUid) {
                     groupStates.push(gameManager.getObjectByUid(stateUid));
                 });
+            };
 
+            this.reverse = function() {
+                direction *= -1;
+                console.log("reverse");
             };
 
             function isValidIndex(index) {
@@ -81,17 +89,34 @@ define(["underscore"], function(_) {
 
                 currentIndex = index;
                 groupStates[index].display();
+
+                this.dispatchEvent("enterstate", groupStates[index]);
+
                 return true;
             };
 
             this.displayNext = function() {
-                return this.displayAtIndex(currentIndex + 1);
+                var ok = this.displayAtIndex(currentIndex + direction);
+
+                if (!ok && loopType === "circle") {
+                    this.reverse();
+                    ok = this.displayNext();
+                }
+
+                return ok;
             };
 
             this.next = this.displayNext;
 
             this.displayPrevious = function() {
-                return this.displayAtIndex(currentIndex - 1);
+                var ok = this.displayAtIndex(currentIndex - direction);
+
+                if (!ok && loopType === "circle") {
+                    this.reverse();
+                    ok = this.displayPrevious();
+                }
+
+                return ok;
             };
 
             this.previous = this.displayPrevious;

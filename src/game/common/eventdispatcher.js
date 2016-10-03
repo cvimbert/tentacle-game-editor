@@ -17,12 +17,12 @@ define(["underscore"], function(_) {
         off: function(type, objectUid) {
             delete this.eventsCallback[type][objectUid];
         },
-        dispatchEvent: function(type, objectUid) {
+        dispatchEvent: function(type, args) {
 
             if (!this.eventsCallback || !this.eventsCallback[type]) return;
 
             _.each(this.eventsCallback[type], function(callback) {
-                callback();
+                callback(args);
             });
         }
     }
