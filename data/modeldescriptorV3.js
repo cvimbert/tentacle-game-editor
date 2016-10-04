@@ -1026,8 +1026,25 @@ var modelDescriptorV3 = {
         enumerationvalues: ["start", "stop"]
     },
     SequenceAction: {
-        type: "Enumeration",
-        enumerationvalues: ["reset", "next", "previous", "reverse"]
+        /*type: "Enumeration",
+        enumerationvalues: ["reset", "next", "previous", "reverse"]*/
+        type: "ConditionalAttributesSet",
+        required: true,
+        attributesSets: {
+            reset: {},
+            next: {},
+            previous: {},
+            reverse: {},
+            setstate: {
+                state: {
+                    type: "reference",
+                    referencetype: "linkedcollection",
+                    linkedcollectionattribute: "sequence",
+                    linkedcollectionattributevalue: "states",
+                    required: true
+                }
+            }
+        }
     },
     ClickEventType: {
         type: "Enumeration",
@@ -1081,21 +1098,21 @@ var modelDescriptorV3 = {
         required: true,
         attributesSets: {
             string: {
-                stringvalue: {
+                vvalue: {
                     type: "string",
                     defaultvalue: "value",
                     required: true
                 }
             },
             number: {
-                numbervalue: {
+                vvalue: {
                     type: "number",
                     defaultvalue: 0,
                     required: true
                 }
             },
             boolean: {
-                booleanvalue: {
+                vvalue: {
                     type: "boolean",
                     defaultvalue: "false",
                     required: true

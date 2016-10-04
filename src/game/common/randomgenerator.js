@@ -1,7 +1,7 @@
 /**
  * Created by Christophe on 26/09/2016.
  */
-define([], function() {
+define(["underscore"], function(_) {
 
     return function(mode, array, options) {
 
@@ -17,6 +17,7 @@ define([], function() {
 
                 case "normal":
                     choosenObject = array[index];
+                    console.log(index);
 
                     break;
 

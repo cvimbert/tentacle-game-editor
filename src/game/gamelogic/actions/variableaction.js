@@ -5,8 +5,9 @@ define([], function() {
 
     return {
         launch: function() {
+            console.log("set: " + this.getModelProperty("vvalue"));
             this.launchObjectCommand("variable", "vaction", {
-                set: "varvalue"
+                set: "vvalue"
             });
         }
     };

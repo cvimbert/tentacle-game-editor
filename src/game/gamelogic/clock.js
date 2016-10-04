@@ -27,7 +27,6 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
                 this.stop();
 
                 interval = setInterval(function() {
-                    console.log("yep");
                     t.dispatchEvent("period");
                 }, period * 1000);
             };

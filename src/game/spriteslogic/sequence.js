@@ -57,7 +57,6 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
             this.reverse = function() {
                 direction *= -1;
-                console.log("reverse");
             };
 
             function isValidIndex(index) {

@@ -43,8 +43,8 @@ define(["underscore"], function(_) {
 
             if (args) {
 
-                if (args[commandName]) {
-                    args = args[commandName];
+                if (args[command]) {
+                    args = args[command];
                 }
 
                 if (_.isArray(args)) {

@@ -38,7 +38,8 @@
         "triggers/controlclick",
         "triggers/gameevent",
         "triggers/spritescollision",
-        "triggers/timeout"
+        "triggers/timeout",
+        "triggers/sequencetrigger"
     ], function(
         controlDirective,
         displayObjectDirective,
