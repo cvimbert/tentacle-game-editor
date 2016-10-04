@@ -66,14 +66,12 @@ module.exports = function(grunt){
                         dest: "dist"
                     },
                     {
-                        cwd: "bower_components",
+                        cwd: "bower_components/bootstrap",
                         expand: true,
-                        src: [
-                            "angular/angular.js",
-                            "angular-route/angular-route.js",
-                            "angular-sanitize/angular-sanitize.js"
+                        src : [
+                            "fonts/**"
                         ],
-                        dest: "dist/externals"
+                        dest: "dist"
                     }
                 ]
             },
@@ -91,6 +89,14 @@ module.exports = function(grunt){
                             "config.js",
                             "app.js",
                             "index_cordova.html"
+                        ],
+                        dest: "cordova/www"
+                    },
+                    {
+                        cwd: "bower_components/bootstrap",
+                        expand: true,
+                        src : [
+                            "fonts/**"
                         ],
                         dest: "cordova/www"
                     }
@@ -122,6 +128,14 @@ module.exports = function(grunt){
                     baseUrl: ".",
                     mainConfigFile: "config.js",
                     name: "app",
+                    include: [
+                        "bower_components/jquery/dist/jquery.js",
+                        "bower_components/bootstrap/dist/js/bootstrap.js",
+                        "bower_components/angular/angular.js",
+                        "bower_components/angular-route/angular-route.js",
+                        "bower_components/angular-sanitize/angular-sanitize.js",
+                        "bower_components/requirejs/require.js"
+                    ],
                     out: "build/require.bundle.js",
                     preserveLicenseComments: false,
                     generateSourceMaps:true,
@@ -130,14 +144,6 @@ module.exports = function(grunt){
             }
         },
         concat: {
-            dependencies: {
-                src: [
-                    "bower_components/jquery/dist/jquery.js",
-                    "bower_components/bootstrap/dist/js/bootstrap.js",
-                    "bower_components/requirejs/require.js"
-                ],
-                dest: "build/dependencies.bundle.js"
-            },
             css: {
                 src: [
                     "bower_components/bootstrap/dist/css/bootstrap.css"
@@ -154,6 +160,8 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-rename');
     grunt.loadNpmTasks('grunt-contrib-concat');
 
-    grunt.registerTask("dist", ["clean:dist", "concat:dependencies", "concat:css", "requirejs:build", "copy:dist", "rename:dist"]);
-    grunt.registerTask("buildcordova", ["clean:cordova", "copy:cordova", "rename:cordova"]);
+    grunt.registerTask("dist", ["clean:dist", "concat:css", "requirejs:build", "copy:dist", "rename:dist"]);
+    grunt.registerTask("buildcordova", ["clean:cordova", "concat:css", "requirejs:build", "copy:cordova", "rename:cordova"]);
+    grunt.registerTask("run", ["cordovacli:run_android"]);
+    grunt.registerTask("build_and_run", ["buildcordova", "run"]);
 };
