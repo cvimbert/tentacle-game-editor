@@ -2063,25 +2063,6 @@
     "uid": "bd489abe-6cbc-4263-b6f2-67b835c7290b",
     "$$hashKey": "object:146"
   },
-  "5a608fd2-c37d-4459-bf9a-5fb3e144485e": {
-    "attributes": {
-      "name": "Click Bouton A",
-      "condition": "",
-      "triggertype": "controlclick",
-      "control": "bd489abe-6cbc-4263-b6f2-67b835c7290b",
-      "activatedonstart": "false",
-      "eventtype": "controldown"
-    },
-    "trashCan": {
-      "name": "Click Bouton A",
-      "condition": "",
-      "triggertype": "controlclick",
-      "control": "bd489abe-6cbc-4263-b6f2-67b835c7290b"
-    },
-    "type": "Trigger",
-    "uid": "5a608fd2-c37d-4459-bf9a-5fb3e144485e",
-    "$$hashKey": "object:159"
-  },
   "203a1f3f-248f-41fc-95d6-d7466330599e": {
     "attributes": {
       "name": "Bouton B",
@@ -2095,31 +2076,10 @@
     "uid": "203a1f3f-248f-41fc-95d6-d7466330599e",
     "$$hashKey": "object:209"
   },
-  "f5333d51-7cc9-4a3d-a5ff-bf83145086ee": {
-    "attributes": {
-      "name": "Click Bouton B",
-      "action": "",
-      "condition": "",
-      "triggertype": "controlclick",
-      "control": "203a1f3f-248f-41fc-95d6-d7466330599e",
-      "activatedonstart": "false",
-      "eventtype": "controldown"
-    },
-    "trashCan": {
-      "name": "Click Bouton B",
-      "action": "",
-      "condition": "",
-      "triggertype": "controlclick",
-      "control": "203a1f3f-248f-41fc-95d6-d7466330599e"
-    },
-    "type": "Trigger",
-    "uid": "f5333d51-7cc9-4a3d-a5ff-bf83145086ee",
-    "$$hashKey": "object:254"
-  },
   "c8489fd9-0560-42b4-9b91-d90bf130be12": {
     "attributes": {
       "name": "Main Clock",
-      "period": 0.2
+      "period": 0.3
     },
     "trashCan": {},
     "type": "Clock",
@@ -2295,7 +2255,9 @@
       "actions": [
         "a59a722e-a832-44e2-9c98-0fc4998cc6c3",
         "05f05bd3-f909-4964-b494-c8ff48fc7dae",
-        "696446ac-2de4-41cb-b2b0-f270803153bd"
+        "696446ac-2de4-41cb-b2b0-f270803153bd",
+        "e38ae0c1-e4f4-47d9-a0d0-49e7df13d564",
+        "bcf2ef41-7ab1-4a81-b90c-491e292683d1"
       ]
     },
     "trashCan": {
@@ -3127,7 +3089,7 @@
   },
   "9cd57cd3-b564-4951-a861-305aeeadcd65": {
     "attributes": {
-      "name": "Tentacle 1 A / B",
+      "name": "Tentacule 1 A / B",
       "variabletype": "string",
       "value": "A"
     },
@@ -3142,22 +3104,23 @@
   "c1bd7a58-01ee-44d3-ab22-101d42419b60": {
     "attributes": {
       "name": "Choose Tentacule A",
-      "condition": "a14dc741-3a84-4fb4-ae2b-7d841b2c307d",
+      "condition": "",
       "actiontype": "variableaction",
       "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
       "vaction": "set",
       "varvalue": "",
-      "stringvalue": "A"
+      "vvalue": "A"
     },
     "trashCan": {
       "name": "Choose Tentacule A",
-      "condition": "a14dc741-3a84-4fb4-ae2b-7d841b2c307d",
+      "condition": "",
       "actiontype": "variableaction",
       "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
       "vaction": "set",
       "varvalue": "",
       "numbervalue": 0,
-      "stringvalue": "A"
+      "stringvalue": "A",
+      "vvalue": "A"
     },
     "type": "Action",
     "uid": "c1bd7a58-01ee-44d3-ab22-101d42419b60",
@@ -3166,21 +3129,22 @@
   "c82f2fcb-68fd-471a-a9bf-971ae742c31d": {
     "attributes": {
       "name": "Choose Tentacule B",
-      "condition": "929a1975-eddf-499b-bfed-56c5ba24a3a6",
+      "condition": "",
       "actiontype": "variableaction",
       "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
       "vaction": "set",
       "varvalue": "",
-      "stringvalue": "B"
+      "vvalue": "B"
     },
     "trashCan": {
       "name": "Choose Tentacule B",
-      "condition": "929a1975-eddf-499b-bfed-56c5ba24a3a6",
+      "condition": "",
       "actiontype": "variableaction",
       "variable": "9cd57cd3-b564-4951-a861-305aeeadcd65",
       "vaction": "set",
       "varvalue": "",
-      "stringvalue": "B"
+      "stringvalue": "B",
+      "vvalue": "B"
     },
     "type": "Action",
     "uid": "c82f2fcb-68fd-471a-a9bf-971ae742c31d",
@@ -3344,149 +3308,173 @@
     "uid": "2a685fc3-4202-43e2-aa8c-bc8ad3ac50fe",
     "$$hashKey": "object:104"
   },
-  "5eac8aa1-bb14-4c70-b233-1588b388a638": {
+  "0409579f-7a94-43e9-88b1-3df1e5560c92": {
     "attributes": {
-      "name": "Reverse Tentacule 1A",
+      "name": "Tentacule 1A Finish",
+      "actions": [
+        "e38ae0c1-e4f4-47d9-a0d0-49e7df13d564"
+      ],
       "condition": "",
-      "actiontype": "sequenceaction",
-      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
-      "saction": "reverse"
-    },
-    "trashCan": {
-      "name": "Reverse Tentacule 1",
-      "condition": "",
-      "actiontype": "sequenceaction",
-      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
-      "saction": ""
-    },
-    "type": "Action",
-    "uid": "5eac8aa1-bb14-4c70-b233-1588b388a638",
-    "$$hashKey": "object:108"
-  },
-  "11876acc-971f-441b-9481-4eec44e40a39": {
-    "attributes": {
-      "name": "Reverse Tentacule 1B",
-      "condition": "",
-      "actiontype": "sequenceaction",
-      "sequence": "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0",
-      "saction": "reverse"
-    },
-    "trashCan": {
-      "name": "Reverse Tentacule 1B",
-      "condition": "",
-      "actiontype": "sequenceaction",
-      "sequence": "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0",
-      "saction": ""
-    },
-    "type": "Action",
-    "uid": "11876acc-971f-441b-9481-4eec44e40a39",
-    "$$hashKey": "object:158"
-  },
-  "c627cd9d-684f-46f6-bd77-63bf10b61cc2": {
-    "attributes": {
-      "name": "Reverse Tentacule 2",
-      "condition": "",
-      "actiontype": "sequenceaction",
-      "sequence": "463c68a2-18d1-45b7-b05e-5a0d9aec8a82",
-      "saction": "reverse"
-    },
-    "trashCan": {
-      "name": "Reverse Tentacule 2",
-      "condition": "",
-      "actiontype": "sequenceaction",
-      "sequence": "463c68a2-18d1-45b7-b05e-5a0d9aec8a82",
-      "saction": ""
-    },
-    "type": "Action",
-    "uid": "c627cd9d-684f-46f6-bd77-63bf10b61cc2",
-    "$$hashKey": "object:179"
-  },
-  "acc400f8-dd3e-4d6a-87e3-f11fdf3dfa39": {
-    "attributes": {
-      "name": "Reverse Tentacule 3",
-      "condition": "",
-      "actiontype": "sequenceaction",
-      "sequence": "0e038d94-49c7-4dc6-899f-d40d9c268fb7",
-      "saction": "reverse"
-    },
-    "trashCan": {
-      "name": "Reverse Tentacule 3",
-      "condition": "",
-      "actiontype": "sequenceaction",
-      "sequence": "0e038d94-49c7-4dc6-899f-d40d9c268fb7",
-      "saction": ""
-    },
-    "type": "Action",
-    "uid": "acc400f8-dd3e-4d6a-87e3-f11fdf3dfa39",
-    "$$hashKey": "object:200"
-  },
-  "ea014fdc-eada-4ccb-b399-656824bb7223": {
-    "attributes": {
-      "name": "Reverse Tentacule 4",
-      "condition": "",
-      "actiontype": "sequenceaction",
-      "sequence": "dc136096-4b05-4312-bc9a-af97bdbd9d78",
-      "saction": "reverse"
-    },
-    "trashCan": {
-      "name": "Reverse Tentacule 4",
-      "condition": "",
-      "actiontype": "sequenceaction",
-      "sequence": "dc136096-4b05-4312-bc9a-af97bdbd9d78",
-      "saction": ""
-    },
-    "type": "Action",
-    "uid": "ea014fdc-eada-4ccb-b399-656824bb7223",
-    "$$hashKey": "object:221"
-  },
-  "57cfec2c-4b5e-44bd-b330-c9df18952698": {
-    "attributes": {
-      "name": "Tentacule 1A Complete",
-      "actions": [],
-      "condition": "",
-      "activatedonstart": "false",
-      "triggertype": "sequencetrigger",
-      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
-      "eventtype": "enterstate",
-      "state": "c8d042d7-c3ba-411b-808a-3809b91e3f97"
-    },
-    "trashCan": {
-      "name": "Tentacule 1A Complete",
-      "actions": [],
-      "condition": "",
-      "activatedonstart": "false",
-      "triggertype": "sequencetrigger",
-      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
-      "eventtype": "enterstate",
-      "state": "c8d042d7-c3ba-411b-808a-3809b91e3f97"
-    },
-    "type": "Trigger",
-    "uid": "57cfec2c-4b5e-44bd-b330-c9df18952698",
-    "$$hashKey": "object:242"
-  },
-  "dd1418a2-1915-45dc-99af-2d87ff40033b": {
-    "attributes": {
-      "name": "Tentacule 1A Started",
-      "actions": [],
-      "condition": "",
-      "activatedonstart": "false",
+      "activatedonstart": "true",
       "triggertype": "sequencetrigger",
       "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
       "eventtype": "enterstate",
       "state": "b536e3eb-2a2b-46de-9b96-c1c1fc8881d4"
     },
     "trashCan": {
-      "name": "Tentacule 1A Started",
-      "actions": [],
+      "name": "Tentacule 1 Finish",
+      "actions": [
+        "e38ae0c1-e4f4-47d9-a0d0-49e7df13d564"
+      ],
       "condition": "",
-      "activatedonstart": "false",
+      "activatedonstart": "true",
       "triggertype": "sequencetrigger",
       "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
       "eventtype": "enterstate",
       "state": "b536e3eb-2a2b-46de-9b96-c1c1fc8881d4"
     },
     "type": "Trigger",
-    "uid": "dd1418a2-1915-45dc-99af-2d87ff40033b",
-    "$$hashKey": "object:323"
+    "uid": "0409579f-7a94-43e9-88b1-3df1e5560c92",
+    "$$hashKey": "object:155"
+  },
+  "8206d668-c7b6-456d-964f-738c79bc735b": {
+    "attributes": {
+      "name": "Tentacule 1B Finish",
+      "actions": [
+        "e38ae0c1-e4f4-47d9-a0d0-49e7df13d564"
+      ],
+      "condition": "",
+      "activatedonstart": "true",
+      "triggertype": "sequencetrigger",
+      "sequence": "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0",
+      "eventtype": "enterstate",
+      "state": "94f6eeb0-33ee-4f86-aff1-52d626d56b85"
+    },
+    "trashCan": {
+      "name": "Tentacule 1B Finish",
+      "actions": [],
+      "condition": "",
+      "activatedonstart": "true",
+      "triggertype": "sequencetrigger",
+      "sequence": "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0",
+      "eventtype": "enterstate",
+      "state": "94f6eeb0-33ee-4f86-aff1-52d626d56b85"
+    },
+    "type": "Trigger",
+    "uid": "8206d668-c7b6-456d-964f-738c79bc735b",
+    "$$hashKey": "object:241"
+  },
+  "76421190-d370-4292-a6e6-e71cfb1b8f71": {
+    "attributes": {
+      "name": "Perso Next",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a",
+      "saction": "next"
+    },
+    "trashCan": {
+      "name": "Perso Next",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a",
+      "saction": ""
+    },
+    "type": "Action",
+    "uid": "76421190-d370-4292-a6e6-e71cfb1b8f71",
+    "$$hashKey": "object:51"
+  },
+  "b4ae82ad-e6f0-456b-b707-0a1d8157f623": {
+    "attributes": {
+      "name": "Perso Previous",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a",
+      "saction": "previous"
+    },
+    "trashCan": {
+      "name": "Perso Previous",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a",
+      "saction": "previous"
+    },
+    "type": "Action",
+    "uid": "b4ae82ad-e6f0-456b-b707-0a1d8157f623",
+    "$$hashKey": "object:112"
+  },
+  "a7ade942-aa16-4ca8-aee7-8a634c2ee945": {
+    "attributes": {
+      "name": "Click Button A",
+      "actions": [
+        "b4ae82ad-e6f0-456b-b707-0a1d8157f623"
+      ],
+      "condition": "",
+      "activatedonstart": "true",
+      "triggertype": "controlclick",
+      "control": "bd489abe-6cbc-4263-b6f2-67b835c7290b",
+      "eventtype": "controldown"
+    },
+    "trashCan": {
+      "name": "Click Button A",
+      "actions": [
+        "b4ae82ad-e6f0-456b-b707-0a1d8157f623"
+      ],
+      "condition": "",
+      "activatedonstart": "true",
+      "triggertype": "controlclick",
+      "control": "bd489abe-6cbc-4263-b6f2-67b835c7290b",
+      "eventtype": ""
+    },
+    "type": "Trigger",
+    "uid": "a7ade942-aa16-4ca8-aee7-8a634c2ee945",
+    "$$hashKey": "object:130"
+  },
+  "3ee31fec-7d7e-4e8e-ba5d-624fba83b57e": {
+    "attributes": {
+      "name": "Click Button B",
+      "actions": [
+        "76421190-d370-4292-a6e6-e71cfb1b8f71"
+      ],
+      "condition": "",
+      "activatedonstart": "true",
+      "triggertype": "controlclick",
+      "control": "203a1f3f-248f-41fc-95d6-d7466330599e",
+      "eventtype": "controldown"
+    },
+    "trashCan": {
+      "name": "Click Button B",
+      "actions": [
+        "76421190-d370-4292-a6e6-e71cfb1b8f71"
+      ],
+      "condition": "",
+      "activatedonstart": "false",
+      "triggertype": "controlclick",
+      "control": "203a1f3f-248f-41fc-95d6-d7466330599e",
+      "eventtype": ""
+    },
+    "type": "Trigger",
+    "uid": "3ee31fec-7d7e-4e8e-ba5d-624fba83b57e",
+    "$$hashKey": "object:151"
+  },
+  "bcf2ef41-7ab1-4a81-b90c-491e292683d1": {
+    "attributes": {
+      "name": "Init Perso",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a",
+      "saction": "setstate",
+      "state": "d4e41439-d912-4978-9790-e62960f3e09c"
+    },
+    "trashCan": {
+      "name": "Init Perso",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a",
+      "saction": "setstate",
+      "state": "d4e41439-d912-4978-9790-e62960f3e09c"
+    },
+    "type": "Action",
+    "uid": "bcf2ef41-7ab1-4a81-b90c-491e292683d1",
+    "$$hashKey": "object:222"
   }
 }

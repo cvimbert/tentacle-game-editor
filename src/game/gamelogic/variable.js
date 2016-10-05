@@ -30,7 +30,6 @@ define([], function() {
                 initValue = model.get("value");
 
                 currentValue = initValue;
-                console.log(currentValue);
             };
 
             function convert(value) {

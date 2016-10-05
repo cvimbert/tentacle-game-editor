@@ -4,8 +4,19 @@
 define([], function() {
 
     return {
+        initialize: function() {
+            this.actionType = this.getModelProperty("saction");
+        },
         launch: function() {
-            this.launchObjectCommand("sequence", "saction");
+            var arg;
+
+            if (this.actionType === "setstate") {
+                arg = {
+                    object: "state"
+                }
+            }
+
+            this.launchObjectCommand("sequence", "saction", arg);
         }
     };
 });

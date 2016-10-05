@@ -16,7 +16,6 @@ define([], function() {
 
         $scope.getModels = function () {
             $scope.models = shared.modelManager.getModelByType($scope.modeltype);
-            console.log($scope.models);
         };
 
 

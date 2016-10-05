@@ -5,6 +5,8 @@ define(["underscore"], function(_) {
 
     return function (model, modelManager, gameManager) {
 
+        var self = this;
+
         this.getObjectById = function(id) {
             var uid = model.get(id);
             return gameManager.getObjectByUid(uid);
@@ -16,13 +18,23 @@ define(["underscore"], function(_) {
 
         function launchEval(object, functionName, args) {
 
-            // TODO: ne fonctionne pour l'instant que pour les chaines de cararactères
+            // TODO: fonctionne pour les chaines de caractère et les objets
 
             var expression = "object." + functionName + "(";
+            var argsArray = [];
+            var count = 0;
 
             if (args.length > 0) {
                 _.each(args, function(arg, i) {
-                    expression += "'" + arg + "'";
+
+                    if (arg.object !== undefined) {
+                        argsArray[count] = self.getObjectById(arg.object);
+                        expression += "argsArray[" + count + "]";
+                        count++;
+                    } else {
+                        expression += "'" + model.get(arg) + "'";
+                    }
+
                     if (i < args.length - 1) expression += ",";
                 });
             }
@@ -41,7 +53,7 @@ define(["underscore"], function(_) {
 
             var argsValues = [];
 
-            if (args) {
+            if (args !== undefined) {
 
                 if (args[command]) {
                     args = args[command];
@@ -49,10 +61,10 @@ define(["underscore"], function(_) {
 
                 if (_.isArray(args)) {
                     _.each(args, function(arg) {
-                        argsValues.push(model.get(arg));
+                        argsValues.push(arg);
                     });
                 } else {
-                    argsValues.push(model.get(args));
+                    argsValues.push(args);
                 }
             }
 

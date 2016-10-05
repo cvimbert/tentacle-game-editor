@@ -17,7 +17,6 @@ define(["underscore"], function(_) {
 
                 case "normal":
                     choosenObject = array[index];
-                    console.log(index);
 
                     break;
 

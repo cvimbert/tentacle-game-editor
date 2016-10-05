@@ -68,8 +68,6 @@
 
                 localStorage["defaultModel"] = id;
             }
-
-            console.log("model loaded");
         };
 
         this.getDescriptors = function () {
