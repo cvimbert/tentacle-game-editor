@@ -1,7 +1,7 @@
 /**
  * Created by Christophe on 16/09/2016.
  */
-define([], function() {
+define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
     return {
         console: {
@@ -19,6 +19,7 @@ define([], function() {
             }
         },
         "Variable": function(model, modelManager, gameManager) {
+            _.extend(this, EventDispatcher);
 
             var type;
             var initValue;
@@ -55,6 +56,7 @@ define([], function() {
 
             this.set = function(value) {
                 currentValue = convert(value);
+                this.dispatchEvent("change", value);
             };
 
             this.reset = function(newInitValue) {

@@ -26,15 +26,7 @@ var modelDescriptorV3 = {
                 //referencetype: ["GroupState", "ConditionalGroupStateSet"],
                 referencetype: "GroupState",
                 required: true
-
-                // ici il faudrait plutôt une liste filtrée d'éléments (par un autre attribut)
-
-                /*type: "collection",
-                collectiontype: "reference",
-                referencetype: "linkedcollection",
-                linkedcollectionattribute: "spritesgroup",
-                linkedcollectionattributevalue: "sprites",
-                required: true*/
+                // afficher plutôt les états
             }
         }
     },
@@ -356,6 +348,40 @@ var modelDescriptorV3 = {
                 type: "ConditionalAttributesSet",
                 required: true,
                 attributesSets: {
+                    variabletrigger: {
+                        variable: {
+                            type: "reference",
+                            referencetype: "Variable",
+                            required: true
+                        },
+                        eventtype: {
+                            type: "ConditionalAttributesSet",
+                            required: true,
+                            attributesSets: {
+                                change: {}
+                            }
+                        }
+                    },
+                    spritetrigger: {
+                        sprite: {
+                            type: "reference",
+                            referencetype: "Sprite",
+                            required: true
+                        },
+                        eventtype: {
+                            type: "ConditionalAttributesSet",
+                            required: true,
+                            attributesSets: {
+                                collision: {
+                                    collisionsprite: {
+                                        type: "reference",
+                                        referencetype: "Sprite",
+                                        required: true
+                                    }
+                                }
+                            }
+                        }
+                    },
                     sequencetrigger: {
                         sequence: {
                             type: "reference",
@@ -1041,6 +1067,18 @@ var modelDescriptorV3 = {
                     referencetype: "linkedcollection",
                     linkedcollectionattribute: "sequence",
                     linkedcollectionattributevalue: "states",
+                    required: true
+                }
+            },
+            play: {
+                occurences: {
+                    type: "number",
+                    defaultvalue: 1,
+                    required: true
+                },
+                period: {
+                    type: "number",
+                    defaultvalue: 0.5,
                     required: true
                 }
             }

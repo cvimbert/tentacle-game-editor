@@ -120,7 +120,9 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
             this.previous = this.displayPrevious;
 
-            this.play = function(delay) {
+            this.play = function(delay, occurences) {
+
+                if (occurences === undefined) occurences = 1;
 
                 var t = this;
                 t.reset();
@@ -129,10 +131,23 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
                 t.displayNext();
 
+                var occurencesCounter = 0;
+
                 animationInterval = setInterval(function() {
 
                     if (!t.displayNext()) {
-                        clearInterval(animationInterval);
+                        t.dispatchEvent("iterationend", occurencesCounter);
+                        occurencesCounter++;
+
+                        if (occurencesCounter >= occurences) {
+                            clearInterval(animationInterval);
+                            t.dispatchEvent("animationend");
+                        }
+                        else {
+                            currentIndex = -1;
+                            t.displayNext();
+                        }
+
                     }
 
                 }, delay * 1000);

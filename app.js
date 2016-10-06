@@ -39,7 +39,9 @@
         "triggers/gameevent",
         "triggers/spritescollision",
         "triggers/timeout",
-        "triggers/sequencetrigger"
+        "triggers/sequencetrigger",
+        "triggers/spritetrigger",
+        "triggers/variabletrigger"
     ], function(
         controlDirective,
         displayObjectDirective,

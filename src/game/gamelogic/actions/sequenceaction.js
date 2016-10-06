@@ -13,7 +13,12 @@ define([], function() {
             if (this.actionType === "setstate") {
                 arg = {
                     object: "state"
-                }
+                };
+            } else if (this.actionType === "play") {
+                arg = [
+                    "period",
+                    "occurences"
+                ];
             }
 
             this.launchObjectCommand("sequence", "saction", arg);

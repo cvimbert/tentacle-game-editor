@@ -25,6 +25,7 @@ define(["underscore"], function(_) {
             var count = 0;
 
             if (args.length > 0) {
+
                 _.each(args, function(arg, i) {
 
                     if (arg.object !== undefined) {
@@ -32,7 +33,13 @@ define(["underscore"], function(_) {
                         expression += "argsArray[" + count + "]";
                         count++;
                     } else {
-                        expression += "'" + model.get(arg) + "'";
+                        var argValue = model.get(arg);
+
+                        if ((typeof argValue) === "string") {
+                            expression += "'" + argValue + "'";
+                        } else {
+                            expression += argValue;
+                        }
                     }
 
                     if (i < args.length - 1) expression += ",";
