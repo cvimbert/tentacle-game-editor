@@ -17,7 +17,8 @@ define([], function() {
             } else if (this.actionType === "play") {
                 arg = [
                     "period",
-                    "occurences"
+                    "occurences",
+                    "interruptable"
                 ];
             }
 

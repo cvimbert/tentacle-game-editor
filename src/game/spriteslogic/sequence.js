@@ -37,10 +37,13 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
             var currentIndex = 0;
             var animationInterval;
             var direction;
+            var isPlaying;
 
             this.initialize = function() {
 
                 direction = 1;
+
+                isPlaying = false;
 
                 var groupUid = model.get("spritesgroup");
                 var statesUidCollection = model.get("states");
@@ -66,6 +69,7 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
             this.reset = function() {
                 group.hide();
                 currentIndex = -1;
+                isPlaying = false;
 
                 if (animationInterval) {
                     clearInterval(animationInterval);
@@ -120,11 +124,19 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
             this.previous = this.displayPrevious;
 
-            this.play = function(delay, occurences) {
+            this.play = function(delay, occurences, interruptable) {
 
                 if (occurences === undefined) occurences = 1;
 
+                console.log(interruptable);
+
                 var t = this;
+
+                if (interruptable === "false" && isPlaying) {
+                    occurencesCounter = 0;
+                    return;
+                }
+
                 t.reset();
 
                 if (delay === undefined) delay = 1;
@@ -132,6 +144,8 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
                 t.displayNext();
 
                 var occurencesCounter = 0;
+
+                isPlaying = true;
 
                 animationInterval = setInterval(function() {
 
@@ -142,6 +156,8 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
                         if (occurencesCounter >= occurences) {
                             clearInterval(animationInterval);
                             t.dispatchEvent("animationend");
+                            console.log("end");
+                            isPlaying = false;
                         }
                         else {
                             currentIndex = -1;
@@ -151,7 +167,7 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
                     }
 
                 }, delay * 1000);
-            }
+            };
 
             this.setstate = function(state) {
                 var index = groupStates.indexOf(state);

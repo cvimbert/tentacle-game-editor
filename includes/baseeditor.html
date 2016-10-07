@@ -28,7 +28,7 @@
                 <tr>
                     <td>
                         <select ng-model="collectionid" class="combobox">
-                            <option ng-repeat="(refid, ref) in getReferencesCollection(item, attribute)" ng-if="isInCollection(item, attributeid, refid)" value="{{refid}}">{{getName(ref)}}</option>
+                            <option ng-repeat="(refid, ref) in getReferencesCollection(item, attribute)" ng-if="attribute.filtered === false || isInCollection(item, attributeid, refid)" value="{{refid}}">{{getName(ref)}}</option>
                         </select>
                     </td>
                     <td class="button-td">
@@ -66,7 +66,7 @@
     </div>
 
     <div class="collection-item-displayer-container" ng-if="attribute.type === 'collection' && attribute.collectiontype === 'reference' && item.get(attributeid).length > 0">
-        <div class="collection-item-displayer" ng-repeat="ref in item.get(attributeid)">
+        <div class="collection-item-displayer" ng-repeat="ref in item.get(attributeid) track by $index">
             {{getNameByUid(ref)}}
             <div ng-click="deleteItemFromCollection($index, item.get(attributeid))" class="item-delete-button"><span class="glyphicon glyphicon-remove"></span></div>
         </div>

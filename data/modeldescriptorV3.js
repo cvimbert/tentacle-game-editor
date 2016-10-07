@@ -24,9 +24,9 @@ var modelDescriptorV3 = {
                 type: "collection",
                 collectiontype: "reference",
                 //referencetype: ["GroupState", "ConditionalGroupStateSet"],
+                filtered: false,
                 referencetype: "GroupState",
                 required: true
-                // afficher plutôt les états
             }
         }
     },
@@ -903,42 +903,26 @@ var modelDescriptorV3 = {
                             }
                         }
                     },
-                    comparevariablewithvalue: {
-                        variable: {
+                    sequencecondition: {
+                        sequence: {
                             type: "reference",
-                            referencetype: "Variable",
+                            referencetype: "Sequence",
                             required: true
                         },
                         operator: {
                             type: "include",
-                            includetype: "ArithmeticOperator",
+                            includetype: "EqualityOperator",
                             required: true
                         },
-                        variabletype: {
-                            type: "LinkedConditionalAttributesSet",
-                            linktype: "referenceattributevalue",
-                            linkedreference: "variable",
-                            linkedattribute: "variabletype",
+                        conditiontype: {
+                            type: "ConditionalAttributesSet",
                             required: true,
                             attributesSets: {
-                                string: {
-                                    value: {
-                                        type: "string",
-                                        defaultvalue: "value",
-                                        required: true
-                                    }
-                                },
-                                number: {
-                                    value: {
-                                        type: "number",
-                                        defaultvalue: 0,
-                                        required: true
-                                    }
-                                },
-                                boolean: {
-                                    value: {
-                                        type: "boolean",
-                                        defaultvalue: "false",
+                                onstate: {
+                                    state: {
+                                        // pas bon !!! les states de la séquence exclusivement !!!!
+                                        type: "reference",
+                                        referencetype: ["GroupState", "ConditionalGroupStateSet"],
                                         required: true
                                     }
                                 }
@@ -1026,6 +1010,11 @@ var modelDescriptorV3 = {
         required: true,
         enumerationvalues: ["===", "!==", "<", ">", "<=", ">="]
     },
+    EqualityOperator: {
+        type: "Enumeration",
+        required: true,
+        enumerationvalues: ["===", "!=="]
+    },
     LoopType: {
         type: "Enumeration",
         enumerationvalues: ["circle", "reset"]
@@ -1080,6 +1069,10 @@ var modelDescriptorV3 = {
                     type: "number",
                     defaultvalue: 0.5,
                     required: true
+                },
+                interruptable: {
+                    type: "boolean",
+                    defaultvalue: "true"
                 }
             }
         }
