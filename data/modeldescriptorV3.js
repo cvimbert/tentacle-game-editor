@@ -920,9 +920,10 @@ var modelDescriptorV3 = {
                             attributesSets: {
                                 onstate: {
                                     state: {
-                                        // pas bon !!! les states de la séquence exclusivement !!!!
                                         type: "reference",
-                                        referencetype: ["GroupState", "ConditionalGroupStateSet"],
+                                        referencetype: "linkedcollection",
+                                        linkedcollectionattribute: "sequence",
+                                        linkedcollectionattributevalue: "states",
                                         required: true
                                     }
                                 }

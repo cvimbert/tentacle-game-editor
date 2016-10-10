@@ -33,6 +33,7 @@
         "actions/variableaction",
         "conditions/basecondition",
         "conditions/variablecondition",
+        "conditions/sequencecondition",
         "triggers/basetrigger",
         "triggers/clockperiod",
         "triggers/controlclick",

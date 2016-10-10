@@ -128,8 +128,6 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
                 if (occurences === undefined) occurences = 1;
 
-                console.log(interruptable);
-
                 var t = this;
 
                 if (interruptable === "false" && isPlaying) {
@@ -156,7 +154,6 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
                         if (occurencesCounter >= occurences) {
                             clearInterval(animationInterval);
                             t.dispatchEvent("animationend");
-                            console.log("end");
                             isPlaying = false;
                         }
                         else {
@@ -173,6 +170,10 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
                 var index = groupStates.indexOf(state);
                 this.displayAtIndex(index);
             };
+
+            this.getstate = function() {
+                return currentIndex !== -1 ? groupStates[currentIndex] : null;
+            }
         }
     }
 });

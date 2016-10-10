@@ -3385,7 +3385,8 @@
     "attributes": {
       "name": "Click Button A",
       "actions": [
-        "b4ae82ad-e6f0-456b-b707-0a1d8157f623"
+        "b4ae82ad-e6f0-456b-b707-0a1d8157f623",
+        "7932b062-04c5-4b02-8726-bff8145c4ce3"
       ],
       "condition": "",
       "activatedonstart": "true",
@@ -3412,7 +3413,8 @@
     "attributes": {
       "name": "Click Button B",
       "actions": [
-        "76421190-d370-4292-a6e6-e71cfb1b8f71"
+        "76421190-d370-4292-a6e6-e71cfb1b8f71",
+        "4cef98bd-a035-4b99-8da8-2cea8af853d8"
       ],
       "condition": "",
       "activatedonstart": "true",
@@ -3753,19 +3755,22 @@
   "7932b062-04c5-4b02-8726-bff8145c4ce3": {
     "attributes": {
       "name": "Play Animation Perso 1",
-      "condition": "",
+      "condition": "74588f9f-192a-4227-9502-610453d9a5da",
+      "actiontype": "sequenceaction",
+      "sequence": "0ee42cea-9c32-489b-9ebf-28243e387a17",
+      "saction": "play",
+      "occurences": 3,
+      "period": 0.5,
+      "interruptable": "false"
+    },
+    "trashCan": {
+      "name": "Play Animation Perso 1",
+      "condition": "74588f9f-192a-4227-9502-610453d9a5da",
       "actiontype": "sequenceaction",
       "sequence": "0ee42cea-9c32-489b-9ebf-28243e387a17",
       "saction": "play",
       "occurences": 3,
       "period": 0.5
-    },
-    "trashCan": {
-      "name": "Play Animation Perso 1",
-      "condition": "",
-      "actiontype": "sequenceaction",
-      "sequence": "0ee42cea-9c32-489b-9ebf-28243e387a17",
-      "saction": "play"
     },
     "type": "Action",
     "uid": "7932b062-04c5-4b02-8726-bff8145c4ce3",
@@ -3774,7 +3779,7 @@
   "4cef98bd-a035-4b99-8da8-2cea8af853d8": {
     "attributes": {
       "name": "Play Animation Perso 8",
-      "condition": "",
+      "condition": "4398a375-b797-4130-a797-ce4ca325e70c",
       "actiontype": "sequenceaction",
       "sequence": "8f1274ec-d695-4ecb-94ba-5c45c2d4b94d",
       "saction": "play",
@@ -3784,12 +3789,13 @@
     },
     "trashCan": {
       "name": "Play Animation Perso 8",
-      "condition": "",
+      "condition": "4398a375-b797-4130-a797-ce4ca325e70c",
       "actiontype": "sequenceaction",
       "sequence": "8f1274ec-d695-4ecb-94ba-5c45c2d4b94d",
       "saction": "play",
-      "occurences": 3,
-      "period": 0.5
+      "occurences": 1,
+      "period": 0.2,
+      "interruptable": "false"
     },
     "type": "Action",
     "uid": "4cef98bd-a035-4b99-8da8-2cea8af853d8",
@@ -4010,5 +4016,47 @@
     "type": "Sequence",
     "uid": "8f1274ec-d695-4ecb-94ba-5c45c2d4b94d",
     "$$hashKey": "object:309"
+  },
+  "74588f9f-192a-4227-9502-610453d9a5da": {
+    "attributes": {
+      "name": "Is Perso Start State",
+      "conditionobject": "sequencecondition",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a",
+      "operator": "===",
+      "conditiontype": "onstate",
+      "state": "d4e41439-d912-4978-9790-e62960f3e09c"
+    },
+    "trashCan": {
+      "name": "Is Perso Start State",
+      "conditionobject": "sequencecondition",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a",
+      "operator": "===",
+      "conditiontype": "onstate",
+      "state": "d4e41439-d912-4978-9790-e62960f3e09c"
+    },
+    "type": "Condition",
+    "uid": "74588f9f-192a-4227-9502-610453d9a5da",
+    "$$hashKey": "object:113"
+  },
+  "4398a375-b797-4130-a797-ce4ca325e70c": {
+    "attributes": {
+      "name": "Is Perso End State",
+      "conditionobject": "sequencecondition",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a",
+      "operator": "===",
+      "conditiontype": "onstate",
+      "state": "45ce893e-6b11-490b-bde0-d23d47c6b86b"
+    },
+    "trashCan": {
+      "name": "Is Perso End State",
+      "conditionobject": "sequencecondition",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a",
+      "operator": "===",
+      "conditiontype": "onstate",
+      "state": "45ce893e-6b11-490b-bde0-d23d47c6b86b"
+    },
+    "type": "Condition",
+    "uid": "4398a375-b797-4130-a797-ce4ca325e70c",
+    "$$hashKey": "object:150"
   }
 }

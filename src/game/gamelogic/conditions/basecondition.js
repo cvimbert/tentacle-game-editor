@@ -17,15 +17,19 @@ define(["variable"], function(Variable) {
         this.addQuotesToOperandIfString = function(operand) {
             if ((typeof operand) === "string") {
                 return "'" + operand + "'";
+            } else {
+                return operand;
             }
         };
 
         function getValueFromComplexOperand(operand) {
 
             var object;
+            var command;
 
             if (operand["object"] !== undefined) {
-                return operand["object"]["command"]();
+                command = operand["command"];
+                return operand["object"][command]();
             } else if (operand["uid"] !== undefined) {
                 object = gameManager.getObjectByUid(operand["uid"]);
                 return object["command"];
@@ -48,9 +52,23 @@ define(["variable"], function(Variable) {
 
         this.evalExpression = function(operand1, operator, operand2) {
 
-            operand1 = this.addQuotesToOperandIfString(operand1);
-            operand2 = this.addQuotesToOperandIfString(operand2);
+            // cas des égalités d'objets
+            var bf = {};
 
+            if ((typeof operand1) === "object") {
+                operand1 = "operand1";
+            } else {
+                operand1 = this.addQuotesToOperandIfString(operand1);
+            }
+
+
+            if ((typeof operand2) === "object") {
+                operand2 = "operand2"
+            } else {
+                operand2 = this.addQuotesToOperandIfString(operand2);
+            }
+
+            console.log(operand1 + operator + operand2);
             return eval(operand1 + operator + operand2);
         };
     };
