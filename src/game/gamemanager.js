@@ -4,6 +4,7 @@
 define([
     "underscore",
     "eventdispatcher",
+    "gameobject",
     "sprite",
     "spritesgroup",
     "groupstate",
@@ -23,6 +24,7 @@ define([
 ], function(
     _,
     EventDispatcher,
+    GameObject,
     Sprite,
     SpritesGroup,
     GroupState,
@@ -81,6 +83,8 @@ define([
                         if (classFunction) {
 
                             var instanciedClass = new classFunction[type](model, modelManager, self);
+                            instanciedClass.model = model;
+                            _.extend(instanciedClass, GameObject);
                             modelsByType[type][uid] = instanciedClass;
                             models[uid] = instanciedClass;
 

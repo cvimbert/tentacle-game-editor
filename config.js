@@ -24,6 +24,7 @@ require.config({
         underscore: 'bower_components/underscore/underscore',
         modelmanager: 'src/model-manager/modelmanager',
         modeldescriptor: 'src/model-manager/modeldescriptor',
+        gameobject: 'src/game/common/gameobject',
         model: 'src/model-manager/model',
         logger: 'src/model-manager/logger',
         filter: 'src/model-manager/filter',

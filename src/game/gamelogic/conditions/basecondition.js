@@ -52,23 +52,19 @@ define(["variable"], function(Variable) {
 
         this.evalExpression = function(operand1, operator, operand2) {
 
-            // cas des égalités d'objets
-            var bf = {};
-
             if ((typeof operand1) === "object") {
-                operand1 = "operand1";
+                operand1 = this.addQuotesToOperandIfString(operand1.getUid());
             } else {
                 operand1 = this.addQuotesToOperandIfString(operand1);
             }
 
 
             if ((typeof operand2) === "object") {
-                operand2 = "operand2"
+                operand2 = this.addQuotesToOperandIfString(operand2.getUid());
             } else {
                 operand2 = this.addQuotesToOperandIfString(operand2);
             }
 
-            console.log(operand1 + operator + operand2);
             return eval(operand1 + operator + operand2);
         };
     };

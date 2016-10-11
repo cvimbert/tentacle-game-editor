@@ -38,6 +38,7 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
             var animationInterval;
             var direction;
             var isPlaying;
+            var self = this;
 
             this.initialize = function() {
 
@@ -67,14 +68,16 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
             }
 
             this.reset = function() {
+                console.log("reset");
+
+                if (animationInterval !== undefined) {
+                    clearInterval(animationInterval);
+                    animationInterval = undefined;
+                }
+
                 group.hide();
                 currentIndex = -1;
                 isPlaying = false;
-
-                if (animationInterval) {
-                    clearInterval(animationInterval);
-                    animationInterval = null;
-                }
             };
 
             this.hide = function() {
@@ -128,37 +131,41 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
                 if (occurences === undefined) occurences = 1;
 
-                var t = this;
-
                 if (interruptable === "false" && isPlaying) {
                     occurencesCounter = 0;
                     return;
                 }
 
-                t.reset();
+                self.reset();
 
                 if (delay === undefined) delay = 1;
 
-                t.displayNext();
+                self.displayNext();
 
                 var occurencesCounter = 0;
 
                 isPlaying = true;
 
+                // attention, il semblerait que animationInterval ne soit pas défini avant la première itération
+
                 animationInterval = setInterval(function() {
 
-                    if (!t.displayNext()) {
-                        t.dispatchEvent("iterationend", occurencesCounter);
+                    if (isPlaying === false) return;
+
+                    if (!self.displayNext()) {
+                        self.dispatchEvent("iterationend", occurencesCounter);
                         occurencesCounter++;
 
                         if (occurencesCounter >= occurences) {
+
                             clearInterval(animationInterval);
-                            t.dispatchEvent("animationend");
+
+                            self.dispatchEvent("animationend");
                             isPlaying = false;
                         }
                         else {
                             currentIndex = -1;
-                            t.displayNext();
+                            self.displayNext();
                         }
 
                     }

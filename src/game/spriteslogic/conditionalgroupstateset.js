@@ -34,6 +34,10 @@ define(["underscore"], function(_) {
                 defaultState = gameManager.getObjectByUid(defaultStateUid);
             };
 
+            this.getUid = function() {
+                return model.uid;
+            };
+
             this.display = function() {
 
                 var cstate;

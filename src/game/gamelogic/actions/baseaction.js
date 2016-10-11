@@ -20,6 +20,10 @@ define(["underscore"], function(_) {
 
             // TODO: fonctionne pour les chaines de caractère et les objets
 
+            // c'est très probablement cette partie qui est à incriminer !
+            // Usage de l'éval pour lancer une commande ?
+            // Plutôt utiliser un call ?
+
             var expression = "object." + functionName + "(";
             var argsArray = [];
             var count = 0;

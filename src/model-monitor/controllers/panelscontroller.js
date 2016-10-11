@@ -211,6 +211,9 @@ define ([
             }
         }
 
+        $scope.deleteItemFromCollection = function (index, targetItemAttribute) {
+            targetItemAttribute.splice(index, 1);
+        };
 
         $scope.validateAndGoBack = function () {
             $scope.validate();

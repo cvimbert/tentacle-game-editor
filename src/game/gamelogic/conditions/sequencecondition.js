@@ -15,16 +15,11 @@ define([], function() {
 
                 case "onstate":
                     var targetState = this.getObjectById("state");
-
-                    return this.complexEval({
-                        object: this.sequence,
-                        command: "getstate"
-                    }, this.operator, targetState);
-
+                    return this.complexEval(this.sequence.getstate(), this.operator, targetState);
                     break;
 
                 default:
-                    console.log("Type de condition non géré: " + this.conditionType);
+                    console.log("Type de condition non géré : " + this.conditionType);
             }
         }
     }
