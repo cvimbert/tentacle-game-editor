@@ -3385,8 +3385,9 @@
     "attributes": {
       "name": "Click Button A",
       "actions": [
-        "b4ae82ad-e6f0-456b-b707-0a1d8157f623",
-        "7932b062-04c5-4b02-8726-bff8145c4ce3"
+        "32e00acc-3618-4be3-adc6-8aea373cdf5d",
+        "7932b062-04c5-4b02-8726-bff8145c4ce3",
+        "b4ae82ad-e6f0-456b-b707-0a1d8157f623"
       ],
       "condition": "",
       "activatedonstart": "true",
@@ -3413,8 +3414,8 @@
     "attributes": {
       "name": "Click Button B",
       "actions": [
-        "76421190-d370-4292-a6e6-e71cfb1b8f71",
-        "4cef98bd-a035-4b99-8da8-2cea8af853d8"
+        "4cef98bd-a035-4b99-8da8-2cea8af853d8",
+        "76421190-d370-4292-a6e6-e71cfb1b8f71"
       ],
       "condition": "",
       "activatedonstart": "true",
@@ -3461,7 +3462,9 @@
   "4dd79631-179b-4066-9478-142b07a045a9": {
     "attributes": {
       "name": "P4 Collision",
-      "actions": [],
+      "actions": [
+        "7055d03c-0599-4d60-a99a-50697913dd72"
+      ],
       "condition": "",
       "activatedonstart": "true",
       "triggertype": "spritetrigger",
@@ -3486,7 +3489,9 @@
   "82cec899-3418-47c8-b33f-5e18ff4b4959": {
     "attributes": {
       "name": "P5 Collision",
-      "actions": [],
+      "actions": [
+        "7055d03c-0599-4d60-a99a-50697913dd72"
+      ],
       "condition": "",
       "activatedonstart": "true",
       "triggertype": "spritetrigger",
@@ -3511,7 +3516,9 @@
   "84c05824-0021-49fe-86fa-c4c7f278e7c4": {
     "attributes": {
       "name": "P6 Collision",
-      "actions": [],
+      "actions": [
+        "7055d03c-0599-4d60-a99a-50697913dd72"
+      ],
       "condition": "",
       "activatedonstart": "true",
       "triggertype": "spritetrigger",
@@ -3536,7 +3543,9 @@
   "2d4dee93-ad8b-46b8-b39d-62704d460076": {
     "attributes": {
       "name": "P7 Collision",
-      "actions": [],
+      "actions": [
+        "7055d03c-0599-4d60-a99a-50697913dd72"
+      ],
       "condition": "",
       "activatedonstart": "true",
       "triggertype": "spritetrigger",
@@ -3561,7 +3570,9 @@
   "51965556-e577-4e9d-af97-cd48379da532": {
     "attributes": {
       "name": "P8 Collision",
-      "actions": [],
+      "actions": [
+        "7055d03c-0599-4d60-a99a-50697913dd72"
+      ],
       "condition": "",
       "activatedonstart": "true",
       "triggertype": "spritetrigger",
@@ -3588,7 +3599,9 @@
       "name": "Taken",
       "condition": "",
       "actiontype": "actionsset",
-      "actions": []
+      "actions": [
+        "ed822726-3886-47da-9c41-c60ec90f6bc5"
+      ]
     },
     "trashCan": {
       "name": "Taken",
@@ -4058,5 +4071,43 @@
     "type": "Condition",
     "uid": "4398a375-b797-4130-a797-ce4ca325e70c",
     "$$hashKey": "object:150"
+  },
+  "7ab3defb-015b-4700-a6b4-968bb7ec2fd2": {
+    "attributes": {
+      "name": "Reset Sequence Perso",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a",
+      "saction": "reset"
+    },
+    "trashCan": {
+      "name": "Reset Sequence Perso",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "55e56ce0-bb60-40be-a465-6067eeb5466a",
+      "saction": "reset"
+    },
+    "type": "Action",
+    "uid": "7ab3defb-015b-4700-a6b4-968bb7ec2fd2",
+    "$$hashKey": "object:174"
+  },
+  "32e00acc-3618-4be3-adc6-8aea373cdf5d": {
+    "attributes": {
+      "name": "Reset Anim P8",
+      "condition": "4398a375-b797-4130-a797-ce4ca325e70c",
+      "actiontype": "sequenceaction",
+      "sequence": "8f1274ec-d695-4ecb-94ba-5c45c2d4b94d",
+      "saction": "reset"
+    },
+    "trashCan": {
+      "name": "Reset Anim P8",
+      "condition": "4398a375-b797-4130-a797-ce4ca325e70c",
+      "actiontype": "sequenceaction",
+      "sequence": "8f1274ec-d695-4ecb-94ba-5c45c2d4b94d",
+      "saction": "reset"
+    },
+    "type": "Action",
+    "uid": "32e00acc-3618-4be3-adc6-8aea373cdf5d",
+    "$$hashKey": "object:245"
   }
 }
