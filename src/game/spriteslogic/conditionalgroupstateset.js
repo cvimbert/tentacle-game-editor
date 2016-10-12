@@ -54,6 +54,10 @@ define(["underscore"], function(_) {
                 defaultState.display();
             };
 
+            this.update = function() {
+                this.display();
+            };
+
             this.hide = function() {
                 group.hide();
             };

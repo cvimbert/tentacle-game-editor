@@ -400,7 +400,9 @@ var modelDescriptorV3 = {
                                         linkedcollectionattributevalue: "states",
                                         required: true
                                     }
-                                }
+                                },
+                                iterationend: {},
+                                animationend: {}
                             }
                         }
                     },
@@ -1051,6 +1053,7 @@ var modelDescriptorV3 = {
             next: {},
             previous: {},
             reverse: {},
+            updatecurrentstate: {},
             setstate: {
                 state: {
                     type: "reference",
@@ -1119,7 +1122,10 @@ var modelDescriptorV3 = {
                     includetype: "VariableValueByType",
                     required: true
                 }
-            }
+            },
+            // ces deux dernières actions ne devraient être visible que si la variable est de type "number"
+            increment: {},
+            decrement: {}
         }
     },
     VariableValueByType: {

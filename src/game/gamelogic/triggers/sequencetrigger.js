@@ -10,12 +10,15 @@ define([], function() {
         },
         on: function() {
             var t = this;
+            var conditionOperand;
 
             // attention : valable uniquement dans le cas de l'écouteur d'état de la séquence
-            var state = this.getObjectById("state");
+            if (this.eventType === "enterstate") {
+                conditionOperand = this.getObjectById("state");
+            }
 
             this.bind(this.sequence, this.eventType, function(args) {
-                if (args === state) {
+                if (conditionOperand === undefined || args === conditionOperand) {
                     t.executeAction();
                 }
             });

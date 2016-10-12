@@ -40,6 +40,10 @@ define(["underscore"], function(_) {
                 });
             };
 
+            this.update = function() {
+                // ne fait rien, mais obligatoire pour la compatibilité avec les ConditionalGroupStateSet
+            };
+
             this.hide = function() {
                 group.hide();
             };

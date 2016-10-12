@@ -173,6 +173,10 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
                 }, delay * 1000);
             };
 
+            this.updatecurrentstate = function() {
+
+            };
+
             this.setstate = function(state) {
                 var index = groupStates.indexOf(state);
                 this.displayAtIndex(index);

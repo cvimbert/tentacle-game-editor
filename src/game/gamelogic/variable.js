@@ -59,6 +59,22 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
                 this.dispatchEvent("change", value);
             };
 
+            this.increment = function() {
+                if (type === "number") {
+                    this.set(currentValue + 1);
+                } else {
+                    console.log("Impossible increment: wrong variable type.");
+                }
+            };
+
+            this.decrement = function() {
+                if (type === "number") {
+                    this.set(currentValue - 1);
+                } else {
+                    console.log("Impossible decrement: wrong variable type.")
+                }
+            };
+
             this.reset = function(newInitValue) {
 
                 if (newInitValue !== undefined) {
