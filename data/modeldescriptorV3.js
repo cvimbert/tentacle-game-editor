@@ -78,6 +78,21 @@ var modelDescriptorV3 = {
                             required: true
                         }
                     },
+                    controlaction: {
+                        control: {
+                            type: "reference",
+                            referencetype: "Control",
+                            required: true
+                        },
+                        ctaction: {
+                            type: "ConditionalAttributesSet",
+                            required: true,
+                            attributesSets: {
+                                disable: {},
+                                enable: {}
+                            }
+                        }
+                    },
                     triggeraction: {
                         trigger: {
                             type: "reference",

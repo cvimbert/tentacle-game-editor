@@ -75,7 +75,10 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
                     animationInterval = undefined;
                 }
 
-                group.hide();
+                if (currentIndex !== -1) {
+                    groupStates[currentIndex].hide();
+                }
+
                 currentIndex = -1;
                 isPlaying = false;
             };

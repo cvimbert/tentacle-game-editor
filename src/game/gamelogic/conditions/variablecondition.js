@@ -15,12 +15,12 @@ define([], function() {
 
                 case "valuecomparison":
                     var variableValue = this.getModelProperty("value");
-                    return this.complexEval(variableValue, this.operator, this.variable.get());
+                    return this.complexEval(this.variable.get(), this.operator, variableValue);
                     break;
 
                 case "variablecomparison":
                     var operandVar = this.getObjectById("operandvariable");
-                    return this.complexEval(operandVar.get(), this.operator, this.variable.get());
+                    return this.complexEval(this.variable.get(), this.operator, operandVar.get());
                     break;
 
                 default:

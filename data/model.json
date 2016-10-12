@@ -1540,7 +1540,7 @@
   },
   "bb981b04-3930-41da-be26-6acdbbd6aeb8": {
     "attributes": {
-      "name": "Gold in Bag",
+      "name": "Gold In Bag",
       "variabletype": "number",
       "value": 0
     },
@@ -3387,7 +3387,8 @@
       "actions": [
         "32e00acc-3618-4be3-adc6-8aea373cdf5d",
         "7932b062-04c5-4b02-8726-bff8145c4ce3",
-        "b4ae82ad-e6f0-456b-b707-0a1d8157f623"
+        "b4ae82ad-e6f0-456b-b707-0a1d8157f623",
+        "21a9264b-37cc-4ac1-8669-da19663c401f"
       ],
       "condition": "",
       "activatedonstart": "true",
@@ -3601,7 +3602,15 @@
       "actiontype": "actionsset",
       "actions": [
         "ed822726-3886-47da-9c41-c60ec90f6bc5",
-        "7ab3defb-015b-4700-a6b4-968bb7ec2fd2"
+        "7ab3defb-015b-4700-a6b4-968bb7ec2fd2",
+        "ebd8c549-ef22-41ba-b503-1b18164709d4",
+        "2ad7bfaf-95fd-49d6-a7d3-bdfaf44d748d",
+        "9edb108f-fe72-4886-9c1a-96796f9c8a94",
+        "133e4083-e02b-4949-9d9b-1a94c15b5cca",
+        "8402a6f9-8953-4d1d-960c-3c41bd52df77",
+        "c74c5b88-849b-4643-88be-755e50b32cec",
+        "f1c05257-73bf-4a0a-b76c-0faded0d1018",
+        "0fdcc0d1-5e47-4e7e-b7c1-37adf7ccb747"
       ]
     },
     "trashCan": {
@@ -3774,7 +3783,7 @@
       "sequence": "0ee42cea-9c32-489b-9ebf-28243e387a17",
       "saction": "play",
       "occurences": 3,
-      "period": 0.5,
+      "period": 0.2,
       "interruptable": "false"
     },
     "trashCan": {
@@ -4242,7 +4251,7 @@
   "21a9264b-37cc-4ac1-8669-da19663c401f": {
     "attributes": {
       "name": "Reset Gold In Bag",
-      "condition": "",
+      "condition": "74588f9f-192a-4227-9502-610453d9a5da",
       "actiontype": "variableaction",
       "variable": "bb981b04-3930-41da-be26-6acdbbd6aeb8",
       "vaction": "set",
@@ -4251,13 +4260,301 @@
     },
     "trashCan": {
       "name": "Reset Gold In Bag",
-      "condition": "",
+      "condition": "74588f9f-192a-4227-9502-610453d9a5da",
       "actiontype": "variableaction",
       "variable": "bb981b04-3930-41da-be26-6acdbbd6aeb8",
-      "vaction": "set"
+      "vaction": "set",
+      "varvalue": "",
+      "vvalue": 0
     },
     "type": "Action",
     "uid": "21a9264b-37cc-4ac1-8669-da19663c401f",
     "$$hashKey": "object:361"
+  },
+  "ebd8c549-ef22-41ba-b503-1b18164709d4": {
+    "attributes": {
+      "name": "Stop Main Clock",
+      "condition": "",
+      "actiontype": "clockaction",
+      "clock": "c8489fd9-0560-42b4-9b91-d90bf130be12",
+      "caction": "stop"
+    },
+    "trashCan": {
+      "name": "Stop Main Clock",
+      "condition": "",
+      "actiontype": "clockaction",
+      "clock": "c8489fd9-0560-42b4-9b91-d90bf130be12",
+      "caction": ""
+    },
+    "type": "Action",
+    "uid": "ebd8c549-ef22-41ba-b503-1b18164709d4",
+    "$$hashKey": "object:183"
+  },
+  "70a84247-0842-4e6e-8eb9-bb26daeea941": {
+    "attributes": {
+      "name": "After Taken Animation",
+      "actions": [
+        "a59a722e-a832-44e2-9c98-0fc4998cc6c3",
+        "50fe0461-12bd-4ec8-b785-7736db6bbd7d",
+        "a8e9f9e9-4015-47f5-922d-366d86838314"
+      ],
+      "condition": "",
+      "activatedonstart": "true",
+      "triggertype": "sequencetrigger",
+      "sequence": "cdd2bf90-d5cb-4e89-bc3f-6fcaabe69e60",
+      "eventtype": "animationend"
+    },
+    "trashCan": {
+      "name": "After Taken Animation",
+      "actions": [
+        "a59a722e-a832-44e2-9c98-0fc4998cc6c3"
+      ],
+      "condition": "",
+      "activatedonstart": "true",
+      "triggertype": "sequencetrigger",
+      "sequence": "cdd2bf90-d5cb-4e89-bc3f-6fcaabe69e60",
+      "eventtype": "animationend"
+    },
+    "type": "Trigger",
+    "uid": "70a84247-0842-4e6e-8eb9-bb26daeea941",
+    "$$hashKey": "object:302"
+  },
+  "50fe0461-12bd-4ec8-b785-7736db6bbd7d": {
+    "attributes": {
+      "name": "Reset Taken Animation",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "cdd2bf90-d5cb-4e89-bc3f-6fcaabe69e60",
+      "saction": "reset"
+    },
+    "trashCan": {
+      "name": "Reset Taken Animation",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "cdd2bf90-d5cb-4e89-bc3f-6fcaabe69e60",
+      "saction": "reset"
+    },
+    "type": "Action",
+    "uid": "50fe0461-12bd-4ec8-b785-7736db6bbd7d",
+    "$$hashKey": "object:185"
+  },
+  "feda2df8-d82d-4242-a8f0-ec202074f286": {
+    "attributes": {
+      "name": "Enable A Control",
+      "condition": "",
+      "actiontype": "controlaction",
+      "control": "bd489abe-6cbc-4263-b6f2-67b835c7290b",
+      "ctaction": "enable"
+    },
+    "trashCan": {
+      "name": "Enable A control",
+      "condition": "",
+      "actiontype": "controlaction",
+      "control": "bd489abe-6cbc-4263-b6f2-67b835c7290b",
+      "ctaction": "enable"
+    },
+    "type": "Action",
+    "uid": "feda2df8-d82d-4242-a8f0-ec202074f286",
+    "$$hashKey": "object:81"
+  },
+  "211b4e60-17f6-48e6-9fcd-0d33a5511d45": {
+    "attributes": {
+      "name": "Enable B Control",
+      "condition": "",
+      "actiontype": "controlaction",
+      "control": "203a1f3f-248f-41fc-95d6-d7466330599e",
+      "ctaction": "enable"
+    },
+    "trashCan": {
+      "name": "Enable B Control",
+      "condition": "",
+      "actiontype": "controlaction",
+      "control": "203a1f3f-248f-41fc-95d6-d7466330599e",
+      "ctaction": "enable"
+    },
+    "type": "Action",
+    "uid": "211b4e60-17f6-48e6-9fcd-0d33a5511d45",
+    "$$hashKey": "object:142"
+  },
+  "4a7844d3-103e-47fc-84b9-03cb09d81cd2": {
+    "attributes": {
+      "name": "Disable A Control",
+      "condition": "",
+      "actiontype": "controlaction",
+      "control": "bd489abe-6cbc-4263-b6f2-67b835c7290b",
+      "ctaction": "disable"
+    },
+    "trashCan": {
+      "name": "Disable A Control",
+      "condition": "",
+      "actiontype": "controlaction",
+      "control": "bd489abe-6cbc-4263-b6f2-67b835c7290b",
+      "ctaction": "disable"
+    },
+    "type": "Action",
+    "uid": "4a7844d3-103e-47fc-84b9-03cb09d81cd2",
+    "$$hashKey": "object:162"
+  },
+  "798d863d-c704-4b13-8884-a0c10b41e83c": {
+    "attributes": {
+      "name": "Disable B Control",
+      "condition": "",
+      "actiontype": "controlaction",
+      "control": "203a1f3f-248f-41fc-95d6-d7466330599e",
+      "ctaction": "disable"
+    },
+    "trashCan": {
+      "name": "Disable B Control",
+      "condition": "",
+      "actiontype": "controlaction",
+      "control": "203a1f3f-248f-41fc-95d6-d7466330599e",
+      "ctaction": "disable"
+    },
+    "type": "Action",
+    "uid": "798d863d-c704-4b13-8884-a0c10b41e83c",
+    "$$hashKey": "object:180"
+  },
+  "9edb108f-fe72-4886-9c1a-96796f9c8a94": {
+    "attributes": {
+      "name": "Disable Controls",
+      "condition": "",
+      "actiontype": "actionsset",
+      "actions": [
+        "4a7844d3-103e-47fc-84b9-03cb09d81cd2",
+        "798d863d-c704-4b13-8884-a0c10b41e83c"
+      ]
+    },
+    "trashCan": {
+      "name": "Disable Controls",
+      "condition": "",
+      "actiontype": "actionsset"
+    },
+    "type": "Action",
+    "uid": "9edb108f-fe72-4886-9c1a-96796f9c8a94",
+    "$$hashKey": "object:216"
+  },
+  "a8e9f9e9-4015-47f5-922d-366d86838314": {
+    "attributes": {
+      "name": "Enable Controls",
+      "condition": "",
+      "actiontype": "actionsset",
+      "actions": [
+        "feda2df8-d82d-4242-a8f0-ec202074f286",
+        "211b4e60-17f6-48e6-9fcd-0d33a5511d45"
+      ]
+    },
+    "trashCan": {
+      "name": "Enable Controls",
+      "condition": "",
+      "actiontype": "actionsset"
+    },
+    "type": "Action",
+    "uid": "a8e9f9e9-4015-47f5-922d-366d86838314",
+    "$$hashKey": "object:333"
+  },
+  "133e4083-e02b-4949-9d9b-1a94c15b5cca": {
+    "attributes": {
+      "name": "Reset Tentacule 1A",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
+      "saction": "setstate",
+      "state": "b536e3eb-2a2b-46de-9b96-c1c1fc8881d4"
+    },
+    "trashCan": {
+      "name": "Reset Tentacule 1",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "f2312dfd-26f3-46ca-9b58-2647efd93bf4",
+      "saction": "setstate",
+      "state": "b536e3eb-2a2b-46de-9b96-c1c1fc8881d4"
+    },
+    "type": "Action",
+    "uid": "133e4083-e02b-4949-9d9b-1a94c15b5cca",
+    "$$hashKey": "object:192"
+  },
+  "8402a6f9-8953-4d1d-960c-3c41bd52df77": {
+    "attributes": {
+      "name": "Reset Tentacule 1B",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0",
+      "saction": "setstate",
+      "state": "94f6eeb0-33ee-4f86-aff1-52d626d56b85"
+    },
+    "trashCan": {
+      "name": "Reset Tentacule 1B",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "d52a2bdc-8d0f-4e5b-ba93-da163b2d1ca0",
+      "saction": "setstate",
+      "state": "94f6eeb0-33ee-4f86-aff1-52d626d56b85"
+    },
+    "type": "Action",
+    "uid": "8402a6f9-8953-4d1d-960c-3c41bd52df77",
+    "$$hashKey": "object:271"
+  },
+  "c74c5b88-849b-4643-88be-755e50b32cec": {
+    "attributes": {
+      "name": "Reset Tentacule 2",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "463c68a2-18d1-45b7-b05e-5a0d9aec8a82",
+      "saction": "setstate",
+      "state": "2d5ca173-370f-4d6e-b74d-b92d0fd74324"
+    },
+    "trashCan": {
+      "name": "Reset Tentacule 2",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "463c68a2-18d1-45b7-b05e-5a0d9aec8a82",
+      "saction": "setstate",
+      "state": "2d5ca173-370f-4d6e-b74d-b92d0fd74324"
+    },
+    "type": "Action",
+    "uid": "c74c5b88-849b-4643-88be-755e50b32cec",
+    "$$hashKey": "object:498"
+  },
+  "f1c05257-73bf-4a0a-b76c-0faded0d1018": {
+    "attributes": {
+      "name": "Reset Tentacule 3",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "0e038d94-49c7-4dc6-899f-d40d9c268fb7",
+      "saction": "setstate",
+      "state": "a63b5545-e2de-4136-a8ef-c9f8574b4655"
+    },
+    "trashCan": {
+      "name": "Reset Tentacule 3",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "0e038d94-49c7-4dc6-899f-d40d9c268fb7",
+      "saction": "setstate",
+      "state": "a63b5545-e2de-4136-a8ef-c9f8574b4655"
+    },
+    "type": "Action",
+    "uid": "f1c05257-73bf-4a0a-b76c-0faded0d1018",
+    "$$hashKey": "object:726"
+  },
+  "0fdcc0d1-5e47-4e7e-b7c1-37adf7ccb747": {
+    "attributes": {
+      "name": "Reset Tentacule 4",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "dc136096-4b05-4312-bc9a-af97bdbd9d78",
+      "saction": "setstate",
+      "state": "038210d4-8cb4-488e-a3a4-adc1203f7826"
+    },
+    "trashCan": {
+      "name": "Reset Tentacule 4",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "dc136096-4b05-4312-bc9a-af97bdbd9d78",
+      "saction": "setstate",
+      "state": "038210d4-8cb4-488e-a3a4-adc1203f7826"
+    },
+    "type": "Action",
+    "uid": "0fdcc0d1-5e47-4e7e-b7c1-37adf7ccb747",
+    "$$hashKey": "object:763"
   }
 }

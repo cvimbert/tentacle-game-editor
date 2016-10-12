@@ -44,6 +44,10 @@ define(["variable"], function(Variable) {
 
         this.complexEval = function(operand1, operator, operand2) {
 
+            if (operand1 === null || operand2 === null) {
+                return false;
+            }
+
             operand1 = getValueFromComplexOperand(operand1);
             operand2 = getValueFromComplexOperand(operand2);
 
@@ -65,6 +69,7 @@ define(["variable"], function(Variable) {
                 operand2 = this.addQuotesToOperandIfString(operand2);
             }
 
+            console.log(operand1 + operator + operand2);
             return eval(operand1 + operator + operand2);
         };
     };
