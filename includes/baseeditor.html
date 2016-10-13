@@ -66,8 +66,10 @@
     </div>
 
     <div class="collection-item-displayer-container" ng-if="attribute.type === 'collection' && attribute.collectiontype === 'reference' && item.get(attributeid).length > 0">
-        <div class="collection-item-displayer" ng-repeat="ref in item.get(attributeid) track by $index">
+        <div class="collection-item-displayer" ng-repeat="ref in item.get(attributeid) track by $index" ng-click="editItem(ref)">
             {{getNameByUid(ref)}}
+            <div class="go-up glyphicon glyphicon-triangle-top" ng-if="$index > 0"></div>
+            <div class="go-down glyphicon glyphicon-triangle-bottom" ng-if="$index < item.get(attributeid).length - 1"></div>
             <div ng-click="deleteItemFromCollection($index, item.get(attributeid))" class="item-delete-button"><span class="glyphicon glyphicon-remove"></span></div>
         </div>
     </div>

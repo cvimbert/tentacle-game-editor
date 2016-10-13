@@ -15,6 +15,7 @@
         "panelscontroller",
         "spritespanelcontroller",
         "draggabledirective",
+        "sortablelistdirective",
         "toolbarpanelcontroller",
         "console",
         "contenteditable",
@@ -54,6 +55,7 @@
         panelsController,
         spritesPanelController,
         draggableDirective,
+        sortableListDirective,
         toolbarPanelController,
         console,
         contentEditable,
@@ -77,6 +79,7 @@
 
 
         mainApp.directive('draggable', draggableDirective);
+        mainApp.directive("sortablelist", ['$timeout', sortableListDirective]);
         mainApp.directive('contenteditable', contentEditable);
         mainApp.directive('selectable', selectable);
         mainApp.directive('displayboolean', displayObjectDirective);

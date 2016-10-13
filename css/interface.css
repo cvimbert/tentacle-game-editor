@@ -194,6 +194,7 @@ body {
     cursor: pointer;
     vertical-align: middle;
     border-radius: 5px;
+    position: relative;
     /* text-align: center; */
 }
 
@@ -226,4 +227,16 @@ body {
 #top-left {
     text-align: left;
     padding: 16px;
+}
+
+.go-up {
+    position: absolute;
+    top: 7px;
+    right: 35px;
+}
+
+.go-down {
+    position: absolute;
+    top: 8px;
+    right: 54px;
 }
