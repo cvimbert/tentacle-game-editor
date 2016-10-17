@@ -211,8 +211,29 @@ define ([
             }
         }
 
-        $scope.deleteItemFromCollection = function (index, targetItemAttribute) {
+        $scope.invertCollectionItemPositions = function(item, attributeid, $index1, $index2, $event) {
+            var collection = item.get(attributeid);
+
+            // attention : pas de vérification de la validité des indexs
+            var tmp = collection[$index1];
+            collection[$index1] = collection[$index2];
+            collection[$index2] = tmp;
+
+            $event.stopPropagation();
+        };
+
+        $scope.goUp = function(item, attributeid, $index, $event) {
+            $scope.invertCollectionItemPositions(item, attributeid, $index, $index - 1, $event);
+        };
+
+        $scope.goDown = function(item, attributeid, $index, $event) {
+            $scope.invertCollectionItemPositions(item, attributeid, $index, $index + 1, $event);
+        };
+
+        $scope.deleteItemFromCollection = function (index, targetItemAttribute, $event) {
             targetItemAttribute.splice(index, 1);
+
+            if ($event) $event.stopPropagation();
         };
 
         $scope.validateAndGoBack = function () {

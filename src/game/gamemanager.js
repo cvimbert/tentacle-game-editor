@@ -4,11 +4,13 @@
 define([
     "underscore",
     "eventdispatcher",
+    "soundmanager",
     "gameobject",
     "sprite",
     "spritesgroup",
     "groupstate",
     "sequence",
+    "animation",
     "variable",
     "condition",
     "control",
@@ -24,11 +26,13 @@ define([
 ], function(
     _,
     EventDispatcher,
+    SoundManager,
     GameObject,
     Sprite,
     SpritesGroup,
     GroupState,
     Sequence,
+    Animation,
     Variable,
     Condition,
     Control,
@@ -50,6 +54,7 @@ define([
         var modelsByType = {};
         var models = {};
         this.scope = null;
+        this.soundManager = null;
 
         // pour la console uniquement
         var modelsByName = {};
@@ -108,6 +113,8 @@ define([
                 if (object.isActivatedOnStart())
                     object.enable();
             });
+
+            this.soundManager = new SoundManager(modelsByType["Sound"]);
         };
 
         // on met là-dedans tout ce qui est dépendant du DOM

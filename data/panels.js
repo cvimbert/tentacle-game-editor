@@ -67,12 +67,17 @@ var panels = {
             }
         },
         global: {
-            template: "includes/layout-1-1.html",
+            template: "includes/layout-1-2.html",
             panels: {
                 package: {
                     name: "Packages",
                     type: "Package",
                     containerid: "b1"
+                },
+                modules: {
+                    name: "Modules",
+                    type: "Module",
+                    containerid: "b2"
                 }
             }
         },
@@ -158,6 +163,11 @@ var panels = {
                     name: "Conditional Group States Sets",
                     type: "ConditionalGroupStateSet",
                     containerid: "b5"
+                },
+                animations: {
+                    name: "Animations",
+                    type: "Animation",
+                    containerid: "b6"
                 }
             }
         },

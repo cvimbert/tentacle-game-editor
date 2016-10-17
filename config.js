@@ -23,6 +23,7 @@ require.config({
     paths: {
         underscore: 'bower_components/underscore/underscore',
         modelmanager: 'src/model-manager/modelmanager',
+        soundmanager: 'src/game/soundmanager',
         modeldescriptor: 'src/model-manager/modeldescriptor',
         gameobject: 'src/game/common/gameobject',
         model: 'src/model-manager/model',
@@ -57,6 +58,7 @@ require.config({
         spritesgroup: 'src/game/display/spritesgroup',
         groupstate: 'src/game/display/groupstate',
         sequence: 'src/game/spriteslogic/sequence',
+        animation: 'src/game/spriteslogic/animation',
         variable: 'src/game/gamelogic/variable',
         condition: 'src/game/gamelogic/condition',
         gameconsole: 'src/game/gameconsole',

@@ -32,6 +32,8 @@
         "actions/spriteaction",
         "actions/triggeraction",
         "actions/variableaction",
+        "actions/controlaction",
+        "actions/soundaction",
         "conditions/basecondition",
         "conditions/variablecondition",
         "conditions/sequencecondition",

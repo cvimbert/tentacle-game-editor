@@ -2,6 +2,51 @@
 var modelDescriptorV3 = {
     //Objects
 
+    Animation: {
+        referenceable: true,
+        attributes: {
+            name: {
+                type: "string",
+                defaultvalue: "Animation name",
+                required: true
+            },
+            sequence: {
+                type: "reference",
+                referencetype: "Sequence",
+                required: true
+            },
+            iterations: {
+                type: "number",
+                defaultvalue: 1,
+                required: true
+            },
+            period: {
+                type: "number",
+                defaultvalue: 1,
+                required: true
+            },
+            interruptable: {
+                type: "boolean",
+                defaultvalue: "true",
+                required: true
+            }
+        }
+    },
+    Module: {
+        referenceable: true,
+        attributes: {
+            name: {
+                type: "string",
+                defaultvalue: "Modules name",
+                required: true
+            },
+            identifier: {
+                type: "string",
+                defaultvalue: "Module id",
+                required: true
+            }
+        }
+    },
     Sequence: {
         referenceable: true,
         attributes: {
@@ -76,6 +121,20 @@ var modelDescriptorV3 = {
                             collectiontype: "reference",
                             referencetype: "Action",
                             required: true
+                        }
+                    },
+                    soundaction: {
+                        sound: {
+                            type: "reference",
+                            referencetype: "Sound",
+                            required: true
+                        },
+                        sndaction: {
+                            type: "ConditionalAttributesSet",
+                            required: true,
+                            attributesSets: {
+                                play: {}
+                            }
                         }
                     },
                     controlaction: {
@@ -164,13 +223,6 @@ var modelDescriptorV3 = {
                             includetype: "VariableAction"
                         }
                     },
-                    nextloop: {
-                        sequence: {
-                            type: "reference",
-                            referencetype: "Sequence",
-                            required: true
-                        }
-                    },
                     randomaction: {
                         actions: {
                             type: "collection",
@@ -181,154 +233,6 @@ var modelDescriptorV3 = {
                         randmode: {
                             type: "include",
                             includetype: "RandMode"
-                        }
-                    },
-                    incvariable: {
-                        variable: {
-                            type: "reference",
-                            referencetype: "Variable",
-                            required: true
-                        }
-                    },
-                    decvariable: {
-                        variable: {
-                            type: "reference",
-                            referencetype: "Variable",
-                            required: true
-                        }
-                    },
-                    actions: {
-                        actions: {
-                            type: "collection",
-                            collectiontype: "reference",
-                            referencetype: "Action"
-                        }
-                    },
-                    resetsequence: {
-                        sequence: {
-                            type: "reference",
-                            referencetype: "Sequence",
-                            required: true
-                        }
-                    },
-                    animiteration: {
-                        sequence: {
-                            type: "reference",
-                            referencetype: "Sequence",
-                            required: true
-                        },
-                        period: {
-                            type: "number",
-                            required: true
-                        },
-                        iterations: {
-                            type: "number",
-                            required: true,
-                            defaultvalue: 1
-                        },
-                        oncomplete: {
-                            type: "reference",
-                            referencetype: "Action",
-                            required: false
-                        },
-                        oniteration: {
-                            type: "reference",
-                            referencetype: "Action",
-                            required: false
-                        },
-                        onstep: {
-                            type: "reference",
-                            referencetype: "Action",
-                            required: false
-                        },
-                        stepnumber: {
-                            type: "number",
-                            required: true
-                        }
-                    },
-                    togglestart: {
-                    },
-                    wait: {
-                        action: {
-                            type: "reference",
-                            referencetype: "Action",
-                            required: true
-                        },
-                        time: {
-                            type: "number",
-                            required: true,
-                            defaultvalue: 500
-                        }
-                    },
-                    setsequencestep: {
-                        sequence: {
-                            type: "reference",
-                            referencetype: "Sequence",
-                            required: true
-                        },
-                        step: {
-                            type: "reference",
-                            referencetype: "linkedcollection",
-                            linkedcollectionattribute: "sequence",
-                            linkedcollectionattributevalue: "states",
-                            required: true
-                        }
-                    },
-                    setgroupstate: {
-                        state: {
-                            type: "reference",
-                            referencetype: "GroupState",
-                            required: true
-                        },
-                        grouprefresh: {
-                            type: "boolean",
-                            required: true
-                        }
-                    },
-                    disabletrigger: {
-                        trigger: {
-                            type: "reference",
-                            referencetype: "Trigger",
-                            required: true
-                        }
-                    },
-                    enabletrigger: {
-                        trigger: {
-                            type: "reference",
-                            referencetype: "Trigger",
-                            required: true
-                        }
-                    },
-                    disablecontrol: {
-                        control: {
-                            type: "reference",
-                            referencetype: "Control",
-                            required: true
-                        }
-                    },
-                    enablecontrol: {
-                        control: {
-                            type: "reference",
-                            referencetype: "Control",
-                            required: true
-                        }
-                    },
-                    enablecontrols: {
-                    },
-                    disablecontrols: {
-                    },
-                    playsound: {
-                        sound: {
-                            type: "reference",
-                            referencetype: "Sound",
-                            required: true
-                        }
-                    },
-                    cadencyup: {
-                        factor: {
-                            type: "number",
-                            required: true,
-                            defaultvalue: 0.05
                         }
                     }
                 }
@@ -451,46 +355,6 @@ var modelDescriptorV3 = {
                         eventname: {
                             type: "include",
                             includetype: "GameEventName",
-                            required: true
-                        }
-                    },
-                    sequencestepleave: {
-                        sequence: {
-                            type: "reference",
-                            referencetype: "Sequence",
-                            required: true
-                        },
-                        step: {
-                            type: "reference",
-                            referencetype: "linkedcollection",
-                            linkedcollectionattribute: "sequence",
-                            linkedcollectionattributevalue: "states",
-                            required: true
-                        }
-                    },
-                    sequencestepenter: {
-                        sequence: {
-                            type: "reference",
-                            referencetype: "Sequence",
-                            required: true
-                        },
-                        step: {
-                            type: "reference",
-                            referencetype: "linkedcollection",
-                            linkedcollectionattribute: "sequence",
-                            linkedcollectionattributevalue: "states",
-                            required: true
-                        }
-                    },
-                    spritescollision: {
-                        sprite1: {
-                            type: "reference",
-                            referencetype: "Sprite",
-                            required: true
-                        },
-                        sprite2: {
-                            type: "reference",
-                            referencetype: "Sprite",
                             required: true
                         }
                     }
@@ -963,6 +827,36 @@ var modelDescriptorV3 = {
                 type: "reference",
                 referencetype: "ControlSprite",
                 required: true
+            },
+            zoning: {
+                type: "ConditionalAttributesSet",
+                required: true,
+                defaultvalue: "nozone",
+                attributesSets: {
+                    nozone: {},
+                    haszone: {
+                        x: {
+                            type: "number",
+                            required: true,
+                            defaultvalue: 0
+                        },
+                        y: {
+                            type: "number",
+                            required: true,
+                            defaultvalue: 0
+                        },
+                        width: {
+                            type: "number",
+                            required: true,
+                            defaultvalue: 0
+                        },
+                        height: {
+                            type: "number",
+                            required: true,
+                            defaultvalue: 0
+                        }
+                    }
+                }
             }
         }
     },

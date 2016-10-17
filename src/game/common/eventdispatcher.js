@@ -19,10 +19,14 @@ define(["underscore"], function(_) {
         },
         dispatchEvent: function(type, args) {
 
-            if (!this.eventsCallback || !this.eventsCallback[type]) return;
+            var t = this;
 
-            _.each(this.eventsCallback[type], function(callback) {
-                callback(args);
+            _.defer(function() {
+                if (!t.eventsCallback || !t.eventsCallback[type]) return;
+
+                _.each(t.eventsCallback[type], function(callback) {
+                    callback(args);
+                });
             });
         }
     }

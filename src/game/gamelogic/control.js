@@ -16,32 +16,53 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
             var controlSprite;
             var controlDOMElement;
+            var zoning;
+            var zone = {};
+            var self = this;
 
             this.initialize = function() {
                 var spriteUid = model.get("sprite");
                 controlSprite = gameManager.getObjectByUid(spriteUid);
+                zoning = model.get("zoning");
+
+                if (zoning === "haszone") {
+                    zone = {
+                        x: model.get("x"),
+                        y: model.get("y"),
+                        width: model.get("width"),
+                        height: model.get("height")
+                    }
+                }
             };
 
             this.trigger = function() {
 
             };
 
-            this.enable = function() {
+            function isInZone(x, y) {
+                return x >= zone.x && x < zone.x + zone.width && y >= zone.y && y < zone.y + zone.height;
+            }
 
-                var self = this;
+            function dispatchIfInZone(event, eventToDispatch) {
+                if (zoning === "nozone" || isInZone(event.offsetX, event.offsetY)) {
+                    self.dispatchEvent(eventToDispatch);
+                }
+            }
+
+            this.enable = function() {
 
                 controlDOMElement = controlSprite.getDOMElement();
 
-                controlDOMElement.onclick = function() {
-                    self.dispatchEvent("controlclick");
+                controlDOMElement.onmousedown = function (e) {
+                    dispatchIfInZone(e, "controldown");
                 };
 
-                controlDOMElement.onmousedown = function() {
-                    self.dispatchEvent("controldown");
+                controlDOMElement.onmouseup = function (e) {
+                    dispatchIfInZone(e, "controlup");
                 };
 
-                controlDOMElement.onmouseup = function() {
-                    self.dispatchEvent("controlup");
+                controlDOMElement.onclick = function (e) {
+                    dispatchIfInZone(e, "controlclick");
                 };
             };
 
