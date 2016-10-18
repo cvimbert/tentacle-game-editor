@@ -2053,11 +2053,13 @@
   "bd489abe-6cbc-4263-b6f2-67b835c7290b": {
     "attributes": {
       "name": "Bouton A",
-      "sprite": "5d3973eb-7131-478e-9df4-86dbbb194511"
+      "sprite": "5d3973eb-7131-478e-9df4-86dbbb194511",
+      "zoning": "nozone"
     },
     "trashCan": {
-      "name": "BoutonA",
-      "sprite": "5d3973eb-7131-478e-9df4-86dbbb194511"
+      "name": "Bouton A",
+      "sprite": "5d3973eb-7131-478e-9df4-86dbbb194511",
+      "zoning": "nozone"
     },
     "type": "Control",
     "uid": "bd489abe-6cbc-4263-b6f2-67b835c7290b",
@@ -2066,11 +2068,13 @@
   "203a1f3f-248f-41fc-95d6-d7466330599e": {
     "attributes": {
       "name": "Bouton B",
-      "sprite": "68efe720-e1ee-41c4-baf0-844c742ec3a7"
+      "sprite": "68efe720-e1ee-41c4-baf0-844c742ec3a7",
+      "zoning": "nozone"
     },
     "trashCan": {
       "name": "Bouton B",
-      "sprite": "68efe720-e1ee-41c4-baf0-844c742ec3a7"
+      "sprite": "68efe720-e1ee-41c4-baf0-844c742ec3a7",
+      "zoning": "nozone"
     },
     "type": "Control",
     "uid": "203a1f3f-248f-41fc-95d6-d7466330599e",
@@ -2176,11 +2180,13 @@
   "81761c92-6137-479e-b5b7-ca7dccb66539": {
     "attributes": {
       "name": "Start 2",
-      "sprite": "b6bafd79-9aff-446f-b5c1-c0fe830e8992"
+      "sprite": "b6bafd79-9aff-446f-b5c1-c0fe830e8992",
+      "zoning": "nozone"
     },
     "trashCan": {
       "name": "Start 2",
-      "sprite": "b6bafd79-9aff-446f-b5c1-c0fe830e8992"
+      "sprite": "b6bafd79-9aff-446f-b5c1-c0fe830e8992",
+      "zoning": "nozone"
     },
     "type": "Control",
     "uid": "81761c92-6137-479e-b5b7-ca7dccb66539",
@@ -2236,7 +2242,8 @@
         "05f05bd3-f909-4964-b494-c8ff48fc7dae",
         "696446ac-2de4-41cb-b2b0-f270803153bd",
         "e38ae0c1-e4f4-47d9-a0d0-49e7df13d564",
-        "bcf2ef41-7ab1-4a81-b90c-491e292683d1"
+        "bcf2ef41-7ab1-4a81-b90c-491e292683d1",
+        "e568e361-8d2a-499d-b833-382867e7f7cf"
       ]
     },
     "trashCan": {
@@ -2925,11 +2932,17 @@
   "eac19532-4b18-4778-9032-b8a16e4bebf3": {
     "attributes": {
       "name": "Start 1",
-      "sprite": "b2eb5621-9b01-4cf1-817b-9a34083309ba"
+      "sprite": "b2eb5621-9b01-4cf1-817b-9a34083309ba",
+      "zoning": "nozone"
     },
     "trashCan": {
       "name": "Start 1",
-      "sprite": "b2eb5621-9b01-4cf1-817b-9a34083309ba"
+      "sprite": "b2eb5621-9b01-4cf1-817b-9a34083309ba",
+      "zoning": "nozone",
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
     },
     "type": "Control",
     "uid": "eac19532-4b18-4778-9032-b8a16e4bebf3",
@@ -3601,16 +3614,15 @@
       "condition": "",
       "actiontype": "actionsset",
       "actions": [
-        "ed822726-3886-47da-9c41-c60ec90f6bc5",
+        "9edb108f-fe72-4886-9c1a-96796f9c8a94",
+        "32e00acc-3618-4be3-adc6-8aea373cdf5d",
         "7ab3defb-015b-4700-a6b4-968bb7ec2fd2",
         "ebd8c549-ef22-41ba-b503-1b18164709d4",
+        "ed822726-3886-47da-9c41-c60ec90f6bc5",
         "2ad7bfaf-95fd-49d6-a7d3-bdfaf44d748d",
-        "9edb108f-fe72-4886-9c1a-96796f9c8a94",
-        "133e4083-e02b-4949-9d9b-1a94c15b5cca",
-        "8402a6f9-8953-4d1d-960c-3c41bd52df77",
         "c74c5b88-849b-4643-88be-755e50b32cec",
         "f1c05257-73bf-4a0a-b76c-0faded0d1018",
-        "0fdcc0d1-5e47-4e7e-b7c1-37adf7ccb747"
+        "85e3f9f5-028b-4063-90f0-90f891bd1017"
       ]
     },
     "trashCan": {
@@ -3827,11 +3839,17 @@
   "40d537a4-1793-4876-8b7c-68bcfec601e5": {
     "attributes": {
       "name": "Start 3",
-      "sprite": "c4dadbc7-b0ff-4a1a-ba24-3d82aa7f71c2"
+      "sprite": "c4dadbc7-b0ff-4a1a-ba24-3d82aa7f71c2",
+      "zoning": "nozone"
     },
     "trashCan": {
       "name": "Start 3",
-      "sprite": "c4dadbc7-b0ff-4a1a-ba24-3d82aa7f71c2"
+      "sprite": "c4dadbc7-b0ff-4a1a-ba24-3d82aa7f71c2",
+      "zoning": "nozone",
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
     },
     "type": "Control",
     "uid": "40d537a4-1793-4876-8b7c-68bcfec601e5",
@@ -3841,7 +3859,7 @@
     "attributes": {
       "name": "Click Start 3",
       "actions": [
-        "4cef98bd-a035-4b99-8da8-2cea8af853d8"
+        "53bed902-c2ef-4d9a-b8f0-979304d49678"
       ],
       "condition": "",
       "activatedonstart": "true",
@@ -3999,8 +4017,9 @@
       "actiontype": "sequenceaction",
       "sequence": "cdd2bf90-d5cb-4e89-bc3f-6fcaabe69e60",
       "saction": "play",
-      "occurences": 5,
-      "period": 0.5
+      "occurences": 4,
+      "period": 0.4,
+      "interruptable": "false"
     },
     "trashCan": {
       "name": "Play Animation Taken",
@@ -4296,7 +4315,9 @@
       "actions": [
         "a59a722e-a832-44e2-9c98-0fc4998cc6c3",
         "50fe0461-12bd-4ec8-b785-7736db6bbd7d",
-        "a8e9f9e9-4015-47f5-922d-366d86838314"
+        "a8e9f9e9-4015-47f5-922d-366d86838314",
+        "bcf2ef41-7ab1-4a81-b90c-491e292683d1",
+        "a198d6e9-5c76-4b38-b21f-dbe2c23f90f9"
       ],
       "condition": "",
       "activatedonstart": "true",
@@ -4556,5 +4577,198 @@
     "type": "Action",
     "uid": "0fdcc0d1-5e47-4e7e-b7c1-37adf7ccb747",
     "$$hashKey": "object:763"
+  },
+  "df499bd9-5b4a-46f3-abe6-55658944172d": {
+    "attributes": {
+      "name": "Boat perso",
+      "sprites": [
+        "8e075819-fb0a-4d90-b8e9-48b7a7aa84f3",
+        "17d3df03-7b13-40da-9a10-ba69368705e8"
+      ]
+    },
+    "trashCan": {},
+    "type": "SpritesGroup",
+    "uid": "df499bd9-5b4a-46f3-abe6-55658944172d",
+    "$$hashKey": "object:407"
+  },
+  "d0cbca9a-5a3a-4f4c-b721-2ebca4b3c1fe": {
+    "attributes": {
+      "name": "Two",
+      "group": "df499bd9-5b4a-46f3-abe6-55658944172d",
+      "sprites": [
+        "8e075819-fb0a-4d90-b8e9-48b7a7aa84f3",
+        "17d3df03-7b13-40da-9a10-ba69368705e8"
+      ]
+    },
+    "trashCan": {
+      "name": "Two",
+      "group": "df499bd9-5b4a-46f3-abe6-55658944172d",
+      "sprites": [
+        "8e075819-fb0a-4d90-b8e9-48b7a7aa84f3",
+        "17d3df03-7b13-40da-9a10-ba69368705e8"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "d0cbca9a-5a3a-4f4c-b721-2ebca4b3c1fe",
+    "$$hashKey": "object:625"
+  },
+  "dd229965-7c3b-4e19-b63e-fd40c053a219": {
+    "attributes": {
+      "name": "Boat Perso",
+      "spritesgroup": "df499bd9-5b4a-46f3-abe6-55658944172d",
+      "looptype": "",
+      "states": [
+        "d0cbca9a-5a3a-4f4c-b721-2ebca4b3c1fe",
+        "a229e52e-c1a7-4e44-9a68-db8c6ef081b5",
+        "75098dad-c3d0-4392-a824-6b9241f76bcf"
+      ]
+    },
+    "trashCan": {},
+    "type": "Sequence",
+    "uid": "dd229965-7c3b-4e19-b63e-fd40c053a219",
+    "$$hashKey": "object:289"
+  },
+  "a229e52e-c1a7-4e44-9a68-db8c6ef081b5": {
+    "attributes": {
+      "name": "One",
+      "group": "df499bd9-5b4a-46f3-abe6-55658944172d",
+      "sprites": [
+        "8e075819-fb0a-4d90-b8e9-48b7a7aa84f3"
+      ]
+    },
+    "trashCan": {
+      "name": "One",
+      "group": "df499bd9-5b4a-46f3-abe6-55658944172d",
+      "sprites": [
+        "8e075819-fb0a-4d90-b8e9-48b7a7aa84f3"
+      ]
+    },
+    "type": "GroupState",
+    "uid": "a229e52e-c1a7-4e44-9a68-db8c6ef081b5",
+    "$$hashKey": "object:781"
+  },
+  "75098dad-c3d0-4392-a824-6b9241f76bcf": {
+    "attributes": {
+      "name": "Zero",
+      "group": "df499bd9-5b4a-46f3-abe6-55658944172d",
+      "sprites": []
+    },
+    "trashCan": {
+      "name": "Zero",
+      "group": "df499bd9-5b4a-46f3-abe6-55658944172d",
+      "sprites": []
+    },
+    "type": "GroupState",
+    "uid": "75098dad-c3d0-4392-a824-6b9241f76bcf",
+    "$$hashKey": "object:1430"
+  },
+  "a198d6e9-5c76-4b38-b21f-dbe2c23f90f9": {
+    "attributes": {
+      "name": "Perso Boat Next",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "dd229965-7c3b-4e19-b63e-fd40c053a219",
+      "saction": "next"
+    },
+    "trashCan": {
+      "name": "Perso Boat Next",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "dd229965-7c3b-4e19-b63e-fd40c053a219",
+      "saction": "next"
+    },
+    "type": "Action",
+    "uid": "a198d6e9-5c76-4b38-b21f-dbe2c23f90f9",
+    "$$hashKey": "object:1676"
+  },
+  "e568e361-8d2a-499d-b833-382867e7f7cf": {
+    "attributes": {
+      "name": "Perso Boat Init",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "dd229965-7c3b-4e19-b63e-fd40c053a219",
+      "saction": "setstate",
+      "state": "d0cbca9a-5a3a-4f4c-b721-2ebca4b3c1fe"
+    },
+    "trashCan": {
+      "name": "Perso Boat Init",
+      "condition": "",
+      "actiontype": "sequenceaction",
+      "sequence": "dd229965-7c3b-4e19-b63e-fd40c053a219",
+      "saction": "setstate",
+      "state": "d0cbca9a-5a3a-4f4c-b721-2ebca4b3c1fe"
+    },
+    "type": "Action",
+    "uid": "e568e361-8d2a-499d-b833-382867e7f7cf",
+    "$$hashKey": "object:198"
+  },
+  "85e3f9f5-028b-4063-90f0-90f891bd1017": {
+    "attributes": {
+      "name": "Reset Gold In bag No Condition",
+      "condition": "",
+      "actiontype": "variableaction",
+      "variable": "bb981b04-3930-41da-be26-6acdbbd6aeb8",
+      "vaction": "set",
+      "varvalue": "",
+      "vvalue": 0
+    },
+    "trashCan": {
+      "name": "Reset Gold In bag No Condition",
+      "condition": "",
+      "actiontype": "variableaction",
+      "variable": "bb981b04-3930-41da-be26-6acdbbd6aeb8",
+      "vaction": "set"
+    },
+    "type": "Action",
+    "uid": "85e3f9f5-028b-4063-90f0-90f891bd1017",
+    "$$hashKey": "object:370"
+  },
+  "80c4d1b6-9ce5-4a74-9cc6-c02706a91447": {
+    "attributes": {
+      "name": "LCD Display",
+      "identifier": "lcddisplay"
+    },
+    "trashCan": {},
+    "type": "Module",
+    "uid": "80c4d1b6-9ce5-4a74-9cc6-c02706a91447",
+    "$$hashKey": "object:11"
+  },
+  "623c5657-1f12-4586-a4b6-5738f9d42eaa": {
+    "attributes": {
+      "name": "Animation test",
+      "sequence": "8f1274ec-d695-4ecb-94ba-5c45c2d4b94d",
+      "iterations": 4,
+      "period": 0.5,
+      "interruptable": "false"
+    },
+    "trashCan": {
+      "name": "Animation test",
+      "sequence": "8f1274ec-d695-4ecb-94ba-5c45c2d4b94d",
+      "iterations": 4,
+      "period": 0.5,
+      "interruptable": "true"
+    },
+    "type": "Animation",
+    "uid": "623c5657-1f12-4586-a4b6-5738f9d42eaa",
+    "$$hashKey": "object:358"
+  },
+  "53bed902-c2ef-4d9a-b8f0-979304d49678": {
+    "attributes": {
+      "name": "Play Animation Test",
+      "condition": "",
+      "actiontype": "animationaction",
+      "animation": "623c5657-1f12-4586-a4b6-5738f9d42eaa",
+      "animaction": "play"
+    },
+    "trashCan": {
+      "name": "Play Animation Test",
+      "condition": "",
+      "actiontype": "animationaction",
+      "animation": "623c5657-1f12-4586-a4b6-5738f9d42eaa",
+      "animaction": "play"
+    },
+    "type": "Action",
+    "uid": "53bed902-c2ef-4d9a-b8f0-979304d49678",
+    "$$hashKey": "object:200"
   }
 }

@@ -115,6 +115,70 @@ var modelDescriptorV3 = {
                 type: "ConditionalAttributesSet",
                 required: true,
                 attributesSets: {
+                    animationaction: {
+                        animation: {
+                            type: "reference",
+                            referencetype: "Animation",
+                            required: true
+                        },
+                        animaction: {
+                            type: "ConditionalAttributesSet",
+                            required: true,
+                            attributesSets: {
+                                play: {},
+                                reset: {}
+                            }
+                        }
+                    },
+                    actionsaction: {
+                        actions: {
+                            type: "collection",
+                            collectiontype: "reference",
+                            referencetype: "Action",
+                            required: true
+                        },
+                        actaction: {
+                            type: "ConditionalAttributesSet",
+                            required: true,
+                            attributesSets: {
+                                launchall: {},
+                                randomaction: {
+                                    randmode: {
+                                        type: "include",
+                                        includetype: "RandMode"
+                                    }
+                                },
+                                temporized: {
+                                    delay: {
+                                        type: "number",
+                                        defaultvalue: 1,
+                                        required: true
+                                    }
+                                },
+                                repeat: {
+                                    count: {
+                                        type: "number",
+                                        defaultvalue: 1,
+                                        required: true
+                                    }
+                                },
+                                actionssequence: {
+                                    delay: {
+                                        type: "number",
+                                        defaultvalue: 0,
+                                        required: true
+                                    }
+                                },
+                                conditional: {
+                                    condition: {
+                                        type: "reference",
+                                        referencetype: "Condition",
+                                        required: true
+                                    }
+                                }
+                            }
+                        }
+                    },
                     actionsset: {
                         actions: {
                             type: "collection",
@@ -267,6 +331,21 @@ var modelDescriptorV3 = {
                 type: "ConditionalAttributesSet",
                 required: true,
                 attributesSets: {
+                    animationtrigger: {
+                        animation: {
+                            type: "reference",
+                            referencetype: "Animation",
+                            required: true
+                        },
+                        eventtype: {
+                            type: "ConditionalAttributesSet",
+                            required: true,
+                            attributesSets: {
+                                iterationend: {},
+                                animationend: {}
+                            }
+                        }
+                    },
                     variabletrigger: {
                         variable: {
                             type: "reference",

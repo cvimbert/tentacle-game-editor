@@ -34,6 +34,8 @@
         "actions/variableaction",
         "actions/controlaction",
         "actions/soundaction",
+        "actions/actionaction",
+        "actions/animationaction",
         "conditions/basecondition",
         "conditions/variablecondition",
         "conditions/sequencecondition",
@@ -45,7 +47,8 @@
         "triggers/timeout",
         "triggers/sequencetrigger",
         "triggers/spritetrigger",
-        "triggers/variabletrigger"
+        "triggers/variabletrigger",
+        "triggers/animationtrigger"
     ], function(
         controlDirective,
         displayObjectDirective,

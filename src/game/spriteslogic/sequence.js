@@ -176,6 +176,10 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
                 }, delay * 1000);
             };
 
+            this.resetIndex = function() {
+                currentIndex = -1;
+            };
+
             this.updatecurrentstate = function() {
 
             };
@@ -187,7 +191,7 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
 
             this.getstate = function() {
                 return currentIndex !== -1 ? groupStates[currentIndex] : null;
-            }
+            };
         }
     }
 });
