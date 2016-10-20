@@ -68,8 +68,6 @@ define(["underscore", "eventdispatcher"], function(_, EventDispatcher) {
             }
 
             this.reset = function() {
-                console.log("reset");
-
                 if (animationInterval !== undefined) {
                     clearInterval(animationInterval);
                     animationInterval = undefined;

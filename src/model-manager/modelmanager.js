@@ -7,7 +7,8 @@
         (typeof global == 'object' && global.global === global && global);
 
     if (typeof define === 'function' && define.amd) {
-        define(["underscore", "model", "modeldescriptor", "filter", "filtersset", "constants"], function(_, Model, ModelDescriptor, Filter, FiltersSet, Constants) {
+        define([
+            "underscore", "model", "modeldescriptor", "filter", "filtersset", "constants"], function(_, Model, ModelDescriptor, Filter, FiltersSet, Constants) {
             return factory(_, Model, ModelDescriptor, Filter, FiltersSet, Constants);
         });
     } else {
@@ -19,6 +20,8 @@
     return function () {
         var models = {};
         var modelsByType = {};
+
+        var usedIn = {};
 
         var modelDescriptor;
 
@@ -50,6 +53,11 @@
             }
 
             modelsByType[model.type][model.uid] = model;
+
+            // et on enregistre aussi les usedIn (là ou chacune des références est utilisée)
+            var descriptor = getClassDescriptor(model.type);
+            var flatten = descriptor.flattenByItem(model);
+            console.log(flatten);
         };
 
         this.loadModel = function (id) {
@@ -64,7 +72,11 @@
 
                     modelsByType[item.type][item.uid] = new Model(item, self);
                     models[item.uid] = modelsByType[item.type][item.uid];
+
+                    self.registerUsedIn(modelsByType[item.type][item.uid]);
                 });
+
+                console.log(usedIn);
 
                 localStorage["defaultModel"] = id;
             }
@@ -78,6 +90,53 @@
             return modelDescriptor.getClassDescriptor(id);
         };
 
+        this.getUsedIn = function(reference) {
+            if (typeof reference === "object") {
+                return usedIn[reference.uid];
+            } else {
+                return usedIn[reference];
+            }
+        };
+
+        this.unregisterUsedIn = function(model, where) {
+            // à voir, plus complexe. Eviter à tout prix de faire une usine à gaz.
+        };
+
+        this.registerUsedIn = function(model) {
+            var descriptor = modelDescriptor.getClassDescriptor(model.type);
+            var flatten = descriptor.flattenByItem(model);
+
+            _.each(flatten, function(descAttribute, propName) {
+
+                if (descAttribute.type === "reference") {
+                    var targetObjectUid = model.get(propName);
+
+                    if (targetObjectUid !== "") {
+                        if (usedIn[targetObjectUid] === undefined) {
+                            usedIn[targetObjectUid] = [];
+                        }
+
+                        usedIn[targetObjectUid].push(model.uid);
+                    }
+                }
+
+                if ((descAttribute.type === "collection" && descAttribute.collectiontype === "reference") || descAttribute.type === "linkedcollection") {
+                    var targetUidsCollection = model.get(propName);
+
+                    _.each(targetUidsCollection, function(targetUid) {
+
+                        if (targetUid !== "") {
+                            if (usedIn[targetUid] === undefined) {
+                                usedIn[targetUid] = [];
+                            }
+
+                            usedIn[targetUid].push(model.uid);
+                        }
+                    });
+                }
+            });
+        };
+
         this.saveObject = function (objectType, object) {
             if (!modelsByType[objectType]) {
                 modelsByType[objectType] = {};
@@ -85,6 +144,9 @@
 
             modelsByType[objectType][object.uid] = object;
             models[object.uid] = object;
+
+            // et on enregistre aussi les usedIn (là ou chacune des références est utilisée)
+            this.registerUsedIn(object);
         };
 
         this.loadDefaultModel = function () {
@@ -211,8 +273,23 @@
         };
 
         this.deleteItem = function (descid, item) {
-            delete modelsByType[descid][item.uid];
-            delete models[item.uid];
+
+            if (usedIn[item.uid] && usedIn[item.uid].length > 0) {
+
+                var str = "Objet non supprimable. Utilisé dans :";
+
+                _.each(usedIn[item.uid], function(uid) {
+                    str += "\n" + uid;
+                });
+
+                alert(str);
+                return;
+            }
+
+            if (confirm("Suppression ?")) {
+                delete modelsByType[descid][item.uid];
+                delete models[item.uid];
+            }
         };
 
         this.clearModel = function () {

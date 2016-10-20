@@ -39,6 +39,9 @@ define ([
             $("#modal-desc").modal(modalOptions);
         });
 
+        $scope.displayUsedInModal = function(usedInArray) {
+
+        };
 
         shared.editItem = function (uid) {
             var item = shared.modelManager.getModelByUid(uid);

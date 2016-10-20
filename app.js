@@ -34,7 +34,7 @@
         "actions/variableaction",
         "actions/controlaction",
         "actions/soundaction",
-        "actions/actionaction",
+        "actions/actionsaction",
         "actions/animationaction",
         "conditions/basecondition",
         "conditions/variablecondition",
