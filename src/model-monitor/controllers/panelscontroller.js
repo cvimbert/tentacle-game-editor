@@ -40,8 +40,15 @@ define ([
         });
 
         $scope.displayUsedInModal = function(usedInArray) {
-
+            $scope.usedIn = usedInArray;
+            $("#modal-used-in").modal(modalOptions);
         };
+
+        $scope.closeUsedInModal = function() {
+            $("#modal-used-in").modal("hide");
+        };
+
+        shared.displayUsedInModal = $scope.displayUsedInModal;
 
         shared.editItem = function (uid) {
             var item = shared.modelManager.getModelByUid(uid);

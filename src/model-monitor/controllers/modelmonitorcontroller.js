@@ -29,7 +29,12 @@ define([], function() {
 
         $scope.deleteItem = function (descid, item, $event) {
             $event.stopPropagation();
-            shared.modelManager.deleteItem(descid, item);
+
+            var deletion = shared.modelManager.deleteItem(descid, item);
+
+            if (deletion !== true) {
+                shared.displayUsedInModal(deletion);
+            }
         };
     };
 });

@@ -79,6 +79,25 @@
                 </div>
             </form>
         </div>
+
+        <div id="modal-used-in" class="modal">
+            <form name="modalform">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" ng-click="closeUsedInModal()" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">{{getLocString("impossibledeletion")}}</h4>
+                            <div>Your object is used by the following objects</div>
+                        </div>
+                        <div class="modal-body" ng-include="'includes/usedin.html'">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" ng-click="closeUsedInModal()">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
 

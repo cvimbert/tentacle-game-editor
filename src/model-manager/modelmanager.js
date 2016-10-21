@@ -57,7 +57,6 @@
             // et on enregistre aussi les usedIn (là ou chacune des références est utilisée)
             var descriptor = getClassDescriptor(model.type);
             var flatten = descriptor.flattenByItem(model);
-            console.log(flatten);
         };
 
         this.loadModel = function (id) {
@@ -75,8 +74,6 @@
 
                     self.registerUsedIn(modelsByType[item.type][item.uid]);
                 });
-
-                console.log(usedIn);
 
                 localStorage["defaultModel"] = id;
             }
@@ -98,8 +95,19 @@
             }
         };
 
-        this.unregisterUsedIn = function(model, where) {
-            // à voir, plus complexe. Eviter à tout prix de faire une usine à gaz.
+        this.unregisterUsedIn = function(model) {
+            var uid = model.uid;
+
+            delete usedIn[uid];
+
+            _.each(usedIn, function(usedInItem) {
+                var index = usedInItem.indexOf(uid);
+
+                while (index !== -1) {
+                    usedInItem.splice(index, 1);
+                    index = usedInItem.indexOf(uid);
+                }
+            });
         };
 
         this.registerUsedIn = function(model) {
@@ -275,21 +283,23 @@
         this.deleteItem = function (descid, item) {
 
             if (usedIn[item.uid] && usedIn[item.uid].length > 0) {
+                var uids = usedIn[item.uid];
+                var objects = [];
 
-                var str = "Objet non supprimable. Utilisé dans :";
-
-                _.each(usedIn[item.uid], function(uid) {
-                    str += "\n" + uid;
+                _.each(uids, function (uid) {
+                    objects.push(self.getModelByUid(uid));
                 });
 
-                alert(str);
-                return;
+                return objects;
             }
 
             if (confirm("Suppression ?")) {
                 delete modelsByType[descid][item.uid];
                 delete models[item.uid];
+                this.unregisterUsedIn(item);
             }
+
+            return true;
         };
 
         this.clearModel = function () {
