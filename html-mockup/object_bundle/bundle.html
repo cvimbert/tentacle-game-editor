@@ -1,0 +1,6 @@
+<div class="bundle-content" ng-class="{'deployed':datas.deployed}">
+    <div class="bundle-background" style="width: {{ liveProps.width }}px; height: {{ liveProps.height }}px; opacity: {{ liveProps.opacity }};"></div>
+    <satellite ng-repeat="action in datas.actions" from="20" to="160" position="$index" length="datas.actions.length" translate="liveProps.radius" datas="action" class="satellite action"></satellite>
+    <satellite ng-repeat="action in datas.triggers" from="200" to="340" position="$index" length="datas.triggers.length" translate="liveProps.radius" datas="trigger" class="satellite trigger"></satellite>
+    <div class="game-object"></div>
+</div>
