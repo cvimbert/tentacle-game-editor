@@ -1,3 +1,7 @@
+body {
+    background-color: #333333;
+}
+
 .container {
     position: absolute;
     top: 0;
@@ -22,8 +26,8 @@ bundle {
 
 .bundle-background {
     border-radius: 50%;
-    border: 2px dashed #333333;
-    background-color: #eee;
+    border: 2px solid #999;
+    background-color: rgba(255, 255, 255, 0.2);
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -31,14 +35,30 @@ bundle {
 }
 
 .game-object {
-    width: 50px;
-    height: 50px;
-    background-color: orange;
-    border: 1px solid #333;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #999;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    color: white;
+    text-align: center;
+    line-height: 76px;
+    font-size: 12px;
+}
+
+.game-object.sprite {
+    background-color: #d38800;
+}
+
+.game-object.variable {
+    background-color: purple;
+}
+
+.game-object.seq {
+    background-color: #e0e000;
 }
 
 .satellite {
@@ -47,19 +67,47 @@ bundle {
     left: 50%;
 }
 
+.top-linker {
+    width: 60px;
+    height: 10px;
+    background-color: #A50000;
+    position: absolute;
+    top: -40px;
+    transform: translate(-50%);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border: 2px solid #999;
+    border-bottom: none;
+}
+
+.bottom-linker {
+    width: 60px;
+    height: 10px;
+    background-color: #009800;
+    position: absolute;
+    top: 30px;
+    transform: translate(-50%);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 2px solid #999;
+    border-top: none;
+}
+
 .satellite-content {
     width: 30px;
     height: 30px;
-    border: 1px solid #333333;
+    border: 2px solid #666666;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     line-height: 27px;
     text-align: center;
     cursor: pointer;
+    color: #999;
+    font-weight: bold;
 }
 
 .action .satellite-content {
-    background-color: #ff0000;
+    background-color: #A50000;
 }
 
 .action-0 {
@@ -71,7 +119,7 @@ bundle {
 }
 
 .trigger .satellite-content {
-    background-color: #00ff00;
+    background-color: #009800;
 }
 
 .trigger-0 {

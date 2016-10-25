@@ -1,5 +1,6 @@
 <div style="transform: rotate({{ liveProps.rotation }}deg) translate({{ liveProps.translation }}px); opacity:{{ liveProps.opacity }};">
     <div style="transform: rotate({{ -liveProps.rotation }}deg)">
-        <div class="satellite-content">A</div>
+        <div ng-if="category === 'actions'" class="satellite-content">A</div>
+        <div ng-if="category === 'triggers'" class="satellite-content">T</div>
     </div>
 </div>
