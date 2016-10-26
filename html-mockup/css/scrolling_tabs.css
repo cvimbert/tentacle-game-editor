@@ -19,22 +19,31 @@ body {
     flex: 1;
 }
 
-.scroller {
+.scroller, tabsscroller {
     width: 350px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
-.scroller .content {
+tabsscroller .content {
     flex: 1;
     background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .scrolling-tab {
     color: black;
     display: flex;
     flex-direction: column;
+    flex: 1;
     height: 100%;
+}
+
+scrollingtab {
+    /*flex: 1;*/
 }
 
 .scrolling-tab .title {
@@ -43,12 +52,14 @@ body {
     width: 100%;
     text-align: center;
     line-height: 29px;
+    cursor: pointer;
 }
 
-.scrolling-tab .content {
+.scrolling-tab .tab-content {
     background-color: lightsalmon;
     flex: 1;
     color: white;
+    text-align: center;
 }
 
 scrollingtabstitle > div {
