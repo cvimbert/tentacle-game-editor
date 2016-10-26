@@ -1,0 +1,61 @@
+body {
+    background-color: #333333;
+    color: white;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.main-panel {
+    flex: 1;
+}
+
+.scroller {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroller .content {
+    flex: 1;
+    background-color: lightgoldenrodyellow;
+}
+
+.scrolling-tab {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.scrolling-tab .title {
+    background-color: lightcoral;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    line-height: 29px;
+}
+
+.scrolling-tab .content {
+    background-color: lightsalmon;
+    flex: 1;
+    color: white;
+}
+
+scrollingtabstitle > div {
+    width: 100%;
+    height: 30px;
+    background-color: #dddddd;
+    color: black;
+    text-align: center;
+    line-height: 27px;
+}
