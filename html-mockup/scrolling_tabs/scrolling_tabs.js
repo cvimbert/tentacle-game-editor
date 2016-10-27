@@ -35,6 +35,28 @@ mainApp.directive("tabsscroller", function()  {
 
         link: function(scope, element, attributes) {
 
+            scope.childTabs = [];
+
+            scope.toggle = function(tabindex) {
+
+                var activeTab = scope.childTabs[tabindex];
+                var passiveTab;
+
+                // passiveTab n'est peut-être pas utile
+                if (tabindex === 0) {
+                    passiveTab = scope.childTabs[1];
+                } else {
+                    passiveTab = scope.childTabs[tabindex - 1];
+                }
+
+                _.each(scope.childTabs, function(tab, i) {
+                    if (i !== tabindex) {
+                        tab.toggle(false);
+                    }
+                });
+
+                activeTab.toggle(true);
+            };
         }
     }
 });
@@ -66,10 +88,13 @@ mainApp.directive("scrollingtab", function() {
         templateUrl: "scrolling_tabs/tab.html",
 
         scope: {
-            open: "=open"
+            open: "=open",
+            tabindex: "=tabindex"
         },
 
         link: function(scope, element, attributes) {
+
+            scope.$parent.childTabs.push(scope);
 
             scope.liveProps = {
                 height: 0
@@ -82,6 +107,14 @@ mainApp.directive("scrollingtab", function() {
                     element.css("flex", 0);
                 }
             });
+
+            scope.triggerToggle = function(index) {
+                scope.$parent.toggle(scope.tabindex);
+            };
+
+            scope.toggle = function(mustOpen) {
+                //alert (mustOpen);
+            };
         }
     }
 });
