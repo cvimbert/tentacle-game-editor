@@ -63,6 +63,22 @@ var panels = {
                         type: "navigatetopanel",
                         panelid: "graphs"
                     }
+                },
+                b8: {
+                    label: "Scene editor",
+                    containerid: "b8",
+                    action: {
+                        type: "navigatetopanel",
+                        panelid: "sceneeditor"
+                    }
+                },
+                b9: {
+                    label: "Graph editor",
+                    containerid: "b9",
+                    action: {
+                        type: "navigatetopanel",
+                        panelid: "grapheditor"
+                    }
                 }
             }
         },

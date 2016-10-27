@@ -43,6 +43,16 @@ define(["modelmanager", "loadingmanager", "monitorpanelsset"]
                             });
                         }
 
+                        $routeProvider.when("/sceneeditor", {
+                            templateUrl: "includes/panels/sceneeditor.html",
+                            controller: ""
+                        });
+
+                        $routeProvider.when("/grapheditor", {
+                            template: "includes/panels/grapheditor.html",
+                            controller: ""
+                        });
+
                         $routeProvider.otherwise({
                             redirectTo: '/' + defaultSetId
                         });

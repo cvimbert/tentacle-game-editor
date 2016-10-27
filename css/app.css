@@ -17,6 +17,14 @@ body {
     height: 100%;
 }
 
+.row-30 {
+    height: 30%;
+}
+
+.row-40 {
+    height: 40%;
+}
+
 .vertical-centered {
     position: absolute;
     top: 50%;
