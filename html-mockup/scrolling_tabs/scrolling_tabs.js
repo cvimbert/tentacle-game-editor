@@ -52,10 +52,11 @@ mainApp.directive("tabsscroller", function()  {
                 _.each(scope.childTabs, function(tab, i) {
                     if (i !== tabindex) {
                         tab.toggle(false);
+                        tab.liveopen = false;
                     }
                 });
 
-                activeTab.toggle(true);
+                activeTab.liveopen = true;
             };
         }
     }
@@ -88,11 +89,13 @@ mainApp.directive("scrollingtab", function() {
         templateUrl: "scrolling_tabs/tab.html",
 
         scope: {
-            open: "=open",
-            tabindex: "=tabindex"
+            tabindex: "=tabindex",
+            open: "=open"
         },
 
         link: function(scope, element, attributes) {
+
+            scope.liveopen = scope.open;
 
             scope.$parent.childTabs.push(scope);
 
@@ -100,13 +103,13 @@ mainApp.directive("scrollingtab", function() {
                 height: 0
             };
 
-            scope.$watch(scope.open, function() {
-                if (scope.open) {
+            scope.$watch('liveopen', function() {
+                if (scope.liveopen) {
                     element.css("flex", 1);
                 } else {
                     element.css("flex", 0);
                 }
-            });
+            }, true);
 
             scope.triggerToggle = function(index) {
                 scope.$parent.toggle(scope.tabindex);
