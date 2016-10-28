@@ -52,8 +52,6 @@ define(["TweenLite"], function(TweenLite) {
 
                         element.css("flex", 0);
                     }
-
-                    alert (scope.liveopen);
                 }, true);
 
                 $timeout(function() {
