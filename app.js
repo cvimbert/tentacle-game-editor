@@ -20,9 +20,16 @@
         "console",
         "contenteditable",
         "selectable",
-        //"angular",
-        //"angularRoute",
-        //"angularSanitize",
+
+        "directives/grapheditor/bundle",
+        "directives/grapheditor/satellite",
+        "directives/sceneeditor/scrollingtab",
+        "directives/sceneeditor/scrollingtabstitle",
+        "directives/sceneeditor/tabsscroller",
+
+        "sceneeditor",
+        "grapheditor",
+
         "actions/actionsset",
         "actions/baseaction",
         "actions/clockaction",
@@ -64,7 +71,16 @@
         toolbarPanelController,
         console,
         contentEditable,
-        selectable
+        selectable,
+
+        bundleDirective,
+        satelliteDirective,
+        scrollingTabDirective,
+        scrollingTabsTitleDirective,
+        tabScrollerDirective,
+
+        sceneEditorController,
+        graphEditorController
     ) {
 
         var shared = {};
@@ -82,6 +98,9 @@
 
         mainApp.controller("panelscontroller", panelsController);
 
+        mainApp.controller("sceneeditor", sceneEditorController);
+        mainApp.controller("grapheditor", graphEditorController);
+
 
         mainApp.directive('draggable', draggableDirective);
         mainApp.directive("sortablelist", ['$timeout', sortableListDirective]);
@@ -89,6 +108,15 @@
         mainApp.directive('selectable', selectable);
         mainApp.directive('displayboolean', displayObjectDirective);
         mainApp.directive('control', controlDirective);
+
+        // graph editor
+        mainApp.directive("bundle", ['$timeout', bundleDirective]);
+        mainApp.directive("satellite", satelliteDirective);
+
+        // sceneeditor
+        mainApp.directive("tabsscroller", tabScrollerDirective);
+        mainApp.directive("scrollingtabstitle", scrollingTabsTitleDirective);
+        mainApp.directive("scrollingtab", ['$timeout', scrollingTabDirective]);
 
 
         var app = new MonitoringApp(mainApp, modelDescriptorV3, panels, function() {

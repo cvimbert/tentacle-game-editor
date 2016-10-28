@@ -45,12 +45,12 @@ define(["modelmanager", "loadingmanager", "monitorpanelsset"]
 
                         $routeProvider.when("/sceneeditor", {
                             templateUrl: "includes/panels/sceneeditor.html",
-                            controller: ""
+                            controller: "sceneeditor"
                         });
 
                         $routeProvider.when("/grapheditor", {
-                            template: "includes/panels/grapheditor.html",
-                            controller: ""
+                            templateUrl: "includes/panels/grapheditor.html",
+                            controller: "grapheditor"
                         });
 
                         $routeProvider.otherwise({

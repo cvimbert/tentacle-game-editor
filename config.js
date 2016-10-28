@@ -81,7 +81,9 @@ require.config({
         angular: 'bower_components/angular/angular',
         angularRoute: 'bower_components/angular-route/angular-route',
         angularSanitize: 'bower_components/angular-sanitize/angular-sanitize',
-        app: "app"
-
+        app: "app",
+        directives: "src/directives",
+        sceneeditor: "src/controllers/sceneeditor",
+        grapheditor: "src/controllers/grapheditor"
     }
 });
