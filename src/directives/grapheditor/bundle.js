@@ -93,7 +93,7 @@ define(["underscore", "Draggable", "TweenLite"], function(_, Draggable, TweenLit
 
                     scope.liveProps.radius = widthVal / 2;
 
-                    scope.$apply();
+                    //scope.$apply();
 
                     TweenLite.to(scope.liveProps, 0.5, vals);
 
@@ -104,7 +104,7 @@ define(["underscore", "Draggable", "TweenLite"], function(_, Draggable, TweenLit
                     isDeployed = !isDeployed;
                 };
 
-                angular.element(gameObject).on("click", scope.toggle);
+                //angular.element(gameObject).on("touch", scope.toggle);
 
 
                 TweenLite.set(element, {

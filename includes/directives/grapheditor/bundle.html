@@ -3,6 +3,6 @@
     <satellite ng-click="addElement('actions');" ng-repeat="action in datas.actions track by $index" category="actions" from="200" to="340" position="$index" length="datas.actions.length" translate="liveProps.radius" datas="action" class="satellite action"></satellite>
     <satellite ng-click="addElement('triggers')" ng-repeat="trigger in datas.triggers track by $index" category="triggers" from="20" to="160" position="$index" length="datas.triggers.length" translate="liveProps.radius" datas="trigger" class="satellite trigger"></satellite>
     <div class="top-linker" style="opacity: {{ 1 - liveProps.opacity }};"></div>
-    <div class="game-object {{ datas.type }}">{{ datas.type }}</div>
+    <div class="game-object {{ datas.type }}" ng-click="toggle();">{{ datas.type }}</div>
     <div class="bottom-linker" style="opacity: {{ 1 - liveProps.opacity }};"></div>
 </div>
