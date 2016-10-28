@@ -36,7 +36,7 @@ define(["TweenLite"], function(TweenLite) {
 
                 scope.$watch('liveopen', function() {
 
-                    if (scope.liveopen) {
+                    if (scope.liveopen === true) {
                         element.css("flex", 1);
                     } else {
                         if (init) {
@@ -52,6 +52,8 @@ define(["TweenLite"], function(TweenLite) {
 
                         element.css("flex", 0);
                     }
+
+                    alert (scope.liveopen);
                 }, true);
 
                 $timeout(function() {

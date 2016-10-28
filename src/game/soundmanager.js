@@ -37,7 +37,8 @@ define(["underscore"], function(_) {
             };
         };
 
-        _.each(audioDatas.sounds, function (soundDef) {
+        // à vérifier
+        _.each(audioDatas, function (soundDef) {
             var snd = new Sound(soundDef);
             sounds[soundDef.uid] = snd;
         });

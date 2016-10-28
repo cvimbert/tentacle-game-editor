@@ -49,11 +49,193 @@
 
 /* ------------------ SCENE EDITOR -------------------- */
 
+.scroller, tabsscroller {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
 
+.scene-editor {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.scene-editor-main-panel {
+    flex: 1;
+}
+
+tabsscroller .content {
+    flex: 1;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+tabsscroller .content .content-sub {
+
+}
+
+.scrolling-tab {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+scrollingtab {
+    /*flex: 1;*/
+}
+
+.scrolling-tab .title {
+    background-color: lightcoral;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    line-height: 29px;
+    cursor: pointer;
+}
+
+.scrolling-tab .tab-content {
+    background-color: lightsalmon;
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+scrollingtabstitle > div {
+    width: 100%;
+    height: 30px;
+    background-color: #dddddd;
+    color: black;
+    text-align: center;
+    line-height: 27px;
+}
 /* ---------------------------------------------------- */
 
 
 /* -------------------GRAPH EDITOR -------------------- */
 
+.bundle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
 
+bundle {
+    position: absolute;
+}
+
+.bundle-content {
+    transform: translate(-50%, -50%);
+}
+
+.bundle-background {
+    border-radius: 50%;
+    border: 2px solid #999;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.game-object {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    text-align: center;
+    line-height: 76px;
+    font-size: 12px;
+}
+
+.game-object.sprite {
+    background-color: #d38800;
+}
+
+.game-object.variable {
+    background-color: purple;
+}
+
+.game-object.seq {
+    background-color: #e0e000;
+}
+
+.satellite {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.top-linker {
+    width: 60px;
+    height: 10px;
+    background-color: #A50000;
+    position: absolute;
+    top: -40px;
+    transform: translate(-50%);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border: 2px solid #999;
+    border-bottom: none;
+}
+
+.bottom-linker {
+    width: 60px;
+    height: 10px;
+    background-color: #009800;
+    position: absolute;
+    top: 30px;
+    transform: translate(-50%);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 2px solid #999;
+    border-top: none;
+}
+
+.satellite-content {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #666666;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 27px;
+    text-align: center;
+    cursor: pointer;
+    color: #999;
+    font-weight: bold;
+}
+
+.action .satellite-content {
+    background-color: #A50000;
+}
+
+.action-0 {
+
+}
+
+.action-1 {
+
+}
+
+.trigger .satellite-content {
+    background-color: #009800;
+}
+
+.trigger-0 {
+
+}
+
+.trigger-1 {
+
+}
 /* ---------------------------------------------------- */

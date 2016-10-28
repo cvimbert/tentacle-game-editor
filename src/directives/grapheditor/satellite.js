@@ -18,7 +18,7 @@ define(["Draggable", "TweenLite"], function(Draggable, TweenLite) {
                 category: "@category"
             },
 
-            templateUrl: "include/directives/grapheditor/satellite.html",
+            templateUrl: "includes/directives/grapheditor/satellite.html",
 
             link: function(scope, element, attrs) {
 

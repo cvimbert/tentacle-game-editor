@@ -12,7 +12,7 @@ define(["underscore", "Draggable", "TweenLite"], function(_, Draggable, TweenLit
                 datas: "=datas"
             },
 
-            templateUrl: "include/directives/grapheditor/bundle.html",
+            templateUrl: "includes/directives/grapheditor/bundle.html",
 
             link: function (scope, element, attrs) {
 
