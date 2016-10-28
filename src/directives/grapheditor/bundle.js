@@ -21,7 +21,7 @@ define(["underscore", "Draggable", "TweenLite"], function(_, Draggable, TweenLit
 
                 Draggable.create(element, {
                     type: "x,y",
-                    trigger: gameObject
+                    trigger: gameObjectWrapper
                 });
 
                 scope.satellitesScopes = [];
@@ -105,7 +105,7 @@ define(["underscore", "Draggable", "TweenLite"], function(_, Draggable, TweenLit
                     isDeployed = !isDeployed;
                 };
 
-                angular.element(gameObjectWrapper).on("click", scope.toggle);
+                angular.element(gameObject).on("click", scope.toggle);
 
 
                 TweenLite.set(element, {

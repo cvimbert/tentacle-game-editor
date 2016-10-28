@@ -37,7 +37,7 @@ define(["TweenLite"], function(TweenLite) {
                 scope.$watch('liveopen', function() {
 
                     if (scope.liveopen === true) {
-                        element.css("flex", 1);
+                        element.css("flex", "1");
                     } else {
                         if (init) {
                             scope.liveProps.height = targetHeight;
@@ -50,7 +50,7 @@ define(["TweenLite"], function(TweenLite) {
                             });
                         }
 
-                        element.css("flex", 0);
+                        element.css("flex", "0");
                     }
                 }, true);
 
