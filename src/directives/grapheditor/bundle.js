@@ -17,6 +17,7 @@ define(["underscore", "Draggable", "TweenLite"], function(_, Draggable, TweenLit
             link: function (scope, element, attrs) {
 
                 var gameObject = element[0].querySelector('.game-object');
+                var gameObjectWrapper = element[0].querySelector('.game-object-wrapper');
 
                 Draggable.create(element, {
                     type: "x,y",
@@ -104,7 +105,7 @@ define(["underscore", "Draggable", "TweenLite"], function(_, Draggable, TweenLit
                     isDeployed = !isDeployed;
                 };
 
-                angular.element(gameObject).on("click", scope.toggle);
+                angular.element(gameObjectWrapper).on("click", scope.toggle);
 
 
                 TweenLite.set(element, {
