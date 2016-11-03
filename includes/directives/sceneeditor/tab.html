@@ -1,8 +1,10 @@
 <div class="scrolling-tab">
-    <div class="title" ng-click="triggerToggle();">titre tab</div>
+    <div class="title" ng-click="triggerToggle();">{{ category }}</div>
     <div class="tab-content">
         <div class="content-sub" style="height: {{ liveProps.height }}px;">
-            Contenu
+            <div ng-repeat="elem in datas">
+                <img src="data/packages/octopus/{{ category }}/{{ elem.get('file'); }}">
+            </div>
         </div>
     </div>
 </div>

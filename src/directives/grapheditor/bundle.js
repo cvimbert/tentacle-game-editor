@@ -16,12 +16,21 @@ define(["underscore", "Draggable", "TweenLite"], function(_, Draggable, TweenLit
 
             link: function (scope, element, attrs) {
 
+                var isDragging = false;
+
                 var gameObject = element[0].querySelector('.game-object');
                 var gameObjectWrapper = element[0].querySelector('.game-object-wrapper');
 
                 Draggable.create(element, {
                     type: "x,y",
-                    trigger: gameObjectWrapper
+                    trigger: gameObjectWrapper,
+                    minimumMovement: 10,
+                    onDragStart: function() {
+                        isDragging = true;
+                    },
+                    onDragEnd: function() {
+                        isDragging = false;
+                    }
                 });
 
                 scope.satellitesScopes = [];
@@ -84,6 +93,9 @@ define(["underscore", "Draggable", "TweenLite"], function(_, Draggable, TweenLit
                 var isDeployed = false;
 
                 scope.toggle = function() {
+
+                    if(isDragging) return;
+
                     var vals;
 
                     if (!isDeployed) {
@@ -105,6 +117,9 @@ define(["underscore", "Draggable", "TweenLite"], function(_, Draggable, TweenLit
                     isDeployed = !isDeployed;
                 };
 
+                angular.element(gameObject).on("touchend", scope.toggle);
+
+                // attention au machines hybrides tactiles/souris
                 angular.element(gameObject).on("click", scope.toggle);
 
 

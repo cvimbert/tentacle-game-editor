@@ -13,12 +13,16 @@ define(["TweenLite"], function(TweenLite) {
 
             scope: {
                 tabindex: "=tabindex",
-                open: "=open"
+                open: "=open",
+                datas: "=datas",
+                category: "=category"
             },
 
             link: function(scope, element, attributes) {
 
                 scope.liveopen = scope.open;
+
+                console.log(scope.datas);
 
                 scope.$parent.childTabs.push(scope);
 

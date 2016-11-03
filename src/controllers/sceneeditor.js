@@ -3,21 +3,16 @@
  */
 define([], function() {
 
-    return function($scope) {
+    return function($scope, shared) {
 
         $scope.scrollerDatas = {
             octopus: {
-                sprites: {
-
-                },
-                backgrounds: {
-
-                },
-                controls: {
-
-                }
+                sprites: shared.modelManager.getModelByType("SpriteFileReference"),
+                decorations: shared.modelManager.getModelByType("BackgroundFileReference"),
+                controls: shared.modelManager.getModelByType("ControlFileReference")
             }
         };
 
+        $scope.package = "octopus";
     }
 });

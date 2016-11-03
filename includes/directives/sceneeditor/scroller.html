@@ -1,4 +1,4 @@
 <scrollingtabstitle title="titre"></scrollingtabstitle>
 <div class="content">
-    <scrollingtab ng-repeat="tabid in datas" open="$index === 0" tabindex="$index"></scrollingtab>
+    <scrollingtab ng-repeat="(tabid, dat) in datas" open="$index === 0" tabindex="$index" datas="dat" category="tabid"></scrollingtab>
 </div>
