@@ -38,18 +38,39 @@ define(["TweenLite"], function(TweenLite) {
                     targetHeight = element[0].querySelector(".tab-content").clientHeight;
                 };
 
+                scope.setOverflow = function(overflow) {
+                    var tc = angular.element(element[0].querySelector(".tab-content"));
+
+                    if (overflow) {
+                        tc.css("overflow", "auto");
+                    } else {
+                        tc.css("overflow", "hidden");
+                    }
+                };
+
+                scope.setContentVisibility = function() {
+
+                };
+
                 scope.$watch('liveopen', function() {
 
                     if (scope.liveopen === true) {
                         element.css("flex", "1");
                     } else {
+
+                        scope.setOverflow(false);
+
                         if (init) {
+
                             scope.liveProps.height = targetHeight;
 
                             TweenLite.to(scope.liveProps, 0.8, {
                                 height: 0,
                                 onUpdate: function() {
                                     scope.$apply();
+                                },
+                                onComplete: function() {
+                                    scope.$parent.$parent.updateOverflowAndVisibility();
                                 }
                             });
                         }

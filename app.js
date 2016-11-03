@@ -26,6 +26,9 @@
         "directives/sceneeditor/scrollingtab",
         "directives/sceneeditor/scrollingtabstitle",
         "directives/sceneeditor/tabsscroller",
+        "directives/sceneeditor/selector",
+
+        "directives/adaptative",
 
         "sceneeditor",
         "grapheditor",
@@ -78,6 +81,9 @@
         scrollingTabDirective,
         scrollingTabsTitleDirective,
         tabScrollerDirective,
+        fileSelectorDirective,
+
+        adaptativeDirective,
 
         sceneEditorController,
         graphEditorController
@@ -108,6 +114,7 @@
         mainApp.directive('selectable', selectable);
         mainApp.directive('displayboolean', displayObjectDirective);
         mainApp.directive('control', controlDirective);
+        mainApp.directive("adaptative", adaptativeDirective);
 
         // graph editor
         mainApp.directive("bundle", ['$timeout', bundleDirective]);
@@ -117,6 +124,7 @@
         mainApp.directive("tabsscroller", tabScrollerDirective);
         mainApp.directive("scrollingtabstitle", scrollingTabsTitleDirective);
         mainApp.directive("scrollingtab", ['$timeout', scrollingTabDirective]);
+        mainApp.directive("fileselector", fileSelectorDirective);
 
 
         var app = new MonitoringApp(mainApp, modelDescriptorV3, panels, function() {

@@ -226,6 +226,16 @@ bundle {
     font-weight: bold;
 }
 
+.selector-thumbnail {
+    display: inline-block;
+    min-width: 33.3%;
+    padding: 5px;
+}
+
+.selector-thumbnail img {
+
+}
+
 .action .satellite-content {
     background-color: #A50000;
 }

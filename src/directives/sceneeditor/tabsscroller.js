@@ -19,6 +19,14 @@ define(["underscore"], function(_) {
 
                 scope.childTabs = [];
 
+                scope.updateOverflowAndVisibility = function() {
+                    _.each(scope.childTabs, function(tab) {
+                        if (tab.liveopen === true) {
+                            tab.setOverflow(true);
+                        }
+                    });
+                };
+
                 scope.toggle = function(tabindex) {
 
                     var activeTab = scope.childTabs[tabindex];

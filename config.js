@@ -84,6 +84,7 @@ require.config({
         app: "app",
         directives: "src/directives",
         sceneeditor: "src/controllers/sceneeditor",
-        grapheditor: "src/controllers/grapheditor"
+        grapheditor: "src/controllers/grapheditor",
+        CSSPlugin: "bower_components/gsap/src/uncompressed/plugins/CSSPlugin"
     }
 });

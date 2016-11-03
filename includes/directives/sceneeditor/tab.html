@@ -2,9 +2,7 @@
     <div class="title" ng-click="triggerToggle();">{{ category }}</div>
     <div class="tab-content">
         <div class="content-sub" style="height: {{ liveProps.height }}px;">
-            <div ng-repeat="elem in datas">
-                <img src="data/packages/octopus/{{ category }}/{{ elem.get('file'); }}">
-            </div>
+            <fileselector datas="datas" category="category"></fileselector>
         </div>
     </div>
 </div>
