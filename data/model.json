@@ -3265,41 +3265,6 @@
     "uid": "c84dea5f-6062-4265-8a15-759678ff99be",
     "$$hashKey": "object:190"
   },
-  "fa166dfb-3010-4597-bcfb-e1c080065e45": {
-    "attributes": {
-      "name": "Test Booleen",
-      "variabletype": "boolean",
-      "value": "true"
-    },
-    "trashCan": {
-      "name": "Test Booleen",
-      "variabletype": "boolean"
-    },
-    "type": "Variable",
-    "uid": "fa166dfb-3010-4597-bcfb-e1c080065e45",
-    "$$hashKey": "object:153"
-  },
-  "2a685fc3-4202-43e2-aa8c-bc8ad3ac50fe": {
-    "attributes": {
-      "name": "Test cond boolean",
-      "conditionobject": "variablecondition",
-      "variable": "fa166dfb-3010-4597-bcfb-e1c080065e45",
-      "operator": "===",
-      "conditiontype": "valuecomparison",
-      "variablevalue": "",
-      "value": "false"
-    },
-    "trashCan": {
-      "name": "Test cond boolean",
-      "conditionobject": "variablecondition",
-      "variable": "fa166dfb-3010-4597-bcfb-e1c080065e45",
-      "operator": "===",
-      "conditiontype": "valuecomparison"
-    },
-    "type": "Condition",
-    "uid": "2a685fc3-4202-43e2-aa8c-bc8ad3ac50fe",
-    "$$hashKey": "object:104"
-  },
   "0409579f-7a94-43e9-88b1-3df1e5560c92": {
     "attributes": {
       "name": "Tentacule 1A Finish",
@@ -3616,13 +3581,10 @@
       "actions": [
         "9edb108f-fe72-4886-9c1a-96796f9c8a94",
         "32e00acc-3618-4be3-adc6-8aea373cdf5d",
-        "7ab3defb-015b-4700-a6b4-968bb7ec2fd2",
         "ebd8c549-ef22-41ba-b503-1b18164709d4",
-        "ed822726-3886-47da-9c41-c60ec90f6bc5",
         "2ad7bfaf-95fd-49d6-a7d3-bdfaf44d748d",
-        "c74c5b88-849b-4643-88be-755e50b32cec",
-        "f1c05257-73bf-4a0a-b76c-0faded0d1018",
-        "85e3f9f5-028b-4063-90f0-90f891bd1017"
+        "85e3f9f5-028b-4063-90f0-90f891bd1017",
+        "15ab468b-175d-4070-a80f-52b764afaa8e"
       ]
     },
     "trashCan": {
@@ -3859,7 +3821,7 @@
     "attributes": {
       "name": "Click Start 3",
       "actions": [
-        "53bed902-c2ef-4d9a-b8f0-979304d49678"
+        "813826c7-35c2-4712-a936-a8b31b0c7738"
       ],
       "condition": "",
       "activatedonstart": "true",
@@ -4770,5 +4732,84 @@
     "type": "Action",
     "uid": "53bed902-c2ef-4d9a-b8f0-979304d49678",
     "$$hashKey": "object:200"
+  },
+  "813826c7-35c2-4712-a936-a8b31b0c7738": {
+    "attributes": {
+      "name": "Delayed Test",
+      "condition": "",
+      "actiontype": "actionsaction",
+      "actions": [
+        "53bed902-c2ef-4d9a-b8f0-979304d49678"
+      ],
+      "actaction": "temporized",
+      "delay": 2
+    },
+    "trashCan": {
+      "name": "Delayed Test",
+      "condition": "",
+      "actiontype": "actionsaction",
+      "animation": "",
+      "animaction": "",
+      "actions": [
+        "53bed902-c2ef-4d9a-b8f0-979304d49678"
+      ],
+      "actaction": "temporized",
+      "delay": 2,
+      "count": 2
+    },
+    "type": "Action",
+    "uid": "813826c7-35c2-4712-a936-a8b31b0c7738",
+    "$$hashKey": "object:163"
+  },
+  "389dceb9-2d09-48db-bdc2-7e6dd2702a6e": {
+    "attributes": {
+      "name": "After Taken Wait",
+      "condition": "",
+      "actiontype": "actionsaction",
+      "actions": [
+        "ed822726-3886-47da-9c41-c60ec90f6bc5",
+        "7ab3defb-015b-4700-a6b4-968bb7ec2fd2",
+        "c74c5b88-849b-4643-88be-755e50b32cec",
+        "f1c05257-73bf-4a0a-b76c-0faded0d1018"
+      ],
+      "actaction": "launchall"
+    },
+    "trashCan": {
+      "name": "After Taken Wait",
+      "condition": "",
+      "actiontype": "actionsaction",
+      "actions": [
+        "ed822726-3886-47da-9c41-c60ec90f6bc5",
+        "7ab3defb-015b-4700-a6b4-968bb7ec2fd2"
+      ],
+      "actaction": "launchall"
+    },
+    "type": "Action",
+    "uid": "389dceb9-2d09-48db-bdc2-7e6dd2702a6e",
+    "$$hashKey": "object:728"
+  },
+  "15ab468b-175d-4070-a80f-52b764afaa8e": {
+    "attributes": {
+      "name": "Taken Wait",
+      "condition": "",
+      "actiontype": "actionsaction",
+      "actions": [
+        "389dceb9-2d09-48db-bdc2-7e6dd2702a6e"
+      ],
+      "actaction": "temporized",
+      "delay": 2
+    },
+    "trashCan": {
+      "name": "Taken Wait",
+      "condition": "",
+      "actiontype": "actionsaction",
+      "actions": [
+        "389dceb9-2d09-48db-bdc2-7e6dd2702a6e"
+      ],
+      "actaction": "temporized"
+    },
+    "type": "Action",
+    "uid": "15ab468b-175d-4070-a80f-52b764afaa8e",
+    "$$hashKey": "object:836"
   }
 }
