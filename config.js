@@ -42,7 +42,7 @@ require.config({
         panelcontroller: 'src/model-monitor/controllers/panelcontroller',
         panelscontroller: 'src/model-monitor/controllers/panelscontroller',
         spritespanelcontroller: 'src/model-monitor/controllers/spritespanelcontroller',
-        draggabledirective: 'src/model-monitor/directives/draggable',
+        draggabledirective: 'src/directives/draggable',
         sortablelistdirective: 'src/model-monitor/directives/sortablelist',
         Draggable: 'bower_components/gsap/src/uncompressed/utils/Draggable',
         CSSPlugin: 'bower_components/gsap/src/uncompressed/plugins/CSSPlugin',

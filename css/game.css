@@ -53,7 +53,7 @@
     width: 350px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    /*overflow-y: hidden;*/
     margin-right: -15px;
     margin-bottom: -8px;
 }
@@ -73,7 +73,7 @@ tabsscroller .content {
     background-color: lightgoldenrodyellow;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    /*overflow-y: hidden;*/
 }
 
 tabsscroller .content .content-sub {
@@ -106,6 +106,7 @@ scrollingtab {
     flex: 1;
     color: white;
     text-align: center;
+    overflow-y: hidden;
 }
 
 scrollingtabstitle > div {

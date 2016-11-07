@@ -55,7 +55,7 @@
             modelsByType[model.type][model.uid] = model;
 
             // et on enregistre aussi les usedIn (là ou chacune des références est utilisée)
-            var descriptor = getClassDescriptor(model.type);
+            var descriptor = modelDescriptor.getClassDescriptor(model.type);
             var flatten = descriptor.flattenByItem(model);
         };
 

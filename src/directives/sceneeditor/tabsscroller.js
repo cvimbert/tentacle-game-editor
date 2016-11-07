@@ -12,7 +12,8 @@ define(["underscore"], function(_) {
             templateUrl: "includes/directives/sceneeditor/scroller.html",
 
             scope: {
-                datas: "=datas"
+                datas: "=datas",
+                dropedontarget: "=dropedontarget"
             },
 
             link: function(scope, element, attributes) {
@@ -30,14 +31,6 @@ define(["underscore"], function(_) {
                 scope.toggle = function(tabindex) {
 
                     var activeTab = scope.childTabs[tabindex];
-                    var passiveTab;
-
-                    // passiveTab n'est peut-être pas utile (si si ! ou pas)
-                    if (tabindex === 0) {
-                        passiveTab = scope.childTabs[1];
-                    } else {
-                        passiveTab = scope.childTabs[tabindex - 1];
-                    }
 
                     _.each(scope.childTabs, function(tab) {
                         tab.calculateHeight();

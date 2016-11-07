@@ -15,7 +15,8 @@ define(["TweenLite"], function(TweenLite) {
                 tabindex: "=tabindex",
                 open: "=open",
                 datas: "=datas",
-                category: "=category"
+                category: "=category",
+                dropedontarget: "=dropedontarget"
             },
 
             link: function(scope, element, attributes) {
@@ -39,13 +40,13 @@ define(["TweenLite"], function(TweenLite) {
                 };
 
                 scope.setOverflow = function(overflow) {
-                    var tc = angular.element(element[0].querySelector(".tab-content"));
+                    /*var tc = angular.element(element[0].querySelector(".tab-content"));
 
                     if (overflow) {
                         tc.css("overflow", "auto");
                     } else {
                         tc.css("overflow", "hidden");
-                    }
+                    }*/
                 };
 
                 scope.setContentVisibility = function() {

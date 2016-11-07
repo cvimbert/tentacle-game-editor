@@ -1,7 +1,7 @@
 /**
  * Created by Christophe on 03/11/2016.
  */
-define([], function() {
+define(["Draggable"], function(Draggable) {
 
     return function () {
 
@@ -13,6 +13,7 @@ define([], function() {
             scope: {
                 datas: "=datas",
                 category: "=category",
+                dropedontarget: "=dropedontarget",
                 mode: "&mode"
             },
 
