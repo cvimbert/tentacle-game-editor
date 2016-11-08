@@ -7,12 +7,13 @@
                 </div>
 
                 <div id="editor-spritescontainer">
-                    <div editorsprite type="sprite" onselect="onSelectSprite" model="model" class="game-element sprite enabled ui-widget-content" ng-repeat="model in sprites" style="opacity: 1;"><img ng-src="data/packages/{{getImageUrl(model, 'sprites');}}"></div>
+                    <div editorsprite type="sprite" register="onRegisterSprite" onselect="onSelectSprite" model="model" class="game-element sprite enabled ui-widget-content" ng-repeat="model in sprites" style="opacity: 1;"><img ng-src="data/packages/{{getImageUrl(model, 'sprites');}}"></div>
                 </div>
 
                 <div id="controlscontainer">
-                    <div editorsprite type="control" onselect="onSelectSprite" model="control" id="{{'control-' + control.uid}}" class="game-element enabled ui-widget-content" ng-repeat="control in controls"><img ng-src="data/packages/{{getImageUrl(control, 'controls');}}"></div>
+                    <div editorsprite type="control" register="onRegisterSprite" onselect="onSelectSprite" model="control" id="{{'control-' + control.uid}}" class="game-element enabled ui-widget-content" ng-repeat="control in controls"><img ng-src="data/packages/{{getImageUrl(control, 'controls');}}"></div>
                 </div>
+                <editortoolsbar ng-show="selectedSprite"></editortoolsbar>
             </div>
         </div>
     </div>

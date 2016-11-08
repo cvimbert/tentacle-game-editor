@@ -28,6 +28,7 @@
         "directives/sceneeditor/tabsscroller",
         "directives/sceneeditor/selector",
         "directives/sceneeditor/editorsprite",
+        "directives/sceneeditor/toolsbar",
 
         "directives/adaptative",
 
@@ -84,6 +85,7 @@
         tabScrollerDirective,
         fileSelectorDirective,
         editorSpriteDirective,
+        editorToolsbarDirective,
 
         adaptativeDirective,
 
@@ -128,6 +130,7 @@
         mainApp.directive("scrollingtab", ['$timeout', scrollingTabDirective]);
         mainApp.directive("fileselector", fileSelectorDirective);
         mainApp.directive("editorsprite", editorSpriteDirective);
+        mainApp.directive("editortoolsbar", editorToolsbarDirective);
 
 
         var app = new MonitoringApp(mainApp, modelDescriptorV3, panels, function() {

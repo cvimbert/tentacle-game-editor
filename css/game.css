@@ -261,3 +261,48 @@ bundle {
 
 }
 /* ---------------------------------------------------- */
+
+/* EDITOR TOOLSBAR */
+
+editortoolsbar {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+editortoolsbar .arrows div > div {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    margin: -1px;
+}
+
+editortoolsbar .arrows .arrows-row {
+    display: flex;
+    flex-direction: row;
+}
+
+editortoolsbar .arrow, .center {
+    background-color: white;
+}
+
+editortoolsbar .arrow {
+    border: 1px solid black;
+}
+
+editortoolsbar .right-arrow {
+    border-left: none;
+}
+
+editortoolsbar .left-arrow {
+    border-right: none;
+}
+
+editortoolsbar .up-arrow {
+    border-bottom: none;
+}
+
+editortoolsbar .bottom-arrow {
+    border-top: none;
+}

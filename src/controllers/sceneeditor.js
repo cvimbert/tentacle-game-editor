@@ -21,8 +21,23 @@ define([], function() {
             return spritePackage.get("identifier") + "/" + folder + "/" + spriteFile.get("file");
         };
 
-        $scope.onSelectSprite = function(model) {
+        var registeredSprites = [];
 
+        $scope.onRegisterSprite = function(editorSpriteScope) {
+            registeredSprites.push(editorSpriteScope);
+        };
+
+        $scope.selectedSprite;
+
+        $scope.onSelectSprite = function(spriteScope) {
+            $scope.selectedSprite = spriteScope;
+
+            _.each(registeredSprites, function(sprite) {
+                sprite.unselect();
+            });
+
+            spriteScope.select();
+            $scope.$apply();
         };
 
         $scope.backgroundSprites = shared.modelManager.getModelByType("BackgroundSprite");
