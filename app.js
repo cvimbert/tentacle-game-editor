@@ -14,7 +14,7 @@
         "panelcontroller",
         "panelscontroller",
         "spritespanelcontroller",
-        "draggabledirective",
+        "clonedraggabledirective",
         "sortablelistdirective",
         "toolbarpanelcontroller",
         "console",
@@ -27,6 +27,7 @@
         "directives/sceneeditor/scrollingtabstitle",
         "directives/sceneeditor/tabsscroller",
         "directives/sceneeditor/selector",
+        "directives/sceneeditor/editorsprite",
 
         "directives/adaptative",
 
@@ -69,7 +70,7 @@
         panelController,
         panelsController,
         spritesPanelController,
-        draggableDirective,
+        clonedraggableDirective,
         sortableListDirective,
         toolbarPanelController,
         console,
@@ -82,6 +83,7 @@
         scrollingTabsTitleDirective,
         tabScrollerDirective,
         fileSelectorDirective,
+        editorSpriteDirective,
 
         adaptativeDirective,
 
@@ -108,7 +110,7 @@
         mainApp.controller("grapheditor", graphEditorController);
 
 
-        mainApp.directive('draggable', draggableDirective);
+        mainApp.directive('draggable', clonedraggableDirective);
         mainApp.directive("sortablelist", ['$timeout', sortableListDirective]);
         mainApp.directive('contenteditable', contentEditable);
         mainApp.directive('selectable', selectable);
@@ -125,6 +127,7 @@
         mainApp.directive("scrollingtabstitle", scrollingTabsTitleDirective);
         mainApp.directive("scrollingtab", ['$timeout', scrollingTabDirective]);
         mainApp.directive("fileselector", fileSelectorDirective);
+        mainApp.directive("editorsprite", editorSpriteDirective);
 
 
         var app = new MonitoringApp(mainApp, modelDescriptorV3, panels, function() {
@@ -136,6 +139,8 @@
             var gameManager = new GameManager(app.modelManager, gameConsole);
             shared.gameManager = gameManager;
             gameManager.initialize();
+
+
 
             gameConsole.initialize(gameManager);
         });

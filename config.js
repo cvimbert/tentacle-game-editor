@@ -42,7 +42,7 @@ require.config({
         panelcontroller: 'src/model-monitor/controllers/panelcontroller',
         panelscontroller: 'src/model-monitor/controllers/panelscontroller',
         spritespanelcontroller: 'src/model-monitor/controllers/spritespanelcontroller',
-        draggabledirective: 'src/directives/draggable',
+        clonedraggabledirective: 'src/directives/clonedraggable',
         sortablelistdirective: 'src/model-monitor/directives/sortablelist',
         Draggable: 'bower_components/gsap/src/uncompressed/utils/Draggable',
         CSSPlugin: 'bower_components/gsap/src/uncompressed/plugins/CSSPlugin',
@@ -85,6 +85,7 @@ require.config({
         directives: "src/directives",
         sceneeditor: "src/controllers/sceneeditor",
         grapheditor: "src/controllers/grapheditor",
-        CSSPlugin: "bower_components/gsap/src/uncompressed/plugins/CSSPlugin"
+        CSSPlugin: "bower_components/gsap/src/uncompressed/plugins/CSSPlugin",
+        editorsprite: "src/directives/sceneeditor/editorsprite"
     }
 });

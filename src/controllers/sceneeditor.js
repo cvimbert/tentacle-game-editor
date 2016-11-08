@@ -21,31 +21,46 @@ define([], function() {
             return spritePackage.get("identifier") + "/" + folder + "/" + spriteFile.get("file");
         };
 
+        $scope.onSelectSprite = function(model) {
+
+        };
+
         $scope.backgroundSprites = shared.modelManager.getModelByType("BackgroundSprite");
+        $scope.sprites = shared.modelManager.getModelByType("Sprite");
+        $scope.controls = shared.modelManager.getModelByType("ControlSprite");
 
-        $scope.onDropped = function(elem) {
+        $scope.onDropped = function(elem, xPos, yPos) {
             // création d'un nouvel objet de jeu en fonction du type d'objet déposé
-            alert (elem.type);
-
             switch (elem.type) {
 
                 case "SpriteFileReference":
                     shared.modelManager.addModel("Sprite", true, {
                         reference: elem.uid,
-                        x: 0,
-                        y: 0
+                        x: xPos,
+                        y: yPos
                     });
 
                     break;
 
                 case "BackgroundFileReference":
-
+                    shared.modelManager.addModel("BackgroundSprite", true, {
+                        reference: elem.uid,
+                        x: 0,
+                        y: 0
+                    });
                     break;
 
                 case "ControlFileReference":
-
+                    shared.modelManager.addModel("ControlSprite", true, {
+                        reference: elem.uid,
+                        x: xPos,
+                        y: yPos
+                    });
                     break;
             }
+
+            $scope.$apply();
+
         };
     }
 });
