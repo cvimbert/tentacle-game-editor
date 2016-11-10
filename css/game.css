@@ -228,9 +228,9 @@ bundle {
 }
 
 .selector-thumbnail {
-    display: inline-block;
+    /*display: inline-block;
     min-width: 33.3%;
-    padding: 5px;
+    padding: 5px;*/
 }
 
 .selector-thumbnail img {
@@ -268,6 +268,8 @@ editortoolsbar {
     position: absolute;
     top: 40px;
     left: 40px;
+    text-align: center;
+    border-collapse: collapse;
 }
 
 editortoolsbar .arrows div > div {
@@ -275,7 +277,6 @@ editortoolsbar .arrows div > div {
     height: 40px;
     text-align: center;
     line-height: 38px;
-    margin: -1px;
 }
 
 editortoolsbar .arrows .arrows-row {
@@ -289,6 +290,7 @@ editortoolsbar .arrow, .center {
 
 editortoolsbar .arrow {
     border: 1px solid black;
+    cursor: pointer;
 }
 
 editortoolsbar .right-arrow {
@@ -305,4 +307,24 @@ editortoolsbar .up-arrow {
 
 editortoolsbar .bottom-arrow {
     border-top: none;
+}
+
+editortoolsbar .delete {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    font-size: 25px;
+    padding: 10px 0 10px 0;
+    width: 40px;
+    border: 1px solid black;
+
+}
+
+.grid-item {
+    width: 33%;
+    border: 1px solid black;
+}
+
+.grid-item--width2 {
+    width: 66%;
 }

@@ -41,13 +41,30 @@ define(["TweenLite", "Draggable"], function(TweenLite, Draggable) {
                     scope.onselect(scope);
                 });
 
+                element.on("touchstart", function() {
+                    scope.onselect(scope);
+                });
+
                 scope.select = function() {
                     element.addClass("selected");
                 };
 
                 scope.unselect = function() {
                     element.removeClass("selected");
-                }
+                };
+
+                scope.move = function(axis, quantity) {
+
+                    var cssProps = {};
+                    var newPos = scope.model.get(axis) + quantity;
+                    cssProps[axis] = newPos;
+
+                    TweenLite.set(element, {
+                        css: cssProps
+                    });
+
+                    scope.model.set(axis, newPos);
+                };
             }
         }
     }

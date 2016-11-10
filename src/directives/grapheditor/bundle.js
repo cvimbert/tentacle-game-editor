@@ -117,11 +117,10 @@ define(["underscore", "Draggable", "TweenLite"], function(_, Draggable, TweenLit
                     isDeployed = !isDeployed;
                 };
 
-                angular.element(gameObject).on("touchend", scope.toggle);
-
-                // attention au machines hybrides tactiles/souris
-                angular.element(gameObject).on("click", scope.toggle);
-
+                angular.element(gameObject).on("click touchend", function(e) {
+                    scope.toggle();
+                    e.preventDefault();
+                });
 
                 TweenLite.set(element, {
                     x: scope.datas.x,

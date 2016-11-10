@@ -1,7 +1,7 @@
 /**
  * Created by Christophe on 28/10/2016.
  */
-define([], function() {
+define(["underscore"], function(_) {
 
     return function($scope, shared) {
 
@@ -27,17 +27,25 @@ define([], function() {
             registeredSprites.push(editorSpriteScope);
         };
 
-        $scope.selectedSprite;
+        $scope.unselectAll = function() {
+            _.each(registeredSprites, function(sprite) {
+                sprite.unselect();
+            });
+        };
 
         $scope.onSelectSprite = function(spriteScope) {
             $scope.selectedSprite = spriteScope;
 
-            _.each(registeredSprites, function(sprite) {
-                sprite.unselect();
-            });
+            $scope.unselectAll();
 
             spriteScope.select();
             $scope.$apply();
+        };
+
+        $scope.onDeleteSprite = function(model) {
+            shared.modelManager.deleteItem(model.type, model);
+            $scope.$apply();
+            $scope.selectedSprite = undefined;
         };
 
         $scope.backgroundSprites = shared.modelManager.getModelByType("BackgroundSprite");

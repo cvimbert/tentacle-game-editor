@@ -6,6 +6,9 @@ require.config({
         jquery: {
             exports: 'jQuery'
         },
+        /*packery: {
+            exports: "packery"
+        },*/
         shim: {
             angularRoute: {
                 deps: ['angular'],
@@ -86,6 +89,7 @@ require.config({
         sceneeditor: "src/controllers/sceneeditor",
         grapheditor: "src/controllers/grapheditor",
         CSSPlugin: "bower_components/gsap/src/uncompressed/plugins/CSSPlugin",
-        editorsprite: "src/directives/sceneeditor/editorsprite"
+        editorsprite: "src/directives/sceneeditor/editorsprite",
+        packery: "bower_components/packery/dist/packery.pkgd"
     }
 });

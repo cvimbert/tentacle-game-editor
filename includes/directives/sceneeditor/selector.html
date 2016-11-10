@@ -1,3 +1,6 @@
-<div class="selector-thumbnail" ng-repeat="elem in datas" draggable datas="elem" target="'.scene-container'" dropedontarget="dropedontarget">
-    <img adaptative src="data/packages/octopus/{{ category }}/{{ elem.get('file'); }}">
+<div class="grid">
+    <div class="grid-item selector-thumbnail" ng-repeat="elem in datas" draggable count="$index" datas="elem" target="'.scene-container'"
+         dropedontarget="dropedontarget">
+        <img width="20" height="20" src="data/packages/octopus/{{ category }}/{{ elem.get('file'); }}">
+    </div>
 </div>

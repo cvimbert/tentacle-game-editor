@@ -128,7 +128,7 @@
         mainApp.directive("tabsscroller", tabScrollerDirective);
         mainApp.directive("scrollingtabstitle", scrollingTabsTitleDirective);
         mainApp.directive("scrollingtab", ['$timeout', scrollingTabDirective]);
-        mainApp.directive("fileselector", fileSelectorDirective);
+        mainApp.directive("fileselector", ['$timeout', fileSelectorDirective]);
         mainApp.directive("editorsprite", editorSpriteDirective);
         mainApp.directive("editortoolsbar", editorToolsbarDirective);
 

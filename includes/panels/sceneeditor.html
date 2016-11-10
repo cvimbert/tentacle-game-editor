@@ -13,7 +13,7 @@
                 <div id="controlscontainer">
                     <div editorsprite type="control" register="onRegisterSprite" onselect="onSelectSprite" model="control" id="{{'control-' + control.uid}}" class="game-element enabled ui-widget-content" ng-repeat="control in controls"><img ng-src="data/packages/{{getImageUrl(control, 'controls');}}"></div>
                 </div>
-                <editortoolsbar ng-show="selectedSprite"></editortoolsbar>
+                <editortoolsbar ng-show="selectedSprite" selection="selectedSprite" deletion="onDeleteSprite"></editortoolsbar>
             </div>
         </div>
     </div>
