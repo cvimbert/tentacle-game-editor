@@ -31,7 +31,7 @@ define(["jquery", "Draggable", "packery"], function($, Draggable, Packery) {
                     });
 
                     element.css("visibility", "visible");
-                });
+                }, 1000);
             }
         }
     }
