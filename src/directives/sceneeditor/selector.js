@@ -14,20 +14,24 @@ define(["jquery", "Draggable", "packery"], function($, Draggable, Packery) {
                 datas: "=datas",
                 category: "=category",
                 dropedontarget: "=dropedontarget",
-                mode: "&mode"
+                mode: "&mode",
+                model: "=model"
             },
 
             link: function(scope, element, attributes) {
-                //return;
+
+                element.css("visibility", "hidden");
 
                 $timeout(function() {
+
                     var pack = new Packery(element[0].querySelector(".grid"), {
                         itemSelector: '.grid-item',
                         percentPosition: true,
-                        gutter: 1
+                        gutter: 0
                     });
-                });
 
+                    element.css("visibility", "visible");
+                });
             }
         }
     }

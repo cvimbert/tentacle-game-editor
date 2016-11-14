@@ -13,10 +13,16 @@ define(["Draggable", "TweenLite"], function(Draggable, TweenLite) {
                 datas: "=datas",
                 ondragend: "=ondragend",
                 dropedontarget: "=dropedontarget",
-                target: "=target"
+                target: "=target",
+                category: "@category",
+                model: "=model"
             },
 
             link: function(scope, element, attributes) {
+
+                scope.srcImage = "data/packages/octopus/" + scope.category + "/" + scope.model.get('file');
+
+                element.css("background-image", "url(" + scope.srcImage + ")");
 
                 function createAndDragClone(e) {
                     var clonedHtml = element[0].innerHTML;
@@ -50,8 +56,8 @@ define(["Draggable", "TweenLite"], function(Draggable, TweenLite) {
                     drag[0].startDrag(e);
                 }
 
-                element.on("mousedown", createAndDragClone);
-                element.on("touchstart", createAndDragClone);
+                /*element.on("mousedown", createAndDragClone);
+                element.on("touchstart", createAndDragClone);*/
             }
         }
     }
