@@ -1,7 +1,7 @@
 /**
  * Created by Christophe on 28/10/2016.
  */
-define(["TweenLite"], function(TweenLite) {
+define(["TweenLite", "Draggable"], function(TweenLite, Draggable) {
 
     return function($timeout) {
 
@@ -23,13 +23,23 @@ define(["TweenLite"], function(TweenLite) {
 
                 scope.liveopen = scope.open;
 
-                console.log(scope.datas);
-
                 scope.$parent.childTabs.push(scope);
 
                 scope.liveProps = {
                     height: 0
                 };
+
+                // une amélioration à apporter plus tard
+                /*Draggable.create(element[0].querySelector(".title"), {
+                    type: "y",
+                    bounds: element,
+                    onDrag: function() {
+
+                    },
+                    onDragEnd: function() {
+
+                    }
+                });*/
 
                 var init = false;
 

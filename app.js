@@ -31,6 +31,7 @@
         "directives/sceneeditor/toolsbar",
 
         "directives/adaptative",
+        "directives/adaptativelayer",
 
         "sceneeditor",
         "grapheditor",
@@ -88,6 +89,7 @@
         editorToolsbarDirective,
 
         adaptativeDirective,
+        adaptativeLayerDirective,
 
         sceneEditorController,
         graphEditorController
@@ -119,6 +121,7 @@
         mainApp.directive('displayboolean', displayObjectDirective);
         mainApp.directive('control', controlDirective);
         mainApp.directive("adaptative", adaptativeDirective);
+        mainApp.directive("adaptativelayer", adaptativeLayerDirective);
 
         // graph editor
         mainApp.directive("bundle", ['$timeout', bundleDirective]);

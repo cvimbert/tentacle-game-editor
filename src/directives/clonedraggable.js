@@ -45,8 +45,12 @@ define(["Draggable", "TweenLite"], function(Draggable, TweenLite) {
                         element.addClass("grid-item--width2");
                     }
 
-                    if (elem.width > 130) {
+                    if (elem.width > 150) {
                         element.addClass("grid-item--width3");
+                    }
+
+                    if (elem.width > 230) {
+                        element.addClass("grid-item--width4");
                     }
 
                     if (elem.height > 35) {
@@ -56,22 +60,35 @@ define(["Draggable", "TweenLite"], function(Draggable, TweenLite) {
                     if (elem.height > 90) {
                         element.addClass("grid-item--height3");
                     }
+
+                    if (elem.height > 150) {
+                        element.addClass("grid-item--height4");
+                    }
                 };
 
                 function createAndDragClone(e) {
+                    //return;
+
                     var cloneElement = document.createElement("img");
                     cloneElement.src = scope.srcImage;
                     document.body.appendChild(cloneElement);
+
+                    var mainPanel = document.querySelector(".game-container");
 
                     var drag = Draggable.create(cloneElement, {
                         type: "x,y",
                         onDragStart: function() {
 
                         },
-                        onDragEnd: function() {
-                            if (this.hitTest(".scene-editor-main-panel")) {
-                                var xPos = Math.floor(this.x - cloneElement.width / 2);
-                                var yPos = Math.floor(this.y - cloneElement.height / 2);
+                        onDragEnd: function(evt) {
+
+                            // attention, ici on ne tient pas compte du scale de la zone ciblée
+
+                            if (this.hitTest(".game-container")) {
+
+                                var xPos = Math.floor(this.x - mainPanel.offsetLeft);
+                                var yPos = Math.floor(this.y - mainPanel.offsetTop);
+
                                 scope.dropedontarget(scope.model, xPos, yPos);
                             }
 
@@ -101,7 +118,7 @@ define(["Draggable", "TweenLite"], function(Draggable, TweenLite) {
 
                 element.on("mousedown touchstart", function(e) {
                     createAndDragClone(e);
-                    e.preventDefault();
+                    //e.preventDefault();
                 });
             }
         }

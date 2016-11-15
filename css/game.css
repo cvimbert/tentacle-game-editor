@@ -23,8 +23,13 @@
 
 .game-container {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0 0;
+    width: 773px;
+    height: 469px;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 .game-element img {
@@ -106,7 +111,7 @@ scrollingtab {
     flex: 1;
     color: white;
     text-align: center;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 scrollingtabstitle > div {
@@ -341,6 +346,14 @@ editortoolsbar .delete {
 
 .grid-item--height2 {
     height: 110px;
+}
+
+.grid-item--height3 {
+    height: 165px;
+}
+
+.grid-item--height4 {
+    height: 220px;
 }
 
 .grid-item--width2 {
