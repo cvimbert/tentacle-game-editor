@@ -19,6 +19,7 @@
     "tentacle-model-monitor": "cvimbert/tentacle-model-monitor",
     "angular-sanitize": "^1.5.8",
     "gsap": "greensock#^1.19.0",
-    "packery": "^2.1.1"
+    "packery": "^2.1.1",
+    "simplebar": "^1.1.9"
   }
 }
