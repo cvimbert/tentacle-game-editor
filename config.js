@@ -26,7 +26,7 @@ require.config({
             deps: ["jquery", "mousewheel"]
         },
         app: {
-            deps: ['malihuScrollbar']
+            deps: ['malihuScrollbar', 'simplebar']
         }
     },
     paths: {

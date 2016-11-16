@@ -31,20 +31,10 @@ define(["TweenLite", "Draggable", "jquery"], function(TweenLite, Draggable, $) {
 
                 var elem = element[0].querySelector(".tab-content");
 
-                /*$(elem).mCustomScrollbar({
-                    axis: "y",
-                    theme: "dark-3",
-                    scrollButtons:{
-                        enable: true
-                    },
-                    advanced: {
-                        updateOnContentResize: true,
-                        updateOnImageLoad: true
-                    },
-                    mouseWheel: {
-                        scrollAmount: 50
-                    }
-                });*/
+
+                $(elem).simplebar({
+                    //autoHide: false
+                });
 
                 $timeout(function() {
 
@@ -52,7 +42,6 @@ define(["TweenLite", "Draggable", "jquery"], function(TweenLite, Draggable, $) {
                     /*$(elem).simplebar({
                         autoHide: false
                     });*/
-
 
 
                 }, 1100);
