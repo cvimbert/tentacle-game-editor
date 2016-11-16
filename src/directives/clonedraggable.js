@@ -67,7 +67,7 @@ define(["Draggable", "TweenLite"], function(Draggable, TweenLite) {
                 };
 
                 function createAndDragClone(e) {
-                    //return;
+                    return;
 
                     var cloneElement = document.createElement("img");
                     cloneElement.src = scope.srcImage;

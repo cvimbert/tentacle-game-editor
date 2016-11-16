@@ -21,9 +21,16 @@ require.config({
             angular: {
                 exports: 'angular'
             }
+        },
+        malihuScrollbar: {
+            deps: ["jquery", "mousewheel"]
+        },
+        app: {
+            deps: ['malihuScrollbar']
         }
     },
     paths: {
+        mousewheel: "node_modules/jquery.mousewheel/jquery.mousewheel",
         underscore: 'bower_components/underscore/underscore',
         modelmanager: 'src/model-manager/modelmanager',
         soundmanager: 'src/game/soundmanager',
@@ -48,7 +55,6 @@ require.config({
         clonedraggabledirective: 'src/directives/clonedraggable',
         sortablelistdirective: 'src/model-monitor/directives/sortablelist',
         Draggable: 'bower_components/gsap/src/uncompressed/utils/Draggable',
-        CSSPlugin: 'bower_components/gsap/src/uncompressed/plugins/CSSPlugin',
         TweenLite: 'bower_components/gsap/src/uncompressed/TweenLite',
         toolbarpanelcontroller: 'src/controllers/toolbar',
         localization: 'data/localisation',
@@ -90,6 +96,8 @@ require.config({
         grapheditor: "src/controllers/grapheditor",
         CSSPlugin: "bower_components/gsap/src/uncompressed/plugins/CSSPlugin",
         editorsprite: "src/directives/sceneeditor/editorsprite",
-        packery: "bower_components/packery/dist/packery.pkgd"
+        packery: "bower_components/packery/dist/packery.pkgd",
+        simplebar: "bower_components/simplebar/src/simplebar",
+        malihuScrollbar: "bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar"
     }
 });

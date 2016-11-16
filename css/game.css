@@ -111,7 +111,8 @@ scrollingtab {
     flex: 1;
     color: white;
     text-align: center;
-    overflow-y: auto;
+    overflow-y: hidden;
+    position: relative;
 }
 
 scrollingtabstitle > div {

@@ -1,7 +1,7 @@
 /**
  * Created by Christophe on 28/10/2016.
  */
-define(["TweenLite", "Draggable"], function(TweenLite, Draggable) {
+define(["TweenLite", "Draggable", "jquery"], function(TweenLite, Draggable, $) {
 
     return function($timeout) {
 
@@ -28,6 +28,35 @@ define(["TweenLite", "Draggable"], function(TweenLite, Draggable) {
                 scope.liveProps = {
                     height: 0
                 };
+
+                var elem = element[0].querySelector(".tab-content");
+
+                /*$(elem).mCustomScrollbar({
+                    axis: "y",
+                    theme: "dark-3",
+                    scrollButtons:{
+                        enable: true
+                    },
+                    advanced: {
+                        updateOnContentResize: true,
+                        updateOnImageLoad: true
+                    },
+                    mouseWheel: {
+                        scrollAmount: 50
+                    }
+                });*/
+
+                $timeout(function() {
+
+
+                    /*$(elem).simplebar({
+                        autoHide: false
+                    });*/
+
+
+
+                }, 1100);
+
 
                 // une amélioration à apporter plus tard
                 /*Draggable.create(element[0].querySelector(".title"), {

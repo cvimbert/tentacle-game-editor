@@ -20,6 +20,7 @@
     "angular-sanitize": "^1.5.8",
     "gsap": "greensock#^1.19.0",
     "packery": "^2.1.1",
-    "simplebar": "^1.1.9"
+    "simplebar": "^1.1.9",
+    "malihu-custom-scrollbar-plugin": "^3.1.3"
   }
 }
