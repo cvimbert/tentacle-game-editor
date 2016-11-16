@@ -67,7 +67,7 @@ define(["Draggable", "TweenLite"], function(Draggable, TweenLite) {
                 };
 
                 function createAndDragClone(e) {
-                    return;
+                    //return;
 
                     var cloneElement = document.createElement("img");
                     cloneElement.src = scope.srcImage;
@@ -116,9 +116,21 @@ define(["Draggable", "TweenLite"], function(Draggable, TweenLite) {
                     drag.startDrag(e);
                 }
 
+                var touchTimeout;
+
                 element.on("mousedown touchstart", function(e) {
-                    createAndDragClone(e);
+
+                    touchTimeout = setTimeout(function () {
+                        createAndDragClone(e);
+                    }, 800);
+
                     //e.preventDefault();
+                });
+
+                angular.element(document).on("mouseup touchend", function(e) {
+                    if (touchTimeout) {
+                        clearTimeout(touchTimeout);
+                    }
                 });
             }
         }
